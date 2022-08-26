@@ -25,3 +25,99 @@
 
 }
 
+.but-n1 {
+    border: 0px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #8E8E8E;
+
+}
+
+.but-n2 {
+    font-size: 18px;
+    line-height: 19px;
+    color: #272525;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+
+.placeholder {
+    border-color: black;
+    border-radius: 17px;
+    background: url(/img/search.svg) no-repeat left;
+    background-size: 5% ;
+    padding-left: 20px;
+    background-position: 5px;
+}
+
+.phone {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #EEF1F6;
+    background-color: #1FAB8A;
+    margin-top: 20px;
+    border-radius: 15px;
+
+    }
+.poisk {
+    margin: 0px 68px;
+}
+
+.poisk2 {
+    margin-right: 72.44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
