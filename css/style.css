@@ -1,5 +1,10 @@
+body {
+    font-family: 'Gilroy';
+}
+
+
 .main-container {
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 162px;
 }
@@ -30,7 +35,8 @@
     font-size: 18px;
     line-height: 19px;
     color: #8E8E8E;
-
+    background: transparent;
+    border: none;
 }
 
 .but-n2 {
@@ -39,40 +45,39 @@
     color: #272525;
     margin-left: auto;
     cursor: pointer;
-
+    background: transparent;
+    border: 0px;
 }
 
 .placeholder {
+    width: 491px;
+    height: 60px;
     border-color: black;
     border-radius: 17px;
     background: url(/img/search.svg) no-repeat left;
     background-size: 5% ;
     padding-left: 20px;
     background-position: 5px;
+    font-size: 16px;
+    line-height: 16.88px;
 }
 
 .phone {
+
+    display: inline-block;
+    text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     line-height: 19px;
     color: #EEF1F6;
     background-color: #1FAB8A;
-    margin-top: 20px;
-    border-radius: 15px;
+    border-radius: 90px;
+    padding: 20.5px 62px;
+}
 
-    }
 .poisk {
-    margin: 0px 68px;
+
 }
-
-.poisk2 {
-    margin-right: 72.44px;
-}
-
-
-
-
-
 
 
 
