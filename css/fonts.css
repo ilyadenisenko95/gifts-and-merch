@@ -218,3 +218,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family:  'Neutraface Display';
+    src: local('Neutraface Display Titling'),
+        url('../fonts/Neutraface\ Display\ Titling.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
