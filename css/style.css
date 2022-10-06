@@ -2,7 +2,6 @@ body {
     font-family: 'Gilroy', sans-serif;
 }
 
-
 .main-container {
     max-width: 1600px;
     margin: 0 auto;
@@ -137,7 +136,7 @@ body {
 }
 
 .header-nav {
-    background: rgba(250, 251, 253, 0.44);
+    background: rgba(30, 34, 42, 0.44);
     max-height: 100px;
 }
 
@@ -194,6 +193,70 @@ margin-left: 40px;
 margin-right: 40px;
 }
 
+.prize-header {
+    min-height: 605px;
+    background: linear-gradient(38.95deg, #9796F0 -10.38%, #FBC7D4 107.56%);
+}
+
+.line {
+    width: 179px;
+    height: 8px;
+    background-color: #272525;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 289px;
+}
 
 
+.prize-navigation__buttons {
+    display: flex;
+    align-items: center;
+    color: #8E8E8E;
+    margin-top: 48px;
+    margin-left: 156px;
+}
 
+
+.prize-navigation__button.active {
+    cursor: pointer;
+    align-items: center;
+    color: #7981AD;
+}
+
+.prize-navigation__button {
+    border: 0px;
+    font-size: 14px;
+    color: #524983;
+    line-height: 130%;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px;
+    padding:  3px;
+    background: transparent;
+
+}
+.prize-text {
+    max-width: 638px;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 156px;
+    color: #272525;
+}
+.prize-text2 {
+    max-width: 638px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    margin-top: 20px;
+    margin-left: 156px;
+    letter-spacing: 0.065em;
+    color: #454747;
+
+}
