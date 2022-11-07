@@ -12,10 +12,10 @@ body {
     background: linear-gradient(38.95deg, #9796F0 -10.38%, #FBC7D4 107.56%);
 }
 
-.page-header {
+/* .page-header {
     /* display: flex;
     align-items: center; */
-}
+} */
 
 .page-header__top {
     display: flex;
@@ -394,5 +394,6 @@ display: flex;
     padding-right: 20.3px;
 }
 
-
 }
+
+.sds
