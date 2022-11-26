@@ -12,68 +12,67 @@
 
   <body>
     <div class="header-bg">
-      <header class=" page-header">
+      <header class="page-header">
         <div class="main-container page-header__top">
-          <a href="/">
+          <a class="page-header__logo-link" href="/">
             <img class="header-image" src="/img/logo.svg" alt="Gifts Merch " />
           </a>
           <input class="page-header__search" type="Поиск" placeholder="Поиск" >
 
-          <img class="page-header__search1" src="/img/search1.svg" alt="поиск">
+          <img class="page-header__search-inside" src="/img/search1.svg" alt="поиск">
 
           <a class="phone" href="tel:+79283627229" >+380 630 130 103</a>
 
           <div class="page-header__buttons">
-            <button class="but-n1"><img class="but-image" src="/img/men.svg" alt=""></button>
+            <button class="page-header__profile-btn"><img class="but-image" src="/img/men.svg" alt=""></button>
             <button type="button" class="page-header__button active">RU</button>
-        /
+            /
             <button type="button" class="page-header__button">ENG</button>
-         </div>
-
-          <button class="page-header__burger"><img src="/img/🌈 COLOR.svg" alt=""> </button>
-
         </div>
 
-        <div class="header-nav header-long">
-          <ul class="header-list">
-            <li>
-              <a class="nab" href="/collections">Наборы</a>
-            </li>
-            <li class="correct">
-              <a class="nab--active" href="products">Все товары </a>
-            </li>
-            <li><a class="nab" href="information">Информация</a>
-            </li>
-          </ul>
-          <div class="header-text">
-            ШОпперы со скидкой - 25%
-          </div>
-          <img class="img-resize" src="/img/shopping-bags.png" alt="packages">
-        </div>
-      </header>
+      <button class="page-header__burger"><img src="/img/🌈 COLOR.svg" alt=""> </button>
 
-      <section class="prize-header">
-        <!-- <div class="line"></div> -->
-        <div class="prize-navigation__buttons">
-          <button class="prize-navigation__button active">Главная</button>
-          /
-          <button class="prize-navigation__button">Наборы</button>
-        </div>
-        <h1 class="prize-text">Подарочные наборы это необычные......</h1>
-        <div class="prize-text2">Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.</div>
-        <div class="prize-creation">
-          <a class="box-active" href="">Выбрать готовый бокс</a>
-          <a class="box" href="">Создать свой</a>
+    </div>
 
-        <!-- <div class="prize_picture"> -->
-          <!-- <img class="picture2" src="./img/prize2.svg" alt="prize"> -->
-        <!-- </div> -->
+  <div class="header-nav">
+      <ul class="header-list">
+        <li>
+          <a class="nab" href="/collections">Наборы</a>
+        </li>
+        <li class="correct">
+          <a class="nab--active" href="products">Все товары </a>
+        </li>
+        <li><a class="nab" href="information">Информация</a>
+        </li>
+      </ul>
+      <div class="header-text">
+        ШОпперы со скидкой - 25%
+      </div>
+      <img class="img-resize" src="/img/shopping-bags.png" alt="packages">
+    </div>
+  </header>
+
+<section class="prize-header">
+  <div class="prize-navigation__buttons">
+    <button class="prize-navigation__button active">Главная</button>
+        /
+    <button class="prize-navigation__button">Наборы</button>
+  </div>
+    <h1 class="prize-text__main">Подарочные наборы это необычные......</h1>
+    <p class="prize-text__description">Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.</p>
+      <div class="prize-creation">
+        <a class="prize-box__ready" href="">Выбрать готовый бокс</a>
+        <a class="prize-box__create" href="">Создать свой</a>
+
+      <!-- <div class="prize_picture"> -->
+        <!-- <img class="picture2" src="./img/prize2.svg" alt="prize"> -->
+      <!-- </div> -->
 
 
-        </div>
-        <img class="picture1" src="./img/prize1.svg" alt="prize">
+      </div>
+      <img class="picture1" src="./img/prize1.svg" alt="prize">
 
-      </section>
+</section>
     </div>
 
 
@@ -100,18 +99,19 @@
      <div class="burger-menu__sets">Наборы</div>
      <div class="burger-menu__all">Все товары</div>
      <div class="burger-menu__list">
-      <div class="burger-menu__text"><li>Толстовки</li></div>
-      <div class="burger-menu__text"><li>Свитшоты</li></div>
-      <div class="burger-menu__text"><li>Футболки</li></div>
-      <div class="burger-menu__text"><li>Поло</li></div>
-      <div class="burger-menu__text"><li>Жилетки</li></div>
-      <div class="burger-menu__text"><li>Рюкзаки</li></div>
-      <div class="burger-menu__text"><li>Бананки</li></div>
-      <div class="burger-menu__text"><li>Эко-сумки/Шопперы </li></div>
-      <div class="burger-menu__text"><li>Пледы</li></div>
-      <div class="burger-menu__text"><li>Носки</li></div>
-      <div class="burger-menu__text"><li>Маски</li></div>
-
+      <ul class="burger-menu__list">
+      <a class="burger-menu__text" href="" ><li>Толстовки</li>
+      <a class="burger-menu__text" href="" ><li>Свитшоты</li>
+      <a class="burger-menu__text" href="" ><li>Футболки</li>
+      <a class="burger-menu__text" href="" ><li>Поло</li>
+      <a class="burger-menu__text" href="" ><li>Жилетки</li>
+      <a class="burger-menu__text" href="" ><li>Рюкзаки</li>
+      <a class="burger-menu__text" href="" ><li>Бананки</li>
+      <a class="burger-menu__text" href="" ><li>Эко-сумки/Шопперы </li>
+      <a class="burger-menu__text" href="" ><li>Пледы</li>
+      <a class="burger-menu__text" href="" ><li>Носки</li>
+      <a class="burger-menu__text" href="" ><li>Маски</li>
+      </ul>
      </div>
 
 
@@ -124,3 +124,12 @@
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
