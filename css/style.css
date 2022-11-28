@@ -121,12 +121,12 @@ body {
 }
 
 .header-list {
-    margin: 0;
-    margin-left: 142.5px;
-    margin-top: 2px;
     display: flex;
     flex-grow: 1;
     align-items: center;
+    margin: 0;
+    margin-left: 142.5px;
+    margin-top: 2px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -175,12 +175,12 @@ body {
 
 .correct::after {
     position: absolute;
-    width: 179px;
-    height: 8px;
     bottom: -18px;
     left: 0;
     display: block;
     content: '';
+    width: 179px;
+    height: 8px;
     background-color: #272525;
     border-radius: 6px;
 }
@@ -190,10 +190,10 @@ body {
 }
 
 .header-hero__buttons {
+    align-items: center;
     margin-top: 48px;
     margin-left: 156px;
     display: flex;
-    align-items: center;
     color: #8E8E8E;
 }
 
@@ -244,16 +244,16 @@ body {
 }
 
 .header-hero__ready {
-    padding: 18px 43px;
-    width: 194px;
     display: inline-block;
+    width: 194px;
+    padding: 18px 43px;
     text-decoration: none;
-    letter-spacing: 0.81px;
     text-align: center;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
+    letter-spacing: 0.81px;
     color: #FFFFFF;;
     background-color: #3C336C;
     border-radius: 90px;
@@ -295,9 +295,10 @@ body {
 
     .page-header__search {
         width: 295.33px;
+        margin-right: 0px;
         height: 36.35px;
         border: 2.40592px solid black;
-        margin-right: 0px;
+
     }
 
     .page-header__search-inside {
@@ -353,9 +354,9 @@ body {
 
     .page-header__search {
         width: 294.33px;
+        margin-right: -4px;
         height: 36.35px;
         border: 2.40592px solid black;
-        margin-right: -4px;
     }
 
     .page-header__search1 {
@@ -421,11 +422,13 @@ body {
 
     .page-header__burger {
         display: block;
-        border: none;
-        text-decoration: none;
-        background-color: transparent;
         margin-right: 12px;
         margin-top: 5px;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+
+
     }
 }
 
