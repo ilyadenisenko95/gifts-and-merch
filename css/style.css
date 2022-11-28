@@ -18,11 +18,11 @@ body {
 
 .page-header__top {
     display: flex;
-    padding-top: 41px;
-    padding-bottom: 45px;
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
+    padding-top: 41px;
+    padding-bottom: 45px;
     font-size: 18px;
 }
 
@@ -94,6 +94,7 @@ body {
 
 .phone {
     display: inline-block;
+    padding: 20.5px 62px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -101,7 +102,6 @@ body {
     color: #EEF1F6;
     background-color: #1FAB8A;
     border-radius: 90px;
-    padding: 20.5px 62px;
 }
 
 .phone:hover,
@@ -114,10 +114,10 @@ body {
 }
 
 .header-nav {
-    max-height: 100px;
     display: flex;
-    background: rgba(250, 251, 253, 0.44);
     align-items: center;
+    max-height: 100px;
+    background: rgba(250, 251, 253, 0.44);
 }
 
 .header-list {
@@ -144,7 +144,6 @@ body {
 .nab--active {
     text-decoration: none;
     color: #FAFBFD;
-
 }
 
 .header-text {
@@ -186,11 +185,11 @@ body {
     border-radius: 6px;
 }
 
-.prize-header {
+.header-hero {
     min-height: 605px;
 }
 
-.prize-navigation__buttons {
+.header-hero__buttons {
     margin-top: 48px;
     margin-left: 156px;
     display: flex;
@@ -198,13 +197,13 @@ body {
     color: #8E8E8E;
 }
 
-.prize-navigation__button.active {
+.header-hero__button.active {
     cursor: pointer;
     align-items: center;
     color: #7981AD;
 }
 
-.prize-navigation__button {
+.header-hero__button {
     padding:  4px;
     font-size: 14px;
     color: #524983;
@@ -215,7 +214,7 @@ body {
     border: 0px;
 }
 
-.prize-text__main {
+.header-hero__main {
     max-width: 638px;
     margin: 0;
     margin-top: 13px;
@@ -228,7 +227,7 @@ body {
     color: #272525;
 }
 
-.prize-text__description {
+.header-hero__description {
     max-width: 638px;
     margin-top: 20px;
     margin-left: 156px;
@@ -239,12 +238,12 @@ body {
     color: #454747;
 }
 
-.prize-creation {
+.pheader-hero__creation {
     padding-left: 156px;
     padding-top: 42px;
 }
 
-.prize-box__ready {
+.header-hero__ready {
     padding: 18px 43px;
     width: 194px;
     display: inline-block;
@@ -260,7 +259,7 @@ body {
     border-radius: 90px;
 }
 
-.prize-box__create {
+.header-hero__create {
     padding-left: 41px;
     font-weight: 500;
     font-size: 17px;
@@ -269,7 +268,7 @@ body {
     text-decoration: none;
 }
 
-.prize_picture {
+.header-hero__picture {
     display: flex;
 }
 
@@ -504,8 +503,8 @@ body {
 }
 
 .burger-menu__all {
-    margin-left: 83px;
     width: 115px;
+    margin-left: 83px;
     padding: 6px 0px 7px 0px;
     font-weight: 700;
     font-size: 16px;
@@ -521,12 +520,14 @@ body {
     list-style-type: none;
 
 }
+
  .burger-menu__text {
     text-decoration: none;
+
+
  }
 
- .burger-menu__list {
-    columns: 2;
+ .burger-menu__clothes{
     list-style-type: none;
 
  }
