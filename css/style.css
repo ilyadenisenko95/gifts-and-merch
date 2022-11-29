@@ -88,7 +88,7 @@ body {
     border: 4px solid black;
     box-sizing: border-box;
 }
-.page-header__search-inside {
+.page-header__loupe {
     display: none;
 }
 
@@ -301,10 +301,6 @@ body {
 
     }
 
-    .page-header__search-inside {
-        display: none;
-    }
-
     .page-header__search::placeholder {
         font-size: 14px;
     }
@@ -393,6 +389,7 @@ body {
 }
 
 @media (max-width: 950px) {
+
     .page-header__top {
         padding-top: 20px;
     }
@@ -412,10 +409,6 @@ body {
         display: none;
     }
 
-    .page-header__search1 {
-        display: inline;
-    }
-
     .page-header__buttons {
         display: none;
     }
@@ -427,11 +420,61 @@ body {
         text-decoration: none;
         background-color: transparent;
         border: none;
+    }
 
+    .page-header__loupe {
+        display: block;
+        border: none;
+        background-color: transparent;
+       }
+}
 
+@media (max-width: 600px) {
+
+    .header-image {
+        width: 210px;
+        height: 16.86px;
+    }
+
+    .phone {
+        display: none;
     }
 }
 
+@media (max-width: 320px) {
+
+    .page-header__top {
+        margin-top: -9px;
+    }
+
+    .header-image {
+        width: 130px;
+        height: 10px;
+    }
+
+    .page-header__loupe {
+        margin-left: 20px;
+        width: 15.95px;
+        height: 15.95px;
+    }
+
+    .page-header__loupe-image {
+        width: 15.95px;
+        height: 15.95px;
+        background-size: contain;
+        margin-left: 22px;
+    }
+
+    .page-header__burger-image {
+        width: 20px;
+        height: 12px;
+        background-size: contain;
+    }
+
+
+
+
+}
 
 
 
@@ -461,9 +504,9 @@ body {
 
 .burger-menu__header {
     display: flex;
+    align-items: center;
     margin-left: 89px;
     margin-top: 25px;
-    align-items: center;
     color: #8E8E8E;
     font-size: 12px;
 }
@@ -521,20 +564,16 @@ body {
 .burger-menu__list {
     columns: 2;
     list-style-type: none;
-
 }
 
  .burger-menu__text {
     text-decoration: none;
-
-
  }
 
  .burger-menu__clothes{
     list-style-type: none;
-
  }
 
 
 
-.
+
