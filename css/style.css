@@ -341,11 +341,12 @@ body {
 
 @media (max-width: 1000px) {
     .header-image {
-        width: 293.29px;
-        height: 23.54px;
+        width: 326px;
+        height: 24px;
         margin-right: 9px;
         margin-bottom: -9px;
-        margin-left: -3px;
+        margin-left: -17px;
+        margin-right: -8.5px;
     }
 
     .page-header__search {
@@ -444,12 +445,13 @@ body {
 @media (max-width: 320px) {
 
     .page-header__top {
-        margin-top: -9px;
+        margin-top: -8.5px;
     }
 
     .header-image {
         width: 130px;
-        height: 10px;
+        margin-top: 3px;
+        margin-left: 0.1px;
     }
 
     .page-header__loupe {
@@ -462,17 +464,19 @@ body {
         width: 15.95px;
         height: 15.95px;
         background-size: contain;
-        margin-left: 22px;
+        margin-left: 13px;
+        margin-top: 0.6px;
     }
 
     .page-header__burger-image {
-        width: 20px;
-        height: 12px;
         background-size: contain;
+        width: 21px;
+        height: 13px;
     }
 
-
-
+    .page-header__burger {
+        margin-right: -4px;
+    }
 
 }
 
