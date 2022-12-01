@@ -86,8 +86,8 @@ body {
     background-size: 4.2% ;
     background-position: 19px;
     border: 4px solid black;
-    box-sizing: border-box;
 }
+
 .page-header__loupe {
     display: none;
 }
@@ -190,10 +190,10 @@ body {
 }
 
 .header-hero__buttons {
+    display: flex;
     align-items: center;
     margin-top: 48px;
     margin-left: 156px;
-    display: flex;
     color: #8E8E8E;
 }
 
@@ -295,10 +295,9 @@ body {
 
     .page-header__search {
         width: 295.33px;
-        margin-right: 0px;
         height: 36.35px;
+        margin-right: 0px;
         border: 2.40592px solid black;
-
     }
 
     .page-header__search::placeholder {
@@ -351,8 +350,8 @@ body {
 
     .page-header__search {
         width: 294.33px;
-        margin-right: -4px;
         height: 36.35px;
+        margin-right: -4px;
         border: 2.40592px solid black;
     }
 
@@ -455,29 +454,28 @@ body {
     }
 
     .page-header__loupe {
+        height: 15.95px;
         margin-left: 20px;
         width: 15.95px;
-        height: 15.95px;
     }
 
     .page-header__loupe-image {
         width: 15.95px;
         height: 15.95px;
-        background-size: contain;
         margin-left: 13px;
         margin-top: 0.6px;
+        background-size: contain;
     }
 
     .page-header__burger-image {
-        background-size: contain;
         width: 21px;
         height: 13px;
+        background-size: contain;
     }
 
     .page-header__burger {
         margin-right: -4px;
     }
-
 }
 
 
