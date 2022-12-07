@@ -527,13 +527,6 @@ body {
 
 }
 
-@media (max-width: 786px) {
-    .header-nav{
-        display: none;
-    }
-}
-
-
 @media (max-width: 950px) {
 
     .page-header__top {
@@ -572,7 +565,44 @@ body {
         display: block;
         border: none;
         background-color: transparent;
-       }
+    }
+
+    /* .header-hero__main {
+        margin-left: 21px;
+        margin-top: 27px;
+        width: 472px;
+        height: 90px;
+        font-size: 36px;
+        line-height: 45px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    .header-hero__description {
+        width: 389px;
+        height: 63px;
+        margin-left: 22px;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.065em;
+    }
+
+    .header-hero__create {
+        top: 359px;
+    }
+
+    .header-hero__masage {
+        top: 339px;
+        margin-left: 1px;
+    }
+ */
+
+}
+
+@media (max-width: 786px) {
+    .header-nav{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -622,6 +652,8 @@ body {
     .page-header__burger {
         margin-right: -4px;
     }
+
+
 }
 
 
@@ -722,6 +754,58 @@ body {
     list-style-type: none;
  }
 
+ .burger-menu__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 105.5%;
+    color: #8E8E8E;
+ }
 
+ .burger-menu__text--active {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 105.5%;
+    color: #272525;
+    text-decoration: none;
+ }
 
+.burger-menu__info {
+    position: absolute;
+    width: 86px;
+    height: 15px;
+    left: 117px;
+    top: 322px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 105.5%;
+    text-align: center;
+    color: #272525;
+}
 
+.burger-menu__mail {
+    position: absolute;
+    width: 133px;
+    height: 16px;
+    left: 94px;
+    top: 380px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration:none;
+    color: #454747;
+    border-bottom: 1px #454747 solid;
+}
+
+.burger-menu__phone {
+    margin-top: 200px;
+}
+
+.burger-menu__masagers {
+    display: flex;
+    margin-top: 12px;
+}
+
+.burger-menu__image {
+    margin-left: 18.18px;
+}
