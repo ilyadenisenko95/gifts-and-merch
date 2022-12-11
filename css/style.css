@@ -7,7 +7,7 @@ body {
 }
 
 .main-container {
-    max-width: 1600px;
+    max-width: 1664px;
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -46,12 +46,10 @@ body {
 
 .header-image {
     margin-bottom: -12px;
-    margin-left: -31px;
 }
 
 .page-header__buttons {
     display: flex;
-    margin-right: -37px;
     align-items: center;
     color: #8E8E8E;
 }
@@ -118,18 +116,25 @@ body {
 }
 
 .header-nav {
+    height: 100px;
+    background: rgba(250, 251, 253, 0.44);
+}
+
+.header-nav__container {
     display: flex;
     align-items: center;
-    max-height: 100px;
-    background: rgba(250, 251, 253, 0.44);
+    height: 100%;
+    padding-left: 0;
 }
 
 .header-list {
     display: flex;
     flex-grow: 1;
     align-items: center;
+    height: 100%;
     margin: 0;
-    margin-left: 142.5px;
+    padding: 0;
+    /* margin-left: 142.5px; */
     margin-top: 2px;
     font-family: 'Gilroy';
     font-style: normal;
@@ -137,17 +142,38 @@ body {
     font-size: 18px;
     color: #272525;
     list-style-type: none;
+}
 
+.header-list__item {
+    height: 100%;
 }
 
 .header-list__navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    border-radius: 6px;
     text-decoration: none;
     color: #272525;
 }
 
 .header-list__navigation--active {
-    text-decoration: none;
     color: #FAFBFD;
+    background: #272525;
+}
+
+.header-list__navigation--active::after {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    display: block;
+    content: '';
+    width: 179px;
+    height: 8px;
+    background-color: #272525;
+    border-radius: 6px;
 }
 
 .header-text {
@@ -164,39 +190,24 @@ body {
 .img-resize {
     max-height: 100px;
     width: auto;
-    margin-right: 100px;
-}
-
-.header-list__navigation.current {
-    position: relative;
-    padding: 39.656px 40.25px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background: #272525;
-    border-radius: 6px;
-    color: #FAFBFD;
-}
-
-.header-list__navigation.current::after {
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    display: block;
-    content: '';
-    width: 179px;
-    height: 8px;
-    background-color: #272525;
-    border-radius: 6px;
 }
 
 .header-hero {
+    overflow: hidden;
+    position: relative;
     min-height: 605px;
+    padding-bottom: 231px;
+}
+
+.header-hero__container {
+    position: relative;
+    z-index: 1;
 }
 
 .header-hero__buttons {
     display: flex;
     margin-top: 44.5px;
-    margin-left: 152px;
+    /* margin-left: 152px; */
     align-items: center;
     color: #8E8E8E;
 }
@@ -222,7 +233,7 @@ body {
     max-width: 638px;
     margin: 0;
     margin-top: 15.5px;
-    margin-left: 156px;
+    /* margin-left: 156px; */
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -234,7 +245,7 @@ body {
 .header-hero__description {
     max-width: 638px;
     margin-top: 20px;
-    margin-left: 156px;
+    /* margin-left: 156px; */
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
@@ -243,11 +254,13 @@ body {
 }
 
 .header-hero__creation {
-    margin-left: 50px;
+    margin-top: 42px;
+    /* margin-left: 50px; */
 }
 
 .header-hero__ready {
-    position: absolute;
+    /* position: absolute; */
+    display: inline-block;
     width: 280px;
     height: 60px;
     left: 156px;
@@ -264,7 +277,7 @@ body {
 }
 
 .header-hero__create {
-    position: absolute;
+    /* position: absolute; */
     width: 109px;
     height: 24px;
     left: 481px;
@@ -279,21 +292,26 @@ body {
 }
 
 .header-hero__picture {
+    width: 42.6vw;
     max-width: 100%;
     position: absolute;
     left: 689px;
-    top: 188px;
-
+    bottom: 0;
 }
 
 .header-hero__pictures {
+    width: 38.3vw;
     max-width: 100%;
     position: absolute;
-    left: 1146px;
-    top: 328px;
+    right: 39px;
+    bottom: 0;
 }
 
 @media (max-width: 1500px) {
+    .header-hero__pictures {
+        right: auto;
+        left: 900px;
+    }
 
     .header-image {
         width: 293px;
@@ -349,9 +367,9 @@ body {
         padding-right: 20.3px;
     }
 
-    .header-list{
+    /* .header-list{
         margin-left: 2px;
-    }
+    } */
 
     .header-nav {
         margin-top: -6px;
