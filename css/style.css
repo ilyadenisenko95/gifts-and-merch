@@ -375,7 +375,7 @@ body {
         margin-top: -6px;
     }
 
-    .header-list__correct {
+    /* .header-list__correct {
         position: relative;
         padding: 40px 20.25px;
         margin-left: 20px;
@@ -383,9 +383,18 @@ body {
         background: #272525;
         border-radius: 6px;
         color: #FAFBFD;
+    } */
+
+    .header-list {
+        margin-left: 22px;
     }
 
-    .header-list__navigation.current::after {
+
+    .header-list__navigation {
+        padding: 0 20px;
+    }
+
+    .header-list__navigation--active::after {
         position: absolute;
         bottom: -18px;
         left: 0;
