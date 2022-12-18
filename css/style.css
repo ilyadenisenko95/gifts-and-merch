@@ -76,7 +76,7 @@ body {
 .page-header__search {
     width: 491px;
     height: 60px;
-    margin-right: 4px;
+    margin-right: 3px;
     padding-left: 39px;
     font-size: 16px;
     line-height: 16.88px;
@@ -95,7 +95,7 @@ body {
 
 .phone {
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 1px;
     padding: 20.5px 62px;
     text-decoration: none;
     font-size: 18px;
@@ -177,7 +177,7 @@ body {
 }
 
 .header-text {
-    margin-right: 76.5px;
+    margin-right: 16.5px;
     font-family: 'Neutraface Display';
     font-style: normal;
     font-weight: 900;
@@ -202,12 +202,13 @@ body {
 .header-hero__container {
     position: relative;
     z-index: 1;
+    margin-right: 132px;
 }
 
 .header-hero__buttons {
     display: flex;
     margin-top: 44.5px;
-    /* margin-left: 152px; */
+    margin-left: -4px;
     align-items: center;
     color: #8E8E8E;
 }
@@ -254,12 +255,10 @@ body {
 }
 
 .header-hero__creation {
-    margin-top: 42px;
-    /* margin-left: 50px; */
+    margin-top: 41px;
 }
 
 .header-hero__ready {
-    /* position: absolute; */
     display: inline-block;
     width: 280px;
     height: 60px;
@@ -277,42 +276,26 @@ body {
 }
 
 .header-hero__create {
-    /* position: absolute; */
     width: 109px;
     height: 24px;
-    left: 481px;
-    top: 578px;
+    margin-left: 42px;
     font-size: 17px;
     text-decoration: none;
     color: #524983;
 }
 
-.header-hero__images {
-        /* overflow: hidden; */
-}
-
 .header-hero__picture {
-    width: 42.6vw;
-    max-width: 100%;
-    position: absolute;
-    left: 689px;
-    bottom: 0;
-}
-
-.header-hero__pictures {
-    width: 38.3vw;
-    max-width: 100%;
     position: absolute;
     right: 39px;
-    bottom: 0;
+    bottom: -154px;
+    width: 62.1vw;
 }
 
-@media (max-width: 1500px) {
-    .header-hero__pictures {
-        right: auto;
-        left: 900px;
-    }
+.header-hero__picture2 {
+    display: none;
+}
 
+/* @media (max-width: 1500px) {
     .header-image {
         width: 293px;
         height: 23.54px;
@@ -367,30 +350,11 @@ body {
         padding-right: 20.3px;
     }
 
-    /* .header-list{
-        margin-left: 2px;
-    } */
-
     .header-nav {
         margin-top: -6px;
     }
 
-    /* .header-list__correct {
-        position: relative;
-        padding: 40px 20.25px;
-        margin-left: 20px;
-        margin-right: 20px;
-        background: #272525;
-        border-radius: 6px;
-        color: #FAFBFD;
-    } */
-
-    .header-list {
-        margin-left: 22px;
-    }
-
-
-    .header-list__navigation {
+     .header-list__navigation {
         padding: 0 20px;
     }
 
@@ -419,22 +383,36 @@ body {
     .img-resize {
         margin-right: 30px;
     }
-}
 
-@media (max-width: 1000px) {
+    .header-hero__picture {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50vw;
+    }
+} */
+
+/* Изменить на 999 */
+@media (max-width: 1500px) {
+
+    .page-header__top {
+        margin-top: -18px;
+    }
+
     .header-image {
         width: 326px;
         height: 24px;
         margin-right: 9px;
         margin-bottom: -9px;
-        margin-left: -17px;
+        margin-left: -28px;
         margin-right: -8.5px;
     }
 
     .page-header__search {
         width: 294.33px;
         height: 36.35px;
-        margin-right: 0px;
+        margin-right: -1px;
+        margin-top: 1px;
         border: 2.40592px solid black;
     }
 
@@ -444,7 +422,7 @@ body {
 
     .phone {
         padding: 10.54px 37.29px;
-        margin-right: -2px;
+        margin-right: -1px;
         text-align: center;
         font-size: 14px;
         line-height: 14.5px;
@@ -456,7 +434,7 @@ body {
     }
 
     .page-header__buttons{
-        margin-right: 0px;
+        margin-right: -23px;
     }
 
     .page-header__burger {
@@ -487,39 +465,68 @@ body {
     .header-hero__main {
         width: 510px;
         height: 180px;
-        margin-left: 19px;
+        margin-left: -12px;
         margin-top: 69px;
+    }
+
+    .header-list {
+        margin-left: 22px;
+    }
+
+    .header-nav__container {
+        margin-top: -5px;
+    }
+
+    .header-list__navigation {
+        padding: 0 20px;
+    }
+
+    .header-list__navigation--active::after {
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+        display: block;
+        content: '';
+        width: 139px;
+        height: 8px;
+        background-color: #272525;
+        border-radius: 6px;
+    }
+
+    .header-text {
+        width: 194px;
+        margin-right: 5px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: lowercase;
+    }
+
+    .img-resize {
+        margin-right: 30px;
     }
 
     .header-hero__description {
         width: 543px;
         height: 42px;
-        margin-left: 19.53px;
+        margin-left: -12px;
         font-weight: 400;
         font-size: 14px;
         line-height: 152.5%;
         letter-spacing: 1px;
     }
 
-    .header-hero__creation {
-        margin-left: 50px;
-    }
-
     .header-hero__ready {
-        display: none;
-    }
-
-    .header-hero__masage {
-        position: absolute;
-        top: 543px;
-        left: 19px;
-        width: 245.12px;
+        display: inline-block;
+        width: 245px;
         height: 60px;
+        left: 156px;
+        top: 560px;
         padding: 18px 43px;
         align-items: center;
         font-weight: 500;
-        font-size: 15.76px;
-        line-height: 140%;
+        font-size: 15px;
         text-align: center;
         text-decoration: none;
         color: #FFFFFF;
@@ -527,9 +534,13 @@ body {
         border-radius: 60px;
     }
 
+    .header-hero__creation {
+        margin-left: -12px;
+        margin-top: 33px;
+    }
+
     .header-hero__create {
-        left: 287.9px;
-        top: 566px;
+        margin-left: 19px;
         letter-spacing: 0.5px;
         font-size: 17px;
     }
@@ -539,25 +550,19 @@ body {
     }
 
     .header-hero__picture {
-        width: 626px;
-        height: 427px;
-        left: 343px;
-        top: 349px;
+        position: absolute;
+        right: -161px;
+        bottom: -38px;
+        width: 76.7vw;
     }
-
-    .header-hero__pictures{
-        width: 474.32px;
-        height: 400px;
-        left: 687.8px;
-        top: 407px;
-    }
-
 }
 
-@media (max-width: 950px) {
+/* Переместить в 999; */
+@media (max-width: 999px) {
 
     .page-header__top {
-        padding-top: 20px;
+        padding-top: 0px;
+        margin-top: 0;
     }
 
     .page-header__logo-link {
@@ -566,9 +571,14 @@ body {
     .header-image {
         width: 229px;
         height: 18.38px;
-        margin-bottom: 0;
+        margin-bottom: -19px;
         margin-right: 9px;
-        margin-left: -2px;
+        margin-left: -14px;
+    }
+
+    .phone {
+        margin-top: 21px;
+        margin-right: 0px;
     }
 
     .page-header__search {
@@ -581,8 +591,8 @@ body {
 
     .page-header__burger {
         display: block;
-        margin-right: 12px;
-        margin-top: 5px;
+        margin-right: 0px;
+        margin-top: 25px;
         text-decoration: none;
         background-color: transparent;
         border: none;
@@ -592,74 +602,140 @@ body {
         display: block;
         border: none;
         background-color: transparent;
+        margin-top: 25px;
+        margin-left: 60px;
     }
 
-    /* .header-hero__main {
-        margin-left: 21px;
-        margin-top: 27px;
+    .header-nav{
+        display: none;
+    }
+
+    .header-hero__main {
         width: 472px;
         height: 90px;
+        margin-top: 26px;
         font-size: 36px;
         line-height: 45px;
         letter-spacing: 0.04em;
-        text-transform: uppercase;
     }
 
     .header-hero__description {
         width: 389px;
         height: 63px;
-        margin-left: 22px;
+        margin-left: -10px;
+        margin-top: 21px;
         font-size: 16px;
         line-height: 130%;
         letter-spacing: 0.065em;
     }
 
-    .header-hero__create {
-        top: 359px;
+    .header-hero__creation {
+        margin-top: 37px;
     }
 
-    .header-hero__masage {
-        top: 339px;
-        margin-left: 1px;
-    }
- */
-
-}
-
-@media (max-width: 786px) {
-    .header-nav{
+    .header-hero__picture {
         display: none;
     }
+
+    .header-hero__picture2 {
+        display: block;
+        position: absolute;
+        right: -3px;
+        bottom: 135px;
+        width: 67.7vw;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+
+    .page-header__top {
+        margin-top: -3px;
+    }
 
     .header-image {
         width: 210px;
         height: 16.86px;
+        margin-top: 13px;
+    }
+
+    .page-header__loupe {
+        margin-top: 33px;
+        margin-left: 111px;
     }
 
     .phone {
         display: none;
     }
+
+    .page-header__burger {
+        margin-top: 36px;
+        margin-right: -16px;
+    }
+
+    .header-hero__main {
+        width: 434px;
+        height: 90px;
+        margin-top: 11px;
+        font-size: 36px;
+        line-height: 45px;
+        letter-spacing: 0.0006em;
+    }
+
+    .header-hero__description {
+        width: 296px;
+        height: 84px;
+        margin-left: -13px;
+        margin-top: 21px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .header-hero__ready {
+        width: 210px;
+        height: 51px;
+        margin-top: -6.5px;
+        padding: 18px 22px;
+        margin-bottom: 8px;
+    }
+
+    .header-hero__create {
+        margin-left: 51px;
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .header-hero__picture2 {
+        right: -44px;
+        bottom: 174px;
+        width: 76.7vw;
+    }
 }
 
-@media (max-width: 320px) {
-
+/* Сделать 479 */
+@media (max-width: 479px) {
     .page-header__top {
-        margin-top: -8.5px;
+        margin-top: -19px;
+    }
+
+    .header-nav {
+        display: none;
+        z-index: -1;
     }
 
     .header-image {
         width: 130px;
-        margin-top: 3px;
-        margin-left: 0.1px;
+        margin-bottom: 0px;
+        margin-left: -12px;
     }
 
     .page-header__loupe {
-        height: 15.95px;
-        margin-left: 20px;
         width: 15.95px;
+        height: 15.95px;
+        margin-left: 30px;
+        margin-bottom: 23px
     }
 
     .page-header__loupe-image {
@@ -677,9 +753,51 @@ body {
     }
 
     .page-header__burger {
-        margin-right: -4px;
+        margin-left: -15px;
+        margin-bottom: 20px;
     }
 
+    .header-hero__main {
+        width: 280px;
+        height: 105px;
+        margin-top: -12px;
+        font-size: 28px;
+        line-height: 35px;
+        /* letter-spacing: 0.0006em; */
+        z-index: 1;
+    }
+
+    .header-hero__description {
+        width: 296px;
+        height: 84px;
+        margin-left: -13px;
+        margin-top: 21px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .header-hero__ready {
+        width: 210px;
+        height: 51px;
+        margin-top: -6.5px;
+        padding: 18px 22px;
+        margin-bottom: 8px;
+    }
+
+    .header-hero__create {
+        margin-left: 51px;
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .header-hero__picture2 {
+        right: -44px;
+        bottom: 174px;
+        width: 76.7vw;
+    }
 
 }
 
@@ -698,7 +816,7 @@ body {
 
 
 
-
+/* Переместить до медиа выражений */
 .burger-menu {
     /* display: none; */
     position: absolute;
