@@ -292,6 +292,145 @@ body {
     display: none;
 }
 
+.card__section {
+    margin-top: 40px;
+    display: flex;
+    justify-content:  space-between;
+}
+
+.card__image {
+    position: relative;
+    width: 378px;
+    height: 632px;
+    box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+    border-radius: 15px;
+
+}
+
+.card__text {
+    margin: 0;
+    margin-top: 7px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.card__image {
+    position: relative;
+    /* margin-top: 40px; */
+}
+
+.card__image-picture {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card__pagination {
+    position: absolute;
+    top: 351px;
+    right: 13px;
+}
+
+.card__pagination-direction {
+
+    border: none;
+    background: transparent;
+}
+
+.card__info {
+    position: relative;
+    padding-left: 16px;
+    padding-top: 11px;
+
+}
+
+.card__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 105.5%;
+    color: #272525;
+}
+
+.card__description {
+    width: 223px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 105.5%;
+    color: #272525;
+}
+
+.card__color {
+    margin-top: 15px;
+    margin-left: -1px;
+}
+
+.card__color-button {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0 0.5px;
+}
+
+.card__price {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 105.5%;
+    color: #C4C4C4;
+}
+
+.card__cart {
+    position: absolute;
+    border: none;
+    background: transparent;
+    margin-top: -63px;
+    margin-left: 308px;
+}
+
+.card__show-text {
+    margin-top: 33px;
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #272525;
+}
+
+.card__show-menu {
+    border: none;
+    background: transparent;
+}
+
+.card__show-image {
+    display: flex;
+    justify-content:  space-between;
+    margin-top: -58px;
+    margin-left: 194px;
+}
+
+.card__information {
+
+}
+
+.card__information-location {
+    width: 415px;
+    height: 173px;
+    margin-top: 222px;
+}
+
+.card__information-contents {
+    margin: 0;
+    margin-top: 47px;
+    margin-left: 1px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: #272525;
+}
+
+
 @media (max-width: 1500px) {
 
     .page-header__top {
@@ -718,7 +857,7 @@ body {
 
 
 
-f
+
 
 
 
