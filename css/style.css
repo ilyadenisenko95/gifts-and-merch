@@ -35,7 +35,7 @@ body {
 }
 
 .page-header__profile-btn {
-    margin-right: 37px;
+    margin-right: 34px;
     padding:  3px;
     font-size: 18px;
     line-height: 19px;
@@ -95,7 +95,7 @@ body {
 
 .phone {
     display: inline-block;
-    margin-right: 1px;
+    margin-right: 3px;
     padding: 20.5px 62px;
     text-decoration: none;
     font-size: 18px;
@@ -134,7 +134,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* margin-left: 142.5px; */
     margin-top: 2px;
     font-family: 'Gilroy';
     font-style: normal;
@@ -234,7 +233,6 @@ body {
     max-width: 638px;
     margin: 0;
     margin-top: 15.5px;
-    /* margin-left: 156px; */
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -246,7 +244,6 @@ body {
 .header-hero__description {
     max-width: 638px;
     margin-top: 20px;
-    /* margin-left: 156px; */
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
@@ -295,104 +292,6 @@ body {
     display: none;
 }
 
-/* @media (max-width: 1500px) {
-    .header-image {
-        width: 293px;
-        height: 23.54px;
-        margin-left: 0px;
-        margin-bottom: -9px;
-    }
-
-    .page-header__search {
-        width: 295.33px;
-        height: 36.35px;
-        margin-right: 0px;
-        border: 2.40592px solid black;
-    }
-
-    .page-header__search::placeholder {
-        font-size: 14px;
-    }
-
-    .phone {
-        padding: 10.54px 37.29px;
-        margin-right: 0px;
-        text-align: center;
-        font-size: 14px;
-        line-height: 14.5px;
-    }
-
-    .page-header__profile-btn {
-        margin: 0;
-    }
-
-    .but-image {
-        width: 19.95px;
-        height: 20px;
-        margin: 0px;
-    }
-
-    .page-header__button,
-    .page-header__buttons {
-        font-size: 14px;
-    }
-
-    .page-header__button {
-        padding: 0;
-    }
-    .page-header__buttons{
-        margin-right: 0;
-    }
-
-    .page-header__top {
-        padding-top: 24px;
-        padding-left: 20px;
-        padding-right: 20.3px;
-    }
-
-    .header-nav {
-        margin-top: -6px;
-    }
-
-     .header-list__navigation {
-        padding: 0 20px;
-    }
-
-    .header-list__navigation--active::after {
-        position: absolute;
-        bottom: -18px;
-        left: 0;
-        display: block;
-        content: '';
-        width: 139px;
-        height: 8px;
-        background-color: #272525;
-        border-radius: 6px;
-    }
-
-    .header-text {
-        width: 194px;
-        margin-right: 5px;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 24px;
-        text-transform: lowercase;
-    }
-
-    .img-resize {
-        margin-right: 30px;
-    }
-
-    .header-hero__picture {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 50vw;
-    }
-} */
-
-/* Изменить на 999 */
 @media (max-width: 1500px) {
 
     .page-header__top {
@@ -411,7 +310,7 @@ body {
     .page-header__search {
         width: 294.33px;
         height: 36.35px;
-        margin-right: -1px;
+        margin-right: -2px;
         margin-top: 1px;
         border: 2.40592px solid black;
     }
@@ -422,7 +321,8 @@ body {
 
     .phone {
         padding: 10.54px 37.29px;
-        margin-right: -1px;
+        margin-right: -2px;
+        margin-top: 1px;
         text-align: center;
         font-size: 14px;
         line-height: 14.5px;
@@ -443,7 +343,8 @@ body {
 
     .page-header__profile-btn {
         margin: 0px;
-        margin-right: 13px;
+        margin-right: 12px;
+        margin-top: 2px;
     }
 
     .but-image {
@@ -557,7 +458,6 @@ body {
     }
 }
 
-/* Переместить в 999; */
 @media (max-width: 999px) {
 
     .page-header__top {
@@ -600,10 +500,10 @@ body {
 
     .page-header__loupe {
         display: block;
-        border: none;
-        background-color: transparent;
         margin-top: 25px;
         margin-left: 60px;
+        border: none;
+        background-color: transparent;
     }
 
     .header-nav{
@@ -678,33 +578,36 @@ body {
         margin-top: 11px;
         font-size: 36px;
         line-height: 45px;
-        letter-spacing: 0.0006em;
+        letter-spacing: 0.00002em;
     }
 
     .header-hero__description {
-        width: 296px;
+        width: 261px;
         height: 84px;
         margin-left: -13px;
         margin-top: 21px;
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
+        letter-spacing: 0.00002em;
     }
 
     .header-hero__ready {
         width: 210px;
         height: 51px;
         margin-top: -6.5px;
-        padding: 18px 22px;
+        padding: 17px 22px;
         margin-bottom: 8px;
+
     }
 
     .header-hero__create {
-        margin-left: 51px;
+        margin-left: 55px;
         margin-bottom: 4px;
         font-weight: 500;
         font-size: 14px;
         line-height: 140%;
+        letter-spacing: 0.0002em;
     }
 
     .header-hero__picture2 {
@@ -714,10 +617,13 @@ body {
     }
 }
 
-/* Сделать 479 */
 @media (max-width: 479px) {
     .page-header__top {
         margin-top: -19px;
+    }
+
+    .main-container {
+        padding: 0px 32px;
     }
 
     .header-nav {
@@ -760,21 +666,23 @@ body {
     .header-hero__main {
         width: 280px;
         height: 105px;
-        margin-top: -12px;
+        margin-top: 23px;
+        margin-left: -12px;
         font-size: 28px;
         line-height: 35px;
-        /* letter-spacing: 0.0006em; */
-        z-index: 1;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     .header-hero__description {
         width: 296px;
         height: 84px;
-        margin-left: -13px;
-        margin-top: 21px;
+        margin-left: -19px;
+        margin-top: 15px;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 130%;
+        text-align: center;
     }
 
     .header-hero__ready {
@@ -786,7 +694,7 @@ body {
     }
 
     .header-hero__create {
-        margin-left: 51px;
+        margin-left: 11px;
         margin-bottom: 4px;
         font-weight: 500;
         font-size: 14px;
@@ -797,6 +705,11 @@ body {
         right: -44px;
         bottom: 174px;
         width: 76.7vw;
+    }
+
+    .header-hero__creation {
+        margin-top: 323px;
+        margin-left: 23px;
     }
 
 }
