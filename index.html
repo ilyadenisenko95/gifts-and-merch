@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/css/normalize.css" />
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/sets.css" />
+  <link rel="stylesheet" href="/css/card.css" />
 </head>
 
 <body>
@@ -79,14 +79,14 @@
 
 <div class="cards main-container">
   <h2 class="cards__header">Готовые наборы </h2>
-  <div class="card__list">
+  <div class="cards__list">
     <div class="card">
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image1.png" alt="">
         <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-direction--image" src="/img/left.png" alt=""></button>
+        <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
             <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-direction--img card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -109,9 +109,9 @@
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image2.png" alt="">
         <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
             <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-direction--img card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -134,9 +134,9 @@
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image3.png" alt="">
         <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
             <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-direction--img card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -159,9 +159,9 @@
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image4.png" alt="">
         <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
             <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-direction--img card__pagination-direction--image" src="/img/left.png" alt=""></button>
+          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -196,29 +196,29 @@
           <td><a class="card__show-page--transition" href="/">4</a></td>
           <td><a class="card__show-page--transition" href="/">5</a></td>
         </tr>
-      <button class="card__show-direction card__pagination-direction--right"><img  class="card__pagination-direction--img" src="/img/left.png" alt=""></button>
+      <button class="card__show-direction card__pagination-img"><img  class="card__pagination-direction--img" src="/img/left.png" alt=""></button>
     </div>
   </div>
 </div>
 
 
 <div class="reduction main-container">
-  <div class="reduction__information-location">
-    <h1 class="reduction__information-contents">Сроки изготовления</h1>
-    <div class="reduction__information-text">Сроки пошива будут зависеть от объема Вашего заказа и сложности моделей. В среднем изготовление корпоративной продукции занимает  <b> 10 -18 рабочих дней</b>  с момента утверждения всех деталей.
-    </div>
-    <div class="reduction__information-note">Если же Вам нужно "на вчера" - Вы можете согласовать такие условия со своими личным менеджером.
-    </div>
+  <div class="reduction__item">
+    <h1 class="reduction__title">Сроки изготовления</h1>
+    <p class="reduction__text">Сроки пошива будут зависеть от объема Вашего заказа и сложности моделей. В среднем изготовление корпоративной продукции занимает  <b> 10 -18 рабочих дней</b>  с момента утверждения всех деталей.
+    </p>
+    <p class="reduction__text">Если же Вам нужно "на вчера" - Вы можете согласовать такие условия со своими личным менеджером.
+    </p>
   </div>
-  <div class="reduction__information-location">
-    <h1 class="reduction__information-contents">Стоимость</h1>
-    <div class="reduction__information-text1">Стоимость производства брендированной продукции  на заказ  расчитывается индивидуально. Цена зависит от сложности работы, брендирования, материалов, тиража и срочности. Мы подберем для вас оптимальный вариант в соответствии с вашим бюджетом
-    </div>
+  <div class="reduction__title">
+    <h1 class="reduction__title">Стоимость</h1>
+    <p class="reduction__text">Стоимость производства брендированной продукции  на заказ  расчитывается индивидуально. Цена зависит от сложности работы, брендирования, материалов, тиража и срочности. Мы подберем для вас оптимальный вариант в соответствии с вашим бюджетом
+    </p>
   </div>
-  <div class="reduction__information-location">
-    <h1 class="reduction__information-content">Брендирование</h1>
-    <div class="reduction__information-text2">Стоимость производства брендированной продукции  на заказ  расчитывается индивидуально. Цена зависит от сложности работы, брендирования, материалов, тиража и срочности. Мы подберем для вас оптимальный вариант в соответствии с вашим бюджетом
-    </div>
+  <div class="reduction__title">
+    <h1 class="reduction__title">Брендирование</h1>
+    <p class="reduction__text">Стоимость производства брендированной продукции  на заказ  расчитывается индивидуально. Цена зависит от сложности работы, брендирования, материалов, тиража и срочности. Мы подберем для вас оптимальный вариант в соответствии с вашим бюджетом
+    </p>
   </div>
 </div>
 

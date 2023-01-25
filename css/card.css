@@ -6,7 +6,7 @@
     line-height: 58px;
 }
 
-.card__list {
+.cards__list {
     margin-top: 40px;
     display: flex;
     justify-content:  space-between;
@@ -14,11 +14,11 @@
 
 .card {
     width: calc(25% - 23px);
+    position: relative;
 }
 
 .card__info {
     overflow: hidden;
-    position: relative;
     margin-top: -35px;
     padding-left: 16px;
     padding-top: 11px;
@@ -35,8 +35,8 @@
 .card__pagination {
     display: flex;
     position: relative;
-    top: -39px;
-    left: 300px;
+    top: -42px;
+    left: 296px;
     text-align: center;
     align-items: center;
     font-weight: 400;
@@ -53,10 +53,12 @@
 
 .card__pagination-direction--right {
     transform: rotate(180deg);
+    margin-top: -7px;
+    margin-left: 6px;
 }
 
-.card__pagination-direction--img {
-    margin-top: 3px;
+.card__pagination-img {
+    transform: rotate(180deg);
 }
 
 .card__name {
@@ -87,20 +89,18 @@
     padding: 0 0.5px;
     background: transparent;
     border: none;
+    border-radius: 50%;
 }
 
 .card__color-button--purple {
-    border-radius: 50%;
     background: #524983;
 }
 
 .card__color-button--green {
-    border-radius: 50%;
     background: #309F85;
 }
 
 .card__color-button--silver {
-    border-radius: 50%;
     background: #F1F1F1;
 }
 
@@ -117,8 +117,8 @@
     position: absolute;
     border: none;
     background: transparent;
-    margin-top: -63px;
-    margin-left: 308px;
+    bottom: 10px;
+    right: 11px;
 }
 
 .card__show-more {
@@ -198,24 +198,24 @@
     color: red;
 }
 
-.reduction__information-location {
+.reduction__item {
     width: 30%;
 }
 
-.reduction__information-contents {
+.reduction__title {
     font-weight: 600;
     font-size: 36px;
     line-height: 130%;
 }
 
-.reduction__information-content {
+.reduction__title {
     margin-bottom: 0;
     font-weight: 600;
     font-size: 36px;
     line-height: 130%;
 }
 
-.reduction__information-text {
+.reduction__text {
     margin-top: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -229,27 +229,9 @@
     line-height: 130%;
 }
 
-.reduction__information-text1 {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-}
-
-.reduction__information-text2 {
-    margin-top: 21px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    /* color: #454747; */
-}
-
-
-
-
 @media (max-width: 1500px) {
 
-    .card__active{
+    .card__active {
         display: none;
     }
 
@@ -264,16 +246,15 @@
         margin-left: -11px;
     }
 
-    .card__list {
+    .cards__list {
         margin: 0;
     }
 
     .card__info {
         width: 304px;
+        margin-right: -10px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
-        margin-right: -10px;
-
     }
 
     .card__image {
@@ -286,9 +267,14 @@
         left: 239px;
     }
 
-    .card__pagination-direction--image {
+    .card__pagination-arrow {
         height: 17px;
         width: 9px;
+    }
+
+    .card__pagination-direction--right {
+        margin-top: 0px;
+        margin-left: 2px;
     }
 
     .card__number {
@@ -322,7 +308,6 @@
         height: 19.26px;
         margin-top: 1px;
         margin-left: 1px;
-
     }
 
     .card__price {
@@ -334,29 +319,30 @@
     }
 
     .card__cart-image {
-
         width: 36.46px;
         height: 36.9px;
     }
 
     .card__cart {
-        position: relative;
-        top: -25px;
-        left: -62px;
+        bottom: 6px;
+        right: -1px;
     }
 
     .card__show-more {
         position: relative;
-        bottom: 8px;
+        bottom: -9px;
         right: 28px;
     }
 
     .card__show-page {
-        margin-top: -68px;
-        right: 18px;
+        right: 20px;
+        margin-top: -51px;
     }
 
-
+    .card__pagination-direction--right {
+        margin-left: 3px;
+        margin-top: -11px;
+    }
 }
 
 @media (max-width: 999px) {
@@ -365,21 +351,19 @@
         display: block;
     }
 
-    .card__list {
+    .cards__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin-top: 16px;
         margin-left: -11px;
-
+        justify-content: space-between;
     }
 
     .card {
-        width: calc(50% - 19px);
+        width: calc(53% - 40px);
         margin-top: 1px;
         margin-left: -2px;
-        margin-bottom: 11px;
-
+        margin-bottom: 32px;
     }
 
     .cards__header {
@@ -390,8 +374,6 @@
     .card__info {
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
-
-
     }
 
     .card__image {
@@ -401,10 +383,8 @@
 
     .card__pagination {
         top: -41px;
-        left: 281px;
+        left: 276px;
     }
-
-
 
     .card__name{
         margin-left: -2px;
@@ -433,7 +413,6 @@
         height: 22.23px;
         margin-top: 1px;
         margin-left: 1px;
-
     }
 
     .card__price {
@@ -450,16 +429,27 @@
     }
 
     .card__show {
-        margin-top: -24px;
+        margin-top: -44px;
     }
 
     .card__cart {
-        top: -29px;
-        left: -24px;
+        bottom: 10px;
+        right: -2px;
     }
 
+    .card__pagination-direction--right {
+        margin-left: 9px;
+        margin-top: -6px;
+    }
 
+    .card__show-page {
+        right: 34px;
+    }
 
+    .card__pagination-img {
+        margin-top: -1px;
+        margin-right: -14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -468,8 +458,7 @@
         width: calc(55% - 35px);
         margin-top: 8px;
         margin-left: -1px;
-        margin-bottom: -24px;
-
+        margin-bottom: -4px;
     }
 
     .cards__header {
@@ -477,17 +466,14 @@
         margin-left: -12px;
         font-size: 28px;
         line-height: 34px;
-
     }
-
 
     .card__info {
         width: 211px;
-        box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
-        border-radius: 15px;
         margin-right: -12px;
         margin-bottom: 16.5px;
-
+        box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+        border-radius: 15px;
     }
 
     .card__image {
@@ -522,12 +508,20 @@
         height: 13.43px;
         margin-top: 1px;
         margin-left: 1px;
-
     }
 
     .card__pagination {
-        top: -31px;
-        left: 161px;
+        top: -29px;
+        left: 164px;
+    }
+    .card__pagination-direction--right {
+        margin-top: -8px;
+        margin-left: -2px;
+    }
+
+    .card__pagination-arrow {
+        height: 14px;
+        width: 7px;
     }
 
     .card__number {
@@ -548,13 +542,12 @@
     }
 
     .card__cart {
-        top: -39px;
-        left: -140px;
+        bottom: 19px;
+        right: -8px;
     }
 
     .card__show-menu {
         margin-top: 36px;margin-right: 2px;
-
     }
 
     .card__show-more--text {
@@ -566,10 +559,9 @@
     }
 
     .card__show-page {
-        margin-top: -5px;
-        right: 76px;
+        margin-top: 14px;
+        right: 93px;
     }
-
 }
 
 @media (max-width: 479px) {
@@ -577,8 +569,7 @@
     .card {
         width: calc(100% - 0px);
         margin-top: -7px;
-        margin-bottom: -7px;
-
+        margin-bottom: 12px;
     }
 
     .cards__header {
@@ -586,7 +577,6 @@
         margin-left: -12px;
         font-size: 28px;
         line-height: 34px;
-
     }
 
     .card__info {
@@ -595,7 +585,6 @@
         border-radius: 15px;
         margin-right: -12px;
         margin-bottom: 20.5px;
-
     }
 
     .card__image {
@@ -638,6 +627,16 @@
         left: 219px;
     }
 
+    .card__pagination-arrow {
+        height: 16px;
+        width: 8px;
+    }
+
+    .card__pagination-direction--right {
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+
     .card__price {
         margin-top: 30px;
         margin-left: -5px;
@@ -647,8 +646,12 @@
     }
 
     .card__cart {
-        top: -45px;
-        left: -82px;
+        bottom: 27px;
+        right: -6px;
+    }
+
+    .card__show {
+        margin-top: -40px;
     }
 
     .card__show-more--text {
@@ -667,8 +670,8 @@
     }
 
     .card__show-page {
-        margin-top: -3px;
-        right: 19px;
+        margin-top: 12px;
+        right: 30px;
     }
 
     .card__show-direction {
@@ -684,19 +687,12 @@
     }
 
     .card__show-page--active {
-
         width: 34px;
         height: 34px;
         margin-top: 2px;
         margin-right: 7px;
         padding: 5px 13px;
         font-size: 21px;
-
     }
-
-
-
-
-
 }
 
