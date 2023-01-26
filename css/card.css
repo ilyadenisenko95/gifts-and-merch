@@ -19,7 +19,7 @@
 
 .card__info {
     overflow: hidden;
-    margin-top: -35px;
+    margin-top: 2px;
     padding-left: 16px;
     padding-top: 11px;
     box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
@@ -34,9 +34,9 @@
 
 .card__pagination {
     display: flex;
-    position: relative;
-    top: -42px;
-    left: 296px;
+    position: absolute;
+    bottom: 241px;
+    right: 20px;
     text-align: center;
     align-items: center;
     font-weight: 400;
@@ -242,8 +242,9 @@
 
     .card {
         width: calc(34% - 25px);
+        max-width: 303px;
         margin-top: 21px;
-        margin-left: -11px;
+        margin-left: -10px;
     }
 
     .cards__list {
@@ -253,6 +254,7 @@
     .card__info {
         width: 304px;
         margin-right: -10px;
+        margin-top: -2px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
     }
@@ -263,8 +265,8 @@
     }
 
     .card__pagination {
-        top: -35px;
-        left: 239px;
+        bottom: 193px;
+        right: 7px;
     }
 
     .card__pagination-arrow {
@@ -361,9 +363,10 @@
 
     .card {
         width: calc(53% - 40px);
-        margin-top: 1px;
+        margin-top: 0px;
         margin-left: -2px;
         margin-bottom: 32px;
+        margin-right: 35px;
     }
 
     .cards__header {
@@ -382,8 +385,8 @@
     }
 
     .card__pagination {
-        top: -41px;
-        left: 276px;
+        top: 292px;
+        left: 277px;
     }
 
     .card__name{
@@ -433,8 +436,8 @@
     }
 
     .card__cart {
-        bottom: 10px;
-        right: -2px;
+        bottom: 9px;
+        right: -38px;
     }
 
     .card__pagination-direction--right {
@@ -455,10 +458,13 @@
 @media (max-width: 767px) {
 
     .card {
-        width: calc(55% - 35px);
-        margin-top: 8px;
+        width: calc(55% - 70px);
+        /* width: 211px; */
+        margin-top: 7px;
         margin-left: -1px;
-        margin-bottom: -4px;
+        margin-bottom: -3px;
+        /* margin-right: 2px; */
+
     }
 
     .cards__header {
@@ -472,6 +478,7 @@
         width: 211px;
         margin-right: -12px;
         margin-bottom: 16.5px;
+        margin-top: -8px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
     }
@@ -511,7 +518,7 @@
     }
 
     .card__pagination {
-        top: -29px;
+        top: 206px;
         left: 164px;
     }
     .card__pagination-direction--right {
@@ -542,8 +549,8 @@
     }
 
     .card__cart {
-        bottom: 19px;
-        right: -8px;
+        bottom: 18px;
+        right: -42px;
     }
 
     .card__show-menu {
@@ -568,6 +575,7 @@
 
     .card {
         width: calc(100% - 0px);
+        width: 280px;
         margin-top: -7px;
         margin-bottom: 12px;
     }
@@ -647,7 +655,7 @@
 
     .card__cart {
         bottom: 27px;
-        right: -6px;
+        right: 6px;
     }
 
     .card__show {
