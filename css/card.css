@@ -199,7 +199,7 @@
 }
 
 .reduction__item {
-    width: 30%;
+    width: 89%;
 }
 
 .reduction__title {
@@ -210,6 +210,7 @@
 
 .reduction__title {
     margin-bottom: 0;
+    margin-top: 1px;
     font-weight: 600;
     font-size: 36px;
     line-height: 130%;
@@ -241,10 +242,10 @@
     }
 
     .card {
-        width: calc(34% - 25px);
-        max-width: 303px;
+        width: calc(35% - 25px);
         margin-top: 21px;
-        margin-left: -10px;
+        margin-right: -10px;
+        margin-left: -11px;
     }
 
     .cards__list {
@@ -252,16 +253,10 @@
     }
 
     .card__info {
-        width: 304px;
         margin-right: -10px;
         margin-top: -2px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
-    }
-
-    .card__image {
-        width: 303.35px;
-        height: 310.57px;
     }
 
     .card__pagination {
@@ -356,17 +351,17 @@
     .cards__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 16px;
         margin-left: -11px;
-        justify-content: space-between;
     }
 
     .card {
-        width: calc(53% - 40px);
+        width: calc(48% - -7px);
         margin-top: 0px;
         margin-left: -2px;
         margin-bottom: 32px;
-        margin-right: 35px;
+        margin-right: -11px;
     }
 
     .cards__header {
@@ -377,11 +372,6 @@
     .card__info {
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
-    }
-
-    .card__image {
-        width: 350px;
-        height: 358px;
     }
 
     .card__pagination {
@@ -437,7 +427,7 @@
 
     .card__cart {
         bottom: 9px;
-        right: -38px;
+        right: 8px;
     }
 
     .card__pagination-direction--right {
@@ -458,13 +448,10 @@
 @media (max-width: 767px) {
 
     .card {
-        width: calc(55% - 70px);
-        /* width: 211px; */
+        width: calc(53% - 14px);
         margin-top: 7px;
         margin-left: -1px;
         margin-bottom: -3px;
-        /* margin-right: 2px; */
-
     }
 
     .cards__header {
@@ -475,7 +462,6 @@
     }
 
     .card__info {
-        width: 211px;
         margin-right: -12px;
         margin-bottom: 16.5px;
         margin-top: -8px;
@@ -483,13 +469,9 @@
         border-radius: 15px;
     }
 
-    .card__image {
-        width: 212px;
-        height: 217px;
-    }
-
     .card__name {
-        margin-left: -8px;
+        width: 180px;
+        margin-left: -6px;
         margin-top: 1px;
         font-weight: 600;
         font-size: 13.4338px;
@@ -549,8 +531,8 @@
     }
 
     .card__cart {
-        bottom: 18px;
-        right: -42px;
+        bottom: 19px;
+        right: 4px;
     }
 
     .card__show-menu {
@@ -574,8 +556,7 @@
 @media (max-width: 479px) {
 
     .card {
-        width: calc(100% - 0px);
-        width: 280px;
+        width: calc(114% - 22px);
         margin-top: -7px;
         margin-bottom: 12px;
     }
@@ -588,19 +569,14 @@
     }
 
     .card__info {
-        width: 280px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
         margin-right: -12px;
         margin-bottom: 20.5px;
     }
 
-    .card__image {
-        width: 280px;
-        height: 286px;
-    }
-
     .card__name{
+        width: 238px;
         margin-left: -5px;
         margin-top: 5px;
         font-weight: 600;
@@ -627,7 +603,6 @@
         height: 17.78px;
         margin-top: 1px;
         margin-left: 1px;
-
     }
 
     .card__pagination {
