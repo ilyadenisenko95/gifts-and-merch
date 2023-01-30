@@ -229,6 +229,8 @@
 
 .decor {
     position: relative;
+    margin-top: 131px;
+
 }
 
 .decor__basis {
@@ -236,10 +238,12 @@
 }
 
 .decor__basis-image {
-
+    margin-left: 200px;
 }
 
 .decor__basis-idea {
+    margin-top: 26px;
+    margin-bottom: 0px;
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
@@ -251,6 +255,7 @@
 .decor__basis-text {
     width: 592px;
     height: 46px;
+    margin-bottom: 0px;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -266,6 +271,7 @@
 .decor__basis-connect {
     width: 300px;
     height: 116px;
+    margin-top: 35px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -273,19 +279,55 @@
 }
 
 .decor__basis-order {
-
+    position: absolute;
+    left: 421px;
+    top: 237px;
 }
 
 .decor__basis-order--text {
+    margin-bottom: 0px;
 
 }
 
 .decor__basis-order--line {
-
+    width: 336px;
+    margin-bottom: 34px;
+    border: 1px solid #272525;
 }
 
 .decor__picture {
+    position: absolute;
+    top: -39px;
+    right: 18px;
+}
 
+.date__text {
+    border: none;
+    color: red;
+}
+
+.decor__basis-order--button {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 3px;
+    padding: 21px 101px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #EEF1F6;
+    background-color: #1FAB8A;
+    border-radius: 60px;
+    border: none;
+}
+
+.decor__basis-order--button:hover,
+.decor__basis-order--button:focus {
+    background-color: #1B886E;
+}
+
+.decor__basis-order--button:active {
+    background-color: #156B57;
 }
 
 @media (max-width: 1500px) {
@@ -414,8 +456,30 @@
 
    .reduction__text-color{
         margin-top: -15px;
-
     }
+
+    .decor__basis-idea {
+        width: calc(65% - 12px);
+        margin-top: 38px;
+        margin-left: -12px;
+        line-height: 53px;
+    }
+
+    .decor__basis-text {
+        margin-left: -12px;
+        margin-top: 22px;
+    }
+
+    .decor__basis-connect{
+        margin-top: 60px;
+        margin-left: -12px;
+    }
+
+    .decor__basis-order {
+        left: 409px;
+        top: 325px;
+    }
+
 }
 
 @media (max-width: 999px) {
@@ -518,6 +582,18 @@
     .card__pagination-img {
         margin-top: -1px;
         margin-right: -14px;
+    }
+
+    .reduction {
+        display: none;
+    }
+
+    .decor__basis-image {
+        margin-top: 142px;
+    }
+
+    .decor__basis-idea {
+        width: calc(74% - 12px);
     }
 }
 
@@ -626,6 +702,42 @@
     .card__show-page {
         margin-top: 14px;
         right: 93px;
+    }
+
+    .decor__image {
+        width: 206px;
+        height: 41px;
+    }
+
+    .decor__basis-image {
+        margin-top: 134px;
+        margin-left: 105px;
+    }
+
+    .decor__basis-idea {
+        width: calc(113% - 0px);
+        margin-top: 33px;
+        font-size: 28px;
+        line-height: 110.9%;
+    }
+
+    .decor__basis-text {
+        width: calc(111% - 11px);
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .decor__basis-connect {
+        width: calc(97% - 11px);
+        margin-top: 45px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .decor__basis-order {
+        left: 19px;
+        top: 351px;
     }
 }
 
@@ -753,6 +865,5 @@
         padding: 5px 13px;
         font-size: 21px;
     }
-    .card
 }
 
