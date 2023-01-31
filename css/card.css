@@ -422,7 +422,7 @@
 
     .card__cart {
         bottom: 6px;
-        right: -1px;
+        right: 8px;
     }
 
     .card__show-more {
@@ -480,6 +480,22 @@
         top: 325px;
     }
 
+    .decor__picture {
+
+        top: -173px;
+        right: -154px;
+    }
+
+    .decor__picture-img {
+        position: absolute;
+        width: 580px;
+        height: 533px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%,0%);
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 999px) {
@@ -595,6 +611,17 @@
     .decor__basis-idea {
         width: calc(74% - 12px);
     }
+
+    .decor__picture {
+        top: 7px;
+        right: -98px;
+    }
+
+    .decor__picture-img {
+        width: 335px;
+        height: 318px;
+        transform: translate(-100%,0%);
+   }
 }
 
 @media (max-width: 767px) {
@@ -739,6 +766,16 @@
         left: 19px;
         top: 351px;
     }
+
+    .decor__picture {
+        top: 717px;
+        right: 47px;
+    }
+
+    .decor__picture-img {
+        width: 349px;
+        height: 326px;
+    }
 }
 
 @media (max-width: 479px) {
@@ -865,5 +902,57 @@
         padding: 5px 13px;
         font-size: 21px;
     }
+
+    .decor__image {
+        width: 154px;
+        height: 34px;
+    }
+
+    .decor__basis-image {
+        margin-top: 137px;
+        margin-left: 51px;
+    }
+
+    .decor__basis-idea {
+        width: calc(97% - 0px);
+        margin-top: 24px;
+        margin-left: 4px;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .decor__basis-text {
+        width: calc(99% - 11px);
+        margin-top: 14px;
+        margin-left: 7px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 130%;
+    }
+
+    .decor__basis-connect {
+        width: calc(102% - 10px);
+        margin-left: 6px;
+        margin-top: 57px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .decor__basis-order--line {
+        width: 280px;
+        margin-bottom: 35px;
+    }
+
+    ..decor__picture {
+        top: 684px;
+        right: 47px;
+    }
+
+    .decor__picture-img {
+        width: 366px;
+        height: 345px;
+        transform: translate(-83%,-11%);
+   }
 }
 
