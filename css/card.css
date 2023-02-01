@@ -237,11 +237,11 @@
 
 }
 
-.decor__basis-image {
+.decor__img {
     margin-left: 200px;
 }
 
-.decor__basis-idea {
+.decor__idea {
     margin-top: 26px;
     margin-bottom: 0px;
     font-weight: 700;
@@ -252,7 +252,7 @@
     line-height: 58px;
 }
 
-.decor__basis-text {
+.decor__text {
     width: 592px;
     height: 46px;
     margin-bottom: 0px;
@@ -262,13 +262,14 @@
     letter-spacing: 0.065em;
     color: #454747;
 
+
 }
 
 .colortext {
     color: rgb(132, 202, 116);
 }
 
-.decor__basis-connect {
+.decor__connect {
     width: 300px;
     height: 116px;
     margin-top: 35px;
@@ -278,18 +279,19 @@
     color: #222227;
 }
 
-.decor__basis-order {
+.decor__order {
     position: absolute;
-    left: 421px;
+    left: 420px;
     top: 237px;
 }
 
-.decor__basis-order--text {
-    margin-bottom: 0px;
+.decor__info {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #272525;
 
 }
 
-.decor__basis-order--line {
+.decor__order-line {
     width: 336px;
     margin-bottom: 34px;
     border: 1px solid #272525;
@@ -302,11 +304,12 @@
 }
 
 .date__text {
+    width: 250px;
     border: none;
     color: red;
 }
 
-.decor__basis-order--button {
+.decor__order-button {
     display: inline-block;
     margin-top: 6px;
     margin-right: 3px;
@@ -321,12 +324,12 @@
     border: none;
 }
 
-.decor__basis-order--button:hover,
-.decor__basis-order--button:focus {
+.decor__order-button:hover,
+.decor__order-button:focus {
     background-color: #1B886E;
 }
 
-.decor__basis-order--button:active {
+.decor__order-button:active {
     background-color: #156B57;
 }
 
@@ -458,24 +461,24 @@
         margin-top: -15px;
     }
 
-    .decor__basis-idea {
+    .decor__idea {
         width: calc(65% - 12px);
         margin-top: 38px;
         margin-left: -12px;
         line-height: 53px;
     }
 
-    .decor__basis-text {
+    .decor__text {
         margin-left: -12px;
         margin-top: 22px;
     }
 
-    .decor__basis-connect{
+    .decor__connect{
         margin-top: 60px;
         margin-left: -12px;
     }
 
-    .decor__basis-order {
+    .decor__order {
         left: 409px;
         top: 325px;
     }
@@ -604,11 +607,16 @@
         display: none;
     }
 
-    .decor__basis-image {
-        margin-top: 142px;
+    .decor__img {
+        margin-top: 11px;
     }
 
-    .decor__basis-idea {
+    .decor__order{
+        left: 409px;
+        top: 338px;
+    }
+
+    .decor__idea {
         width: calc(74% - 12px);
     }
 
@@ -620,7 +628,7 @@
     .decor__picture-img {
         width: 335px;
         height: 318px;
-        transform: translate(-100%,0%);
+        transform: translate(-100%,3%);
    }
 }
 
@@ -731,7 +739,7 @@
         right: 93px;
     }
 
-    .decor__image {
+    .decor__img {
         width: 206px;
         height: 41px;
     }
@@ -741,30 +749,35 @@
         margin-left: 105px;
     }
 
-    .decor__basis-idea {
+    .decor__idea {
         width: calc(113% - 0px);
         margin-top: 33px;
         font-size: 28px;
         line-height: 110.9%;
     }
 
-    .decor__basis-text {
+    .decor__text {
         width: calc(111% - 11px);
         margin-top: 15px;
         font-size: 16px;
         line-height: 130%;
     }
 
-    .decor__basis-connect {
+    .decor__connect {
         width: calc(97% - 11px);
         margin-top: 45px;
         font-size: 24px;
         line-height: 29px;
     }
 
-    .decor__basis-order {
+    .decor__order {
         left: 19px;
-        top: 351px;
+        top: 356px;
+    }
+
+    .decor__img {
+        margin-top: 4px;
+        margin-left: 105px;
     }
 
     .decor__picture {
@@ -903,17 +916,18 @@
         font-size: 21px;
     }
 
-    .decor__image {
+    .decor__img {
         width: 154px;
         height: 34px;
-    }
-
-    .decor__basis-image {
-        margin-top: 137px;
+        margin-top: 6px;
         margin-left: 51px;
     }
 
-    .decor__basis-idea {
+    .decor__order {
+        top: 359px;
+    }
+
+    .decor__idea {
         width: calc(97% - 0px);
         margin-top: 24px;
         margin-left: 4px;
@@ -922,7 +936,7 @@
         text-align: center;
     }
 
-    .decor__basis-text {
+    .decor__text {
         width: calc(99% - 11px);
         margin-top: 14px;
         margin-left: 7px;
@@ -931,7 +945,7 @@
         line-height: 130%;
     }
 
-    .decor__basis-connect {
+    .decor__connect {
         width: calc(102% - 10px);
         margin-left: 6px;
         margin-top: 57px;
@@ -939,7 +953,7 @@
         line-height: 24px;
     }
 
-    .decor__basis-order--line {
+    .decor__order-line {
         width: 280px;
         margin-bottom: 35px;
     }
