@@ -306,7 +306,7 @@
 .date__text {
     width: 250px;
     border: none;
-    color: red;
+    color: rgb(0, 0, 0);
 }
 
 .decor__order-button {
@@ -969,5 +969,6 @@
         transform: translate(-83%,-11%);
    }
 }
+
 
 
