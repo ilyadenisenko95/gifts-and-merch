@@ -57,7 +57,7 @@
     margin-left: 6px;
 }
 
-.card__pagination-img {
+.pagination__img {
     transform: rotate(180deg);
 }
 
@@ -121,11 +121,11 @@
     right: 11px;
 }
 
-.card__show-more {
+.pagination__more {
     display: flex;
 }
 
-.card__show-more--text {
+.pagination__text {
     margin-top: 41px;
     margin-left: 16px;
     margin-right: 17px;
@@ -135,7 +135,7 @@
     color: #272525;
 }
 
-.card__show-menu {
+.pagination__menu {
     position: relative;
     margin-top: 26px;
     margin-right: 3px;
@@ -143,25 +143,18 @@
     background: transparent;
 }
 
-.card__show-image {
-    display: flex;
-    justify-content:  space-between;
-    margin-top: -58px;
-    margin-left: 194px;
-}
-
-.card__show-page{
+.pagination__page{
     display: flex;
     position: absolute;
     margin-top: -59px;
     right: 171px;
 }
 
-.card__show-page--number {
+.pagination__nubmers {
     position: relative;
 }
 
-.card__show-page--transition {
+.pagination__page-transition {
     padding: 9px 10px;
     margin-left: 4px;
     font-weight: 700;
@@ -171,7 +164,7 @@
     text-decoration: none;
 }
 
-.card__show-page--active {
+.pagination__page-active {
     padding: 5px 16px;
     margin-left: 39px;
     font-size: 24px;
@@ -181,7 +174,7 @@
     border-radius: 50%;
 }
 
-.card__show-direction {
+.pagination__direction {
     width: 40px;
     height: 40px;
     margin-top: 0px;
@@ -233,10 +226,6 @@
 
 }
 
-.decor__basis {
-
-}
-
 .decor__img {
     margin-left: 200px;
 }
@@ -281,14 +270,20 @@
 
 .decor__order {
     position: absolute;
-    left: 420px;
-    top: 237px;
+    width: 336px;
+    left: 421px;
+    top: 249px;
 }
 
 .decor__info {
-    margin-bottom: 35px;
-    border-bottom: 1px solid #272525;
-
+    width: 100%;
+    margin-bottom: 32px;
+    border: none;
+    border-bottom: 1px solid rgb(1, 0, 0);
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    padding-top: 5px;
 }
 
 .decor__order-line {
@@ -306,7 +301,7 @@
 .date__text {
     width: 250px;
     border: none;
-    color: rgb(0, 0, 0);
+    color:#454747;
 }
 
 .decor__order-button {
@@ -322,6 +317,7 @@
     background-color: #1FAB8A;
     border-radius: 60px;
     border: none;
+    cursor: pointer;
 }
 
 .decor__order-button:hover,
@@ -428,13 +424,13 @@
         right: 8px;
     }
 
-    .card__show-more {
+    .pagination__more {
         position: relative;
         bottom: -9px;
         right: 28px;
     }
 
-    .card__show-page {
+    .pagination__page {
         right: 20px;
         margin-top: -51px;
     }
@@ -480,23 +476,23 @@
 
     .decor__order {
         left: 409px;
-        top: 325px;
+        top: 338px;
     }
 
     .decor__picture {
-
         top: -173px;
-        right: -154px;
+        right: 0;
+        width: 580px;
+        height: 533px;
+        overflow: hidden;
     }
 
     .decor__picture-img {
         position: absolute;
         width: 580px;
         height: 533px;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-100%,0%);
+        top: 0;
+        right: -154px;
         object-fit: cover;
     }
 }
@@ -580,7 +576,7 @@
         height: 44px;
     }
 
-    .card__show {
+    .pagination {
         margin-top: -44px;
     }
 
@@ -594,11 +590,11 @@
         margin-top: -6px;
     }
 
-    .card__show-page {
+    .pagination__page {
         right: 34px;
     }
 
-    .card__pagination-img {
+    .pagination__img {
         margin-top: -1px;
         margin-right: -14px;
     }
@@ -613,7 +609,7 @@
 
     .decor__order{
         left: 409px;
-        top: 338px;
+        top: 349px;
     }
 
     .decor__idea {
@@ -622,13 +618,19 @@
 
     .decor__picture {
         top: 7px;
-        right: -98px;
+        right: 0;
+        width: 335px;
+        height: 318px;
+
     }
 
     .decor__picture-img {
         width: 335px;
         height: 318px;
-        transform: translate(-100%,3%);
+        top: 11px;
+        right: -99px;
+
+
    }
 }
 
@@ -722,11 +724,11 @@
         right: 4px;
     }
 
-    .card__show-menu {
+    .pagination__menu {
         margin-top: 36px;margin-right: 2px;
     }
 
-    .card__show-more--text {
+    .pagination__text {
         margin-top: 51px;
         margin-left: 177px;
         margin-right: 10px;
@@ -734,7 +736,7 @@
         font-weight: 500;
     }
 
-    .card__show-page {
+    .pagination__page {
         margin-top: 14px;
         right: 93px;
     }
@@ -772,7 +774,7 @@
 
     .decor__order {
         left: 19px;
-        top: 356px;
+        top: 368px;
     }
 
     .decor__img {
@@ -781,13 +783,16 @@
     }
 
     .decor__picture {
-        top: 717px;
-        right: 47px;
+        top: 699px;
+        right: 138px;
+        width: 367px;
+        height: 344px;
+        overflow: visible ;
     }
 
     .decor__picture-img {
-        width: 349px;
-        height: 326px;
+        width: 367px;
+        height: 344px;
     }
 }
 
@@ -871,11 +876,11 @@
         right: 6px;
     }
 
-    .card__show {
+    .pagination {
         margin-top: -40px;
     }
 
-    .card__show-more--text {
+    .pagination__text {
         margin-top: 36px;
         margin-left: 77px;
         margin-right: 11px;
@@ -886,28 +891,28 @@
         height: 34px;
     }
 
-    .card__show-menu {
+    .pagination__menu {
         margin-top: 25px;
     }
 
-    .card__show-page {
+    .pagination__page {
         margin-top: 12px;
         right: 30px;
     }
 
-    .card__show-direction {
+    .pagination__direction {
         width: 35px;
         height: 35px;
         margin-top: 4px;
         margin-left: 27px;
     }
 
-    .card__show-page--transition {
+    .pagination__page-transition {
         padding: 9px 7px;
         font-size: 16px;
     }
 
-    .card__show-page--active {
+    .pagination__page-active {
         width: 34px;
         height: 34px;
         margin-top: 2px;
@@ -924,7 +929,8 @@
     }
 
     .decor__order {
-        top: 359px;
+        width: 280px;
+        top: 370px;
     }
 
     .decor__idea {
