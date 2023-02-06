@@ -329,6 +329,19 @@
     background-color: #156B57;
 }
 
+.body {
+    background-image: url(/img/Rectangle\ 88.svg);
+    /* margin-top: 2px; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+
 @media (max-width: 1500px) {
 
     .card__active {
