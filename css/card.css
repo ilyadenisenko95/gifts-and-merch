@@ -164,7 +164,7 @@
     text-decoration: none;
 }
 
-.pagination__page-active {
+.pagination__page-transition--active {
     padding: 5px 16px;
     margin-left: 39px;
     font-size: 24px;
@@ -223,7 +223,6 @@
 .decor {
     position: relative;
     margin-top: 131px;
-
 }
 
 .decor__img {
@@ -250,8 +249,6 @@
     line-height: 23px;
     letter-spacing: 0.065em;
     color: #454747;
-
-
 }
 
 .colortext {
@@ -328,19 +325,6 @@
 .decor__order-button:active {
     background-color: #156B57;
 }
-
-.body {
-    background-image: url(/img/Rectangle\ 88.svg);
-    /* margin-top: 2px; */
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-  }
 
 @media (max-width: 1500px) {
 
@@ -471,7 +455,7 @@
     }
 
     .decor__idea {
-        width: calc(65% - 12px);
+        width: 550px;
         margin-top: 38px;
         margin-left: -12px;
         line-height: 53px;
@@ -625,16 +609,11 @@
         top: 349px;
     }
 
-    .decor__idea {
-        width: calc(74% - 12px);
-    }
-
     .decor__picture {
         top: 7px;
         right: 0;
         width: 335px;
         height: 318px;
-
     }
 
     .decor__picture-img {
@@ -642,8 +621,6 @@
         height: 318px;
         top: 11px;
         right: -99px;
-
-
    }
 }
 
@@ -765,7 +742,6 @@
     }
 
     .decor__idea {
-        width: calc(113% - 0px);
         margin-top: 33px;
         font-size: 28px;
         line-height: 110.9%;
@@ -925,7 +901,7 @@
         font-size: 16px;
     }
 
-    .pagination__page-active {
+    .pagination__page-transition--active {
         width: 34px;
         height: 34px;
         margin-top: 2px;
@@ -947,9 +923,9 @@
     }
 
     .decor__idea {
-        width: calc(97% - 0px);
+        width: 280px;
         margin-top: 24px;
-        margin-left: 4px;
+        margin-left: -12px;
         font-size: 24px;
         line-height: 26px;
         text-align: center;
@@ -978,8 +954,8 @@
     }
 
     .decor__picture {
-        top: 684px;
-        right: 47px;
+        top: 712px;
+        right: -223px;
     }
 
     .decor__picture-img {
@@ -989,5 +965,14 @@
    }
 }
 
-
+/* .body {
+    background-image: url(/img/Rectangle\ 88.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */ PRIMER
 
