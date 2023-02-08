@@ -223,6 +223,7 @@
 .decor {
     position: relative;
     margin-top: 131px;
+    margin-bottom: 425px;
 }
 
 .decor__img {
@@ -325,6 +326,114 @@
 .decor__order-button:active {
     background-color: #156B57;
 }
+
+.footer {
+    position: relative;
+    margin-left: 131px;
+    margin-bottom: 100px;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-servis__text {
+    margin-top: 11px;
+    width: 50%;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.065em;
+    color: #454747;
+}
+
+.footer-servis__phone {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #272525;
+}
+
+.footer-servis__mail {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #272525;
+}
+
+.footer-servis__tel {
+    margin-top: 38px;
+    margin-bottom: -13px;
+}
+
+.footer-servis__logo{
+
+}
+
+.footer-img {
+    text-decoration: none;
+    margin-right: 6px;
+}
+
+.footer-roster__cat {
+    position: absolute;
+    top: 19px;
+    left: -128px;
+
+}
+
+.footer-row {
+    position: absolute;
+    top: -53px;
+    right: 844px;
+}
+
+.footer-roster {
+    position: relative;
+}
+
+.footer-roster__list {
+    position: absolute;
+    top: 60px;
+    left: -167px;
+}
+
+.footer-roster__rank {
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    color: #272525;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 52px;
+    color: #454747;
+
+}
+
+.footer-list {
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer-info {
+    position: absolute;
+    top: -53px;
+    right: 580px;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1500px) {
 
@@ -748,14 +857,14 @@
     }
 
     .decor__text {
-        width: calc(111% - 11px);
+        width: 101%;
         margin-top: 15px;
         font-size: 16px;
         line-height: 130%;
     }
 
     .decor__connect {
-        width: calc(97% - 11px);
+        width: 96%;
         margin-top: 45px;
         font-size: 24px;
         line-height: 29px;
@@ -932,7 +1041,7 @@
     }
 
     .decor__text {
-        width: calc(99% - 11px);
+        width: 95%;
         margin-top: 14px;
         margin-left: 7px;
         text-align: center;
@@ -941,11 +1050,12 @@
     }
 
     .decor__connect {
-        width: calc(102% - 10px);
+        width: 95%;
         margin-left: 6px;
         margin-top: 57px;
         font-size: 20px;
         line-height: 24px;
+        text-align: center;
     }
 
     .decor__order-line {
