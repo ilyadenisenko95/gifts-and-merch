@@ -192,8 +192,8 @@
 }
 
 .reduction__item {
-    width: calc(28% - 30px);
-    margin-right:  88px;
+    width: 23%;
+    margin-right:  123px;
     margin-left: 1px;
 }
 
@@ -554,8 +554,8 @@
     }
 
     .reduction__item {
-        width: calc(46% - 62px);
-        margin-right:  89px;
+        width: 39%;
+        margin-right:  92px;
         margin-left: -12px;
     }
 
