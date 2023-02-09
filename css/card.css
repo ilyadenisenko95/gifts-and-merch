@@ -222,8 +222,12 @@
 
 .decor {
     position: relative;
-    margin-top: 131px;
+    margin-top: 111px;
     margin-bottom: 425px;
+    background-image: url('../img/creative-wave.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .decor__img {
@@ -369,12 +373,20 @@
 }
 
 .footer-servis__logo{
+    margin-top: 3px;
+}
 
+.footer-servis__manager{
+    margin-top: 28px;
+    margin-left: -42px;
+    list-style-type: none;
+    display: flex;
 }
 
 .footer-img {
     text-decoration: none;
-    margin-right: 6px;
+    margin-right: 16px;
+    padding: 2px;
 }
 
 .footer-roster__cat {
@@ -427,6 +439,53 @@
     top: -53px;
     right: 580px;
 }
+
+.footer-manager {
+    position: absolute;
+    width: 10%;
+    top: -53px;
+    right: 65px;
+}
+
+.footer-roster__text{
+    margin-top: -17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #8F90A6;
+}
+
+.footer-roster__tel {
+    position: absolute;
+    top: 169px;
+    right: 19px;
+    display: flex;
+    border: 2px solid #272525;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.footer__phone{
+    width: 200px;
+    margin-right: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #272525;
+    border: none;
+    outline: none;
+}
+
+.footer__arrow {
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #524983;
+
+}
+
+
 
 
 
@@ -561,6 +620,10 @@
 
    .reduction__text-color{
         margin-top: -15px;
+    }
+
+    .decor {
+        margin-top: 131px;
     }
 
     .decor__idea {
