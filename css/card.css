@@ -223,7 +223,7 @@
 .decor {
     position: relative;
     margin-top: 111px;
-    margin-bottom: 425px;
+    margin-bottom: 412px;
     background-image: url('../img/creative-wave.svg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@
 .decor__order {
     position: absolute;
     width: 336px;
-    left: 421px;
+    left: 549px;
     top: 249px;
 }
 
@@ -297,7 +297,7 @@
 .decor__picture {
     position: absolute;
     top: -39px;
-    right: 18px;
+    right: 146px;
 }
 
 .date__text {
@@ -339,11 +339,18 @@
 
 .footer-nav {
     display: flex;
+    justify-content: space-between;
+    /* margin-top: 1px; */
+}
+
+.footer-servis {
+    max-width: 488px;
+    margin-top: 13px;
 }
 
 .footer-servis__text {
     margin-top: 11px;
-    width: 50%;
+    max-width: 401px;
     font-size: 18px;
     line-height: 130%;
     letter-spacing: 0.065em;
@@ -390,30 +397,27 @@
 }
 
 .footer-roster__cat {
-    position: absolute;
-    top: 19px;
-    left: -128px;
+    max-width: 280px;
+
 
 }
 
 .footer-row {
-    position: absolute;
-    top: -53px;
-    right: 844px;
-}
+    margin-left: 27px;
+    /* margin-right: 2px; */
 
-.footer-roster {
-    position: relative;
+
 }
 
 .footer-roster__list {
-    position: absolute;
-    top: 60px;
-    left: -167px;
+
+    padding: 0;
+    margin: 0 auto;
+
 }
 
 .footer-roster__rank {
-
+    margin: 0 auto;
     font-weight: 600;
     font-size: 20px;
     line-height: 36px;
@@ -432,23 +436,24 @@
 .footer-list {
     list-style-type: none;
     text-align: left;
+
 }
 
 .footer-info {
-    position: absolute;
-    top: -53px;
-    right: 580px;
+    /* margin-left: -34px; */
+
 }
 
 .footer-manager {
-    position: absolute;
-    width: 10%;
-    top: -53px;
-    right: 65px;
+    margin-right: 48px;
+    margin-left: 82px;
+
+
 }
 
 .footer-roster__text{
-    margin-top: -17px;
+    max-width: 280px;
+    margin: 0 auto;
     font-weight: 400;
     font-size: 14px;
     line-height: 23px;
@@ -456,18 +461,17 @@
 }
 
 .footer-roster__tel {
-    position: absolute;
-    top: 169px;
-    right: 19px;
-    display: flex;
+    width: 277px;
+    margin-top: 24px;
     border: 2px solid #272525;
     border-radius: 15px;
-    padding: 8px;
+    padding: 4px;
 }
 
 .footer__phone{
     width: 200px;
     margin-right: 22px;
+    padding: 9px;
     font-weight: 400;
     font-size: 14px;
     line-height: 23px;
@@ -482,15 +486,33 @@
     height: 34px;
     border-radius: 50%;
     background: #524983;
+    position: absolute;
+    right: 94px;
+    top: 51%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
 }
 
+.footer-copy {
+    margin-top: 21px;
+    margin-left: -53px;
+}
 
+.footer-copy__corp {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #9FA3B2;
+}
 
-
-
-
-
+.footer-copy__conf{
+    text-decoration-line: underline;
+}
 
 
 
@@ -502,14 +524,12 @@
 
     .cards__header {
         margin-top: -21px;
-        margin-left: -11px;
     }
 
     .card {
-        width: calc(35% - 25px);
+        width: calc(35% - 32px);
         margin-top: 21px;
-        margin-right: -10px;
-        margin-left: -11px;
+        margin-right: 2px;
     }
 
     .cards__list {
@@ -525,7 +545,7 @@
 
     .card__pagination {
         bottom: 193px;
-        right: 7px;
+        right: 17px;
     }
 
     .card__pagination-arrow {
@@ -592,7 +612,7 @@
     .pagination__more {
         position: relative;
         bottom: -9px;
-        right: 28px;
+        right: 15px;
     }
 
     .pagination__page {
@@ -615,7 +635,7 @@
     .reduction__item {
         width: 39%;
         margin-right:  92px;
-        margin-left: -12px;
+
     }
 
    .reduction__text-color{
@@ -629,18 +649,18 @@
     .decor__idea {
         width: 550px;
         margin-top: 38px;
-        margin-left: -12px;
+
         line-height: 53px;
     }
 
     .decor__text {
-        margin-left: -12px;
+
         margin-top: 22px;
     }
 
     .decor__connect{
         margin-top: 60px;
-        margin-left: -12px;
+
     }
 
     .decor__order {
@@ -664,6 +684,64 @@
         right: -154px;
         object-fit: cover;
     }
+
+    .footer {
+        margin-left: 0px;
+        margin-top: -74px;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-servis{
+        width: 50%;
+    }
+
+    .footer-row{
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .footer-info{
+        width: 25%;
+        margin-left: -119px;
+        margin-right: -14px;
+
+    }
+
+    .footer-manager {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 34px;
+    }
+
+    .footer-roster__text {
+        max-width: 350px;
+        line-height: 18px;
+        margin-left: 66px;
+    }
+
+    .footer-roster__tel {
+        margin-top: -9px;
+    }
+
+    .footer__arrow {
+        right: 32px;
+        top: 80%;
+    }
+
+    .footer-copy {
+        margin-top: 39px;
+        margin-left: 0px;
+    }
+
 }
 
 @media (max-width: 999px) {
@@ -681,16 +759,15 @@
     }
 
     .card {
-        width: calc(48% - -7px);
-        margin-top: 0px;
-        margin-left: -2px;
-        margin-bottom: 32px;
-        margin-right: -11px;
+        width: calc(48% - 5px);
+        margin-top: 1px;
+        margin-left: 11px;
+        margin-bottom: 30px;
+        margin-right: -0px;
     }
 
     .cards__header {
         margin-top: -126px;
-        margin-left: -12px;
     }
 
     .card__info {
@@ -773,12 +850,12 @@
     }
 
     .decor__img {
-        margin-top: 11px;
+        margin-top: 14px;
     }
 
     .decor__order{
         left: 409px;
-        top: 349px;
+        top: 352px;
     }
 
     .decor__picture {
@@ -793,21 +870,99 @@
         height: 318px;
         top: 11px;
         right: -99px;
-   }
+    }
+
+    .footer {
+        margin-top: -103px;
+    }
+
+    .footer-servis {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 9px;
+    }
+
+    .footer-row {
+        width: 25%;
+    }
+
+    .footer-info {
+        width: 25%;
+    }
+
+
+    .footer-manager {
+        width: 50%;
+        display: block;
+        margin-left: -104px;
+        margin-right: -13px;
+        margin-top: 0px;
+    }
+
+    .footer-image {
+        max-width: 409px;
+    }
+
+    .footer-servis__text {
+        max-width: 357px;
+        margin-top: 6px;
+        font-size: 16px;
+    }
+
+    .footer-servis__phone {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .footer-servis__mail {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .footer-servis__tel {
+        margin-top: -4px;
+    }
+
+    .footer-servis__connect {
+        margin-right: 31px;
+    }
+
+    .footer-servis__logo{
+        margin-top: -3px;
+    }
+
+    .footer-roster__text {
+        margin-left: 0;
+    }
+
+    .footer-roster__tel {
+        margin-top: 20px;
+    }
+
+    .footer__arrow {
+        right: 106px;
+        top: 59.7%;
+    }
+
+    .footer-copy {
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 767px) {
 
     .card {
-        width: calc(53% - 14px);
+        width: calc(53% - 27px);
         margin-top: 7px;
-        margin-left: -1px;
+        margin-left: 11px;
         margin-bottom: -3px;
     }
 
     .cards__header {
         margin-top: -175px;
-        margin-left: -12px;
         font-size: 28px;
         line-height: 34px;
     }
@@ -906,6 +1061,8 @@
     .decor__img {
         width: 206px;
         height: 41px;
+        margin-top: 5px;
+        margin-left: 118px;
     }
 
     .decor__basis-image {
@@ -938,11 +1095,6 @@
         top: 368px;
     }
 
-    .decor__img {
-        margin-top: 4px;
-        margin-left: 105px;
-    }
-
     .decor__picture {
         top: 699px;
         right: 138px;
@@ -955,14 +1107,77 @@
         width: 367px;
         height: 344px;
     }
+
+    .footer-servis {
+        display: block;
+    }
+
+    .decor {
+        margin-bottom: 856px;
+    }
+
+    .footer {
+        margin-top: 0px;
+    }
+
+    .footer-servis__connect {
+        margin-top: 24px;
+    }
+
+    .footer-servis__logo {
+        margin-top: -63px;
+        margin-left: 257px;
+    }
+
+    .footer-img__logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-servis__manager {
+        margin-top: 25px;
+        margin-left: -60px;
+    }
+
+    .footer-row {
+        width: 50%;
+    }
+
+    .footer-info {
+        width: 50%;
+        margin-right: 33px;
+    }
+
+    .footer-manager {
+        width: 100%;
+        margin-left: 1px;
+        margin-top: 20px;
+    }
+
+    .footer__arrow {
+        right: 194px;
+        top: 89.6%;
+    }
+
+    .footer-copy {
+        margin-top: 25px;
+    }
+
+
 }
 
 @media (max-width: 479px) {
 
     .card {
-        width: calc(114% - 22px);
-        margin-top: -7px;
-        margin-bottom: 12px;
+        width: calc(123% - 38px);
+        margin-top: -5px;
+        margin-bottom: 10px;
+        margin-right: -11px;
+        margin-left: -10px;
+    }
+
+    .cards__list {
+        margin-left: -2px;
     }
 
     .cards__header {
@@ -1082,6 +1297,10 @@
         font-size: 21px;
     }
 
+    .decor {
+        margin-bottom: 789px;
+    }
+
     .decor__img {
         width: 154px;
         height: 34px;
@@ -1135,17 +1354,67 @@
         width: 366px;
         height: 345px;
         transform: translate(-83%,-11%);
-   }
-}
+    }
 
-/* .body {
-    background-image: url(/img/Rectangle\ 88.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } */ PRIMER
+    .footer-image {
+        max-width: 264px;
+    }
+
+    .footer-servis__text {
+        max-width: 277px;
+        margin-top: 9px;
+        font-size: 11.5px;
+        line-height: 130%;
+    }
+
+    .footer-servis__logo {
+        margin-top: 36px;
+        margin-left: 74px;
+    }
+
+    .footer-servis__connect {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .footer-row {
+        margin-left: -11px;
+    }
+
+    .footer-info {
+        margin-right: -10px;
+    }
+
+    .footer-manager {
+        margin-left: 8px;
+    }
+
+    .footer-roster__text {
+        max-width: 240px;
+        line-height: 16px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-roster__tel {
+        margin-top: 9px;
+        margin-left: -19px;
+    }
+
+    .footer__arrow {
+        right: 34px;
+        top: 87.3%;
+    }
+
+    .footer-copy__corp {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer-copy {
+        max-width: 185px;
+        margin-top: 33px;
+        margin-left: 35px;
+    }
+}
 

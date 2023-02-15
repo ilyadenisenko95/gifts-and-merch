@@ -294,6 +294,11 @@ body {
 
 @media (max-width: 1500px) {
 
+    .main-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
     .page-header__top {
         margin-top: -18px;
     }
@@ -301,9 +306,8 @@ body {
     .header-image {
         width: 326px;
         height: 24px;
-        margin-right: 9px;
         margin-bottom: -9px;
-        margin-left: -28px;
+        margin-left: -17px;
         margin-right: -8.5px;
     }
 
@@ -338,7 +342,7 @@ body {
     }
 
     .page-header__buttons{
-        margin-right: -23px;
+        margin-right: -10px;
     }
 
     .page-header__burger {
@@ -370,12 +374,11 @@ body {
     .header-hero__main {
         width: 510px;
         height: 180px;
-        margin-left: -12px;
         margin-top: 69px;
     }
 
     .header-list {
-        margin-left: 22px;
+        margin-left: 2px;
     }
 
     .header-nav__container {
@@ -415,7 +418,6 @@ body {
     .header-hero__description {
         width: 543px;
         height: 42px;
-        margin-left: -12px;
         font-weight: 400;
         font-size: 14px;
         line-height: 152.5%;
@@ -440,7 +442,6 @@ body {
     }
 
     .header-hero__creation {
-        margin-left: -12px;
         margin-top: 33px;
     }
 
@@ -477,7 +478,7 @@ body {
         height: 18.38px;
         margin-bottom: -19px;
         margin-right: 9px;
-        margin-left: -14px;
+        margin-left: 0px;
     }
 
     .phone {
@@ -495,7 +496,7 @@ body {
 
     .page-header__burger {
         display: block;
-        margin-right: 0px;
+        margin-right: 13px;
         margin-top: 25px;
         text-decoration: none;
         background-color: transparent;
@@ -526,7 +527,6 @@ body {
     .header-hero__description {
         width: 389px;
         height: 63px;
-        margin-left: -10px;
         margin-top: 21px;
         font-size: 16px;
         line-height: 130%;
@@ -573,7 +573,7 @@ body {
 
     .page-header__burger {
         margin-top: 36px;
-        margin-right: -16px;
+        margin-right: -4px;
     }
 
     .header-hero__main {
@@ -588,7 +588,6 @@ body {
     .header-hero__description {
         width: 261px;
         height: 84px;
-        margin-left: -13px;
         margin-top: 21px;
         font-weight: 400;
         font-size: 16px;
@@ -665,6 +664,7 @@ body {
     .page-header__burger {
         margin-left: -15px;
         margin-bottom: 20px;
+        margin-right: -17px;
     }
 
     .header-hero__main {
