@@ -245,6 +245,20 @@ body {
     color: #272525;
 }
 
+.header-hero__major {
+    max-width: 638px;
+    margin: 0;
+    margin-top: 74.5px;
+    margin-left: 7px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #272525;
+}
+
 .header-hero__description {
     max-width: 638px;
     margin-top: 20px;
@@ -253,6 +267,57 @@ body {
     line-height: 130%;
     letter-spacing: 0.065em;
     color: #454747;
+}
+
+.header-hero__text {
+    max-width: 666px;
+    margin-top: 10px;
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.065em;
+    color: #454747;
+}
+
+.header-hero__logo {
+    display: inline-block;
+    position: relative;
+    margin-left: 32px;
+    margin-top: 39px;
+    margin-right: 41px;
+}
+
+.header-hero__logos {
+    width: 85.56px;
+    height: 85.56px;
+    background: #EACEFF;
+    border-radius: 50%;
+}
+
+.header-hero__only {
+    max-width: 230px;
+    margin-top: 19px;
+    margin-left: -66px;
+    font-weight: 600;
+    font-size: 21.8449px;
+    line-height: 26px;
+    text-align: center;
+    color: #272525;
+    text-decoration: none;
+    dd
+}
+
+.header-hero__wave {
+    position: absolute;
+    left: 80px;
+    top: 5px;
+}
+
+.header-hero__wave--active {
+    position: absolute;
+    left: -6px;
+    top: 64px;
 }
 
 .header-hero__creation {
@@ -715,7 +780,6 @@ body {
         margin-top: 323px;
         margin-left: 23px;
     }
-
 }
 
 

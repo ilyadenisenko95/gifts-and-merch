@@ -340,7 +340,6 @@
 .footer-nav {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 1px; */
 }
 
 .footer-servis {
@@ -398,22 +397,15 @@
 
 .footer-roster__cat {
     max-width: 280px;
-
-
 }
 
 .footer-row {
     margin-left: 27px;
-    /* margin-right: 2px; */
-
-
 }
 
 .footer-roster__list {
-
     padding: 0;
     margin: 0 auto;
-
 }
 
 .footer-roster__rank {
@@ -430,7 +422,6 @@
     font-size: 18px;
     line-height: 52px;
     color: #454747;
-
 }
 
 .footer-list {
@@ -439,16 +430,9 @@
 
 }
 
-.footer-info {
-    /* margin-left: -34px; */
-
-}
-
 .footer-manager {
     margin-right: 48px;
     margin-left: 82px;
-
-
 }
 
 .footer-roster__text{
@@ -487,14 +471,13 @@
     border-radius: 50%;
     background: #524983;
     position: absolute;
-    right: 94px;
+    right: 95px;
     top: 51%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
 }
 
 .footer-copy {
@@ -635,7 +618,6 @@
     .reduction__item {
         width: 39%;
         margin-right:  92px;
-
     }
 
    .reduction__text-color{
@@ -649,7 +631,6 @@
     .decor__idea {
         width: 550px;
         margin-top: 38px;
-
         line-height: 53px;
     }
 
@@ -710,7 +691,6 @@
         width: 25%;
         margin-left: -119px;
         margin-right: -14px;
-
     }
 
     .footer-manager {
@@ -729,19 +709,19 @@
     }
 
     .footer-roster__tel {
+        position: relative;
         margin-top: -9px;
     }
 
     .footer__arrow {
-        right: 32px;
-        top: 80%;
+        right: 10px;
+        top: 51%;
     }
 
     .footer-copy {
         margin-top: 39px;
         margin-left: 0px;
     }
-
 }
 
 @media (max-width: 999px) {
@@ -892,7 +872,6 @@
         width: 25%;
     }
 
-
     .footer-manager {
         width: 50%;
         display: block;
@@ -942,14 +921,13 @@
     }
 
     .footer__arrow {
-        right: 106px;
-        top: 59.7%;
+        right: 10px;
+        top: 51%;
     }
 
     .footer-copy {
         margin-top: 30px;
     }
-
 }
 
 @media (max-width: 767px) {
@@ -1155,15 +1133,13 @@
     }
 
     .footer__arrow {
-        right: 194px;
-        top: 89.6%;
+        right: 10px;
+        top: 51%;
     }
 
     .footer-copy {
         margin-top: 25px;
     }
-
-
 }
 
 @media (max-width: 479px) {
@@ -1402,8 +1378,8 @@
     }
 
     .footer__arrow {
-        right: 34px;
-        top: 87.3%;
+        right: 10px;
+        top: 51%;
     }
 
     .footer-copy__corp {
