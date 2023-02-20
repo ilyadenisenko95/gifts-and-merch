@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.card__top {
+    position: relative;
+}
+
 .card__info {
     overflow: hidden;
     margin-top: 2px;
@@ -35,26 +39,30 @@
 .card__pagination {
     display: flex;
     position: absolute;
-    bottom: 241px;
-    right: 20px;
+    bottom: 8px;
+    right: 18px;
     text-align: center;
     align-items: center;
     font-weight: 400;
     font-size: 12px;
-    line-height: 105.5%;
+    line-height: 1;
     color: #7981AD;
 }
 
 .card__pagination-direction {
-    padding-left: 1px;
+    display: flex;
+    padding: 5px;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .card__pagination-direction--right {
     transform: rotate(180deg);
-    margin-top: -7px;
-    margin-left: 6px;
+}
+
+.card__number {
+    margin: 0 5px;
 }
 
 .pagination__img {
@@ -121,13 +129,18 @@
     right: 11px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+
 .pagination__more {
     display: flex;
 }
 
 .pagination__text {
-    margin-top: 41px;
-    margin-left: 16px;
+    margin: 0px;
     margin-right: 17px;
     font-weight: 700;
     font-size: 24px;
@@ -136,18 +149,8 @@
 }
 
 .pagination__menu {
-    position: relative;
-    margin-top: 26px;
-    margin-right: 3px;
     border: none;
     background: transparent;
-}
-
-.pagination__page{
-    display: flex;
-    position: absolute;
-    margin-top: -59px;
-    right: 171px;
 }
 
 .pagination__nubmers {
@@ -156,7 +159,7 @@
 
 .pagination__page-transition {
     padding: 9px 10px;
-    margin-left: 4px;
+    margin-left: 0px;
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
@@ -166,8 +169,8 @@
 
 .pagination__page-transition--active {
     padding: 5px 16px;
-    margin-left: 39px;
-    font-size: 24px;
+    margin-left: 23px;
+    font-size: 23px;
     color: white;
     background: #7981AD;
     box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
@@ -178,7 +181,8 @@
     width: 40px;
     height: 40px;
     margin-top: 0px;
-    margin-left: 25px;
+    margin-left: 23px;
+    margin-right: 13px;
     border: none;
     border-radius: 50%;
     background: #ECE7F0;
@@ -187,7 +191,7 @@
 .reduction {
     display: flex;
     justify-content: space-between;
-    margin-top: 64px;
+    margin-top: 82px;
     color: #454747;
 }
 
@@ -331,173 +335,6 @@
     background-color: #156B57;
 }
 
-.footer {
-    position: relative;
-    margin-left: 131px;
-    margin-bottom: 100px;
-}
-
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-servis {
-    max-width: 488px;
-    margin-top: 13px;
-}
-
-.footer-servis__text {
-    margin-top: 11px;
-    max-width: 401px;
-    font-size: 18px;
-    line-height: 130%;
-    letter-spacing: 0.065em;
-    color: #454747;
-}
-
-.footer-servis__phone {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #272525;
-}
-
-.footer-servis__mail {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration-line: underline;
-    color: #272525;
-}
-
-.footer-servis__tel {
-    margin-top: 38px;
-    margin-bottom: -13px;
-}
-
-.footer-servis__logo{
-    margin-top: 3px;
-}
-
-.footer-servis__manager{
-    margin-top: 28px;
-    margin-left: -42px;
-    list-style-type: none;
-    display: flex;
-}
-
-.footer-img {
-    text-decoration: none;
-    margin-right: 16px;
-    padding: 2px;
-}
-
-.footer-roster__cat {
-    max-width: 280px;
-}
-
-.footer-row {
-    margin-left: 27px;
-}
-
-.footer-roster__list {
-    padding: 0;
-    margin: 0 auto;
-}
-
-.footer-roster__rank {
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
-    color: #272525;
-}
-
-.footer-link {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 52px;
-    color: #454747;
-}
-
-.footer-list {
-    list-style-type: none;
-    text-align: left;
-
-}
-
-.footer-manager {
-    margin-right: 48px;
-    margin-left: 82px;
-}
-
-.footer-roster__text{
-    max-width: 280px;
-    margin: 0 auto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    color: #8F90A6;
-}
-
-.footer-roster__tel {
-    width: 277px;
-    margin-top: 24px;
-    border: 2px solid #272525;
-    border-radius: 15px;
-    padding: 4px;
-}
-
-.footer__phone{
-    width: 200px;
-    margin-right: 22px;
-    padding: 9px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    color: #272525;
-    border: none;
-    outline: none;
-}
-
-.footer__arrow {
-    border: none;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #524983;
-    position: absolute;
-    right: 95px;
-    top: 51%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.footer-copy {
-    margin-top: 21px;
-    margin-left: -53px;
-}
-
-.footer-copy__corp {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
-    color: #9FA3B2;
-}
-
-.footer-copy__conf{
-    text-decoration-line: underline;
-}
-
-
 
 @media (max-width: 1500px) {
 
@@ -520,7 +357,6 @@
     }
 
     .card__info {
-        margin-right: -10px;
         margin-top: -2px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
@@ -592,27 +428,28 @@
         right: 8px;
     }
 
-    .pagination__more {
-        position: relative;
-        bottom: -9px;
-        right: 15px;
-    }
-
-    .pagination__page {
-        right: 20px;
-        margin-top: -51px;
-    }
-
     .card__pagination-direction--right {
         margin-left: 3px;
         margin-top: -11px;
+    }
+
+    .pagination {
+        margin-top: 47px;
+    }
+
+    .pagination__direction {
+        margin-right: 0;
+    }
+
+    .pagination__page-transition--active {
+        margin-left: 34px;
     }
 
     .reduction {
         display: flex;
         flex-wrap: wrap;
         gap: 22px;
-        margin-top: 69px;
+        margin-top: 78px;
     }
 
     .reduction__item {
@@ -664,63 +501,6 @@
         top: 0;
         right: -154px;
         object-fit: cover;
-    }
-
-    .footer {
-        margin-left: 0px;
-        margin-top: -74px;
-    }
-
-    .footer-nav {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .footer-servis{
-        width: 50%;
-    }
-
-    .footer-row{
-        width: 25%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .footer-info{
-        width: 25%;
-        margin-left: -119px;
-        margin-right: -14px;
-    }
-
-    .footer-manager {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 34px;
-    }
-
-    .footer-roster__text {
-        max-width: 350px;
-        line-height: 18px;
-        margin-left: 66px;
-    }
-
-    .footer-roster__tel {
-        position: relative;
-        margin-top: -9px;
-    }
-
-    .footer__arrow {
-        right: 10px;
-        top: 51%;
-    }
-
-    .footer-copy {
-        margin-top: 39px;
-        margin-left: 0px;
     }
 }
 
@@ -803,7 +583,7 @@
     }
 
     .pagination {
-        margin-top: -44px;
+        margin-top: 7px;
     }
 
     .card__cart {
@@ -816,17 +596,12 @@
         margin-top: -6px;
     }
 
-    .pagination__page {
-        right: 34px;
-    }
-
-    .pagination__img {
-        margin-top: -1px;
-        margin-right: -14px;
-    }
-
     .reduction {
         display: none;
+    }
+
+    .decor {
+        margin-top: 136px;
     }
 
     .decor__img {
@@ -852,82 +627,7 @@
         right: -99px;
     }
 
-    .footer {
-        margin-top: -103px;
-    }
 
-    .footer-servis {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 700px;
-        margin-bottom: 9px;
-    }
-
-    .footer-row {
-        width: 25%;
-    }
-
-    .footer-info {
-        width: 25%;
-    }
-
-    .footer-manager {
-        width: 50%;
-        display: block;
-        margin-left: -104px;
-        margin-right: -13px;
-        margin-top: 0px;
-    }
-
-    .footer-image {
-        max-width: 409px;
-    }
-
-    .footer-servis__text {
-        max-width: 357px;
-        margin-top: 6px;
-        font-size: 16px;
-    }
-
-    .footer-servis__phone {
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    .footer-servis__mail {
-        font-size: 18px;
-        line-height: 21px;
-    }
-
-    .footer-servis__tel {
-        margin-top: -4px;
-    }
-
-    .footer-servis__connect {
-        margin-right: 31px;
-    }
-
-    .footer-servis__logo{
-        margin-top: -3px;
-    }
-
-    .footer-roster__text {
-        margin-left: 0;
-    }
-
-    .footer-roster__tel {
-        margin-top: 20px;
-    }
-
-    .footer__arrow {
-        right: 10px;
-        top: 51%;
-    }
-
-    .footer-copy {
-        margin-top: 30px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -946,7 +646,6 @@
     }
 
     .card__info {
-        margin-right: -12px;
         margin-bottom: 16.5px;
         margin-top: -8px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
@@ -1019,22 +718,28 @@
         right: 4px;
     }
 
+    .pagination {
+        flex-direction: column;
+
+    }
+
     .pagination__menu {
-        margin-top: 36px;margin-right: 2px;
+        /* margin-top: 36px;
+        margin-right: 2px; */
     }
 
     .pagination__text {
-        margin-top: 51px;
+        /* margin-top: 51px;
         margin-left: 177px;
-        margin-right: 10px;
+        margin-right: 10px; */
         font-size: 18px;
         font-weight: 500;
     }
 
-    .pagination__page {
+    /* .pagination__page {
         margin-top: 14px;
         right: 93px;
-    }
+    } */
 
     .decor__img {
         width: 206px;
@@ -1086,60 +791,11 @@
         height: 344px;
     }
 
-    .footer-servis {
-        display: block;
-    }
-
     .decor {
         margin-bottom: 856px;
     }
 
-    .footer {
-        margin-top: 0px;
-    }
 
-    .footer-servis__connect {
-        margin-top: 24px;
-    }
-
-    .footer-servis__logo {
-        margin-top: -63px;
-        margin-left: 257px;
-    }
-
-    .footer-img__logo {
-        width: 35px;
-        height: 35px;
-    }
-
-    .footer-servis__manager {
-        margin-top: 25px;
-        margin-left: -60px;
-    }
-
-    .footer-row {
-        width: 50%;
-    }
-
-    .footer-info {
-        width: 50%;
-        margin-right: 33px;
-    }
-
-    .footer-manager {
-        width: 100%;
-        margin-left: 1px;
-        margin-top: 20px;
-    }
-
-    .footer__arrow {
-        right: 10px;
-        top: 51%;
-    }
-
-    .footer-copy {
-        margin-top: 25px;
-    }
 }
 
 @media (max-width: 479px) {
@@ -1247,10 +903,10 @@
         margin-top: 25px;
     }
 
-    .pagination__page {
+    /* .pagination__page {
         margin-top: 12px;
         right: 30px;
-    }
+    } */
 
     .pagination__direction {
         width: 35px;
@@ -1332,65 +988,6 @@
         transform: translate(-83%,-11%);
     }
 
-    .footer-image {
-        max-width: 264px;
-    }
 
-    .footer-servis__text {
-        max-width: 277px;
-        margin-top: 9px;
-        font-size: 11.5px;
-        line-height: 130%;
-    }
-
-    .footer-servis__logo {
-        margin-top: 36px;
-        margin-left: 74px;
-    }
-
-    .footer-servis__connect {
-        margin-right: 0px;
-        text-align: center;
-    }
-
-    .footer-row {
-        margin-left: -11px;
-    }
-
-    .footer-info {
-        margin-right: -10px;
-    }
-
-    .footer-manager {
-        margin-left: 8px;
-    }
-
-    .footer-roster__text {
-        max-width: 240px;
-        line-height: 16px;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .footer-roster__tel {
-        margin-top: 9px;
-        margin-left: -19px;
-    }
-
-    .footer__arrow {
-        right: 10px;
-        top: 51%;
-    }
-
-    .footer-copy__corp {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .footer-copy {
-        max-width: 185px;
-        margin-top: 33px;
-        margin-left: 35px;
-    }
 }
 
