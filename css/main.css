@@ -825,10 +825,6 @@ body {
     }
 
     .header-hero__picture {
-        /* display: none; */
-    }
-
-    .header-hero__picture {
         display: block;
         position: absolute;
         right: -3px;
@@ -965,7 +961,6 @@ body {
         margin-top: -6.5px;
         padding: 17px 22px;
         margin-bottom: 8px;
-
     }
 
     .header-hero__create {
@@ -1038,6 +1033,7 @@ body {
 @media (max-width: 479px) {
     .page-header__top {
         margin-top: -19px;
+        padding-bottom: 0px;
     }
 
     .header-nav {
@@ -1048,7 +1044,6 @@ body {
     .header-image {
         width: 130px;
         margin-bottom: 0px;
-        margin-left: -12px;
     }
 
     .page-header__loupe {
@@ -1075,14 +1070,16 @@ body {
     .page-header__burger {
         margin-left: -15px;
         margin-bottom: 20px;
-        margin-right: -17px;
+    }
+
+    .header-hero {
+        padding-bottom: 223px;
     }
 
     .header-hero__main {
         width: 280px;
         height: 105px;
         margin-top: 23px;
-        margin-left: -12px;
         font-size: 28px;
         line-height: 35px;
         text-align: center;
@@ -1092,7 +1089,7 @@ body {
     .header-hero__description {
         width: 296px;
         height: 84px;
-        margin-left: -19px;
+        margin-left: -8px;
         margin-top: 15px;
         font-weight: 400;
         font-size: 15px;
@@ -1117,14 +1114,16 @@ body {
     }
 
     .header-hero__picture {
-        right: -44px;
-        bottom: 174px;
-        width: 76.7vw;
+        right: 0px;
+        bottom: 308px;
+        width: 87.7vw;
     }
 
     .header-hero__creation {
         margin-top: 323px;
-        margin-left: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-image {
@@ -1132,10 +1131,10 @@ body {
     }
 
     .footer-servis__text {
-        max-width: 277px;
         margin-top: 7px;
         font-size: 11.5px;
         line-height: 130%;
+        text-align: center;
     }
 
     .footer-servis__logo {
@@ -1168,6 +1167,10 @@ body {
     }
 
     .footer-roster__rank {
+        text-align: left;
+    }
+
+    .footer-roster__ranks {
         text-align: center;
     }
 

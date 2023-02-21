@@ -24,7 +24,7 @@
 .card__info {
     overflow: hidden;
     margin-top: 2px;
-    padding-left: 16px;
+    padding-left: 14px;
     padding-top: 11px;
     box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
     border-radius: 15px;
@@ -87,7 +87,6 @@
 
 .card__color {
     margin-top: 15px;
-    margin-left: -1px;
 }
 
 .card__color-button {
@@ -198,7 +197,6 @@
 .reduction__item {
     width: 23%;
     margin-right:  123px;
-    margin-left: 1px;
 }
 
 .reduction__title {
@@ -239,6 +237,7 @@
 }
 
 .decor__idea {
+    max-width: 790px;
     margin-top: 26px;
     margin-bottom: 0px;
     font-weight: 700;
@@ -251,7 +250,6 @@
 
 .decor__text {
     width: 592px;
-    height: 46px;
     margin-bottom: 0px;
     font-weight: 400;
     font-size: 18px;
@@ -266,7 +264,6 @@
 
 .decor__connect {
     width: 300px;
-    height: 116px;
     margin-top: 35px;
     font-weight: 600;
     font-size: 24px;
@@ -363,18 +360,19 @@
     }
 
     .card__pagination {
-        bottom: 193px;
-        right: 17px;
+        bottom: 9px;
+        right: 12px;
+        padding: 3px;
     }
+
+    .card__pagination-direction {
+        padding: 3px;
+    }
+
 
     .card__pagination-arrow {
         height: 17px;
         width: 9px;
-    }
-
-    .card__pagination-direction--right {
-        margin-top: 0px;
-        margin-left: 2px;
     }
 
     .card__number {
@@ -383,7 +381,7 @@
     }
 
     .card__name{
-        margin-left: -3px;
+
         font-weight: 600;
         font-size: 19.26px;
         line-height: 105.5%;
@@ -392,7 +390,6 @@
     .card__description {
         width: 179px;
         margin-top: 8px;
-        margin-left: -3px;
         font-weight: 400;
         font-size: 9.63px;
         line-height: 105.5%;
@@ -400,19 +397,17 @@
 
     .card__color {
         margin-top: 12px;
-        margin-left: -5px;
+
     }
 
     .card__color-button{
         width: 19.26px;
         height: 19.26px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__price {
         margin-top: 31px;
-        margin-left: -3px;
         font-weight: 600;
         font-size: 19.26px;
         line-height: 105.5%;
@@ -426,11 +421,6 @@
     .card__cart {
         bottom: 6px;
         right: 8px;
-    }
-
-    .card__pagination-direction--right {
-        margin-left: 3px;
-        margin-top: -11px;
     }
 
     .pagination {
@@ -466,7 +456,7 @@
     }
 
     .decor__idea {
-        width: 550px;
+        max-width: 550px;
         margin-top: 38px;
         line-height: 53px;
     }
@@ -515,14 +505,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 16px;
-        margin-left: -11px;
     }
 
     .card {
-        width: calc(48% - 5px);
+        width: calc(50% - 14px);
         margin-top: 1px;
-        margin-left: 11px;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
         margin-right: -0px;
     }
 
@@ -536,12 +524,11 @@
     }
 
     .card__pagination {
-        top: 292px;
-        left: 277px;
+        bottom: 9px;
+        right: 16px;
     }
 
     .card__name{
-        margin-left: -2px;
         margin-top: 0px;
         font-weight: 600;
         font-size: 22.2267px;
@@ -550,8 +537,7 @@
 
     .card__description {
         width: 179px;
-        margin-top: 15px;
-        margin-left: -3px;
+        margin-top: 13px;
         font-weight: 400;
         font-size: 11.1134px;
         line-height: 105.5%;
@@ -559,19 +545,16 @@
 
     .card__color {
         margin-top: 9px;
-        margin-left: -3px;
     }
 
     .card__color-button{
         width: 22.23px;
         height: 22.23px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__price {
         margin-top: 37px;
-        margin-left: -2px;
         font-weight: 600;
         font-size: 22.2267px;
         line-height: 105.5%;
@@ -587,13 +570,17 @@
     }
 
     .card__cart {
-        bottom: 9px;
-        right: 8px;
+        bottom: 8px;
+        right: 10px;
     }
 
-    .card__pagination-direction--right {
-        margin-left: 9px;
-        margin-top: -6px;
+    .card__pagination-arrow {
+        height: 19px;
+        width: 9px;
+    }
+
+    .card__pagination-direction {
+        padding: 4px;
     }
 
     .reduction {
@@ -633,9 +620,8 @@
 @media (max-width: 767px) {
 
     .card {
-        width: calc(53% - 27px);
+        width: calc(50% - 8px);
         margin-top: 7px;
-        margin-left: 11px;
         margin-bottom: -3px;
     }
 
@@ -648,13 +634,14 @@
     .card__info {
         margin-bottom: 16.5px;
         margin-top: -8px;
+        padding-left: 9px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
+
     }
 
     .card__name {
         width: 180px;
-        margin-left: -6px;
         margin-top: 1px;
         font-weight: 600;
         font-size: 13.4338px;
@@ -664,7 +651,6 @@
     .card__description {
         width: 125px;
         margin-top: 7px;
-        margin-left: -8px;
         font-weight: 400;
         font-size: 6.71689px;
         line-height: 105.5%;
@@ -672,28 +658,26 @@
 
     .card__color {
         margin-top: 7px;
-        margin-left: -9px;
     }
 
     .card__color-button{
         width: 13.43px;
         height: 13.43px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__pagination {
-        top: 206px;
-        left: 164px;
+        bottom: 7px;
+        right: 6px;
     }
-    .card__pagination-direction--right {
-        margin-top: -8px;
-        margin-left: -2px;
+
+    .card__pagination-direction {
+        padding: 2px;
     }
 
     .card__pagination-arrow {
-        height: 14px;
-        width: 7px;
+        height: 11px;
+        width: 6px;
     }
 
     .card__number {
@@ -702,7 +686,6 @@
 
     .card__price {
         margin-top: 20px;
-        margin-left: -8px;
         font-weight: 600;
         font-size: 13.4338px;
         line-height: 105.5%;
@@ -719,27 +702,29 @@
     }
 
     .pagination {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
 
     }
 
-    .pagination__menu {
-        /* margin-top: 36px;
-        margin-right: 2px; */
+    .pagination__page {
+        margin-top: 20px;
     }
 
     .pagination__text {
-        /* margin-top: 51px;
-        margin-left: 177px;
-        margin-right: 10px; */
+
         font-size: 18px;
         font-weight: 500;
     }
 
-    /* .pagination__page {
-        margin-top: 14px;
-        right: 93px;
-    } */
+    .decor {
+        margin-top: 80px;
+        margin-bottom: 886px;
+
+    }
+
 
     .decor__img {
         width: 206px;
@@ -754,6 +739,7 @@
     }
 
     .decor__idea {
+        width: 470px;
         margin-top: 33px;
         font-size: 28px;
         line-height: 110.9%;
@@ -768,7 +754,7 @@
 
     .decor__connect {
         width: 96%;
-        margin-top: 45px;
+        margin-top: 49px;
         font-size: 24px;
         line-height: 29px;
     }
@@ -791,44 +777,34 @@
         height: 344px;
     }
 
-    .decor {
-        margin-bottom: 856px;
-    }
-
 
 }
 
 @media (max-width: 479px) {
 
     .card {
-        width: calc(123% - 38px);
-        margin-top: -5px;
-        margin-bottom: 10px;
-        margin-right: -11px;
-        margin-left: -10px;
-    }
-
-    .cards__list {
-        margin-left: -2px;
+        width: calc(100% - 1px);
+        margin-top: -6px;
+        margin-bottom: 11px;
     }
 
     .cards__header {
         margin-top: -205px;
-        margin-left: -12px;
         font-size: 28px;
         line-height: 34px;
     }
 
     .card__info {
+        margin-bottom: 20.5px;
+        padding-left: 11px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
-        margin-right: -12px;
-        margin-bottom: 20.5px;
+
     }
 
     .card__name{
         width: 238px;
-        margin-left: -5px;
+
         margin-top: 5px;
         font-weight: 600;
         font-size: 17.7778px;
@@ -838,7 +814,6 @@
     .card__description {
         width: 165px;
         margin-top: 9px;
-        margin-left: -5px;
         font-weight: 400;
         font-size: 8.88889px;
         line-height: 105.5%;
@@ -846,19 +821,19 @@
 
     .card__color {
         margin-top: 9px;
-        margin-left: -6px;
+
     }
 
     .card__color-button{
         width: 17.78px;
         height: 17.78px;
         margin-top: 1px;
-        margin-left: 1px;
+
     }
 
     .card__pagination {
-        top: -34px;
-        left: 219px;
+        bottom: 8px;
+        right: 12px;
     }
 
     .card__pagination-arrow {
@@ -866,14 +841,8 @@
         width: 8px;
     }
 
-    .card__pagination-direction--right {
-        margin-top: -5px;
-        margin-left: 5px;
-    }
-
     .card__price {
         margin-top: 30px;
-        margin-left: -5px;
         font-weight: 600;
         font-size: 17.7778px;
         line-height: 105.5%;
@@ -885,13 +854,7 @@
     }
 
     .pagination {
-        margin-top: -40px;
-    }
-
-    .pagination__text {
-        margin-top: 36px;
-        margin-left: 77px;
-        margin-right: 11px;
+        margin-top: 5px;
     }
 
     .card__cart-image {
@@ -899,20 +862,12 @@
         height: 34px;
     }
 
-    .pagination__menu {
-        margin-top: 25px;
-    }
-
-    /* .pagination__page {
-        margin-top: 12px;
-        right: 30px;
-    } */
-
     .pagination__direction {
         width: 35px;
         height: 35px;
         margin-top: 4px;
-        margin-left: 27px;
+        margin-left: 17px;
+        margin-right: 12px;
     }
 
     .pagination__page-transition {
@@ -924,20 +879,20 @@
         width: 34px;
         height: 34px;
         margin-top: 2px;
-        margin-right: 7px;
-        padding: 5px 13px;
+        margin: 0;
+        padding: 4px 14px;
         font-size: 21px;
     }
 
     .decor {
-        margin-bottom: 789px;
+        margin-bottom: 809px;
     }
 
     .decor__img {
         width: 154px;
         height: 34px;
         margin-top: 6px;
-        margin-left: 51px;
+        margin-left: 63px;
     }
 
     .decor__order {
@@ -946,18 +901,16 @@
     }
 
     .decor__idea {
-        width: 280px;
+        max-width: 280px;
         margin-top: 24px;
-        margin-left: -12px;
         font-size: 24px;
         line-height: 26px;
         text-align: center;
     }
 
     .decor__text {
-        width: 95%;
-        margin-top: 14px;
-        margin-left: 7px;
+        width: 89%;
+        margin-left: 15px;
         text-align: center;
         font-size: 15px;
         line-height: 130%;
@@ -966,7 +919,7 @@
     .decor__connect {
         width: 95%;
         margin-left: 6px;
-        margin-top: 57px;
+        margin-top: 45px;
         font-size: 20px;
         line-height: 24px;
         text-align: center;
@@ -979,10 +932,11 @@
 
     .decor__picture {
         top: 712px;
-        right: -223px;
+        right: 77px;
     }
 
     .decor__picture-img {
+        right: -380px;
         width: 366px;
         height: 345px;
         transform: translate(-83%,-11%);
