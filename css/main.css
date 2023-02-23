@@ -517,6 +517,7 @@ body {
 
 .footer-copy__conf{
     text-decoration-line: underline;
+    color: #9FA3B2;;
 }
 
 @media (max-width: 1500px) {
@@ -746,6 +747,11 @@ body {
 
 @media (max-width: 999px) {
 
+    .page-header {
+        height: 80px;
+        background: rgba(250, 251, 253, 0.44);
+    }
+
     .page-header__top {
         padding-top: 0px;
         margin-top: 0;
@@ -790,6 +796,10 @@ body {
         margin-left: 60px;
         border: none;
         background-color: transparent;
+    }
+
+    .header-hero {
+        margin-top: 22px;
     }
 
     .header-nav{
@@ -930,6 +940,10 @@ body {
         margin-right: -4px;
     }
 
+    .header-hero {
+        margin-top: 26px;
+    }
+
     .header-hero__main {
         width: 434px;
         margin-top: 11px;
@@ -1024,6 +1038,11 @@ body {
 }
 
 @media (max-width: 479px) {
+
+    .page-header {
+        height: 69px;
+    }
+
     .page-header__top {
         margin-top: -19px;
         padding-bottom: 0px;
@@ -1066,6 +1085,7 @@ body {
     }
 
     .header-hero {
+        margin-top: 10px;
         padding-bottom: 228px;
     }
 
@@ -1097,7 +1117,7 @@ body {
     }
 
     .header-hero__create {
-        margin-left: 11px;
+        margin-left: 0;
         margin-bottom: 4px;
         font-weight: 500;
         font-size: 14px;
@@ -1105,9 +1125,9 @@ body {
     }
 
     .header-hero__picture {
-        right: 0px;
-        bottom: 308px;
-        width: 87.7vw;
+        right: -6px;
+        bottom: 311px;
+        width: 118.7vw;
     }
 
     .header-hero__creation {

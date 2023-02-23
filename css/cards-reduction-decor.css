@@ -723,10 +723,12 @@
     }
 
     .decor__img {
+        display: block;
         width: 206px;
         height: 41px;
         margin-top: 5px;
-        margin-left: 118px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .decor__basis-image {
@@ -888,8 +890,6 @@
     .decor__img {
         width: 154px;
         height: 34px;
-        margin-top: 6px;
-        margin-left: 63px;
     }
 
     .pagination__menu-arrow {
