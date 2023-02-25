@@ -1003,13 +1003,11 @@ body {
     }
 
     .footer-row {
-        width: 50%;
-        margin-right: -119px;
+        width: 40%;
     }
 
     .footer-info {
-        width: 50%;
-        margin-right: 33px;
+        width: 57%;
     }
 
     .footer-manager {
@@ -1149,7 +1147,7 @@ body {
     }
 
     .footer-info {
-        margin-right: -10px;
+        width: 47%;
     }
 
     .footer-servis__manager {

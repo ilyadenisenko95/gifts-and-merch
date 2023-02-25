@@ -132,11 +132,12 @@
 .pagination {
     display: flex;
     justify-content: space-between;
-    margin-top: 38px;
+    margin-top: 32px;
 }
 
 .pagination__more {
     display: flex;
+    margin-top: 8px;
 }
 
 .pagination__text {
@@ -151,23 +152,24 @@
 .pagination__menu {
     border: none;
     background: transparent;
-    height: 44px;
+    height: 42px;
 }
 
 .pagination__nubmers {
     position: relative;
     display: flex;
     margin: 0;
-    margin-top: 5px;
     padding: 0px;
     list-style-type: none;
+    align-items: center;
 }
 
 .pagination__page {
     display: flex;
-    list-style-type: none;
     margin: 0;
     padding-left: 0;
+    list-style-type: none;
+    align-items: center;
 }
 
 .pagination__page-transition {
@@ -181,8 +183,10 @@
 }
 
 .pagination__page-transition--active {
-    padding: 5px 16px;
-    margin-left: 23px;
+    display: flex;
+    height: 40px;
+    padding: 5px 15px;
+    margin-left: 29px;
     margin-right: 11px;
     font-size: 23px;
     color: white;
@@ -192,14 +196,18 @@
 }
 
 .pagination__direction {
+    display: flex;
     width: 40px;
     height: 40px;
     margin-top: 0px;
     margin-left: 31px;
     margin-right: 13px;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 50%;
     background: #ECE7F0;
+    cursor: pointer;
 }
 
 .reduction {
@@ -437,7 +445,7 @@
     }
 
     .pagination {
-        margin-top: 47px;
+        margin-top: 41px;
     }
 
     .pagination__direction {
@@ -445,7 +453,7 @@
     }
 
     .pagination__page-transition--active {
-        margin-left: 34px;
+        margin-left: 40px;
     }
 
     .reduction {
@@ -578,7 +586,7 @@
     }
 
     .pagination {
-        margin-top: 7px;
+        margin-top: 0px;
     }
 
     .card__cart {
@@ -722,8 +730,12 @@
         height: 28px;
     }
 
+    .pagination__more {
+        margin-top: 0;
+    }
+
     .pagination__page {
-        margin-top: 23px;
+        margin-top: 19px;
     }
 
     .pagination__direction {
@@ -760,7 +772,7 @@
 
     .decor__idea {
         width: 450px;
-        margin-top: 35px;
+        margin-top: 39px;
         font-size: 28px;
         line-height: 110.9%;
     }
@@ -781,7 +793,7 @@
 
     .decor__order {
         left: 19px;
-        top: 361px;
+        top: 365px;
     }
 
     .decor__picture {
@@ -869,7 +881,7 @@
     }
 
     .pagination {
-        margin-top: 5px;
+        margin-top: 4px;
     }
 
     .card__cart-image {
@@ -877,30 +889,33 @@
         height: 34px;
     }
 
+    .pagination__page {
+        margin-top: 20px;
+    }
+
     .pagination__direction {
         width: 35px;
         height: 35px;
-        margin-left: 29px;
-        margin-right: 29px;
+        margin-left: 34px;
+        margin-right: 34px;
     }
 
     .pagination__page-transition {
         padding: 9px 7px;
         font-size: 16px;
-        margin-left: 6px;
+        margin-left: 4px;
     }
 
     .pagination__page-transition--active {
         width: 34px;
         height: 34px;
-        margin-top: 2px;
         margin: 0;
         padding: 4px 14px;
         font-size: 21px;
     }
 
     .decor {
-        margin-bottom: 814px;
+        margin-bottom: 808px;
     }
 
     .decor__basis {
@@ -921,7 +936,7 @@
 
     .decor__idea {
         max-width: 100%;
-        margin-top: 24px;
+        margin-top: 34px;
         font-size: 24px;
         line-height: 26px;
         text-align: center;
