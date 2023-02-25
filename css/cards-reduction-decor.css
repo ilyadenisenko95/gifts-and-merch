@@ -17,10 +17,14 @@
     position: relative;
 }
 
+.card__top {
+    position: relative;
+}
+
 .card__info {
     overflow: hidden;
     margin-top: 2px;
-    padding-left: 16px;
+    padding-left: 14px;
     padding-top: 11px;
     box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
     border-radius: 15px;
@@ -35,26 +39,30 @@
 .card__pagination {
     display: flex;
     position: absolute;
-    bottom: 241px;
-    right: 20px;
+    bottom: 8px;
+    right: 18px;
     text-align: center;
     align-items: center;
     font-weight: 400;
     font-size: 12px;
-    line-height: 105.5%;
+    line-height: 1;
     color: #7981AD;
 }
 
 .card__pagination-direction {
-    padding-left: 1px;
+    display: flex;
+    padding: 5px;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .card__pagination-direction--right {
     transform: rotate(180deg);
-    margin-top: -7px;
-    margin-left: 6px;
+}
+
+.card__number {
+    margin: 0 5px;
 }
 
 .pagination__img {
@@ -79,7 +87,6 @@
 
 .card__color {
     margin-top: 15px;
-    margin-left: -1px;
 }
 
 .card__color-button {
@@ -106,7 +113,8 @@
 
 .card__price {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 37px;
+    margin-bottom: 3px;
     font-weight: 600;
     font-size: 24px;
     line-height: 105.5%;
@@ -121,13 +129,19 @@
     right: 11px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
 .pagination__more {
     display: flex;
+    margin-top: 8px;
 }
 
 .pagination__text {
-    margin-top: 41px;
-    margin-left: 16px;
+    margin: 0px;
     margin-right: 17px;
     font-weight: 700;
     font-size: 24px;
@@ -136,27 +150,31 @@
 }
 
 .pagination__menu {
-    position: relative;
-    margin-top: 26px;
-    margin-right: 3px;
     border: none;
     background: transparent;
-}
-
-.pagination__page{
-    display: flex;
-    position: absolute;
-    margin-top: -59px;
-    right: 171px;
+    height: 42px;
 }
 
 .pagination__nubmers {
     position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.pagination__page {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    align-items: center;
 }
 
 .pagination__page-transition {
     padding: 9px 10px;
-    margin-left: 4px;
+    margin-left: 0px;
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
@@ -165,9 +183,12 @@
 }
 
 .pagination__page-transition--active {
-    padding: 5px 16px;
-    margin-left: 39px;
-    font-size: 24px;
+    display: flex;
+    height: 40px;
+    padding: 5px 15px;
+    margin-left: 29px;
+    margin-right: 11px;
+    font-size: 23px;
     color: white;
     background: #7981AD;
     box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
@@ -175,26 +196,30 @@
 }
 
 .pagination__direction {
+    display: flex;
     width: 40px;
     height: 40px;
     margin-top: 0px;
-    margin-left: 25px;
+    margin-left: 31px;
+    margin-right: 13px;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 50%;
     background: #ECE7F0;
+    cursor: pointer;
 }
 
 .reduction {
     display: flex;
     justify-content: space-between;
-    margin-top: 64px;
+    margin-top: 78px;
     color: #454747;
 }
 
 .reduction__item {
     width: 23%;
     margin-right:  123px;
-    margin-left: 1px;
 }
 
 .reduction__title {
@@ -212,7 +237,7 @@
     line-height: 130%;
 }
 
-.reduction__text-color{
+.reduction__text-color {
     margin-top: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -222,8 +247,12 @@
 
 .decor {
     position: relative;
-    margin-top: 131px;
-    margin-bottom: 425px;
+    margin-top: 111px;
+    margin-bottom: 412px;
+    background-image: url('../img/creative-wave.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .decor__img {
@@ -231,6 +260,7 @@
 }
 
 .decor__idea {
+    max-width: 790px;
     margin-top: 26px;
     margin-bottom: 0px;
     font-weight: 700;
@@ -243,7 +273,6 @@
 
 .decor__text {
     width: 592px;
-    height: 46px;
     margin-bottom: 0px;
     font-weight: 400;
     font-size: 18px;
@@ -258,7 +287,6 @@
 
 .decor__connect {
     width: 300px;
-    height: 116px;
     margin-top: 35px;
     font-weight: 600;
     font-size: 24px;
@@ -269,7 +297,7 @@
 .decor__order {
     position: absolute;
     width: 336px;
-    left: 421px;
+    left: 549px;
     top: 249px;
 }
 
@@ -293,7 +321,7 @@
 .decor__picture {
     position: absolute;
     top: -39px;
-    right: 18px;
+    right: 146px;
 }
 
 .date__text {
@@ -327,113 +355,6 @@
     background-color: #156B57;
 }
 
-.footer {
-    position: relative;
-    margin-left: 131px;
-    margin-bottom: 100px;
-}
-
-.footer-nav {
-    display: flex;
-}
-
-.footer-servis__text {
-    margin-top: 11px;
-    width: 50%;
-    font-size: 18px;
-    line-height: 130%;
-    letter-spacing: 0.065em;
-    color: #454747;
-}
-
-.footer-servis__phone {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #272525;
-}
-
-.footer-servis__mail {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration-line: underline;
-    color: #272525;
-}
-
-.footer-servis__tel {
-    margin-top: 38px;
-    margin-bottom: -13px;
-}
-
-.footer-servis__logo{
-
-}
-
-.footer-img {
-    text-decoration: none;
-    margin-right: 6px;
-}
-
-.footer-roster__cat {
-    position: absolute;
-    top: 19px;
-    left: -128px;
-
-}
-
-.footer-row {
-    position: absolute;
-    top: -53px;
-    right: 844px;
-}
-
-.footer-roster {
-    position: relative;
-}
-
-.footer-roster__list {
-    position: absolute;
-    top: 60px;
-    left: -167px;
-}
-
-.footer-roster__rank {
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
-    color: #272525;
-}
-
-.footer-link {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 52px;
-    color: #454747;
-
-}
-
-.footer-list {
-    list-style-type: none;
-    text-align: left;
-}
-
-.footer-info {
-    position: absolute;
-    top: -53px;
-    right: 580px;
-}
-
-
-
-
-
-
-
 
 @media (max-width: 1500px) {
 
@@ -443,14 +364,12 @@
 
     .cards__header {
         margin-top: -21px;
-        margin-left: -11px;
     }
 
     .card {
-        width: calc(35% - 25px);
+        width: calc(35% - 32px);
         margin-top: 21px;
-        margin-right: -10px;
-        margin-left: -11px;
+        margin-right: 2px;
     }
 
     .cards__list {
@@ -458,25 +377,24 @@
     }
 
     .card__info {
-        margin-right: -10px;
         margin-top: -2px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
     }
 
     .card__pagination {
-        bottom: 193px;
-        right: 7px;
+        bottom: 9px;
+        right: 12px;
+        padding: 3px;
+    }
+
+    .card__pagination-direction {
+        padding: 3px;
     }
 
     .card__pagination-arrow {
         height: 17px;
         width: 9px;
-    }
-
-    .card__pagination-direction--right {
-        margin-top: 0px;
-        margin-left: 2px;
     }
 
     .card__number {
@@ -485,7 +403,6 @@
     }
 
     .card__name{
-        margin-left: -3px;
         font-weight: 600;
         font-size: 19.26px;
         line-height: 105.5%;
@@ -494,7 +411,6 @@
     .card__description {
         width: 179px;
         margin-top: 8px;
-        margin-left: -3px;
         font-weight: 400;
         font-size: 9.63px;
         line-height: 105.5%;
@@ -502,19 +418,17 @@
 
     .card__color {
         margin-top: 12px;
-        margin-left: -5px;
     }
 
     .card__color-button{
         width: 19.26px;
         height: 19.26px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__price {
-        margin-top: 31px;
-        margin-left: -3px;
+        margin-top: 28px;
+        margin-bottom: 3px;
         font-weight: 600;
         font-size: 19.26px;
         line-height: 105.5%;
@@ -530,54 +444,50 @@
         right: 8px;
     }
 
-    .pagination__more {
-        position: relative;
-        bottom: -9px;
-        right: 28px;
+    .pagination {
+        margin-top: 41px;
     }
 
-    .pagination__page {
-        right: 20px;
-        margin-top: -51px;
+    .pagination__direction {
+        margin-right: 0;
     }
 
-    .card__pagination-direction--right {
-        margin-left: 3px;
-        margin-top: -11px;
+    .pagination__page-transition--active {
+        margin-left: 40px;
     }
 
     .reduction {
         display: flex;
         flex-wrap: wrap;
         gap: 22px;
-        margin-top: 69px;
+        margin-top: 74px;
     }
 
     .reduction__item {
         width: 39%;
         margin-right:  92px;
-        margin-left: -12px;
     }
 
    .reduction__text-color{
         margin-top: -15px;
     }
 
+    .decor {
+        margin-top: 131px;
+    }
+
     .decor__idea {
-        width: 550px;
+        max-width: 550px;
         margin-top: 38px;
-        margin-left: -12px;
         line-height: 53px;
     }
 
     .decor__text {
-        margin-left: -12px;
         margin-top: 22px;
     }
 
     .decor__connect{
         margin-top: 60px;
-        margin-left: -12px;
     }
 
     .decor__order {
@@ -614,20 +524,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 16px;
-        margin-left: -11px;
     }
 
     .card {
-        width: calc(48% - -7px);
-        margin-top: 0px;
-        margin-left: -2px;
+        width: calc(50% - 14px);
+        margin-top: 1px;
         margin-bottom: 32px;
-        margin-right: -11px;
+        margin-right: -0px;
     }
 
     .cards__header {
         margin-top: -126px;
-        margin-left: -12px;
     }
 
     .card__info {
@@ -636,12 +543,11 @@
     }
 
     .card__pagination {
-        top: 292px;
-        left: 277px;
+        bottom: 9px;
+        right: 16px;
     }
 
     .card__name{
-        margin-left: -2px;
         margin-top: 0px;
         font-weight: 600;
         font-size: 22.2267px;
@@ -650,8 +556,7 @@
 
     .card__description {
         width: 179px;
-        margin-top: 15px;
-        margin-left: -3px;
+        margin-top: 13px;
         font-weight: 400;
         font-size: 11.1134px;
         line-height: 105.5%;
@@ -659,19 +564,17 @@
 
     .card__color {
         margin-top: 9px;
-        margin-left: -3px;
     }
 
     .card__color-button{
         width: 22.23px;
         height: 22.23px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__price {
-        margin-top: 37px;
-        margin-left: -2px;
+        margin-top: 34px;
+        margin-bottom: 3px;
         font-weight: 600;
         font-size: 22.2267px;
         line-height: 105.5%;
@@ -683,39 +586,38 @@
     }
 
     .pagination {
-        margin-top: -44px;
+        margin-top: 0px;
     }
 
     .card__cart {
-        bottom: 9px;
-        right: 8px;
+        bottom: 8px;
+        right: 10px;
     }
 
-    .card__pagination-direction--right {
-        margin-left: 9px;
-        margin-top: -6px;
+    .card__pagination-arrow {
+        height: 19px;
+        width: 9px;
     }
 
-    .pagination__page {
-        right: 34px;
-    }
-
-    .pagination__img {
-        margin-top: -1px;
-        margin-right: -14px;
+    .card__pagination-direction {
+        padding: 4px;
     }
 
     .reduction {
         display: none;
     }
 
+    .decor {
+        margin-top: 132px;
+    }
+
     .decor__img {
-        margin-top: 11px;
+        margin-top: 14px;
     }
 
     .decor__order{
         left: 409px;
-        top: 349px;
+        top: 352px;
     }
 
     .decor__picture {
@@ -730,36 +632,33 @@
         height: 318px;
         top: 11px;
         right: -99px;
-   }
+    }
 }
 
 @media (max-width: 767px) {
 
     .card {
-        width: calc(53% - 14px);
+        width: calc(50% - 8px);
         margin-top: 7px;
-        margin-left: -1px;
         margin-bottom: -3px;
     }
 
     .cards__header {
-        margin-top: -175px;
-        margin-left: -12px;
+        margin-top: -177px;
         font-size: 28px;
         line-height: 34px;
     }
 
     .card__info {
-        margin-right: -12px;
         margin-bottom: 16.5px;
         margin-top: -8px;
+        padding-left: 9px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
     }
 
     .card__name {
         width: 180px;
-        margin-left: -6px;
         margin-top: 1px;
         font-weight: 600;
         font-size: 13.4338px;
@@ -769,7 +668,6 @@
     .card__description {
         width: 125px;
         margin-top: 7px;
-        margin-left: -8px;
         font-weight: 400;
         font-size: 6.71689px;
         line-height: 105.5%;
@@ -777,28 +675,26 @@
 
     .card__color {
         margin-top: 7px;
-        margin-left: -9px;
     }
 
     .card__color-button{
         width: 13.43px;
         height: 13.43px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__pagination {
-        top: 206px;
-        left: 164px;
+        bottom: 7px;
+        right: 6px;
     }
-    .card__pagination-direction--right {
-        margin-top: -8px;
-        margin-left: -2px;
+
+    .card__pagination-direction {
+        padding: 2px;
     }
 
     .card__pagination-arrow {
-        height: 14px;
-        width: 7px;
+        height: 11px;
+        width: 6px;
     }
 
     .card__number {
@@ -806,8 +702,8 @@
     }
 
     .card__price {
-        margin-top: 20px;
-        margin-left: -8px;
+        margin-top: 17px;
+        margin-bottom: 3px;
         font-weight: 600;
         font-size: 13.4338px;
         line-height: 105.5%;
@@ -823,26 +719,50 @@
         right: 4px;
     }
 
+    .pagination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
     .pagination__menu {
-        margin-top: 36px;margin-right: 2px;
+        height: 28px;
+    }
+
+    .pagination__more {
+        margin-top: 0;
+    }
+
+    .pagination__page {
+        margin-top: 19px;
+    }
+
+    .pagination__direction {
+        margin-right: 27px;
+    }
+
+    .pagination__page-transition--active  {
+        margin-left: 12px;
     }
 
     .pagination__text {
-        margin-top: 51px;
-        margin-left: 177px;
-        margin-right: 10px;
         font-size: 18px;
         font-weight: 500;
     }
 
-    .pagination__page {
-        margin-top: 14px;
-        right: 93px;
+    .decor {
+        margin-top: 80px;
+        margin-bottom: 886px;
     }
 
     .decor__img {
+        display: block;
         width: 206px;
         height: 41px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .decor__basis-image {
@@ -851,7 +771,8 @@
     }
 
     .decor__idea {
-        margin-top: 33px;
+        width: 450px;
+        margin-top: 39px;
         font-size: 28px;
         line-height: 110.9%;
     }
@@ -865,19 +786,14 @@
 
     .decor__connect {
         width: 96%;
-        margin-top: 45px;
+        margin-top: 49px;
         font-size: 24px;
         line-height: 29px;
     }
 
     .decor__order {
         left: 19px;
-        top: 368px;
-    }
-
-    .decor__img {
-        margin-top: 4px;
-        margin-left: 105px;
+        top: 365px;
     }
 
     .decor__picture {
@@ -897,28 +813,26 @@
 @media (max-width: 479px) {
 
     .card {
-        width: calc(114% - 22px);
-        margin-top: -7px;
-        margin-bottom: 12px;
+        width: calc(100% - 1px);
+        margin-top: -6px;
+        margin-bottom: 11px;
     }
 
     .cards__header {
         margin-top: -205px;
-        margin-left: -12px;
         font-size: 28px;
         line-height: 34px;
     }
 
     .card__info {
+        margin-bottom: 20.5px;
+        padding-left: 11px;
         box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
-        margin-right: -12px;
-        margin-bottom: 20.5px;
     }
 
     .card__name{
         width: 238px;
-        margin-left: -5px;
         margin-top: 5px;
         font-weight: 600;
         font-size: 17.7778px;
@@ -928,7 +842,6 @@
     .card__description {
         width: 165px;
         margin-top: 9px;
-        margin-left: -5px;
         font-weight: 400;
         font-size: 8.88889px;
         line-height: 105.5%;
@@ -936,19 +849,17 @@
 
     .card__color {
         margin-top: 9px;
-        margin-left: -6px;
     }
 
     .card__color-button{
         width: 17.78px;
         height: 17.78px;
         margin-top: 1px;
-        margin-left: 1px;
     }
 
     .card__pagination {
-        top: -34px;
-        left: 219px;
+        bottom: 8px;
+        right: 12px;
     }
 
     .card__pagination-arrow {
@@ -956,14 +867,9 @@
         width: 8px;
     }
 
-    .card__pagination-direction--right {
-        margin-top: -5px;
-        margin-left: 5px;
-    }
-
     .card__price {
-        margin-top: 30px;
-        margin-left: -5px;
+        margin-top: 27px;
+        margin-bottom: 3px;
         font-weight: 600;
         font-size: 17.7778px;
         line-height: 105.5%;
@@ -975,13 +881,7 @@
     }
 
     .pagination {
-        margin-top: -40px;
-    }
-
-    .pagination__text {
-        margin-top: 36px;
-        margin-left: 77px;
-        margin-right: 11px;
+        margin-top: 4px;
     }
 
     .card__cart-image {
@@ -989,41 +889,44 @@
         height: 34px;
     }
 
-    .pagination__menu {
-        margin-top: 25px;
-    }
-
     .pagination__page {
-        margin-top: 12px;
-        right: 30px;
+        margin-top: 20px;
     }
 
     .pagination__direction {
         width: 35px;
         height: 35px;
-        margin-top: 4px;
-        margin-left: 27px;
+        margin-left: 34px;
+        margin-right: 34px;
     }
 
     .pagination__page-transition {
         padding: 9px 7px;
         font-size: 16px;
+        margin-left: 4px;
     }
 
     .pagination__page-transition--active {
         width: 34px;
         height: 34px;
-        margin-top: 2px;
-        margin-right: 7px;
-        padding: 5px 13px;
+        margin: 0;
+        padding: 4px 14px;
         font-size: 21px;
+    }
+
+    .decor {
+        margin-bottom: 808px;
+    }
+
+    .decor__basis {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .decor__img {
         width: 154px;
         height: 34px;
-        margin-top: 6px;
-        margin-left: 51px;
     }
 
     .decor__order {
@@ -1032,18 +935,16 @@
     }
 
     .decor__idea {
-        width: 280px;
-        margin-top: 24px;
-        margin-left: -12px;
+        max-width: 100%;
+        margin-top: 34px;
         font-size: 24px;
         line-height: 26px;
         text-align: center;
     }
 
     .decor__text {
-        width: 95%;
-        margin-top: 14px;
-        margin-left: 7px;
+        width: 89%;
+        margin-left: 15px;
         text-align: center;
         font-size: 15px;
         line-height: 130%;
@@ -1052,7 +953,7 @@
     .decor__connect {
         width: 95%;
         margin-left: 6px;
-        margin-top: 57px;
+        margin-top: 45px;
         font-size: 20px;
         line-height: 24px;
         text-align: center;
@@ -1065,24 +966,14 @@
 
     .decor__picture {
         top: 712px;
-        right: -223px;
+        right: 77px;
     }
 
     .decor__picture-img {
+        right: -380px;
         width: 366px;
         height: 345px;
         transform: translate(-83%,-11%);
-   }
+    }
 }
-
-/* .body {
-    background-image: url(/img/Rectangle\ 88.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } */ PRIMER
 
