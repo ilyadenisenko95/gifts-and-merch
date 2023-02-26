@@ -879,7 +879,7 @@ body {
     }
 
     .header-hero {
-        margin-top: 22px;
+        padding-top: 22px;
     }
 
     .header-nav{
@@ -1043,7 +1043,7 @@ body {
     }
 
     .header-hero {
-        margin-top: 26px;
+        padding-top: 26px;
     }
 
     .header-hero__main {
@@ -1114,7 +1114,6 @@ body {
         position: absolute;
         right: -2px;
         bottom: 3px;
-        width: 61.1vw;
     }
 
     .header-hero__picture {
@@ -1219,7 +1218,7 @@ body {
     }
 
     .header-hero {
-        margin-top: 10px;
+        padding-top: 10px;
         padding-bottom: 228px;
     }
 
@@ -1257,6 +1256,21 @@ body {
         line-height: 128%;
     }
 
+    .header-hero__logo {
+        left: 36px;
+        top: 279px;
+    }
+
+    .header-hero__logo1 {
+        left: 30px;
+        top: 399px;
+    }
+
+    .header-hero__logo2 {
+        left: 16px;
+        top: 532px;
+    }
+
     .header-hero__ready {
         width: 210px;
         height: 51px;
@@ -1280,9 +1294,9 @@ body {
     }
 
     .header-hero__picture_new {
-        right: -75px;
-        bottom: 12px;
-        width: 79.1vw;
+        width: 80%;
+        right: -77px;
+        bottom: 0px;
     }
 
     .header-hero__creation {
