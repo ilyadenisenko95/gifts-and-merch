@@ -280,9 +280,10 @@ body {
 .header-hero__selection {
     display: flex;
     padding: 0;
+    list-style-type: none;
 }
 
-.header-hero__logo {
+.header-hero__logo:nth-of-type(1) {
     position: absolute;
     left: 26px;
     top: 257px;
@@ -291,7 +292,7 @@ body {
     align-items: center;
 }
 
-.header-hero__logo1 {
+.header-hero__logo:nth-of-type(2) {
     position: absolute;
     left: 260px;
     top: 257px;
@@ -300,7 +301,7 @@ body {
     align-items: center;
 }
 
-.header-hero__logo2 {
+.header-hero__logo:nth-of-type(3) {
     position: absolute;
     left: 472px;
     top: 257px;
@@ -747,17 +748,17 @@ body {
         height: 22px;
     }
 
-    .header-hero__logo {
+    .header-hero__logo:nth-of-type(1) {
         left: 32px;
         top: 224px;
     }
 
-    .header-hero__logo1 {
+    .header-hero__logo:nth-of-type(2) {
         left: 171px;
         top: 224px;
     }
 
-    .header-hero__logo2 {
+    .header-hero__logo:nth-of-type(3) {
         left: 306px;
         top: 224px;
     }
@@ -907,19 +908,19 @@ body {
         font-size: 16px;
     }
 
-    .header-hero__logo {
+    .header-hero__logo:nth-of-type(1) {
         left: 105px;
-        top: 472px;
+        top: 421px;
     }
 
-    .header-hero__logo1 {
+    .header-hero__logo:nth-of-type(2) {
         left: 317px;
-        top: 472px;
+        top: 421px;
     }
 
-    .header-hero__logo2 {
+    .header-hero__logo:nth-of-type(3) {
         left: 524px;
-        top: 472px;
+        top: 421px;
     }
 
     .header-hero__description {
@@ -1091,19 +1092,19 @@ body {
         letter-spacing: 0.0002em;
     }
 
-    .header-hero__logo {
+    .header-hero__logo:nth-of-type(1) {
         left: 52px;
-        top: 260px;
+        top: 230px;
     }
 
-    .header-hero__logo1 {
+    .header-hero__logo:nth-of-type(2) {
         left: 45px;
-        top: 380px;
+        top: 350px;
     }
 
-    .header-hero__logo2 {
+    .header-hero__logo:nth-of-type(3) {
         left: 31px;
-        top: 513px;
+        top: 473px;
     }
 
     .header-hero__picture_main {
@@ -1256,19 +1257,19 @@ body {
         line-height: 128%;
     }
 
-    .header-hero__logo {
+    .header-hero__logo:nth-of-type(1) {
         left: 36px;
-        top: 279px;
+        top: 229px;
     }
 
-    .header-hero__logo1 {
+    .header-hero__logo:nth-of-type(2) {
         left: 30px;
-        top: 399px;
+        top: 349px;
     }
 
-    .header-hero__logo2 {
+    .header-hero__logo:nth-of-type(3) {
         left: 16px;
-        top: 532px;
+        top: 472px;
     }
 
     .header-hero__ready {
