@@ -1,0 +1,168 @@
+.popular {
+    position: relative;
+    margin-top: 58px;
+}
+
+.popular__most {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #272525;
+}
+
+.popular__star {
+    position: absolute;
+    top: 0px;
+    left: 498px;
+}
+
+.popular__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.065em;
+    text-transform: lowercase;
+    color: #454747;
+}
+
+.popular__all {
+    display: flex;
+    position: absolute;
+    right: 32px;
+    top: 9px;
+    cursor: pointer;
+}
+
+.popular__all-product {
+    margin-right: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.065em;
+    color: #272525;
+    cursor: pointer;
+}
+
+.popular__goods {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.popular__goods-pic {
+    border-radius: 2%;
+}
+
+.popular__goods-picture {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18px;
+}
+
+.popular__goods-mug {
+    margin-bottom: 9px;
+}
+
+.popular__goods-thermos {
+    width: 51%;
+}
+
+.popular__goods-shirt {
+    width: 49%;
+}
+
+.popular__goods-img:nth-of-type(1) {
+    border-radius: 4%;
+}
+
+.popular__goods-img:nth-of-type(2) {
+    border-radius: 4%;
+}
+
+.popular__goods-img:nth-of-type(3) {
+    border-radius: 4%;
+}
+
+.popular__purchases {
+    width: 274px;
+    height: 70px;
+    background: #FAFAFA;
+    box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+    border-radius: 16px;
+}
+
+.popular__purchases {
+    position: absolute;
+    top: 90px;
+    right: 155px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popular__purchases-look {
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 105.5%;
+    text-decoration-line: underline;
+    color: #000000;
+    background-color: #FAFAFA;;
+    cursor: pointer;
+
+}
+
+.popular__purchases-buy {
+    margin-right: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 105.5%;
+    text-decoration-line: underline;
+    color: rgba(31, 171, 138, 0.5);
+    cursor: pointer;
+}
+
+.popular__purchases-exit {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    cursor: pointer;
+}
+
+.popular__basket {
+    position: absolute;
+    top: 76px;
+    right: 32px;
+    cursor: pointer;
+}
+
+.popular__basket-number {
+    position: absolute;
+    top: 3px;
+    right: 25px;
+    font-weight: 500;
+    font-size: 12.6667px;
+    line-height: 105.5%;
+    color: #272525;
+}
+
+.popular__basket-price{
+    position: absolute;
+    top: 89px;
+    right: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 105.5%;
+    color: #000000;
+}
+
+.popular__desc {
+    margin-top: 17px;
+    margin-left: 460px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 105.5%;
+    color: #272525;
+}
