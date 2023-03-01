@@ -303,7 +303,7 @@ body {
 
 .header-hero__logo:nth-of-type(3) {
     position: absolute;
-    left: 472px;
+    left: 482px;
     top: 257px;
     display: flex;
     flex-direction: column;
