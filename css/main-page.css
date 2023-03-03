@@ -52,16 +52,18 @@
 
 .popular-goods__col-left {
     width: 69%;
+    height: 100%;
 }
 
 .popular-goods__pic {
     width: 100%;
-    height: 99%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
 
 .popular-goods__col-right {
+    height: 100%;
     width: 30%;
     margin-left: 17px;
     display: flex;
@@ -70,20 +72,23 @@
 }
 
 .popular-goods__col-top {
-    margin-bottom: 9px;
+    height: 100%;
+    margin-bottom: 10px;
 }
 
 .popular-goods__bot-left {
+    height: 100%;
     width: calc(50% - 4px);
 }
 
 .popular-goods__bot-right {
+    height: 100%;
     width: calc(50% - 4px);
 }
 
 .popular-goods__img:nth-of-type(1) {
     width: 100%;
-    height: 98%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -188,12 +193,12 @@
         margin-top: 50px;
     }
 
-    .popular-goods__col-top {
-        margin-bottom: 6px;
+    .popular-goods__col-right {
+        margin-left: 11px;
     }
 
-    .popular-goods__bot-right {
-        width: calc(50% - 2px);
+    .popular-goods__col-top {
+        margin-bottom: 6px;
     }
 
     .popular__purchases {
@@ -232,6 +237,22 @@
     .popular__star-img {
         width: 21px;
         height: 21px;
+    }
+
+    .popular-goods__col-right {
+        margin-left: 10px;
+    }
+
+    .popular-goods__col-top {
+        margin-bottom: 4px;
+    }
+
+    .popular-goods__bot-left {
+        width: calc(50% - 3px);
+    }
+
+    .popular-goods__bot-right {
+        width: calc(50% - 3px);
     }
 
     .popular__text {
@@ -290,12 +311,13 @@
 
     .popular-goods__col-left {
         width: 100%;
+        height: 49vw;
     }
 
     .popular-goods__col-right {
         width: 100%;
         margin-left: 0;
-        margin-top: 49px;
+        margin-top: 38px;
     }
 
     .popular-goods__pic {
@@ -308,6 +330,17 @@
 
     .popular-goods__col-top {
         width: 100%;
+        height: 37vw;
+        margin-bottom: 8px;
+    }
+
+    .popular-goods__bot-left {
+        height: 29.2vw;
+    }
+
+    .popular-goods__bot-right {
+        height: 29.2vw;
+
     }
 
     .popular__desc {
@@ -352,15 +385,33 @@
     }
 
     .popular__goods {
-        margin-top: 39px;
+        margin-top: 40px;
+    }
+
+    .popular-goods__col-left {
+        height: 58vw;
+    }
+
+    .popular-goods__col-top {
+        height: 45vw;
+        margin-bottom: 10px;
     }
 
     .popular-goods__col-right {
-        margin-top: 30px;
+        margin-top: 33px;
     }
 
+    .popular-goods__bot-left {
+        height: 44.2vw;
+    }
+
+    .popular-goods__bot-right {
+        height: 44.2vw;
+    }
+
+
     .popular__all {
-        bottom: -47px;
+        bottom: -54px;
         right: 88px;
     }
 
