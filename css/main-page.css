@@ -78,12 +78,7 @@
     margin-bottom: 10px;
 }
 
-.popular-goods__bot-left {
-    height: 100%;
-    width: calc(50% - 4px);
-}
-
-.popular-goods__bot-right {
+.popular-goods__bot-bottom {
     height: 100%;
     width: calc(50% - 4px);
 }
@@ -240,11 +235,7 @@
         margin-bottom: 4px;
     }
 
-    .popular-goods__bot-left {
-        width: calc(50% - 3px);
-    }
-
-    .popular-goods__bot-right {
+    .popular-goods__bot-bottom {
         width: calc(50% - 3px);
     }
 
@@ -314,13 +305,8 @@
         margin-bottom: 8px;
     }
 
-    .popular-goods__bot-left {
+    .popular-goods__bot-bottom {
         height: 29.2vw;
-    }
-
-    .popular-goods__bot-right {
-        height: 29.2vw;
-
     }
 
     .popular-goods_desc {
@@ -377,24 +363,12 @@
         margin-bottom: 10px;
     }
 
-    .popular-goods__col-right {
-        margin-top: 10px;
-    }
-
-    .popular-goods__bot-left {
+    .popular-goods__bot-bottom {
         height: 44.2vw;
     }
-
-    .popular-goods__bot-right {
-        height: 44.2vw;
-    }
-
 
     .popular__all {
         bottom: -40px;
         right: 88px;
     }
-
-
-
 }
