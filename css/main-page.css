@@ -176,12 +176,13 @@
     margin-top: 151px;
 }
 
-.creative-main__logo {
+.creative-main__image {
     margin-left: 200px;
 }
 
 .creative-main__text {
     max-width: 950px;
+    margin: 0;
     margin-top: 26px;
     font-weight: 700;
     font-size: 48px;
@@ -191,6 +192,7 @@
 
 .creative-main__desc {
     max-width: 600px;
+    margin: 0;
     margin-top: 14px;
     font-weight: 400;
     font-size: 18px;
@@ -206,6 +208,8 @@
 .creative-main__link {
     background: #272525;
     border-radius: 60px;
+    display: inline-block;
+    min-width: 280px;
     font-weight: 500;
     font-size: 17px;
     line-height: 140%;
@@ -213,13 +217,12 @@
     text-align: center;
     color: #FAFAFA;
     text-decoration: none;
-    padding: 20px 61px;
+    padding: 20px 30px;
     cursor: pointer;
 }
 
-.creative-main__copy {
+.creative-main__link--grey {
     margin-left: 27px;
-    padding: 20px 84px;
     background: #EEF1F6;
     color: #272525;
 }
@@ -278,7 +281,7 @@
         margin-top: 183px;
     }
 
-    .creative-main__logo {
+    .creative-main__image {
         margin-left: 212px;
     }
 
@@ -383,11 +386,8 @@
         margin-top: 137px;
     }
 
-    .creative-main__logo {
-        margin-left: 128px;
-    }
-
     .creative-main__image {
+        margin-left: 128px;
         width: 206px;
     }
 
@@ -414,9 +414,8 @@
         font-size: 15px;
     }
 
-    .creative-main__copy {
+    .creative-main__link--grey {
         margin-left: 28px;
-        padding: 16px 64px;
     }
 
     .creative-main__picture {
@@ -488,10 +487,6 @@
         margin-top: 144px;
     }
 
-    .creative-main__logo {
-        margin: 0;
-    }
-
     .creative-main__image {
         display: block;
         margin-left: auto;
@@ -532,10 +527,9 @@
         font-size: 14px;
     }
 
-    .creative-main__copy {
+    .creative-main__link--grey {
         margin-left: 0;
         margin-top: 20px;
-        padding: 20px 97px;
     }
 
     .creative-main__picture {
@@ -615,10 +609,6 @@
 
     .creative-main__items {
         margin-top: 55px;
-    }
-
-    .creative-main__copy {
-        padding: 20px 95px;
     }
 
     .creative-main__picture {
