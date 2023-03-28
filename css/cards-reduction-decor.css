@@ -36,7 +36,7 @@
     border-top-right-radius: 15px;
 }
 
-.card__pagination {
+.numbering{
     display: flex;
     position: absolute;
     bottom: 8px;
@@ -49,7 +49,7 @@
     color: #7981AD;
 }
 
-.card__pagination-direction {
+.numbering__direction {
     display: flex;
     padding: 5px;
     border: none;
@@ -57,11 +57,11 @@
     cursor: pointer;
 }
 
-.card__pagination-direction--right {
+.numbering__direction--right {
     transform: rotate(180deg);
 }
 
-.card__number {
+.numbering__number {
     margin: 0 5px;
 }
 
@@ -382,22 +382,22 @@
         border-radius: 15px;
     }
 
-    .card__pagination {
+    .numbering{
         bottom: 9px;
         right: 12px;
         padding: 3px;
     }
 
-    .card__pagination-direction {
+    .numbering__direction {
         padding: 3px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow {
         height: 17px;
         width: 9px;
     }
 
-    .card__number {
+    .numbering__number {
         font-size: 10px;
         font-weight: 400;
     }
@@ -542,7 +542,7 @@
         border-radius: 15px;
     }
 
-    .card__pagination {
+    .numbering{
         bottom: 9px;
         right: 16px;
     }
@@ -594,12 +594,12 @@
         right: 10px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow {
         height: 19px;
         width: 9px;
     }
 
-    .card__pagination-direction {
+    .numbering__direction {
         padding: 4px;
     }
 
@@ -683,21 +683,21 @@
         margin-top: 1px;
     }
 
-    .card__pagination {
+    .numbering{
         bottom: 7px;
         right: 6px;
     }
 
-    .card__pagination-direction {
+    .numbering__direction {
         padding: 2px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow {
         height: 11px;
         width: 6px;
     }
 
-    .card__number {
+    .numbering__number {
         font-size: 7px;
     }
 
@@ -857,12 +857,12 @@
         margin-top: 1px;
     }
 
-    .card__pagination {
+    .numbering{
         bottom: 8px;
         right: 12px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow {
         height: 16px;
         width: 8px;
     }
@@ -897,7 +897,6 @@
         width: 35px;
         height: 35px;
         margin-left: 34px;
-        margin-right: 34px;
     }
 
     .pagination__page-transition {
@@ -915,7 +914,7 @@
     }
 
     .decor {
-        margin-bottom: 808px;
+        margin-bottom: 814px;
     }
 
     .decor__basis {
@@ -936,7 +935,7 @@
 
     .decor__idea {
         max-width: 100%;
-        margin-top: 34px;
+        margin-top: 33px;
         font-size: 24px;
         line-height: 26px;
         text-align: center;

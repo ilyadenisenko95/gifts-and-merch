@@ -1125,6 +1125,7 @@ body {
 
     .footer-servis {
         display: block;
+        margin-top: 8px;
     }
 
     .footer {
