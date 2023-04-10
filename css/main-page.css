@@ -331,9 +331,51 @@
     height: 32px;
 }
 
+.ideas {
+    width: 100%;
+    background-image: url(../img/main/ideas/bg.png);
+    background-size: 120%;
+}
+
+.idea {
+    position: relative;
+    margin-top: 30px;
+}
+
+.idea__text {
+    max-width: 560px;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #222227;
+}
+
+.idea__txt {
+    max-width: 560px;
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.065em;
+    color: #454747;
+}
+
+.idea__info {
+    max-width: 530px;
+    margin-top: 91px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222227;
+}
+
+.idea__order {
 
 
-
+}
 
 
 

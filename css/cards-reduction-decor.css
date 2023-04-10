@@ -61,7 +61,7 @@
     transform: rotate(180deg);
 }
 
-.numbering__number {
+.numbering__number--card {
     margin: 0 5px;
 }
 
@@ -294,14 +294,14 @@
     color: #222227;
 }
 
-.decor__order {
+.order{
     position: absolute;
     width: 336px;
     left: 549px;
     top: 249px;
 }
 
-.decor__info {
+.order__info {
     width: 100%;
     margin-bottom: 32px;
     border: none;
@@ -330,7 +330,7 @@
     color:#454747;
 }
 
-.decor__order-button {
+.order__button {
     display: inline-block;
     margin-top: 6px;
     margin-right: 3px;
@@ -346,12 +346,12 @@
     cursor: pointer;
 }
 
-.decor__order-button:hover,
-.decor__order-button:focus {
+.order__button:hover,
+.order__button:focus {
     background-color: #1B886E;
 }
 
-.decor__order-button:active {
+.order__button:active {
     background-color: #156B57;
 }
 
@@ -382,22 +382,22 @@
         border-radius: 15px;
     }
 
-    .numbering{
+    .numbering--card{
         bottom: 9px;
         right: 12px;
         padding: 3px;
     }
 
-    .numbering__direction {
+    .numbering__direction--card {
         padding: 3px;
     }
 
-    .numbering__arrow {
+    .numbering__arrow--card {
         height: 17px;
         width: 9px;
     }
 
-    .numbering__number {
+    .numbering__number--card {
         font-size: 10px;
         font-weight: 400;
     }
@@ -490,7 +490,7 @@
         margin-top: 60px;
     }
 
-    .decor__order {
+    .order{
         left: 409px;
         top: 338px;
     }
@@ -542,7 +542,7 @@
         border-radius: 15px;
     }
 
-    .numbering{
+    .numbering--card{
         bottom: 9px;
         right: 16px;
     }
@@ -594,12 +594,12 @@
         right: 10px;
     }
 
-    .numbering__arrow {
+    .numbering__arrow--card {
         height: 19px;
         width: 9px;
     }
 
-    .numbering__direction {
+    .numbering__direction--card {
         padding: 4px;
     }
 
@@ -683,21 +683,21 @@
         margin-top: 1px;
     }
 
-    .numbering{
+    .numbering--card{
         bottom: 7px;
         right: 6px;
     }
 
-    .numbering__direction {
+    .numbering__direction--card {
         padding: 2px;
     }
 
-    .numbering__arrow {
+    .numbering__arrow--card {
         height: 11px;
         width: 6px;
     }
 
-    .numbering__number {
+    .numbering__number--card {
         font-size: 7px;
     }
 
@@ -791,7 +791,7 @@
         line-height: 29px;
     }
 
-    .decor__order {
+    .order{
         left: 19px;
         top: 365px;
     }
@@ -857,12 +857,12 @@
         margin-top: 1px;
     }
 
-    .numbering{
+    .numbering--card{
         bottom: 8px;
         right: 12px;
     }
 
-    .numbering__arrow {
+    .numbering__arrow--card {
         height: 16px;
         width: 8px;
     }
@@ -928,7 +928,7 @@
         height: 34px;
     }
 
-    .decor__order {
+    .order{
         width: 280px;
         top: 370px;
     }
