@@ -335,6 +335,7 @@
     width: 100%;
     background-image: url(../img/main/ideas/bg.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .idea {
