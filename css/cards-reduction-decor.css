@@ -65,7 +65,7 @@
     margin: 0 5px;
 }
 
-.pagination__img {
+.hand__img {
     transform: rotate(180deg);
 }
 
@@ -195,7 +195,7 @@
     border-radius: 50%;
 }
 
-.pagination__direction {
+.hand {
     display: flex;
     width: 40px;
     height: 40px;
@@ -448,7 +448,7 @@
         margin-top: 41px;
     }
 
-    .pagination__direction {
+    .hand {
         margin-right: 0;
     }
 
@@ -738,7 +738,7 @@
         margin-top: 19px;
     }
 
-    .pagination__direction {
+    .hand {
         margin-right: 27px;
     }
 
@@ -893,7 +893,7 @@
         margin-top: 20px;
     }
 
-    .pagination__direction {
+    .hand {
         width: 35px;
         height: 35px;
         margin-left: 34px;
