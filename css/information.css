@@ -1,0 +1,134 @@
+.hero__txt {
+    max-width: 730px;
+}
+
+.header-hero__navigation {
+    max-width: 545px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 74px;
+}
+
+.header__navigation {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 105.5%;
+    color: #3C336C;
+    text-decoration: none;
+}
+
+.header-hero__image {
+    position: absolute;
+    right: 127px;
+    bottom: 0px;
+    width: 50vw;
+}
+
+@media (max-width: 1500px) {
+
+    .header-hero__navigation {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .header__navigation1 {
+        width: 100%;
+    }
+
+    .header__navigation2 {
+        width: 24%;
+        margin-top: 30px;
+    }
+
+    .header__navigation3 {
+        width: 76%;
+        margin-top: 30px;
+    }
+
+    .header-hero__image {
+        right: -538px;
+        bottom: -17px;
+        width: 104vw;
+    }
+
+
+}
+
+@media (max-width: 999px) {
+
+    .hero__text {
+        width: 300px;
+        margin-top: 7px;
+
+    }
+
+    .hero__txt {
+        letter-spacing: 0.004em;
+    }
+
+    .header-hero__navigation {
+        margin-top: 47px;
+    }
+
+    .header-hero__image {
+        right: -302px;
+        bottom: 148px;
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .hero__text {
+        width: 280px;
+        margin-top: -4px;
+    }
+
+    .hero__txt{
+        width: 400px;
+        margin-top: 340px;
+        font-size: 14px;
+    }
+
+    .header-hero__navigation {
+        display: none;
+    }
+
+    .header-hero__image {
+        right: 0;
+        left: -23px;
+        bottom: 197px;
+        width: 500px;
+    }
+
+
+}
+
+@media (max-width: 479px) {
+
+    .hero__text {
+        width: 220px;
+        margin-top: 23px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__txt {
+        width: 280px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 137%;
+
+    }
+
+    .header-hero__image {
+        left: -21px;
+        bottom: 0px;
+        width: 425px;
+    }
+
+
+
+}

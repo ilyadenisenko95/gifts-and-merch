@@ -282,7 +282,6 @@
 }
 
 .product__selection {
-    /* position: relative; */
     max-width: 826px;
     margin-top: 50px;
 }
@@ -477,10 +476,6 @@
     .popular-goods_desc {
         margin-top: 3px;
         font-size: 18px;
-    }
-
-    .product__picture {
-        /* width: n%; */
     }
 
     .creative-main {
@@ -1279,4 +1274,4 @@
         top: 520px;
         left: 34%;
     }
-}s
+}
