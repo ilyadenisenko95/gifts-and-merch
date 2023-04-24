@@ -229,10 +229,6 @@
     top: 146px;
 }
 
-
-
-
-
 @media (max-width: 1500px) {
 
     .header-hero__navigation {
@@ -362,8 +358,6 @@
         left: 410px;
         top: 430px;
     }
-
-
 }
 
 @media (max-width: 999px) {
@@ -371,7 +365,6 @@
     .hero__text {
         width: 300px;
         margin-top: 7px;
-
     }
 
     .hero__txt {
@@ -486,7 +479,6 @@
         top: -3px;
         left: 187px;
     }
-
 }
 
 @media (max-width: 767px) {
@@ -684,8 +676,4 @@
     .order__reach {
         top: 417px;
     }
-
-
-
-
 }
