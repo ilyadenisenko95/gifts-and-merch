@@ -213,6 +213,11 @@
     cursor: pointer;
 }
 
+.contacts__link {
+    text-decoration: none;
+    color: #272525;
+}
+
 .order__reach {
     left: 1003px;
     top: 146px;
