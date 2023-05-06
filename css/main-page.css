@@ -352,7 +352,7 @@
 .idea {
     position: relative;
     margin-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 140px;
 }
 
 .idea__text {
@@ -411,9 +411,7 @@
 
 .idea__order {
     display: flex;
-    width: 93%;
-    top: 543px;
-    left: 32px;
+    width: 95%;
     justify-content: space-between;
 }
 
@@ -558,18 +556,28 @@
         background-size: 135%;
     }
 
+    .idea {
+        padding-bottom: 396px;
+    }
+
     .idea__text {
         padding-top: 126px;
     }
 
     .idea__info {
         max-width: 300px;
-        margin-top: 75px;
+        margin-top: 0;
+    }
+
+    .idea__book {
+        width: 723px;
+        position: absolute;
+        top: 380px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .idea__order {
-        top: 380px;
-        left: 408px;
         display: block;
         width: 336px;
     }
@@ -787,6 +795,10 @@
         background-size: 205%;
     }
 
+    .idea {
+        padding-bottom: 458px;
+    }
+
     .idea__text {
         max-width: 460px;
         padding-top: 80px;
@@ -799,11 +811,7 @@
         font-size: 16px;
     }
 
-    .idea__info {
-        margin-top: 135px;
-    }
-
-    .idea__order {
+    .idea__book {
         top: 365px;
     }
 
@@ -1000,18 +1008,27 @@
         background-size: 305%;
     }
 
+    .idea {
+        padding-bottom: 356px;
+    }
+
     .idea__text {
         padding-top: 305px;
+    }
+
+    .idea__book {
+        flex-wrap: wrap;
+        width: 465px;
+        top: 455px;
+    }
+
+    .idea__order {
+        margin-top: 42px;
     }
 
     .idea__info {
         max-width: 400px;
         margin-top: 63px;
-    }
-
-    .idea__order {
-        top: 670px;
-        left: 20px;
     }
 
     .idea__icon {
@@ -1184,6 +1201,10 @@
         background-size: 450%;
     }
 
+    .idea {
+        padding-bottom: 395px;
+    }
+
     .idea__text {
         padding-top: 250px;
         text-align: center;
@@ -1216,7 +1237,16 @@
 
     .idea__order {
         width: 280px;
-        top: 685px;
+    }
+
+    .idea__book {
+        top: 460px;
+        max-width: 87%;
+        justify-content: center;
+    }
+
+    .idea__order {
+        margin-top: 15px;
     }
 
     .idea__icon {

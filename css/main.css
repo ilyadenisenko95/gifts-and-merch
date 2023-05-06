@@ -390,7 +390,6 @@ body {
 .footer {
     position: relative;
     margin-left: 131px;
-    margin-bottom: 100px;
 }
 
 .footer-nav {
@@ -433,10 +432,6 @@ body {
 .footer-servis__tel {
     margin-top: 38px;
     margin-bottom: 0px;
-}
-
-.footer-servis__logo{
-    margin-top: 3px;
 }
 
 .footer-servis__manager{
@@ -537,7 +532,7 @@ body {
 }
 
 .footer-copy {
-    margin-top: 21px;
+    margin-top: 8px;
     margin-left: -53px;
 }
 
@@ -547,6 +542,7 @@ body {
     line-height: 15px;
     text-align: center;
     color: #9FA3B2;
+    margin: 0;
 }
 
 .footer-copy__conf{
@@ -804,17 +800,13 @@ body {
         justify-content: space-between;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 34px;
+        margin-top: 22px;
     }
 
     .footer-roster__text {
         max-width: 350px;
         line-height: 18px;
         margin-left: 66px;
-    }
-
-    .footer-servis__gmail {
-        margin-top: 3px;
     }
 
     .footer-roster__tel {
@@ -957,7 +949,6 @@ body {
         justify-content: space-between;
         width: 100%;
         max-width: 700px;
-        margin-bottom: 9px;
     }
 
     .footer-row {
@@ -1016,7 +1007,7 @@ body {
     }
 
     .footer-copy {
-        margin-top: 30px;
+        margin-top: 27px;
     }
 }
 
@@ -1166,7 +1157,7 @@ body {
     .footer-manager {
         width: 100%;
         margin-left: 1px;
-        margin-top: 20px;
+        margin-top: 70px;
     }
 
     .footer-copy {
