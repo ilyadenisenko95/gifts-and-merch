@@ -116,7 +116,6 @@
     color: #000000;
     background-color: #FAFAFA;;
     cursor: pointer;
-
 }
 
 .popular__purchases-buy {
@@ -339,7 +338,6 @@
 .product__numbering {
     position: static;
     margin-top: 20px;
-    /* height: 32px; */
 }
 
 .ideas {

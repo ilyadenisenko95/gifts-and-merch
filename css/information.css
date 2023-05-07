@@ -201,7 +201,7 @@
 
 .slogan__txt {
     max-width: 300px;
-    margin-top: 3px;
+    margin-top: 0px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -216,11 +216,6 @@
 .contacts__link {
     text-decoration: none;
     color: #272525;
-}
-
-.order__reach {
-    left: 1003px;
-    top: 146px;
 }
 
 @media (max-width: 1500px) {
@@ -310,7 +305,7 @@
     }
 
     .description__string  {
-        margin-top: 40px;
+        margin-top: 35px;
     }
 
     .guide-image {
@@ -321,18 +316,13 @@
     }
 
     .reach__promo {
-        padding-bottom: 345px;
+        padding-bottom: 480px;
         display: block;
         margin-top: 80px;
     }
 
     .slogan {
         margin-top: 90px;
-    }
-
-    .order__reach {
-        left: 410px;
-        top: 430px;
     }
 }
 
@@ -403,7 +393,7 @@
     }
 
     .reach__promo {
-        padding-bottom: 307px;
+        padding-bottom: 450px;
         margin-top: 72px;
     }
 
@@ -439,10 +429,6 @@
 
     .slogan {
         margin-top: 83px;
-    }
-
-    .order__reach {
-        top: 350px;
     }
 
     .contacts__img {
@@ -497,12 +483,16 @@
         margin-top: 21px;
     }
 
+    .description__string {
+        margin-top: 32px;
+    }
+
     .guide-image {
         display: none;
     }
 
     .reach__promo {
-        padding-bottom: 400px;
+        padding-bottom: 540px;
         margin-top: 40px;
     }
 
@@ -510,9 +500,14 @@
         margin-top: 40px;
     }
 
-    .order__reach {
-        left: 20px;
-        top: 452px;
+    .slogan__book {
+        flex-wrap: wrap;
+        width: 465px;
+        top: 455px;
+    }
+
+    .slogan__book {
+        top: 310px;
     }
 }
 
@@ -592,7 +587,7 @@
     }
 
     .reach__promo {
-        padding-bottom: 390px;
+        padding-bottom: 505px;
     }
 
     .contacts__phone {
@@ -608,7 +603,7 @@
 
     .slogan__txt {
         max-width: 600px;
-        margin-bottom: 17px;
+        margin-bottom: 0px;
         text-align: center;
         font-size: 20px;
         line-height: 25px;
@@ -637,7 +632,9 @@
         margin-bottom: 20px;
     }
 
-    .order__reach {
-        top: 417px;
+    .slogan__book {
+        top: 283px;
+        max-width: 87%;
+        justify-content: center;
     }
 }
