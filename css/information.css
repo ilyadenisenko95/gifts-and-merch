@@ -145,7 +145,7 @@
 .reach__promo {
     max-width: 990px;
     margin-top: 10px;
-    padding-bottom: 288px;
+    padding-bottom: 192px;
     display: flex;
     justify-content: space-between;
 }
@@ -193,6 +193,7 @@
 }
 
 .slogan__text {
+    margin-left: 240px;
     font-weight: 700;
     font-size: 48px;
     line-height: 105.5%;
@@ -206,6 +207,10 @@
     font-size: 24px;
     line-height: 29px;
     color: #222227;
+}
+
+.slogan__book {
+    margin-left: 240px;
 }
 
 .contacts__logo {
@@ -243,6 +248,10 @@
         right: -538px;
         bottom: -17px;
         width: 104vw;
+    }
+
+    .contacts {
+        margin-top: 92px;
     }
 
     .specification__info {
@@ -316,13 +325,21 @@
     }
 
     .reach__promo {
-        padding-bottom: 480px;
+        padding-bottom: 247px;
         display: block;
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     .slogan {
         margin-top: 90px;
+    }
+
+    .slogan__book {
+        margin-left: 0;
+    }
+
+    .slogan__text {
+        margin-left: 0;
     }
 }
 
@@ -393,7 +410,7 @@
     }
 
     .reach__promo {
-        padding-bottom: 450px;
+        padding-bottom: 207px;
         margin-top: 72px;
     }
 
@@ -416,6 +433,17 @@
 
     .contacts__phone {
         font-size: 28px;
+    }
+
+    .contacts {
+        margin-top: 75px;
+    }
+
+    .contacts__img {
+        width: 34px;
+        height: 34px;
+        top: -3px;
+        left: 187px;
     }
 
     .slogan__text {
@@ -492,7 +520,7 @@
     }
 
     .reach__promo {
-        padding-bottom: 540px;
+        padding-bottom: 157px;
         margin-top: 40px;
     }
 
@@ -503,11 +531,14 @@
     .slogan__book {
         flex-wrap: wrap;
         width: 465px;
-        top: 455px;
     }
 
-    .slogan__book {
-        top: 310px;
+    .contacts {
+        margin-top: 45px;
+    }
+
+    .order__reach {
+        margin-top: 7px;
     }
 }
 
@@ -587,7 +618,7 @@
     }
 
     .reach__promo {
-        padding-bottom: 505px;
+        padding-bottom: 133px;
     }
 
     .contacts__phone {
@@ -602,7 +633,7 @@
     }
 
     .slogan__txt {
-        max-width: 600px;
+        max-width: 250px;
         margin-bottom: 0px;
         text-align: center;
         font-size: 20px;
@@ -633,8 +664,11 @@
     }
 
     .slogan__book {
-        top: 283px;
-        max-width: 87%;
+        max-width: 100%;
         justify-content: center;
+    }
+
+    .order__reach {
+        margin-top: 36px;
     }
 }

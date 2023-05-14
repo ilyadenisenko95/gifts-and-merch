@@ -248,7 +248,7 @@
 .decor {
     position: relative;
     margin-top: 111px;
-    padding-bottom: 563px;
+    padding-bottom: 290px;
     background-image: url('../img/creative-wave.svg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -298,11 +298,10 @@
     width: 723px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
 }
 
 .decor__book {
-    top: 251px;
+    margin-top: 35px;
 }
 
 .order {
@@ -477,7 +476,7 @@
 
     .decor {
         margin-top: 131px;
-        padding-bottom: 588px;
+        padding-bottom: 290px;
     }
 
     .decor__idea {
@@ -491,7 +490,7 @@
     }
 
     .decor__book {
-        top: 340px;
+        margin-top: 60px;
     }
 
     .decor__picture {
@@ -612,10 +611,6 @@
 
     .decor__img {
         margin-top: 14px;
-    }
-
-    .decor__book {
-        top: 355px;
     }
 
     .decor__order{
@@ -756,7 +751,7 @@
 
     .decor {
         margin-top: 80px;
-        padding-bottom: 1027px;
+        padding-bottom: 588px;
     }
 
     .decor__img {
@@ -781,7 +776,7 @@
     }
 
     .decor__book {
-        top: 168px;
+        margin-top: 1px;
         flex-wrap: wrap;
         width: 465px;
     }
@@ -811,6 +806,10 @@
     .decor__picture-img {
         width: 367px;
         height: 344px;
+    }
+
+    .order {
+        margin-top: 65px;
     }
 }
 
@@ -900,7 +899,7 @@
     .hand {
         width: 35px;
         height: 35px;
-        margin-left: 34px;
+        margin-left: 28px;
     }
 
     .pagination__page-transition {
@@ -918,7 +917,7 @@
     }
 
     .decor {
-        padding-bottom: 956px;
+        padding-bottom: 537px;
     }
 
     .decor__basis {
@@ -954,8 +953,7 @@
     }
 
     .decor__connect {
-        width: 95%;
-        margin-left: 6px;
+        max-width: 250px;
         margin-top: 45px;
         font-size: 20px;
         line-height: 24px;
@@ -980,9 +978,13 @@
     }
 
     .decor__book {
-        top: 194px;
-        max-width: 87%;
+        margin-top: 1px;
+        max-width: 100%;
         justify-content: center;
+    }
+
+    .order {
+        margin-top: 40px;
     }
 }
 

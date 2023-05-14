@@ -424,7 +424,7 @@
 }
 
 .partners {
-    padding-bottom: 145px;
+    padding-bottom: 140px;
 }
 
 .partners__text {
@@ -565,7 +565,7 @@
     }
 
     .idea {
-        padding-bottom: 396px;
+        padding-bottom: 30px;
     }
 
     .idea__text {
@@ -579,8 +579,7 @@
 
     .idea__book {
         width: 723px;
-        position: absolute;
-        top: 380px;
+        margin-top: 75px;
         display: flex;
         justify-content: space-between;
     }
@@ -636,10 +635,6 @@
 
     .img__ic4 {
         width: 63%;
-    }
-
-    .partners__text {
-        margin-top: -50px;
     }
 
     .partners {
@@ -808,7 +803,7 @@
     }
 
     .idea {
-        padding-bottom: 458px;
+        padding-bottom: 50px;
     }
 
     .idea__text {
@@ -824,7 +819,7 @@
     }
 
     .idea__book {
-        top: 365px;
+        margin-top: 135px;
     }
 
     .idea__icon {
@@ -860,7 +855,6 @@
     }
 
     .partners__text {
-        margin-top: -32px;
         font-size: 28px;
     }
 
@@ -1025,7 +1019,7 @@
     }
 
     .idea {
-        padding-bottom: 356px;
+        padding-bottom: 45px;
     }
 
     .idea__text {
@@ -1033,9 +1027,9 @@
     }
 
     .idea__book {
-        flex-wrap: wrap;
         width: 465px;
-        top: 455px;
+        margin-top: 60px;
+        flex-wrap: wrap;
     }
 
     .idea__order {
@@ -1044,7 +1038,6 @@
 
     .idea__info {
         max-width: 400px;
-        margin-top: 63px;
     }
 
     .idea__icon {
@@ -1071,10 +1064,6 @@
 
     .img__ic2 {
         width: 116%;
-    }
-
-    .partners__text {
-        margin-top: 145px;
     }
 
     .partners__logo {
@@ -1217,7 +1206,7 @@
     }
 
     .idea {
-        padding-bottom: 395px;
+        padding-bottom: 50px;
     }
 
     .idea__text {
@@ -1244,10 +1233,10 @@
     }
 
     .idea__info {
-        margin-top: 90px;
         text-align: center;
         font-size: 20px;
         line-height: 25px;
+        max-width: 250px;
     }
 
     .idea__order {
@@ -1255,8 +1244,8 @@
     }
 
     .idea__book {
-        top: 460px;
-        max-width: 87%;
+        margin-top: 93px;
+        max-width: 100%;
         justify-content: center;
     }
 
@@ -1276,7 +1265,6 @@
     }
 
     .partners__text {
-        margin-top: 127px;
         text-align: center;
         font-size: 24px;
     }
@@ -1286,13 +1274,6 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    /* .partner__img {
-        width: 100%;
-        display: flex;
-        margin-top: 38px;
-        justify-content: center;
-    } */
 
     .partners__list {
         width: 100%;

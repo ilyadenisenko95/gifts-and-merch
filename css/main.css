@@ -1157,7 +1157,7 @@ body {
     .footer-manager {
         width: 100%;
         margin-left: 1px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
 
     .footer-copy {
@@ -1364,6 +1364,10 @@ body {
 
     .footer-copy {
         margin-top: 33px;
+    }
+
+    .footer-manager {
+        margin-top: 70px;
     }
 }
 
