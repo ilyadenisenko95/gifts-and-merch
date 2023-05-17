@@ -1389,6 +1389,7 @@ body {
 /* Переместить до медиа выражений */
 .burger-menu {
     /* display: none; */
+    margin-left: 100px;
     position: absolute;
     width: 280px;
     height: 542px;
@@ -1436,6 +1437,7 @@ body {
 }
 
 .burger-menu__sets {
+    margin-top: 19px;
     text-align: center;
     font-weight: 500;
     font-size: 14px;
@@ -1445,7 +1447,9 @@ body {
 
 .burger-menu__all {
     width: 115px;
-    margin-left: 83px;
+    margin-top: 9px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 6px 0px 7px 0px;
     font-weight: 700;
     font-size: 16px;
@@ -1457,8 +1461,20 @@ body {
 }
 
 .burger-menu__list {
-    columns: 2;
-    list-style-type: none;
+    /* columns: 2;
+    list-style-type: none; */
+    white-space: nowrap;
+}
+
+.textcols {
+    white-space: normal;
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+}
+
+.textcols:nth-of-type(1) {
+    margin-left: 62px;
 }
 
 .burger-menu__text {
@@ -1467,6 +1483,8 @@ body {
 
 .burger-menu__clothes{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .burger-menu__text {
