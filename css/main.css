@@ -1544,6 +1544,7 @@ body {
 }
 
 .window {
+    position: relative;
     margin-left: 20px;
     width: 1300px;
     height: 987px;
@@ -1552,6 +1553,12 @@ body {
     background: #FAFAFA;
     box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
     border-radius: 25px;
+}
+
+.window__image {
+    position: absolute;
+    top: 18px;
+    right: 17px;
 }
 
 .window__picture {
@@ -1576,6 +1583,7 @@ body {
 }
 
 .win__text {
+    width: 500px;
     margin-top: 113px;
     margin-bottom: 0;
     font-weight: 700;
@@ -1611,8 +1619,64 @@ body {
 .win__txt {
     width: 480px;
     margin-top: 12px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
     color: #454747;
+}
+
+.size__text {
+    margin-top: 28px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 105.5%;
+    color: #272525;
+}
+
+.size__choise {
+    width: 147px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scale {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 105.5%;
+    color: #524983;
+}
+
+.scale--active {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 105.5%;
+    color: #272525;
+}
+
+.size__button {
+    display: inline-block;
+    margin-top: 72px;
+    padding: 21px 82px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #FFFFFF;;
+    background-color: #524983;;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.size__button:hover,
+.size__button:focus {
+    background-color: #1B886E;
+}
+
+.size__button:active {
+    background-color: #156B57;
 }
