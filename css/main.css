@@ -390,6 +390,7 @@ body {
 .footer {
     position: relative;
     margin-left: 131px;
+    margin-bottom: 30px;
 }
 
 .footer-nav {
