@@ -41,20 +41,14 @@
     color: #454747;
 }
 
-.spec-text5 {
+.specification__txt--purple {
+    margin: 0;
     color:#524983;
 }
 
-.spec-text4 {
-    display: none;
-}
-
-.spec-txt4  {
-    display: none;
-}
 
 .guide__txt {
-    margin-top: 107px;
+    margin-top: 80px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 48px;
@@ -109,10 +103,6 @@
     right: 4px;
     top: 16px;
     transform: rotate(180deg);
-}
-
-.spec-txt3 {
-    margin-top: 40px;
 }
 
 .description__string {
@@ -254,46 +244,17 @@
         margin-top: 92px;
     }
 
-    .specification__info {
-        display: block;
-    }
-
-    .spec-txt2 {
-        margin-top: 10px;
-    }
-
-    .spec-text2 {
-        max-width: 800px;
-    }
-
     .specification__txt{
         margin-top: 20px;
+        max-width: 800px;
     }
 
     .specification__text {
         margin-bottom: 0;
     }
 
-    .spec-txt3 {
-        margin-top: 40px;
-    }
-
-    .spec-text3 {
-        max-width: 740px;
-    }
-
-    .spec-txt4{
-        display: block;
-        margin-top: 40px;
-    }
-
-    .spec-text4 {
-        display: block;
-        max-width: 700px;
-    }
-
     .guide__txt {
-        margin-top: 93px;
+        margin-top: 70px;
         margin-bottom: 0px;
     }
 
@@ -372,20 +333,8 @@
         font-size: 16px;
     }
 
-    .spec-txt2 {
-        margin-top: -48px;
-    }
-
-    .spec-text2 {
+    .specification__txt:nth-of-type(1) {
         max-width: 690px;
-    }
-
-    .spec-txt3 {
-        margin-top: 63px;
-    }
-
-    .spec-txt4 {
-        margin-top: 60px;
     }
 
     .guide__txt {
@@ -491,20 +440,8 @@
         width: 500px;
     }
 
-    .spec-txt2 {
-        margin-top: 36px;
-    }
-
-    .spec-txt3 {
-        margin-top: 70px;
-    }
-
-    .spec-txt4 {
-        margin-top: 70px;
-    }
-
     .guide__txt {
-        margin-top: 106px;
+        margin-top: 100px;
     }
 
     .description__txt-active {
@@ -517,6 +454,13 @@
 
     .guide-image {
         display: none;
+    }
+    .specification__text {
+        margin-top: 40px;
+    }
+
+    .specification__txt {
+        max-width: 415px;
     }
 
     .reach__promo {
@@ -569,24 +513,13 @@
         line-height: 117%;
     }
 
-    .spec-txt3 {
-        margin-top: 43px;
-    }
-
-    .spec-txt4 {
-        margin-top: 50px;
-    }
-
     .guide__txt {
+        margin-top: 70px;
         font-size: 28px;
     }
 
     .description__txt {
         font-size: 28px;
-    }
-
-    .guide__txt {
-        margin-top: 62px;
     }
 
     .description__txt {
