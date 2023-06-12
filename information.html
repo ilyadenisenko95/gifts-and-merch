@@ -16,7 +16,7 @@
   <div class="header-bg">
     <header class="page-header">
       <div class="main-container page-header__top">
-        <a class="page-header__logo-link" href="#0">
+        <a class="page-header__logo-link" href="#">
           <img class="header-image" src="/img/logo.svg" alt="Gifts Merch " />
         </a>
         <input class="page-header__search" type="Поиск" placeholder="Поиск" >
@@ -41,10 +41,10 @@
               <a class="header-list__navigation" href="#0">Наборы</a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation header-list__navigation--active" href="#0">Все товары </a>
+              <a class="header-list__navigation header-list__navigation--active" href="#">Все товары </a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation" href="#0">Информация</a>
+              <a class="header-list__navigation" href="#">Информация</a>
             </li>
           </ul>
           <div class="header-text">Шопперы со скидкой - 25%</div>
@@ -66,9 +66,9 @@
 Мы знаем как волнителен, чаще стрессовый бывает заказ брендированной продукции и корпоративных подарков, потому, что были по обе стороны заказа. Это нам позволило изучить проблематики бизнесов и представить лучшие и современые решения для наших клиентов
         </p>
         <div class="header-hero__navigation">
-          <a class="header__navigation header__navigation1" href="/">Часто задаваемые вопросы</a>
-          <a class="header__navigation header__navigation2" href="/">Контакты</a>
-          <a class="header__navigation header__navigation3" href="/">Связаться с нами</a>
+          <a class="header__navigation header__navigation1" href="#">Часто задаваемые вопросы</a>
+          <a class="header__navigation header__navigation2" href="#">Контакты</a>
+          <a class="header__navigation header__navigation3" href="#">Связаться с нами</a>
         </div>
       </div>
       <picture>
@@ -92,8 +92,16 @@
   <div class="guide main-container">
     <p class="guide__txt">Часто задаваемые вопросы</p>
     <div class="guide__info">
-      <div class="description">
-        <div class="description__string">
+      <ul class="description">
+        <li class="description__string">
+          <div class="description__txt description__txt-change ">Как заказать</div>
+          <div class="description__float ">
+              <p class="description__text">Выбирайте из готовых моделей или отправьте нам свой дизайн для пошива.</p>
+          </div>
+          <img class="description__img description__img-chanche description__img-hidden" src="/img/arrow.png" alt="arrow">
+        </li>
+
+        <li class="description__string">
           <div class="description__txt description__txt-active">Материал</div>
           <div class="description__float">
             <p class="description__text">Вы можете заказать у нас пошив толстовок из любого вида материалов:</p>
@@ -104,17 +112,9 @@
           </ul>
           </div>
           <img class="description__img" src="/img/arrow.png" alt="arrow">
-        </div>
+        </li>
 
-        <div class="description__string">
-          <div class="description__txt description__txt-change ">Как заказать</div>
-          <div class="description__float ">
-              <p class="description__text">Выбирайте из готовых моделей или отправьте нам свой дизайн для пошива.</p>
-          </div>
-          <img class="description__img description__img-chanche description__img-hidden" src="/img/arrow.png" alt="arrow">
-        </div>
-
-        <div class="description__string">
+        <li class="description__string">
           <div class="description__txt description__txt-change">Виды нанесения</div>
           <div class="description__float description__float-hidden">
             <p class="description__text ">Вы можете заказать у нас пошив толстовок из любого вида материалов:</p>
@@ -126,9 +126,9 @@
             </ul>
           </div>
           <img class="description__img description__img-chanche" src="/img/arrow.png" alt="arrow">
-        </div>
+        </li>
 
-        <div class="description__string">
+        <li class="description__string">
           <div class="description__txt description__txt-change">Уход за товаром</div>
           <div class="description__float description__float-hidden">
             <p class="description__text ">— Не рекомендуем использовать моющие средства и стиральные порошки с отбеливателями и хлором. <br>
@@ -136,8 +136,8 @@
                     — Стирка в прохладной воде не выше 30°С без включения режима сушки</p>
           </div>
           <img class="description__img description__img-chanche" src="/img/arrow.png" alt="arrow">
-        </div>
-      </div>
+        </li>
+      </ul>
       <img class="guide-image" src="/img/information/Group.png" alt="">
     </div>
   </div>
@@ -145,19 +145,22 @@
   <div class="reach main-container">
     <div class="reach__promo">
       <div class="contacts">
-        <p class="contacts__text">Контакты</p>
-        <img class="contacts__img" src="/img/information/call.png" alt="phone">
+        <div class="contacts__text">
+          Контакты
+          <img class="contacts__img" src="/img/information/call.png" alt="phone">
+        </div>
+
         <p class="contacts__mail">
             <a  class="contacts__link" href="mailto:example@gmail.com">example@gmail.com</a>
         </p>
         <p class="contacts__phone">
           <a  class="contacts__link" href="tel:+79283627229">+380 630 130 103</a>
         </p>
-        <div class="contacts__socials">
-          <a class="contacts__logo" href="/"><img class="contacts__image" src="/img/information/vb.png" alt="vb"></a>
-          <a class="contacts__logo" href="/"><img class="contacts__image" src="/img/information/telega.png" alt="telegtam"></a>
-          <a class="contacts__logo" href="/"><img class="contacts__image" src="/img/information/whatsapp.png" alt="ws"></a>
-        </div>
+        <ul class="contacts__socials">
+          <li><a class="contacts__logo" href="#"><img class="contacts__image" src="/img/information/vb.png" alt="vb"></a></li>
+          <li><a class="contacts__logo" href="#"><img class="contacts__image" src="/img/information/telega.png" alt="telegtam"></a></li>
+          <li><a class="contacts__logo" href="#"><img class="contacts__image" src="/img/information/whatsapp.png" alt="ws"></a></li>
+        </ul>
       </div>
       <div class="slogan">
         <p class="slogan__text">Свяжитесь с нами</p>
@@ -180,7 +183,7 @@
     <div class="footer-nav">
       <div class="footer-servis">
         <div class="footer-servis__gift">
-          <a href="/">
+          <a href="#">
             <img class="footer-image" src="/img/logo.svg" alt="gifts logo">
           </a>
           <div class="footer-servis__text">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее </div>
@@ -192,9 +195,9 @@
           </div>
           <div class="footer-servis__logo">
             <ul class="footer-servis__manager">
-              <li><a class="footer-img" href="/"><img class="footer-img__logo" src="/img/footer/facebook.svg" alt=""></a></li>
-              <li><a class="footer-img" href="/"><img class="footer-img__logo" src="/img/footer/Instagram.svg" alt=""></a></li>
-              <li><a class="footer-img" href="/"><img class="footer-img__logo" src="/img/footer/in.svg" alt=""></a></li>
+              <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/facebook.svg" alt=""></a></li>
+              <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/Instagram.svg" alt=""></a></li>
+              <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/in.svg" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -204,10 +207,10 @@
           <h3 class="footer-roster__rank">Категории</h3>
         </div>
           <ul class="footer-roster__list">
-            <li class="footer-list footer-roster__list-item"><a class="footer-link" href="/">Пошив</a></li>
-            <li class="footer-list"><a class="footer-link" href="/">Все товары</a></li>
-            <li class="footer-list"><a class="footer-link" href="/">Наборы</a></li>
-            <li class="footer-list"><a class="footer-link" href="/">Производство</a></li>
+            <li class="footer-list footer-roster__list-item"><a class="footer-link" href="#">Пошив</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Все товары</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Наборы</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Производство</a></li>
           </ul>
       </div>
       <div class="footer-info">
@@ -215,9 +218,9 @@
           <h3 class="footer-roster__rank">Информация</h3>
         </div>
           <ul class="footer-roster__list">
-            <li class="footer-list"><a class="footer-link" href="/">О нас</a></li>
-            <li class="footer-list"><a class="footer-link" href="/">ЧаВо</a></li>
-            <li class="footer-list"><a class="footer-link" href="/">Контакты</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">О нас</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">ЧаВо</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Контакты</a></li>
           </ul>
       </div>
       <div class="footer-manager">
@@ -233,7 +236,7 @@
       </div>
     </div>
     <div class="footer-copy">
-      <p class="footer-copy__corp"> © 2022 . All rights reserved. <a class="footer-copy__conf" href="/"> Политика конфиденциальности</a></p>
+      <p class="footer-copy__corp"> © 2022 . All rights reserved. <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a></p>
     </div>
   </footer>
 </body>

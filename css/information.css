@@ -63,6 +63,9 @@
 .description {
     position: relative;
     max-width: 853px;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .description__txt {
@@ -178,8 +181,11 @@
 
 .contacts__socials {
     width: 143px;
+    margin: 0;
+    padding-left: 0;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 .slogan__text {
@@ -539,9 +545,14 @@
     }
 
     .contacts__text {
+        position: relative;
         margin-bottom: 0;
         text-align: center;
         font-size: 28px;
+    }
+
+    .contacts__img {
+        left: 74%;
     }
 
     .contacts__mail {
@@ -571,10 +582,6 @@
         text-align: center;
         font-size: 20px;
         line-height: 25px;
-    }
-
-    .contacts__img {
-        left: 74%;
     }
 
     .contacts__image {
