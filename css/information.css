@@ -546,13 +546,18 @@
 
     .contacts__text {
         position: relative;
+        display: inline-block;
         margin-bottom: 0;
         text-align: center;
         font-size: 28px;
     }
 
+    .contacts__call {
+        text-align: center;
+    }
+
     .contacts__img {
-        left: 74%;
+        left: 135px;
     }
 
     .contacts__mail {
