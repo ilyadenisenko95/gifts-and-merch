@@ -1563,6 +1563,7 @@ body {
 }
 
 .window__picture {
+    position: relative;
     width: 43%;
     margin-left: 27px;
     margin-top: 28px;
@@ -1627,8 +1628,14 @@ body {
     color: #454747;
 }
 
+.size {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 .size__text {
-    margin-top: 28px;
+    margin-top: 0px;
     margin-bottom: 0;
     font-weight: 600;
     font-size: 18px;
@@ -1641,6 +1648,33 @@ body {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+.size__right {
+    /* position: relative; */
+    width: 340px;
+}
+
+.size__feature {
+    display: flex;
+}
+
+/* .size__image {
+    position: absolute;
+} */
+
+.size__information {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 13px;
+    margin-top: 14px;
+    border-bottom: 1px solid #524983;
+}
+
+.size__information-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 105.5%;
 }
 
 .scale {
