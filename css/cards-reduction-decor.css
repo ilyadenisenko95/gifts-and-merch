@@ -65,7 +65,7 @@
     margin: 0 5px;
 }
 
-.hand__img {
+.hand__cards-img {
     transform: rotate(180deg);
 }
 
@@ -195,14 +195,16 @@
     border-radius: 50%;
 }
 
-.hand {
+.hand__cards {
     display: flex;
-    width: 40px;
-    height: 40px;
     margin-top: 0px;
     margin-left: 31px;
     margin-right: 13px;
     align-items: center;
+}
+.hand {
+    width: 40px;
+    height: 40px;
     justify-content: center;
     border: none;
     border-radius: 50%;
@@ -450,7 +452,7 @@
         margin-top: 41px;
     }
 
-    .hand {
+    .hand__cards {
         margin-right: 0;
     }
 
@@ -736,7 +738,7 @@
         margin-top: 19px;
     }
 
-    .hand {
+    .hand__cards {
         margin-right: 27px;
     }
 
@@ -899,6 +901,9 @@
     .hand {
         width: 35px;
         height: 35px;
+    }
+
+    .hand__cards {
         margin-left: 28px;
     }
 

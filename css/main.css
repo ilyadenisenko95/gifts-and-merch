@@ -1715,3 +1715,148 @@ body {
 .size__button:active {
     background-color: #156B57;
 }
+
+.hand__window-img {
+    transform: rotate(180deg);
+}
+
+.window__line {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1500px) {
+    .window {
+        width: 960px;
+        height: 729px;
+    }
+
+    .winwod-img {
+        width: 369px;
+        height: 428px;
+    }
+
+    .winwod-thing {
+        width: 73.846px;
+        height: 73.846px;
+    }
+
+    .window__picture-img {
+        width: 236px;
+        margin-top: 2px;
+    }
+
+    .window__picture {
+        margin-left: 22px;
+        margin-top: 21px;
+    }
+
+    .window__line {
+        top: 195px;
+        width: 330px;
+    }
+
+    .win__text {
+        margin-top: 21px;
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .win__price {
+        margin-top: 20px;
+        font-size: 19px;
+    }
+    .win__txt {
+        width: 440px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .size__button {
+        margin-top: 132px;
+        padding: 16px 69px;
+        font-size: 15px;
+    }
+
+    .window__image {
+        top: 12px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 999px) {
+    .window {
+        width: 728px;
+        height: 729px;
+    }
+
+    .win__text {
+        font-size: 18px;
+    }
+
+    .window__picture {
+        width: 56%;
+    }
+
+    .window__order {
+        width: 40%;
+    }
+
+    .win__text {
+        width: 290px;
+    }
+
+    .color {
+        margin-top: 40px;
+    }
+
+    .win__price {
+        margin-top: 15px;
+    }
+
+    .win__txt {
+        width: 245px;
+        margin-top: 12px;
+    }
+
+    .size__button {
+        margin-top: 115px;
+        padding: 16px 94px;
+    }
+
+    .window__image {
+        top: -15px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hand__window {
+        display: none;
+    }
+
+    .window__picture {
+        width: 100%;
+    }
+
+    .window__order {
+        width: 100%;
+    }
+
+    .window {
+        width: 440px;
+        height: 808px;
+    }
+
+
+
+
+}
