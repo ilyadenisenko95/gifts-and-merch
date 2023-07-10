@@ -1694,7 +1694,9 @@ body {
 
 .size__button {
     display: inline-block;
-    margin-top: 72px;
+    position: absolute;
+    top: 543px;
+    right: 480px;
     padding: 21px 82px;
     text-decoration: none;
     font-size: 18px;
@@ -1777,8 +1779,9 @@ body {
     }
 
     .size__button {
-        margin-top: 132px;
-        padding: 16px 69px;
+        top: 468px;
+        right: 313px;
+        padding: 16px 76px;
         font-size: 15px;
     }
 
@@ -1827,8 +1830,9 @@ body {
     }
 
     .size__button {
-        margin-top: 115px;
-        padding: 16px 94px;
+        top: 480px;
+        right: 50px;
+        padding: 16px 90px;
     }
 
     .window__image {
@@ -1845,6 +1849,9 @@ body {
 
     .window__picture {
         width: 100%;
+        height: 245px;
+        margin-left: 16px;
+        margin-top: 16px;
     }
 
     .window__order {
@@ -1856,7 +1863,104 @@ body {
         height: 808px;
     }
 
+    .winwod-img {
+        width: 96%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .winwod-thing {
+        width: 44px;
+        height: 44px;
+    }
+
+    .window__picture-img {
+        width: 145px;
+        margin-top: 4px;
+    }
+
+    .window__order {
+        margin-top: 0px;
+        margin-left: 16px;
+    }
+
+    .win__text {
+        width: 330px;
+        margin-top: 0;
+    }
+
+    .color {
+        width: 385px;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .color__but {
+        margin-right: 7px;
+    }
+
+    .win__txt {
+        width: 185px;
+        margin-top: 23px;
+    }
+
+    /* .size__left {
+        display: none;
+    } */
+
+    .size__button {
+        top: 475px;
+        right: 17px;
+        padding: 16px 64px;
+    }
 
 
 
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    .window {
+        width: 280px;
+        height: 525px;
+    }
+
+    .window__picture {
+        height: 157px;
+        margin-top: 11px;
+        margin-left: 9px;
+    }
+
+    .window__picture-img {
+        display: none;
+    }
+
+    .win__text {
+        width: 260px;
+        margin-top: 15px;
+    }
+
+    .color__but {
+        margin-right: 2px;
+    }
+
+    .win__price {
+        width: 120px;
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .color {
+        width: 275px;
+    }
+
+    .win__txt {
+        /* width: 245px; */
+        /* text-align: center; */
+        /* font-size: 12px; */
+    }
 }
