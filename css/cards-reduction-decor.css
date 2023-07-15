@@ -36,7 +36,7 @@
     border-top-right-radius: 15px;
 }
 
-.card__pagination {
+.numbering{
     display: flex;
     position: absolute;
     bottom: 8px;
@@ -49,7 +49,7 @@
     color: #7981AD;
 }
 
-.card__pagination-direction {
+.numbering__direction {
     display: flex;
     padding: 5px;
     border: none;
@@ -57,15 +57,15 @@
     cursor: pointer;
 }
 
-.card__pagination-direction--right {
+.numbering__direction--right {
     transform: rotate(180deg);
 }
 
-.card__number {
+.numbering__number--card {
     margin: 0 5px;
 }
 
-.pagination__img {
+.hand__cards-img {
     transform: rotate(180deg);
 }
 
@@ -195,14 +195,16 @@
     border-radius: 50%;
 }
 
-.pagination__direction {
+.hand__cards {
     display: flex;
-    width: 40px;
-    height: 40px;
     margin-top: 0px;
     margin-left: 31px;
     margin-right: 13px;
     align-items: center;
+}
+.hand {
+    width: 40px;
+    height: 40px;
     justify-content: center;
     border: none;
     border-radius: 50%;
@@ -248,7 +250,7 @@
 .decor {
     position: relative;
     margin-top: 111px;
-    margin-bottom: 412px;
+    padding-bottom: 290px;
     background-image: url('../img/creative-wave.svg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -287,21 +289,28 @@
 
 .decor__connect {
     width: 300px;
-    margin-top: 35px;
+    margin: 0px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     color: #222227;
 }
 
-.decor__order {
-    position: absolute;
-    width: 336px;
-    left: 549px;
-    top: 249px;
+.book {
+    width: 723px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.decor__info {
+.decor__book {
+    margin-top: 35px;
+}
+
+.order {
+    width: 336px;
+}
+
+.order__info {
     width: 100%;
     margin-bottom: 32px;
     border: none;
@@ -309,7 +318,7 @@
     background-color: transparent;
     color: inherit;
     outline: none;
-    padding-top: 5px;
+    padding-top: 4px;
 }
 
 .decor__order-line {
@@ -330,11 +339,10 @@
     color:#454747;
 }
 
-.decor__order-button {
+.order__button {
     display: inline-block;
-    margin-top: 6px;
-    margin-right: 3px;
-    padding: 21px 101px;
+    margin-top: 7px;
+    padding: 21px 102px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -346,12 +354,12 @@
     cursor: pointer;
 }
 
-.decor__order-button:hover,
-.decor__order-button:focus {
+.order__button:hover,
+.order__button:focus {
     background-color: #1B886E;
 }
 
-.decor__order-button:active {
+.order__button:active {
     background-color: #156B57;
 }
 
@@ -360,10 +368,6 @@
 
     .card__active {
         display: none;
-    }
-
-    .cards__header {
-        margin-top: -21px;
     }
 
     .card {
@@ -382,22 +386,22 @@
         border-radius: 15px;
     }
 
-    .card__pagination {
+    .numbering--card{
         bottom: 9px;
         right: 12px;
         padding: 3px;
     }
 
-    .card__pagination-direction {
+    .numbering__direction--card {
         padding: 3px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow--card {
         height: 17px;
         width: 9px;
     }
 
-    .card__number {
+    .numbering__number--card {
         font-size: 10px;
         font-weight: 400;
     }
@@ -448,7 +452,7 @@
         margin-top: 41px;
     }
 
-    .pagination__direction {
+    .hand__cards {
         margin-right: 0;
     }
 
@@ -474,6 +478,7 @@
 
     .decor {
         margin-top: 131px;
+        padding-bottom: 290px;
     }
 
     .decor__idea {
@@ -486,13 +491,8 @@
         margin-top: 22px;
     }
 
-    .decor__connect{
+    .decor__book {
         margin-top: 60px;
-    }
-
-    .decor__order {
-        left: 409px;
-        top: 338px;
     }
 
     .decor__picture {
@@ -534,7 +534,7 @@
     }
 
     .cards__header {
-        margin-top: -126px;
+        margin-top: -104px;
     }
 
     .card__info {
@@ -542,7 +542,7 @@
         border-radius: 15px;
     }
 
-    .card__pagination {
+    .numbering--card{
         bottom: 9px;
         right: 16px;
     }
@@ -594,12 +594,12 @@
         right: 10px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow--card {
         height: 19px;
         width: 9px;
     }
 
-    .card__pagination-direction {
+    .numbering__direction--card {
         padding: 4px;
     }
 
@@ -644,7 +644,7 @@
     }
 
     .cards__header {
-        margin-top: -177px;
+        margin-top: -152px;
         font-size: 28px;
         line-height: 34px;
     }
@@ -683,21 +683,21 @@
         margin-top: 1px;
     }
 
-    .card__pagination {
+    .numbering--card{
         bottom: 7px;
         right: 6px;
     }
 
-    .card__pagination-direction {
+    .numbering__direction--card {
         padding: 2px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow--card {
         height: 11px;
         width: 6px;
     }
 
-    .card__number {
+    .numbering__number--card {
         font-size: 7px;
     }
 
@@ -738,7 +738,7 @@
         margin-top: 19px;
     }
 
-    .pagination__direction {
+    .hand__cards {
         margin-right: 27px;
     }
 
@@ -753,7 +753,7 @@
 
     .decor {
         margin-top: 80px;
-        margin-bottom: 886px;
+        padding-bottom: 588px;
     }
 
     .decor__img {
@@ -777,6 +777,12 @@
         line-height: 110.9%;
     }
 
+    .decor__book {
+        margin-top: 1px;
+        flex-wrap: wrap;
+        width: 465px;
+    }
+
     .decor__text {
         width: 101%;
         margin-top: 15px;
@@ -791,11 +797,6 @@
         line-height: 29px;
     }
 
-    .decor__order {
-        left: 19px;
-        top: 365px;
-    }
-
     .decor__picture {
         top: 699px;
         right: 138px;
@@ -807,6 +808,10 @@
     .decor__picture-img {
         width: 367px;
         height: 344px;
+    }
+
+    .order {
+        margin-top: 65px;
     }
 }
 
@@ -857,12 +862,12 @@
         margin-top: 1px;
     }
 
-    .card__pagination {
+    .numbering--card{
         bottom: 8px;
         right: 12px;
     }
 
-    .card__pagination-arrow {
+    .numbering__arrow--card {
         height: 16px;
         width: 8px;
     }
@@ -893,11 +898,14 @@
         margin-top: 20px;
     }
 
-    .pagination__direction {
+    .hand {
         width: 35px;
         height: 35px;
-        margin-left: 34px;
-        margin-right: 34px;
+        margin-left: 28px;
+    }
+
+    .hand__cards {
+        margin-left: 28px;
     }
 
     .pagination__page-transition {
@@ -915,7 +923,7 @@
     }
 
     .decor {
-        margin-bottom: 808px;
+        padding-bottom: 537px;
     }
 
     .decor__basis {
@@ -929,14 +937,14 @@
         height: 34px;
     }
 
-    .decor__order {
+    .order {
         width: 280px;
-        top: 370px;
+        margin-top: 40px;
     }
 
     .decor__idea {
         max-width: 100%;
-        margin-top: 34px;
+        margin-top: 33px;
         font-size: 24px;
         line-height: 26px;
         text-align: center;
@@ -951,8 +959,7 @@
     }
 
     .decor__connect {
-        width: 95%;
-        margin-left: 6px;
+        max-width: 250px;
         margin-top: 45px;
         font-size: 20px;
         line-height: 24px;
@@ -974,6 +981,16 @@
         width: 366px;
         height: 345px;
         transform: translate(-83%,-11%);
+    }
+
+    .decor__book {
+        margin-top: 1px;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .order {
+        margin-top: 40px;
     }
 }
 

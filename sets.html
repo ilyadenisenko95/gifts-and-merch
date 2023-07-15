@@ -15,7 +15,7 @@
   <div class="header-bg">
     <header class="page-header">
       <div class="main-container page-header__top">
-        <a class="page-header__logo-link" href="/">
+        <a class="page-header__logo-link" href="#">
           <img class="header-image" src="/img/logo.svg" alt="Gifts Merch " />
         </a>
         <input class="page-header__search" type="Поиск" placeholder="Поиск" >
@@ -79,10 +79,10 @@
     <div class="card">
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image1.png" alt="">
-        <div class="card__pagination">
-        <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
-            <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
+        <div class="numbering numbering--card">
+          <button class="numbering__direction numbering__direction--card"><img class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
+          <p class="numbering__number numbering__number--card">1/7</p>
+          <button class="numbering__direction numbering__direction--card numbering__direction--right"><img  class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -104,10 +104,10 @@
     <div class="card">
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image2.png" alt="">
-        <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
-            <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
+        <div class="numbering numbering--card">
+          <button class="numbering__direction numbering__direction--card"><img class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
+          <p class="numbering__number numbering__number--card">1/7</p>
+          <button class="numbering__direction numbering__direction--card numbering__direction--right"><img  class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -129,10 +129,10 @@
     <div class="card">
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image3.png" alt="">
-        <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
-            <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
+        <div class="numbering numbering--card">
+          <button class="numbering__direction numbering__direction--card"><img class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
+          <p class="numbering__number numbering__number--card">1/7</p>
+          <button class="numbering__direction numbering__direction--card numbering__direction--right"><img  class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -154,10 +154,10 @@
     <div class="card card__active">
       <div class="card__top">
         <img  class="card__image" src="/img/prize_image4.png" alt="">
-        <div class="card__pagination">
-          <button class="card__pagination-direction"><img class="card__pagination-arrow" src="/img/left.png" alt=""></button>
-            <p class="card__number">1/7</p>
-          <button class="card__pagination-direction card__pagination-direction--right"><img  class="card__pagination-arrow" src="/img/left.png" alt=""></button>
+        <div class="numbering numbering--card">
+          <button class="numbering__direction numbering__direction--card"><img class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
+          <p class="numbering__number numbering__number--card">1/7</p>
+          <button class="numbering__direction numbering__direction--card numbering__direction--right"><img  class="numbering__arrow numbering__arrow--card" src="/img/left.png" alt=""></button>
         </div>
       </div>
       <div class="card__info">
@@ -183,15 +183,15 @@
       <button class="pagination__menu"><img class="pagination__menu-arrow" src="/img/arrow.png" alt=""></button>
     </div>
     <div class="pagination__page">
-      <button class="pagination__direction"><img src="/img/left.png" alt=""></button>
+      <button class="hand hand__cards"><img src="/img/left.png" alt=""></button>
         <ul class="pagination__nubmers">
-          <li><a class="pagination__page-transition pagination__page-transition--active" href="/">1</a></li>
-          <li><a class="pagination__page-transition" href="/">2</a></li>
-          <li><a class="pagination__page-transition" href="/">3</a></li>
-          <li><a class="pagination__page-transition" href="/">4</a></li>
-          <li><a class="pagination__page-transition" href="/">5</a></li>
+          <li><a class="pagination__page-transition pagination__page-transition--active" href="#">1</a></li>
+          <li><a class="pagination__page-transition" href="#">2</a></li>
+          <li><a class="pagination__page-transition" href="#">3</a></li>
+          <li><a class="pagination__page-transition" href="#">4</a></li>
+          <li><a class="pagination__page-transition" href="#">5</a></li>
         </ul>
-      <button class="pagination__direction pagination__img"><img src="/img/left.png" alt=""></button>
+      <button class=" hand hand__cards hand__cards-img"><img src="/img/left.png" alt=""></button>
     </div>
   </div>
 </div>
@@ -218,15 +218,17 @@
       <div class="decor__image"><img class="decor__img" src="/img/Pangolin.png" alt=""></div>
       <p class="decor__idea">Как создать бокс по Вашей идее?</p>
       <p class="decor__text">У вас своя уникальная идея для бокса или хотите все стилизовать к одному виду?</p>
-      <p class="decor__connect">Введите свои контактные данные, и наш менеджер свяжется с Вами <span class="colortext">в течении 15 минут</span> </p>
-        <form class="decor__order" action="">
-          <input type="text" class="decor__info" name="login" placeholder="Ваше Имя">
-          <input type="email" class="decor__info" name="login" placeholder="Ваша електронная почта">
-          <input type="tel" class="decor__info" name="login" placeholder="Ваш номер телефона">
-          <button class="decor__order-button">
-            Заказать
-          </button>
-        </form>
+      <div class="book decor__book">
+        <p class="decor__connect">Введите свои контактные данные, и наш менеджер свяжется с Вами <span class="colortext">в&nbsp;течении 15 минут</span> </p>
+      <form class="order" action="">
+        <input type="text" class="order__info" name="login" placeholder="Ваше Имя">
+        <input type="email" class="order__info" name="email" placeholder="Ваша електронная почта">
+        <input type="tel" class="order__info" name="tel" placeholder="Ваш номер телефона">
+        <button class="order__button">
+          Заказать
+        </button>
+      </form>
+      </div>
     </div>
     <div class="decor__picture">
       <img class="decor__picture-img" src="/img/Photo.png" alt="">
@@ -238,7 +240,7 @@
   <div class="footer-nav">
     <div class="footer-servis">
       <div class="footer-servis__gift">
-        <a href="/">
+        <a href="#">
           <img class="footer-image" src="/img/logo.svg" alt="gifts logo">
         </a>
         <div class="footer-servis__text">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее </div>
@@ -250,9 +252,9 @@
         </div>
         <div class="footer-servis__logo">
           <ul class="footer-servis__manager">
-            <li><a class="footer-img" href="/"><img class="footer-img__logo" src="/img/footer/facebook.svg" alt=""></a></li>
-            <li><a class="footer-img" href="/"><img class="footer-img__logo" src="/img/footer/Instagram.svg" alt=""></a></li>
-            <li><a class="footer-img" href="/"><img class="footer-img__logo" src="/img/footer/in.svg" alt=""></a></li>
+            <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/facebook.svg" alt=""></a></li>
+            <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/Instagram.svg" alt=""></a></li>
+            <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/in.svg" alt=""></a></li>
           </ul>
         </div>
       </div>
@@ -262,10 +264,10 @@
         <h3 class="footer-roster__rank">Категории</h3>
       </div>
         <ul class="footer-roster__list">
-          <li class="footer-list footer-roster__list-item"><a class="footer-link" href="/">Пошив</a></li>
-          <li class="footer-list"><a class="footer-link" href="/">Все товары</a></li>
-          <li class="footer-list"><a class="footer-link" href="/">Наборы</a></li>
-          <li class="footer-list"><a class="footer-link" href="/">Производство</a></li>
+          <li class="footer-list footer-roster__list-item"><a class="footer-link" href="#">Пошив</a></li>
+          <li class="footer-list"><a class="footer-link" href="#">Все товары</a></li>
+          <li class="footer-list"><a class="footer-link" href="#">Наборы</a></li>
+          <li class="footer-list"><a class="footer-link" href="#">Производство</a></li>
         </ul>
     </div>
     <div class="footer-info">
@@ -273,9 +275,9 @@
         <h3 class="footer-roster__rank">Информация</h3>
       </div>
         <ul class="footer-roster__list">
-          <li class="footer-list"><a class="footer-link" href="/">О нас</a></li>
-          <li class="footer-list"><a class="footer-link" href="/">ЧаВо</a></li>
-          <li class="footer-list"><a class="footer-link" href="/">Контакты</a></li>
+          <li class="footer-list"><a class="footer-link" href="#">О нас</a></li>
+          <li class="footer-list"><a class="footer-link" href="#">ЧаВо</a></li>
+          <li class="footer-list"><a class="footer-link" href="#">Контакты</a></li>
         </ul>
     </div>
     <div class="footer-manager">
@@ -291,7 +293,7 @@
     </div>
   </div>
   <div class="footer-copy">
-    <p class="footer-copy__corp">© 2022 . All rights reserved. <a class="footer-copy__conf" href="/"> Политика конфиденциальности</a></p>
+    <p class="footer-copy__corp">© 2022 . All rights reserved. <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a></p>
   </div>
 </footer>
 
@@ -318,7 +320,7 @@
 
 
 
- <!-- <div class="burger-menu">
+<!-- <div class="burger-menu">
   <div class="burger-menu__header">
     <button type="button" class="burger-menu__language active">RU</button>
 /
@@ -330,60 +332,151 @@
   <div class="burger-menu__sets">Наборы</div>
   <div class="burger-menu__all">Все товары</div>
   <div class="burger-menu__list">
-  <ul class="burger-menu__clothes">
-    <li>
-      <a class="burger-menu__text--active" href="">Толстовки</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Свитшоты</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Футболки</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Поло</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Жилетки</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Рюкзаки</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Бананки</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Эко-сумки/Шопперы</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Пледы</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Носки</a>
-    </li>
-    <li>
-      <a class="burger-menu__text" href="">Маски</a>
-    </li>
-  </ul>
-</div>
-<p class="burger-menu__info">Информация</p>
+    <div class="textcols">
+      <ul class="burger-menu__clothes">
+        <li>
+          <a class="burger-menu__text--active" href="">Толстовки</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Свитшоты</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Футболки</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Поло</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Жилетки</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Рюкзаки</a>
+        </li>
+      </ul>
+    </div>
+    <div class="textcols">
+      <ul class="burger-menu__clothes">
+        <li>
+          <a class="burger-menu__text" href="">Бананки</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Эко-сумки/Шопперы</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Пледы</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Носки</a>
+        </li>
+        <li>
+          <a class="burger-menu__text" href="">Маски</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="burger-menu__info">Информация</p>
 
-<a class="burger-menu__mail" href=""><example@gmail.com/a>example@gmail.com
-<a class="phone burger-menu__phone" href="tel:+79283627229" >+380 630 130 103</a>
+  <a class="burger-menu__mail" href=""><example@gmail.com/a>example@gmail.com
+  <a class="phone burger-menu__phone" href="tel:+79283627229" >+380 630 130 103</a>
 
-<div class="burger-menu__masagers">
-  <div class="burger-menu__image"><a href=""><img src="/img/facebook.svg" alt=""></a></div class="burger-menu__image">
-  <div class="burger-menu__image"><a href=""></a><img src="/img/instagram.svg" alt=""></div class="burger-menu__image">
-  <div class="burger-menu__image"><a href=""></a><img src="/img/Vector .svg" alt=""></div>
+  <div class="burger-menu__masagers">
+    <div class="burger-menu__image"><a href=""><img src="/img/facebook.svg" alt=""></a></div>
+    <div class="burger-menu__image"><a href=""></a><img src="/img/instagram.svg" alt=""></div>
+      <div class="burger-menu__image"><a href=""></a><img src="/img/Vector .svg" alt=""></div>
+  </div>
 </div> -->
 
+
+
+
+<div class="window">
+  <img class="window__image" src="/img/image/🌈 COLOR1.png" alt="">
+  <div class="window__picture">
+    <div class="window__line">
+      <button class="hand hand__window">
+      <img src="/img/left.png" alt="">
+    </button>
+    <button class="hand hand__window hand__window-img">
+      <img src="/img/left.png" alt="">
+    </button>
+    </div>
+    <img class="winwod-img" src="/img/image/Screenshot 1.png" alt="man">
+    <div class="window__picture-img">
+      <img class="winwod-thing" src="/img/image/Screenshot 2.png" alt="man">
+      <img class="winwod-thing" src="/img/image/Screenshot 3.png" alt="man">
+      <img class="winwod-thing" src="/img/image/Screenshot 4.png" alt="man">
+    </div>
+  </div>
+  <div class="window__order">
+    <p class="win__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+    <div class="color">
+      <div class="color__win">
+        <button class="color__but card__color-button--purple"></button>
+      <button class="color__but card__color-button--green"></button>
+      <button class="color__but card__color-button--silver"></button>
+      </div>
+      <p class="win__price" >From Price $76.43</p>
+    </div>
+
+    <p class="win__txt">This exclusive design has a designated laptop-only section that unfolds to lay flat on the X-ray belt to increase your speed, convenience and security. (Pens, Laptop and other devices shown are not included)</p>
+    <div class="size">
+      <div class="size__left">
+        <p class="size__text">Размер</p>
+          <div class="size__choise">
+            <p class="scale scale--active">XS</p>
+            <p class="scale">S</p>
+            <p class="scale">M</p>
+            <p class="scale">L</p>
+            <p class="scale">XXL</p>
+          </div>
+      </div>
+      <button class="size__button">
+        Заказать
+      </button>
+
+      <div class="size__right">
+        <div class="size__feature">
+          <p class="size__text">Характеристики</p>
+        <img class="size__image" src="/img/image/arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="property">
+        <div class="property__left">
+          <div class="property__text">Материал</div>
+          <div class="property__text">Нанесение</div>
+          <div class="property__text">Торговая марка</div>
+          <div class="property__text">Плотность, г/м</div>
+        </div>
+        <div class="property__right">
+          <div class="property__text">100% хлопок</div>
+          <div class="property__text">вышивка, термопечать</div>
+          <div class="property__text">100% хлопок</div>
+          <div class="property__text">150</div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</div>
 
 
 
 
   </body>
 </html>
-
 
 
 
