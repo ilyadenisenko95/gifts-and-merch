@@ -1308,6 +1308,7 @@
         transform: rotate(270deg);
     }
 
+
     .partners {
         padding-bottom: 0px;
     }
@@ -1327,4 +1328,5 @@
         top: 480px;
         left: 34%;
     }
+
 }
