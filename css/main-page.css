@@ -461,6 +461,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+.hand__partners-img {
+    transform: rotate(180deg) ;
+}
 
 
 @media (max-width: 1500px) {
