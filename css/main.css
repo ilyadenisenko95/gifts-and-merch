@@ -1846,6 +1846,7 @@ body {
 .details__text {
     font-size: 16px;
     font-weight: 600;
+    line-height: normal;
     color: #272525;
 }
 
@@ -2258,6 +2259,7 @@ body {
 
     .trolley__text {
         width: 100%;
+        padding-top: 13px;
     }
 
     .trolley__box {
@@ -2276,6 +2278,35 @@ body {
 
     .trolley__order {
         margin-left: 66px;
+    }
+
+    .order__trolley {
+        width: 100%;
+        margin-top: 21px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .order__info-trolley {
+        width: calc(50% - 51px);
+        margin-bottom: 20px;
+
+    }
+
+    .order__info-trolley--active {
+        margin-left: 29px;
+    }
+
+    .order__button-trolley {
+        margin-left: 38px;
+    }
+
+    .trolley_txt {
+        margin-bottom: 0;
+    }
+
+    .trolley__inf {
+        margin-left: 322px;
     }
 
 
@@ -2376,7 +2407,7 @@ body {
 
     .trolley {
         width: 440px;
-        height: 900px;
+        height: 850px;
     }
 
     .trolley__close-img {
@@ -2390,6 +2421,7 @@ body {
     }
 
     .trolley__box {
+        width: 100%;
         margin-left: 16px;
     }
 
@@ -2397,15 +2429,148 @@ body {
         width: 406px;
     }
 
+    .order__trolley {
+        width: 200px;
+        display: block;
+    }
 
+    .order__info-trolley {
+        width: 100%;
+    }
 
+    .order__info-trolley--active {
+        margin-left: 0;
+    }
 
+    .order__button-trolley {
+        margin-left: 0;
+    }
 
+    .details {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 
+    .details__image {
+        width: 45px;
+        height: 45px;
+    }
 
+    .details__info {
+        width: 80%;
+    }
 
+    .details__color {
+        margin-top: 2px;
+    }
 
+    .basket__selection {
+        position: relative;
+    }
 
+    .details__remove {
+        position: absolute;
+        top: -18px;
+        left: -11px;
+        padding-bottom: 0;
+    }
+
+    .details__size {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .size__text {
+        font-size: 12px;
+    }
+
+    .size__txt {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .details__quantity {
+        width: 41%;
+        height: 20px;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .quantity__choice{
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .quantity__txt {
+        width: 100%;
+    }
+
+    .details__sum {
+        width: 30px;
+        margin-left: 180px;
+        margin-top: 20px;
+    }
+
+    .basket__selection {
+        margin-top: 30px;
+    }
+
+    .order__dilivery {
+        width: 406px;
+    }
+
+    .order__sum {
+        margin-right: 0;
+    }
+
+    .trolley__order {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .trolley__text {
+        padding-top: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .trolley_txt {
+        width: 203px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .order__trolley {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order__button-trolley {
+        padding: 16px 61px;
+        font-size: 14px;
+    }
+
+    .trolley__inf {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .basket__order {
+        width: 97%;
+        text-align: center;
+    }
+
+    .details__img {
+        width: 30.102px;
+        height: 37.818px;
+    }
 }
 
 
@@ -2473,6 +2638,58 @@ body {
     .size__button {
         top: 422px;
         right: 45px;
+    }
+
+    .trolley {
+        width: 280px;
+    }
+
+    .basket__order {
+        width: 88%;
+        margin-bottom: 61px;
+        font-size: 18px;
+    }
+
+    .trolley__box {
+        margin-left: 13px;
+    }
+
+    .order__details {
+        position: absolute;
+        top: 37px;
+        right: 96px;
+    }
+
+    .details__info {
+        width: 78%;
+        margin-left: 11px;
+    }
+
+    .details__remove {
+        top: -13px;
+        left: -10px;
+    }
+
+    .details__sum {
+        width: 60px;
+        margin-left: 30px;
+    }
+
+    .basket__selection {
+        width: 257px;
+    }
+
+    .details__quantity {
+        width: 64%;
+    }
+
+    .order__dilivery {
+        width: 100%;
+    }
+
+    .order__sum {
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
