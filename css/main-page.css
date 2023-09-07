@@ -461,6 +461,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+.hand__partners-img {
+    transform: rotate(180deg) ;
+}
 
 
 @media (max-width: 1500px) {
@@ -1307,6 +1310,7 @@
         margin-top: 50px;
         transform: rotate(270deg);
     }
+
 
     .partners {
         padding-bottom: 0px;
