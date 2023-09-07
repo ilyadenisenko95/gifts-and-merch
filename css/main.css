@@ -46,6 +46,7 @@ body {
     color: #8E8E8E;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .header-image {
@@ -56,6 +57,7 @@ body {
     display: flex;
     align-items: center;
     color: #8E8E8E;
+    cursor: pointer;
 }
 
 .page-header__button {

@@ -465,6 +465,10 @@
     transform: rotate(180deg) ;
 }
 
+.hand__partners-img {
+    transform: rotate(180deg);
+}
+
 
 @media (max-width: 1500px) {
 
