@@ -1389,7 +1389,6 @@ body {
 
 /* Переместить до медиа выражений */
 .burger-menu {
-    /* display: none; */
     margin-left: 100px;
     position: relative;
     width: 280px;
@@ -1397,12 +1396,13 @@ body {
     background: #FAFAFA;
     border-radius: 6px;
     background-color: #FAFAFA;
+    box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
 }
 
 .burger-menu__header {
-    position: absolute;
-    top: 25px;
-    right: 6px;
+    display: flex;
+    justify-content: right;
+    padding-top: 25px;
     display: flex;
     align-items: center;
     color: #8E8E8E;
@@ -1416,6 +1416,7 @@ body {
     line-height: 12.66px;
     background: transparent;
     border: 0px;
+    cursor: pointer;
 }
 
 .burger-menu__language.active {
@@ -1425,23 +1426,24 @@ body {
 }
 
 .burger-menu__man {
+    margin-right: 67px;
+    margin-left: 10px;
     padding: 2px;
-    /* margin-left: 18px; */
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .burger-menu__class {
+    margin-right: 6px;
     padding: 1.88px;
-    margin-left: 58.3px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .burger-menu__sets {
-    /* position: absolute; */
-
-
+    margin-top: 19px;
     text-align: center;
     font-weight: 500;
     font-size: 14px;
@@ -1451,7 +1453,7 @@ body {
 
 .burger-menu__all {
     width: 115px;
-    margin-top: 82px;
+    margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
     padding: 6px 0px 7px 0px;
@@ -1465,9 +1467,16 @@ body {
 }
 
 .burger-menu__list {
-    /* columns: 2;
-    list-style-type: none; */
+    margin-top: 21px;
     white-space: nowrap;
+}
+
+.burger__list {
+    margin-bottom: 9px;
+}
+
+.burger__list-one {
+    line-height: 1;
 }
 
 .textcols {
@@ -1507,11 +1516,9 @@ body {
 }
 
 .burger-menu__info {
-    position: absolute;
-    width: 86px;
-    height: 15px;
-    left: 117px;
-    top: 322px;
+    width: 100%;
+    margin: 0;
+    margin-top: 11px;
     font-weight: 500;
     font-size: 14px;
     line-height: 105.5%;
@@ -1519,12 +1526,14 @@ body {
     color: #272525;
 }
 
+.burger__mail {
+    width: 100%;
+    text-align: center;
+    margin-top: 42px;
+}
+
 .burger-menu__mail {
-    position: absolute;
-    width: 133px;
-    height: 16px;
-    left: 94px;
-    top: 380px;
+    width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -1535,19 +1544,36 @@ body {
 }
 
 .burger-menu__phone {
-    margin-top: 200px;
+    width: 184.5px;
+    display: inline-block;
+    padding: 10.54px 37.29px;
+    margin-right: -2px;
+    margin-top: 1px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14.5px;
 }
 
 .burger-menu__masagers {
     display: flex;
     margin-top: 12px;
+    justify-content: center;
 }
 
-.burger-menu__image {
-    margin-left: 18.18px;
+.burger__mesagers {
+    width: 97px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger__phone {
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
 }
 
 .window {
+    margin-top: 100px;
     position: relative;
     margin-left: 20px;
     width: 1300px;
@@ -1655,7 +1681,6 @@ body {
 }
 
 .size__right {
-    /* position: relative; */
     width: 340px;
 }
 
@@ -1745,13 +1770,15 @@ body {
 }
 
 .trolley {
+    margin-top: 300px;
     position: relative;
     width: 1300px;
     height: 535px;
     margin-left: 50px;
     display: flex;
     border-radius: 25px;
-    background: #e4d990;
+    background: #FAFAFA;
+    box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
 }
 
 .trolley__order {
@@ -2166,7 +2193,6 @@ body {
         top: 19px;
         left: 332px;
     }
-
 }
 
 
@@ -2308,15 +2334,8 @@ body {
     .trolley__inf {
         margin-left: 322px;
     }
-
-
-
-
-
-
-
-
 }
+
 
 @media (max-width: 767px) {
 
@@ -2385,10 +2404,6 @@ body {
     .win__price {
         margin-top: 10px;
     }
-
-    /* .size__left {
-        display: none;
-    } */
 
     .size__button {
         top: 475px;
@@ -2691,6 +2706,4 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-
-
 }
