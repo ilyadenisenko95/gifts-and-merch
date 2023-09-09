@@ -3,40 +3,40 @@
 }
 
 .header-hero__navigation {
-    max-width: 545px;
     display: flex;
-    justify-content: space-between;
+    max-width: 545px;
     margin-top: 74px;
+    justify-content: space-between;
 }
 
 .header__navigation {
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     line-height: 105.5%;
-    color: #3C336C;
     text-decoration: none;
+    color: #3C336C;
 }
 
 .header-hero__image {
     position: absolute;
     right: 127px;
-    bottom: 0px;
+    bottom: 0;
     width: 50vw;
 }
 
 .specification__text {
     margin: 0;
     margin-top: 20px;
-    font-weight: 600;
     font-size: 36px;
+    font-weight: 600;
     line-height: 130%;
     color: #272525;
 }
 
 .specification__txt {
     margin-top: 20px;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 130%;
     color: #454747;
 }
@@ -50,8 +50,8 @@
 .guide__txt {
     margin-top: 80px;
     margin-bottom: 20px;
-    font-weight: 700;
     font-size: 48px;
+    font-weight: 700;
     line-height: 105.5%;
     color: #272525;
 }
@@ -70,8 +70,8 @@
 
 .description__txt {
     margin-bottom: 0;
-    font-weight: 600;
     font-size: 36px;
+    font-weight: 600;
     line-height: 130%;
     color: #272525;
 }
@@ -85,8 +85,8 @@
 .description__text {
     margin-top: 20px;
     margin-bottom: 0;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 130%;
     color: #454747;
 }
@@ -96,22 +96,22 @@
 }
 
 .description__item {
-    margin: 0;
     padding-left: 23px;
+    margin: 0;
     line-height: 130%;
 }
 
 .description__img {
     position: absolute;
-    right: 4px;
     top: 16px;
+    right: 4px;
     transform: rotate(180deg);
 }
 
 .description__string {
     position: relative;
-    margin-top: 30px;
     padding-bottom: 19px;
+    margin-top: 30px;
     border-bottom: 8px solid #F1F0F8;
 }
 
@@ -127,8 +127,8 @@
 
 .guide-image {
     position: absolute;
-    bottom: 90px;
     right: 0;
+    bottom: 90px;
 }
 
 .reach {
@@ -136,10 +136,10 @@
 }
 
 .reach__promo {
-    max-width: 990px;
-    margin-top: 10px;
-    padding-bottom: 192px;
     display: flex;
+    max-width: 990px;
+    padding-bottom: 192px;
+    margin-top: 10px;
     justify-content: space-between;
 }
 
@@ -150,22 +150,22 @@
 
 .contacts__text {
     margin-top: 2px;
-    font-weight: 700;
     font-size: 48px;
+    font-weight: 700;
     line-height: 103%;
     color: #272525;
 }
 
 .contacts__img {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 241px;
 }
 
 .contacts__mail {
     margin-bottom: 0;
-    font-weight: 600;
     font-size: 36px;
+    font-weight: 600;
     line-height: 103%;
     color: #272525;
 }
@@ -173,34 +173,34 @@
 .contacts__phone {
     margin-top: 28px;
     margin-bottom: 0;
-    font-weight: 800;
     font-size: 36px;
+    font-weight: 800;
     line-height: 37px;
     color: #272525;
 }
 
 .contacts__socials {
-    width: 143px;
-    margin: 0;
-    padding-left: 0;
     display: flex;
-    justify-content: space-between;
+    width: 143px;
+    padding-left: 0;
+    margin: 0;
     list-style-type: none;
+    justify-content: space-between;
 }
 
 .slogan__text {
     margin-left: 240px;
-    font-weight: 700;
     font-size: 48px;
+    font-weight: 700;
     line-height: 105.5%;
     color: #272525;
 }
 
 .slogan__txt {
     max-width: 300px;
-    margin-top: 0px;
-    font-weight: 600;
+    margin-top: 0;
     font-size: 24px;
+    font-weight: 600;
     line-height: 29px;
     color: #222227;
 }
@@ -219,8 +219,7 @@
     color: #272525;
 }
 
-@media (max-width: 1500px) {
-
+@media (width <= 1500px) {
     .header-hero__navigation {
         flex-wrap: wrap;
         margin-top: 40px;
@@ -251,8 +250,8 @@
     }
 
     .specification__txt{
-        margin-top: 20px;
         max-width: 800px;
+        margin-top: 20px;
     }
 
     .specification__text {
@@ -261,7 +260,7 @@
 
     .guide__txt {
         margin-top: 70px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .description__txt-hidden {
@@ -285,15 +284,15 @@
     }
 
     .guide-image {
+        right: 46px;
+        bottom: -405px;
         width: 361px;
         height: 361px;
-        bottom: -405px;
-        right: 46px;
     }
 
     .reach__promo {
-        padding-bottom: 247px;
         display: block;
+        padding-bottom: 247px;
         margin-top: 0;
     }
 
@@ -310,8 +309,7 @@
     }
 }
 
-@media (max-width: 999px) {
-
+@media (width <= 999px) {
     .hero__text {
         width: 300px;
         margin-top: 7px;
@@ -344,6 +342,7 @@
     }
 
     .guide__txt {
+        margin-top: 87px;
         font-size: 36px;
     }
 
@@ -351,17 +350,13 @@
         font-size: 28px;
     }
 
-    .guide__txt {
-        margin-top: 87px;
-    }
-
     .description__txt-active {
         margin-top: 23px;
     }
 
     .guide-image {
-        bottom: -387px;
         right: 2px;
+        bottom: -387px;
     }
 
     .reach__promo {
@@ -371,6 +366,7 @@
 
     .contacts__phone {
         margin-top: 13px;
+        font-size: 28px;
     }
 
     .contacts__socials {
@@ -386,19 +382,15 @@
         font-size: 28px;
     }
 
-    .contacts__phone {
-        font-size: 28px;
-    }
-
     .contacts {
         margin-top: 75px;
     }
 
     .contacts__img {
-        width: 34px;
-        height: 34px;
         top: -3px;
         left: 187px;
+        width: 34px;
+        height: 34px;
     }
 
     .slogan__text {
@@ -413,17 +405,9 @@
     .slogan {
         margin-top: 83px;
     }
-
-    .contacts__img {
-        width: 34px;
-        height: 34px;
-        top: -3px;
-        left: 187px;
-    }
 }
 
-@media (max-width: 767px) {
-
+@media (width <= 767px) {
     .hero__text {
         width: 280px;
         margin-top: -4px;
@@ -441,8 +425,8 @@
 
     .header-hero__image {
         right: 0;
-        left: -23px;
         bottom: 197px;
+        left: -23px;
         width: 500px;
     }
 
@@ -461,6 +445,7 @@
     .guide-image {
         display: none;
     }
+
     .specification__text {
         margin-top: 40px;
     }
@@ -492,26 +477,25 @@
     }
 }
 
-@media (max-width: 479px) {
-
+@media (width <= 479px) {
     .hero__text {
         width: 220px;
         margin-top: 23px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .hero__txt {
         width: 280px;
         margin-top: 20px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
         line-height: 137%;
     }
 
     .header-hero__image {
+        bottom: 0;
         left: -21px;
-        bottom: 0px;
         width: 425px;
     }
 
@@ -525,18 +509,14 @@
     }
 
     .description__txt {
-        font-size: 28px;
-    }
-
-    .description__txt {
-        text-align: center;
         font-size: 24px;
+        text-align: center;
     }
 
     .description__txt-active {
         margin-top: 30px;
-        text-align: center;
         font-size: 28px;
+        text-align: center;
     }
 
     .description__img-chanche {
@@ -548,8 +528,8 @@
         position: relative;
         display: inline-block;
         margin-bottom: 0;
-        text-align: center;
         font-size: 28px;
+        text-align: center;
     }
 
     .contacts__call {
@@ -562,8 +542,8 @@
 
     .contacts__mail {
         margin-top: 50px;
-        text-align: center;
         font-size: 24px;
+        text-align: center;
 
     }
 
@@ -573,21 +553,22 @@
 
     .contacts__phone {
         margin-top: 0;
-        text-align: center;
         font-size: 24px;
+        text-align: center;
     }
 
     .slogan__text {
-        text-align: center;
+        margin-bottom: 20px;
         font-size: 28px;
+        text-align: center;
     }
 
     .slogan__txt {
         max-width: 250px;
-        margin-bottom: 0px;
-        text-align: center;
+        margin-bottom: 0;
         font-size: 20px;
         line-height: 25px;
+        text-align: center;
     }
 
     .contacts__image {
@@ -597,16 +578,12 @@
 
     .contacts__socials {
         width: 114px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .slogan {
         margin-top: 55px;
-    }
-
-    .slogan__text {
-        margin-bottom: 20px;
     }
 
     .slogan__book {
