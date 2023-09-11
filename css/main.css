@@ -1,3 +1,6 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable order/properties-order */
 * {
     box-sizing: border-box;
 }
@@ -121,7 +124,7 @@ body {
 
 .header-nav {
     height: 100px;
-    background: rgb(250 251 253 / 44%);
+    background-color: rgb(250 251 253 / 44%);
 }
 
 .header-nav__container {
@@ -163,7 +166,7 @@ body {
 
 .header-list__navigation--active {
     color: #FAFBFD;
-    background: #272525;
+    background-color: #272525;
 }
 
 .header-list__navigation--active::after {
@@ -313,7 +316,7 @@ body {
     position: relative;
     width: 85.56px;
     height: 85.56px;
-    background: #EACEFF;
+    background-color: #EACEFF;
     border-radius: 50%;
 }
 
@@ -356,7 +359,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: #FFF;
-    background: #3C336C;
+    background-color: #3C336C;
     border-radius: 60px;
     align-items: center;
 }
@@ -419,6 +422,10 @@ body {
     color: #272525;
 }
 
+.footer-servis__gmail {
+    margin-top: 0;
+}
+
 .footer-servis__mail {
     margin-top: 3px;
     font-size: 16px;
@@ -437,7 +444,7 @@ body {
 .footer-servis__manager{
     display: flex;
     padding: 0;
-    margin-top: 28px;
+    margin-top: 32px;
     list-style-type: none;
 }
 
@@ -517,13 +524,13 @@ body {
 
 .footer__arrow {
     position: absolute;
-    top: 51%;
+    top: 53%;
     right: 95px;
     display: flex;
     width: 34px;
     height: 34px;
     cursor: pointer;
-    background: #524983;
+    background-color: #524983;
     border: none;
     border-radius: 50%;
     transform: translateY(-50%);
@@ -533,7 +540,6 @@ body {
 
 .footer-copy {
     margin-top: 8px;
-    margin-left: -53px;
 }
 
 .footer-copy__corp {
@@ -694,7 +700,7 @@ body {
         text-align: center;
         text-decoration: none;
         color: #FFF;
-        background: #3C336C;
+        background-color: #3C336C;
         border-radius: 60px;
         align-items: center;
     }
@@ -818,7 +824,7 @@ body {
 @media (width <= 999px) {
     .page-header {
         height: 80px;
-        background: rgb(250 251 253 / 44%);
+        background-color: rgb(250 251 253 / 44%);
     }
 
     .page-header__top {
@@ -1381,15 +1387,43 @@ body {
 
 
 /* Переместить до медиа выражений */
-.burger-menu {
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .burger__menu-gap {
+    transform: scale(1);
+}
+
+.gap {
     position: relative;
-    width: 280px;
-    height: 542px;
-    margin-left: 100px;
-    background: #FAFAFA;
     background-color: #FAFAFA;
-    border-radius: 6px;
     box-shadow: 0 16.0566px 20.0707px -4.01414px rgb(26 32 44 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.burger__menu-gap {
+    width: 280px;
+    border-radius: 6px;
 }
 
 .burger-menu__header {
@@ -1454,7 +1488,7 @@ body {
     line-height: 105.5%;
     text-align: center;
     color: #FAFBFD;
-    background: #272525;
+    background-color: #272525;
     border-radius: 6px;
 }
 
@@ -1546,6 +1580,7 @@ body {
 .burger-menu__masagers {
     display: flex;
     margin-top: 12px;
+    padding-bottom: 40px;
     justify-content: center;
 }
 
@@ -1561,23 +1596,27 @@ body {
     text-align: center;
 }
 
-.window {
-    position: relative;
+.modal.open .window__gap {
+    transform: scale(1);
+}
+
+.window__gap {
     display: flex;
     width: 1300px;
-    height: 987px;
     margin-top: 100px;
     margin-left: 20px;
-    background: #FAFAFA;
     border-radius: 25px;
-    box-shadow: 0 16.0566px 20.0707px -4.01414px rgb(26 32 44 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     flex-wrap: wrap;
 }
 
-.window__image {
+.modal__close {
     position: absolute;
     top: 18px;
     right: 17px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .window__picture {
@@ -1595,6 +1634,7 @@ body {
     display: flex;
     width: 318px;
     margin-top: 6px;
+    padding-bottom: 50px;
     justify-content: space-between;
 }
 
@@ -1627,6 +1667,10 @@ body {
     margin-top: 20px;
 }
 
+.color__win {
+    padding-left: 0;
+}
+
 .win__price {
     margin-top: 28px;
     margin-bottom: 0;
@@ -1648,7 +1692,7 @@ body {
 
 .size {
     display: flex;
-    width: 630px;
+    width: 634px;
     margin-top: 30px;
     justify-content: space-between;
 }
@@ -1665,7 +1709,7 @@ body {
 .size__choise {
     display: flex;
     width: 147px;
-    margin-top: 10px;
+    margin-top: 7px;
     justify-content: space-between;
 }
 
@@ -1673,18 +1717,45 @@ body {
     width: 340px;
 }
 
+.size__image {
+    margin-top: 7px;
+}
+
 .size__feature {
-    display: flex;
     width: 180px;
+    display: flex;
     justify-content: space-between;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* .size__image--active {
+    transform: rotate(180deg);
+} */
+
+.size__text-infor {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 105.5%;
+}
+
+.size__choise {
+    padding-left: 0;
 }
 
 .scale {
     margin: 0;
+    padding: 0;
     font-size: 14px;
     font-weight: 300;
     line-height: 105.5%;
     color: #524983;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .scale--active {
@@ -1750,7 +1821,7 @@ body {
 }
 
 .property__text {
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     margin-top: 14px;
     font-size: 16px;
     font-weight: 400;
@@ -1758,16 +1829,16 @@ body {
     border-bottom: 1px solid #524983;
 }
 
-.trolley {
-    position: relative;
+.trolley__gap {
     display: flex;
     width: 1300px;
-    height: 535px;
     margin-top: 300px;
     margin-left: 50px;
-    background: #FAFAFA;
     border-radius: 25px;
-    box-shadow: 0 16.0566px 20.0707px -4.01414px rgb(26 32 44 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
+}
+
+.modal.open .trolley__gap {
+    transform: scale(1);
 }
 
 .trolley__order {
@@ -1789,7 +1860,7 @@ body {
     color: #272525;
 }
 
-.trolley_txt {
+.trolley__txt {
     width: 337px;
     margin-top: 20px;
     font-size: 16px;
@@ -1801,6 +1872,7 @@ body {
 
 .trolley__inf {
     width: 264px;
+    padding-bottom: 85px;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -1810,18 +1882,39 @@ body {
     color: #737373;
 }
 
-.order__trolley {
+.trolley__orders {
     width: 279px;
     margin-top: 40px;
 }
 
-.order__info-trolley {
+.trolley__order-info {
+    width: 100%;
+    padding-top: 4px;
     margin-bottom: 28px;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(1 0 0);
+    outline: none;
 }
 
-.order__button-trolley {
-    padding: 21px 99px;
-    margin-top: 0;
+.trolley__order-info--active {
+    margin-bottom: 0;
+}
+
+.trolley__order-button {
+    display: inline-block;
+    padding: 21px 100px;
+    margin-top: 17px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+    text-decoration: none;
+    color: #EEF1F6;
+    cursor: pointer;
+    background-color: #1FAB8A;
+    border: none;
+    border-radius: 60px;
 }
 
 .basket__order {
@@ -1848,7 +1941,7 @@ body {
     display: flex;
     width: 70px;
     height: 70px;
-    background: #F1F1F8;
+    background-color: #F1F1F8;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
@@ -1859,36 +1952,33 @@ body {
     margin-left: 24px;
 }
 
+.details__color {
+    margin-top: 9px;
+}
+
 .details__text {
+    margin: 0;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
     color: #272525;
 }
 
-.details__color {
+.details__colors {
     display: flex;
-    width: 53px;
-    margin-top: 9px;
-    justify-content: space-between;
     align-items: center;
-}
-
-.details__color-text {
-    margin: 0;
     font-size: 12px;
     font-weight: 400;
     color: #454747;
-}
+  }
 
-.details__color-button {
+  .details__colors--green::after {
+    content: "";
+    display: block;
     width: 16px;
     height: 16px;
-    padding: 0 0.5px;
-    margin: 0;
-    background: transparent;
+    margin-left: 10px;
     background-color: #309F85;
-    border: none;
     border-radius: 50%;
 }
 
@@ -1899,6 +1989,7 @@ body {
 }
 
 .size__text {
+    margin: 0;
     font-size: 12px;
     font-weight: 400;
     line-height: 105.5%;
@@ -1917,8 +2008,9 @@ body {
 
 .details__quantity {
     width: 63px;
-    margin-top: 7px;
+    margin-top: 2px;
     margin-left: 34px;
+    text-align: center;
 }
 
 .quantity__text {
@@ -1953,6 +2045,7 @@ body {
     border-radius: 2px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .details__sum {
@@ -1976,12 +2069,12 @@ body {
 
 .order__dilivery {
     display: flex;
+    justify-content: space-between;
     width: 710px;
-    justify-content: space-between
+    margin-top: 21px;
 }
 
 .order__details {
-    margin-top: 19px;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
@@ -1989,21 +2082,15 @@ body {
 }
 
 .order__sum {
-    margin-top: 21px;
     font-size: 36px;
     font-weight: 700;
     text-align: right;
     color: #000;
 }
 
-.trolley__close {
-    position: absolute;
+.trolley__modal-close {
     top: 14px;
     right: 13px;
-    padding: 0;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
 }
 
 .trolley__line {
@@ -2012,7 +2099,7 @@ body {
     left: 449px;
     width: 2px;
     height: 464px;
-    background: #454747;
+    background-color: #454747;
 }
 
 
@@ -2021,9 +2108,8 @@ body {
 
 
 @media (width <= 1500px) {
-    .window {
+    .window__gap{
         width: 960px;
-        height: 729px;
     }
 
     .winwod-img {
@@ -2039,6 +2125,7 @@ body {
     .window__picture-img {
         width: 236px;
         margin-top: 2px;
+        padding-bottom: 35px;
     }
 
     .window__picture {
@@ -2075,15 +2162,22 @@ body {
         font-size: 15px;
     }
 
-    .window__image {
+    .modal__close {
         top: 12px;
         right: 10px;
-        width: 40px;
-        height: 40px;
+    }
+
+    .modal__close-img {
+        width: 45px;
+        height: 45px;
     }
 
     .size {
         width: 600px;
+    }
+
+    .size__feature {
+        width: 170px;
     }
 
     .property {
@@ -2097,9 +2191,8 @@ body {
         font-size: 11.815px;
     }
 
-    .trolley {
+    .trolley__gap {
         width: 960px;
-        height: 429px;
     }
 
     .trolley__order {
@@ -2112,19 +2205,23 @@ body {
         font-size: 28px;
     }
 
-    .trolley_txt {
+    .trolley__txt {
         width: 279px;
         margin-top: 12px;
         font-size: 14px;
     }
 
-    .order__trolley {
+    .trolley__orders {
         width: 279px;
         margin-top: 38px;
     }
 
     .trolley__box {
         width: 62.25%;
+    }
+
+    .trolley__inf {
+        padding-bottom: 16px;
     }
 
     .basket__order {
@@ -2142,6 +2239,7 @@ body {
     }
 
     .details__size {
+        margin-top: 15px;
         margin-left: 34px;
     }
 
@@ -2153,7 +2251,7 @@ body {
     }
 
     .details__quantity {
-        margin-top: 7px;
+        margin-top: 10px;
         margin-left: 37px;
     }
 
@@ -2180,9 +2278,8 @@ body {
 
 
 @media (width <= 999px) {
-    .window {
+    .window__gap {
         width: 728px;
-        height: 729px;
     }
 
     .win__text {
@@ -2217,21 +2314,21 @@ body {
         padding: 16px 90px;
     }
 
-    .window__image {
-        top: -15px;
-        right: -15px;
+    .modal__close {
+        top: -7px;
+        right: -7px;
     }
 
     .size__left {
         display: none;
     }
 
-    .size__text {
-        font-size: 16px;
-    }
-
     .size__feature {
         width: 155px;
+    }
+
+    .size__text-infor {
+        font-size: 16px;
     }
 
     .property {
@@ -2246,12 +2343,13 @@ body {
 
     .size {
         width: 180px;
+        margin-top: 16px;
+        padding-bottom: 150px;
     }
 
-    .trolley {
+    .trolley__gap{
         display: flex;
         width: 728px;
-        height: 729px;
         flex-wrap: wrap-reverse;
     }
 
@@ -2266,50 +2364,52 @@ body {
 
     .trolley__text {
         width: 100%;
-        padding-top: 13px;
+        padding-top: 37px;
     }
 
     .trolley__box {
         margin-left: 66px;
     }
 
-    .trolley__close-img {
-        width: 44.308px;
-        height: 44.308px;
-    }
-
-    .trolley__close {
+    .trolley__modal-close {
         top: 6px;
         right: 4px;
     }
 
-    .order__trolley {
+    .trolley__orders {
         display: flex;
         width: 100%;
         margin-top: 21px;
         flex-wrap: wrap;
     }
 
-    .order__info-trolley {
+    .trolley__order-info {
         width: calc(50% - 51px);
+        margin-right: 30px;
         margin-bottom: 20px;
-
     }
 
-    .order__info-trolley--active {
-        margin-left: 29px;
+    .trolley__order-info--active {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 50px;
     }
 
-    .order__button-trolley {
+    .trolley__order-button {
+        height: 60px;
+        margin-top: 0;
         margin-left: 38px;
     }
 
-    .trolley_txt {
+    .trolley__txt {
+        width: 100%;
         margin-bottom: 0;
     }
 
     .trolley__inf {
         margin-left: 322px;
+        margin-top: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -2321,20 +2421,18 @@ body {
 
     .window__picture {
         width: 100%;
-        height: 195px;
         margin-top: 16px;
         margin-left: 16px;
     }
 
     .window__order {
         width: 100%;
-        margin-top: 0;
+        margin-top: 30px;
         margin-left: 16px;
     }
 
-    .window {
+    .window__gap {
         width: 440px;
-        height: 808px;
     }
 
     .winwod-img {
@@ -2351,6 +2449,7 @@ body {
     .window__picture-img {
         width: 145px;
         margin-top: 4px;
+        padding-bottom: 0;
     }
 
 
@@ -2372,11 +2471,7 @@ body {
 
     .win__txt {
         width: 185px;
-        margin-top: 23px;
-    }
-
-    .win__price {
-        margin-top: 10px;
+        margin-top: 27px;
     }
 
     .size__button {
@@ -2386,7 +2481,7 @@ body {
     }
 
     .property {
-        top: 670px;
+        top: 690px;
         right: 180px;
     }
 
@@ -2394,17 +2489,18 @@ body {
         display: none;
     }
 
-    .trolley {
+    .trolley__gap {
         width: 440px;
-        height: 850px;
+        justify-content: center;
     }
 
-    .trolley__close-img {
-        width: 30px;
-        height: 30px;
+    .trolley__order {
+        width: 203px;
+        margin-left: 0;
+        padding-top: 40px;
     }
 
-    .trolley__close {
+    .trolley__modal-close {
         top: -10px;
         right: -10px;
     }
@@ -2420,29 +2516,31 @@ body {
         margin-top: 30px;
     }
 
-    .order__trolley {
+    .trolley__orders {
         display: block;
-        width: 100%;
-        margin-top: 25px;
+        width: 200px;
         margin-right: auto;
-        margin-left: 0;
+        margin-left: auto;
+        margin-top: 25px;
     }
 
     .trolley__inf {
+        width: 100%;
+        margin-top: 10px;
         margin-right: auto;
         margin-left: auto;
     }
 
 
-    .order__info-trolley {
+    .trolley__order-info {
         width: 100%;
     }
 
-    .order__info-trolley--active {
+    .trolley__order-info--active {
         margin-left: 0;
     }
 
-    .order__button-trolley {
+    .trolley__order-button {
         padding: 16px 61px;
         margin-left: 0;
         font-size: 14px;
@@ -2527,12 +2625,24 @@ body {
         text-align: center;
     }
 
-    .trolley_txt {
+    .trolley__txt {
         width: 203px;
+        margin-top: 6px;
         margin-right: auto;
         margin-left: auto;
         font-size: 12px;
         text-align: center;
+    }
+
+    .trolley__order-info {
+        margin-top: 7px;
+        margin-bottom: 6px;
+    }
+
+    .trolley__order-button {
+        height: 50px;
+        margin-top: 18px;
+        padding: 16px 71px;
     }
 
     .basket__order {
@@ -2544,23 +2654,31 @@ body {
         width: 30.102px;
         height: 37.818px;
     }
+
+    .modal__close-img {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 
 @media (width <= 479px) {
-    .window {
+    .window__gap {
         width: 280px;
-        height: 525px;
     }
 
     .window__picture {
-        height: 22.9vw;
+        /* height: 22.9vw; */
         margin-top: 11px;
         margin-left: 9px;
     }
 
     .window__picture-img {
         display: none;
+    }
+
+    .window__order {
+        margin-top: 10px;
     }
 
     .win__text {
@@ -2582,17 +2700,20 @@ body {
         width: 275px;
     }
 
+    .color__win {
+        margin: 0;
+    }
+
     .win__txt {
         width: 245px;
+        margin-top: 11px;
         font-size: 12px;
         text-align: center;
     }
 
-    .window__image {
+    .modal__close {
         top: -8px;
         right: -8px;
-        width: 28px;
-        height: 28px;
     }
 
     .size__left {
@@ -2603,7 +2724,12 @@ body {
         height: 157px;
     }
 
+    .size {
+        padding-bottom: 100px;
+    }
+
     .size__feature {
+        width: 130px;
         font-size: 14px;
     }
 
@@ -2612,23 +2738,43 @@ body {
         right: 45px;
     }
 
-    .trolley {
+    .size__right {
+        width: 155px;
+    }
+
+    .size__image {
+        margin-top: 0;
+    }
+
+    .size__text-infor {
+        font-size: 14px;
+    }
+
+    .property {
+        display: none;
+    }
+
+    .size__feature {
+        margin-left: 60px;
+    }
+
+    .trolley__gap {
         width: 280px;
     }
 
     .basket__order {
-        width: 88%;
+        width: 92%;
         margin-bottom: 61px;
         font-size: 18px;
     }
 
     .trolley__box {
-        margin-left: 13px;
+        margin-left: 0;
     }
 
     .order__details {
         position: absolute;
-        top: 37px;
+        top: 57px;
         right: 96px;
     }
 
@@ -2649,6 +2795,8 @@ body {
 
     .basket__selection {
         width: 257px;
+        margin-top: 26px;
+        margin-left: 13px;
     }
 
     .details__quantity {
@@ -2657,10 +2805,18 @@ body {
 
     .order__dilivery {
         width: 100%;
+        margin-top: 0;
     }
 
     .order__sum {
+        margin-top: 39px;
         margin-right: auto;
         margin-left: auto;
     }
+
+    .trolley__order-info {
+        font-size: 14px;
+    }
+
+
 }

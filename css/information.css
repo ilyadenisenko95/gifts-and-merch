@@ -43,9 +43,9 @@
 
 .specification__txt--purple {
     margin: 0;
+    margin-bottom: 40px;
     color:#524983;
 }
-
 
 .guide__txt {
     margin-top: 80px;
@@ -149,7 +149,7 @@
 }
 
 .contacts__text {
-    margin-top: 2px;
+    display: flex;
     font-size: 48px;
     font-weight: 700;
     line-height: 103%;
@@ -157,12 +157,11 @@
 }
 
 .contacts__img {
-    position: absolute;
-    top: 0;
-    left: 241px;
+    margin-left: 20px;
 }
 
 .contacts__mail {
+    margin-top: 50px;
     margin-bottom: 0;
     font-size: 36px;
     font-weight: 600;
@@ -255,11 +254,12 @@
     }
 
     .specification__text {
+        margin-top: 10px;
         margin-bottom: 0;
     }
 
     .guide__txt {
-        margin-top: 70px;
+        margin-top: 95px;
         margin-bottom: 0;
     }
 
@@ -288,6 +288,10 @@
         bottom: -405px;
         width: 361px;
         height: 361px;
+    }
+
+    .specification__text-one {
+        margin-top: 39px;
     }
 
     .reach__promo {
@@ -379,6 +383,7 @@
     }
 
     .contacts__mail {
+        margin-top: 36px;
         font-size: 28px;
     }
 
@@ -387,8 +392,6 @@
     }
 
     .contacts__img {
-        top: -3px;
-        left: 187px;
         width: 34px;
         height: 34px;
     }
@@ -403,7 +406,7 @@
     }
 
     .slogan {
-        margin-top: 83px;
+        margin-top: 86px;
     }
 }
 
@@ -465,11 +468,31 @@
 
     .slogan__book {
         flex-wrap: wrap;
-        width: 465px;
+        width: 100%;
+        justify-content: center;
     }
 
     .contacts {
         margin-top: 45px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .contacts__text {
+        justify-content: center;
+    }
+
+    .contacts__socials {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .slogan__text {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 
     .order__reach {
@@ -525,8 +548,6 @@
     }
 
     .contacts__text {
-        position: relative;
-        display: inline-block;
         margin-bottom: 0;
         font-size: 28px;
         text-align: center;
@@ -536,15 +557,10 @@
         text-align: center;
     }
 
-    .contacts__img {
-        left: 135px;
-    }
-
     .contacts__mail {
         margin-top: 50px;
         font-size: 24px;
         text-align: center;
-
     }
 
     .reach__promo {
@@ -574,6 +590,10 @@
     .contacts__image {
         width: 24px;
         height: 24px;
+    }
+
+    .contacts__img {
+        margin-left: 10px;
     }
 
     .contacts__socials {

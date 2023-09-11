@@ -100,15 +100,15 @@
 }
 
 .card__color-button--purple {
-    background: #524983;
+    background-color: #524983;
 }
 
 .card__color-button--green {
-    background: #309F85;
+    background-color: #309F85;
 }
 
 .card__color-button--silver {
-    background: #F1F1F1;
+    background-color: #F1F1F1;
 }
 
 .card__price {
@@ -190,7 +190,7 @@
     margin-left: 29px;
     font-size: 23px;
     color: white;
-    background: #7981AD;
+    background-color: #7981AD;
     border-radius: 50%;
     box-shadow: 0 16.0566px 20.0707px -4.01414px rgb(26 32 44 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
 }
@@ -207,7 +207,7 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: #ECE7F0;
+    background-color: #ECE7F0;
     border: none;
     border-radius: 50%;
     justify-content: center;
@@ -747,7 +747,7 @@
     }
 
     .decor {
-        padding-bottom: 588px;
+        padding-bottom: 164px;
         margin-top: 80px;
     }
 
@@ -768,35 +768,46 @@
     .decor__idea {
         width: 450px;
         margin-top: 39px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 28px;
         line-height: 110.9%;
+        text-align: center;
     }
 
     .decor__book {
-        width: 465px;
+        width: 100%;
         margin-top: 1px;
         flex-wrap: wrap;
     }
 
     .decor__text {
-        width: 101%;
+        width: 100%;
         margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 16px;
         line-height: 130%;
+        text-align: center;
     }
 
     .decor__connect {
-        width: 96%;
+        width: 465px;
         margin-top: 49px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 24px;
         line-height: 29px;
+        text-align: center;
     }
 
     .decor__picture {
-        top: 699px;
-        right: 138px;
-        width: 367px;
+        position: relative;
+        width: 200px;
         height: 344px;
+        margin-top: 80px;
+        margin-right: auto;
+        margin-left: auto;
         overflow: visible ;
     }
 
@@ -807,6 +818,9 @@
 
     .order {
         margin-top: 65px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 }
 
@@ -917,7 +931,7 @@
     }
 
     .decor {
-        padding-bottom: 537px;
+        padding-bottom: 103px;
     }
 
     .decor__basis {
@@ -966,12 +980,11 @@
     }
 
     .decor__picture {
-        top: 712px;
-        right: 77px;
+        margin-top: 90px;
     }
 
     .decor__picture-img {
-        right: -380px;
+        right: -362px;
         width: 366px;
         height: 345px;
         transform: translate(-83%,-11%);
