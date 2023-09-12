@@ -108,7 +108,8 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 105.5%;
-    color: #000;;
+    color: #000;
+    ;
     cursor: pointer;
     background-color: #FAFAFA;
     border: none;
@@ -153,7 +154,7 @@
     pointer-events: none;
 }
 
-.popular__basket-price{
+.popular__basket-price {
     position: absolute;
     top: 106px;
     right: 20px;
@@ -251,7 +252,7 @@
 .product__img {
     width: 100%;
     height: 27.74vw;
-    border-radius:  15px;
+    border-radius: 15px;
 }
 
 .product__picture {
@@ -460,11 +461,11 @@
 }
 
 .hand__partners-img {
-    transform: rotate(180deg) ;
+    transform: rotate(180deg);
 }
 
 
-@media (width <= 1500px) {
+@media (width <=1500px) {
     .popular {
         margin-top: -140px;
     }
@@ -658,7 +659,7 @@
     }
 }
 
-@media (width <= 999px) {
+@media (width <=999px) {
     .popular {
         margin-top: 138px;
     }
@@ -875,10 +876,10 @@
 
     .partners__list {
         width: 69%;
-}
+    }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
     .popular {
         margin-top: 122px;
     }
@@ -1120,7 +1121,7 @@
     }
 }
 
-@media (width <= 479px) {
+@media (width <=479px) {
     .popular__most {
         margin-bottom: -9px;
         font-size: 24px;
@@ -1326,7 +1327,7 @@
         transform: rotate(90deg);
     }
 
-    .hand__partners-img{
+    .hand__partners-img {
         margin-top: 50px;
         transform: rotate(270deg);
     }
@@ -1337,14 +1338,14 @@
     }
 }
 
-@media (width <= 420px) {
+@media (width <=420px) {
     .idea__img {
         top: 450px;
         left: 34%;
     }
 }
 
-@media (width <= 360px) {
+@media (width <=360px) {
     .idea__img {
         top: 480px;
         left: 34%;

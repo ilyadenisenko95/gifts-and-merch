@@ -44,7 +44,7 @@
 .specification__txt--purple {
     margin: 0;
     margin-bottom: 40px;
-    color:#524983;
+    color: #524983;
 }
 
 .guide__txt {
@@ -218,7 +218,7 @@
     color: #272525;
 }
 
-@media (width <= 1500px) {
+@media (width <=1500px) {
     .header-hero__navigation {
         flex-wrap: wrap;
         margin-top: 40px;
@@ -248,7 +248,7 @@
         margin-top: 92px;
     }
 
-    .specification__txt{
+    .specification__txt {
         max-width: 800px;
         margin-top: 20px;
     }
@@ -279,7 +279,7 @@
         margin-top: 40px;
     }
 
-    .description__string  {
+    .description__string {
         margin-top: 35px;
     }
 
@@ -313,7 +313,7 @@
     }
 }
 
-@media (width <= 999px) {
+@media (width <=999px) {
     .hero__text {
         width: 300px;
         margin-top: 7px;
@@ -410,13 +410,13 @@
     }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
     .hero__text {
         width: 280px;
         margin-top: -4px;
     }
 
-    .hero__txt{
+    .hero__txt {
         width: 400px;
         margin-top: 340px;
         font-size: 14px;
@@ -500,7 +500,7 @@
     }
 }
 
-@media (width <= 479px) {
+@media (width <=479px) {
     .hero__text {
         width: 220px;
         margin-top: 23px;

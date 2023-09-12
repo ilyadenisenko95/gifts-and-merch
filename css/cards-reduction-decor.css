@@ -9,7 +9,7 @@
 .cards__list {
     display: flex;
     margin-top: 40px;
-    justify-content:  space-between;
+    justify-content: space-between;
 }
 
 .card {
@@ -36,7 +36,7 @@
     border-top-left-radius: 15px;
 }
 
-.numbering{
+.numbering {
     position: absolute;
     right: 18px;
     bottom: 8px;
@@ -86,6 +86,8 @@
 }
 
 .card__color {
+    display: flex;
+    padding: 0;
     margin-top: 15px;
 }
 
@@ -222,7 +224,7 @@
 
 .reduction__item {
     width: 23%;
-    margin-right:  123px;
+    margin-right: 123px;
 }
 
 .reduction__title {
@@ -333,7 +335,7 @@
 
 .date__text {
     width: 250px;
-    color:#454747;
+    color: #454747;
     border: none;
 }
 
@@ -362,7 +364,7 @@
 }
 
 
-@media (width <= 1500px) {
+@media (width <=1500px) {
     .card__active {
         display: none;
     }
@@ -383,7 +385,7 @@
         box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
-    .numbering--card{
+    .numbering--card {
         right: 12px;
         bottom: 9px;
         padding: 3px;
@@ -403,7 +405,7 @@
         font-weight: 400;
     }
 
-    .card__name{
+    .card__name {
         font-size: 19.26px;
         font-weight: 600;
         line-height: 105.5%;
@@ -421,7 +423,7 @@
         margin-top: 12px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 19.26px;
         height: 19.26px;
         margin-top: 1px;
@@ -466,10 +468,10 @@
 
     .reduction__item {
         width: 39%;
-        margin-right:  92px;
+        margin-right: 92px;
     }
 
-   .reduction__text-color{
+    .reduction__text-color {
         margin-top: -15px;
     }
 
@@ -510,8 +512,8 @@
     }
 }
 
-@media (width <= 999px) {
-    .card__active{
+@media (width <=999px) {
+    .card__active {
         display: block;
     }
 
@@ -538,12 +540,12 @@
         box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
-    .numbering--card{
+    .numbering--card {
         right: 16px;
         bottom: 9px;
     }
 
-    .card__name{
+    .card__name {
         margin-top: 0;
         font-size: 22.2267px;
         font-weight: 600;
@@ -562,7 +564,7 @@
         margin-top: 9px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 22.23px;
         height: 22.23px;
         margin-top: 1px;
@@ -611,7 +613,7 @@
         margin-top: 14px;
     }
 
-    .decor__order{
+    .decor__order {
         top: 352px;
         left: 409px;
     }
@@ -631,7 +633,7 @@
     }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
     .card {
         width: calc(50% - 8px);
         margin-top: 7px;
@@ -672,13 +674,13 @@
         margin-top: 7px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 13.43px;
         height: 13.43px;
         margin-top: 1px;
     }
 
-    .numbering--card{
+    .numbering--card {
         right: 6px;
         bottom: 7px;
     }
@@ -737,7 +739,7 @@
         margin-right: 27px;
     }
 
-    .pagination__page-transition--active  {
+    .pagination__page-transition--active {
         margin-left: 12px;
     }
 
@@ -808,7 +810,7 @@
         margin-top: 80px;
         margin-right: auto;
         margin-left: auto;
-        overflow: visible ;
+        overflow: visible;
     }
 
     .decor__picture-img {
@@ -824,7 +826,7 @@
     }
 }
 
-@media (width <= 479px) {
+@media (width <=479px) {
     .card {
         width: calc(100% - 1px);
         margin-top: -6px;
@@ -844,7 +846,7 @@
         box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
-    .card__name{
+    .card__name {
         width: 238px;
         margin-top: 5px;
         font-size: 17.7778px;
@@ -864,13 +866,13 @@
         margin-top: 9px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 17.78px;
         height: 17.78px;
         margin-top: 1px;
     }
 
-    .numbering--card{
+    .numbering--card {
         right: 12px;
         bottom: 8px;
     }
@@ -987,7 +989,7 @@
         right: -362px;
         width: 366px;
         height: 345px;
-        transform: translate(-83%,-11%);
+        transform: translate(-83%, -11%);
     }
 
     .decor__book {
@@ -996,4 +998,3 @@
         justify-content: center;
     }
 }
-
