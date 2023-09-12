@@ -17,6 +17,7 @@ body {
 }
 
 .header-bg {
+    position: relative;
     background: linear-gradient(38.95deg, #9796F0 -10.38%, #FBC7D4 107.56%);
 }
 
@@ -384,6 +385,20 @@ body {
     display: none;
 }
 
+.header__wave {
+    position: absolute;
+    bottom: -5px;
+}
+
+.header__wave-img {
+    width: 100%;
+}
+
+.container__footer {
+    position: relative;
+    background-color: #F7F3F7;
+}
+
 .footer {
     position: relative;
     margin-bottom: 30px;
@@ -498,9 +513,11 @@ body {
 }
 
 .footer-roster__tel {
+    position: relative;
     width: 277px;
     padding: 4px;
     margin-top: 24px;
+    background-color: #fff;
     border: 2px solid #272525;
     border-radius: 15px;
 }
@@ -519,8 +536,8 @@ body {
 
 .footer__arrow {
     position: absolute;
-    top: 53%;
-    right: 95px;
+    top: 50%;
+    right: 10px;
     display: flex;
     width: 34px;
     height: 34px;
@@ -538,6 +555,7 @@ body {
 }
 
 .footer-copy__corp {
+    padding-bottom: 50px;
     margin: 0;
     font-size: 13px;
     font-weight: 400;
@@ -551,6 +569,16 @@ body {
     color: #9FA3B2;
     ;
 }
+
+.footer__wave {
+    position: absolute;
+    bottom: -6px;
+}
+
+.footer__wave-img {
+    width: 100%;
+}
+
 
 @media (width <=1500px) {
     .main-container {
@@ -787,10 +815,6 @@ body {
         width: 24%;
     }
 
-    .footer__arrow {
-        right: 11px;
-    }
-
     .footer-manager {
         display: flex;
         width: 100%;
@@ -807,13 +831,16 @@ body {
     }
 
     .footer-roster__tel {
-        position: relative;
         margin-top: -9px;
     }
 
     .footer-copy {
         margin-top: 39px;
         margin-left: 0;
+    }
+
+    .footer__wave {
+        bottom: 69px;
     }
 }
 
@@ -869,6 +896,7 @@ body {
     }
 
     .header-hero {
+        min-height: 503px;
         padding-top: 22px;
     }
 
@@ -932,7 +960,7 @@ body {
 
     .header-hero__picture {
         right: -3px;
-        bottom: 135px;
+        bottom: 7px;
         display: block;
         width: 67.7vw;
     }
@@ -1006,6 +1034,10 @@ body {
     .footer-copy {
         margin-top: 27px;
     }
+
+    .footer__wave {
+        bottom: 97px;
+    }
 }
 
 @media (width <=767px) {
@@ -1031,6 +1063,7 @@ body {
     }
 
     .header-hero {
+        min-height: 443px;
         padding-top: 26px;
     }
 
@@ -1070,9 +1103,16 @@ body {
         margin-bottom: 8px;
     }
 
+    .header-hero__creation {
+        display: flex;
+        width: 210px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .header-hero__create {
         margin-bottom: 4px;
-        margin-left: 55px;
+        margin-left: 0;
         font-size: 14px;
         font-weight: 500;
         line-height: 140%;
@@ -1107,7 +1147,7 @@ body {
 
     .header-hero__picture {
         right: -44px;
-        bottom: 174px;
+        bottom: 0;
         width: 76.7vw;
     }
 
@@ -1160,6 +1200,10 @@ body {
     .footer-copy {
         margin-top: 25px;
     }
+
+    .footer__wave {
+        bottom: -5px;
+    }
 }
 
 @media (width <=479px) {
@@ -1208,7 +1252,7 @@ body {
 
     .header-hero {
         padding-top: 10px;
-        padding-bottom: 228px;
+        padding-bottom: 0;
     }
 
     .header-hero__main {
@@ -1278,7 +1322,7 @@ body {
 
     .header-hero__picture {
         right: -6px;
-        bottom: 311px;
+        bottom: 0;
         width: 118.7vw;
     }
 
@@ -1289,10 +1333,9 @@ body {
     }
 
     .header-hero__creation {
-        display: flex;
+        width: 280px;
         margin-top: 323px;
-        flex-direction: column;
-        align-items: center;
+
     }
 
     .footer-image {
@@ -1364,6 +1407,14 @@ body {
 
     .footer-manager {
         margin-top: 70px;
+    }
+
+    .header__wave {
+        bottom: -6px;
+    }
+
+    .header__wave-img {
+        transform: scaleY(3) translateY(-32%);
     }
 }
 

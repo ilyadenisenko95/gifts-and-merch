@@ -532,7 +532,7 @@
     }
 
     .cards__header {
-        margin-top: -104px;
+        margin-top: 0;
     }
 
     .card__info {
@@ -641,7 +641,7 @@
     }
 
     .cards__header {
-        margin-top: -152px;
+        margin-top: 10px;
         font-size: 28px;
         line-height: 34px;
     }
@@ -834,7 +834,7 @@
     }
 
     .cards__header {
-        margin-top: -205px;
+        margin-top: 22px;
         font-size: 28px;
         line-height: 34px;
     }
