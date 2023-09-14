@@ -30,7 +30,7 @@
         <div class="page-header__buttons">
           <button type="button" class="page-header__profile-btn"><img class="but-image" src="/img/men.svg" alt=""></button>
           <button type="button" class="page-header__button active">RU</button>
-          /
+          <p class="page-slash">/</p>
           <button type="button" class="page-header__button">ENG</button>
         </div>
       </div>
@@ -39,13 +39,13 @@
         <div class="header-nav__container main-container">
           <ul class="header-list">
             <li class="header-list__item">
-              <a class="header-list__navigation" href="#">Наборы</a>
+              <a class="header-list__navigation" href="/sets.html">Наборы</a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation header-list__navigation--active" href="#">Все товары </a>
+              <a class="header-list__navigation header-list__navigation--active" href="/sets.html">Все товары </a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation" href="#">Информация</a>
+              <a class="header-list__navigation" href="/information.html">Информация</a>
             </li>
           </ul>
           <div class="header-text">Шопперы со скидкой - 25%</div>
@@ -91,6 +91,7 @@
         <img class="header-hero__picture_new" src="./img/main/fashion-girl480.png" alt="prize">
       </picture>
     </section>
+    <img class="header__wave" src="/img/main/header-wave.svg" alt="wave">
   </div>
 
   <div class="popular main-container">
@@ -121,7 +122,7 @@
     </div>
     <div class="popular__purchases">
       <button class="popular__purchases-look">Продолжить покупки</button>
-      <a class="popular__purchases-buy" href="#">В корзину</a>
+      <button class="popular__purchases-buy" type="menu">В корзину</button>
       <img class="popular__purchases-exit" src="./img/main/X.svg" alt="x">
     </div>
     <button type="button" class="popular__basket">
@@ -212,9 +213,9 @@
     </div>
   </div>
 
-  <div class="partners main-container">
-    <p class="partners__text">С нами соотрудничают</p>
-    <div class="partners__logo">
+  <div class="partners">
+    <p class="partners__text main-container">С нами соотрудничают</p>
+    <div class="partners__logo main-container">
       <button type="button" class="hand hand__partners"><img src="/img/left.png" alt=""></button>
       <ul class="partners__list">
         <li class="partners__items"><img class="partners__img" src="/img/Logo_NIKE1.png" alt="nike"></li>
@@ -225,69 +226,71 @@
       </ul>
       <button type="button" class="hand hand__partners hand__img hand__partners-img"><img src="/img/left.png" alt=""></button>
     </div>
+    <img class="footer__wave" src="/img/footer/footer-wave.svg" alt="wave">
   </div>
 
-  <footer class="footer main-container">
-    <div class="footer-nav">
-      <div class="footer-servis">
-        <div class="footer-servis__gift">
-          <a href="#">
-            <img class="footer-image" src="/img/logo.svg" alt="gifts logo">
-          </a>
-          <div class="footer-servis__text">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее </div>
-        </div>
-        <div class="footer-servis__connect">
-          <div class="footer-servis__relations">
-            <p class="footer-servis__tel"><a class="footer-servis__phone" href="tel:+79283627229">+380 630 130 103</a></p>
-            <p class="footer-servis__gmail"><a class="footer-servis__mail" href="mailto:example@gmail.com">example@gmail.com</a></p>
+  <div class="container__footer">
+    <footer class="footer main-container">
+      <div class="footer-nav">
+        <div class="footer-servis">
+          <div class="footer-servis__gift">
+            <a href="#">
+              <img class="footer-image" src="/img/logo.svg" alt="gifts logo">
+            </a>
+            <div class="footer-servis__text">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее </div>
           </div>
-          <div class="footer-servis__logo">
-            <ul class="footer-servis__manager">
-              <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/facebook.svg" alt=""></a></li>
-              <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/Instagram.svg" alt=""></a></li>
-              <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/in.svg" alt=""></a></li>
-            </ul>
+          <div class="footer-servis__connect">
+            <div class="footer-servis__relations">
+              <p class="footer-servis__tel"><a class="footer-servis__phone" href="tel:+79283627229">+380 630 130 103</a></p>
+              <p class="footer-servis__gmail"><a class="footer-servis__mail" href="mailto:example@gmail.com">example@gmail.com</a></p>
+            </div>
+            <div class="footer-servis__logo">
+              <ul class="footer-servis__manager">
+                <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/facebook.svg" alt=""></a></li>
+                <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/Instagram.svg" alt=""></a></li>
+                <li><a class="footer-img" href="#"><img class="footer-img__logo" src="/img/footer/in.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-row">
+          <div class="footer-roster__cat">
+            <h3 class="footer-roster__rank">Категории</h3>
+          </div>
+          <ul class="footer-roster__list">
+            <li class="footer-list footer-roster__list-item"><a class="footer-link" href="#">Пошив</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Все товары</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Наборы</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Производство</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <div class="footer-roster__cat">
+            <h3 class="footer-roster__rank">Информация</h3>
+          </div>
+          <ul class="footer-roster__list">
+            <li class="footer-list"><a class="footer-link" href="#">О нас</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">ЧаВо</a></li>
+            <li class="footer-list"><a class="footer-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-manager">
+          <div class="footer-roster__cat">
+            <h3 class="footer-roster__rank footer-roster__ranks">Связаться с менеджером</h3>
+
+          </div>
+          <div class="footer-roster__text">Есть вопрос на который не нашли ответ? <br> Оставьте контакт и наш менеджер свяжеться с вами</div>
+          <div class="footer-roster__tel">
+            <input type="tel" class="footer__phone" name="phone" placeholder="Номер телефона">
+            <button type="button" class="footer__arrow"><img class="footer__arrow-img" src="/img/footer/Group6.svg" alt=""></button>
           </div>
         </div>
       </div>
-      <div class="footer-row">
-        <div class="footer-roster__cat">
-          <h3 class="footer-roster__rank">Категории</h3>
-        </div>
-        <ul class="footer-roster__list">
-          <li class="footer-list footer-roster__list-item"><a class="footer-link" href="#">Пошив</a></li>
-          <li class="footer-list"><a class="footer-link" href="#">Все товары</a></li>
-          <li class="footer-list"><a class="footer-link" href="#">Наборы</a></li>
-          <li class="footer-list"><a class="footer-link" href="#">Производство</a></li>
-        </ul>
+      <div class="footer-copy">
+        <p class="footer-copy__corp">© 2022 . All rights reserved. <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a></p>
       </div>
-      <div class="footer-info">
-        <div class="footer-roster__cat">
-          <h3 class="footer-roster__rank">Информация</h3>
-        </div>
-        <ul class="footer-roster__list">
-          <li class="footer-list"><a class="footer-link" href="#">О нас</a></li>
-          <li class="footer-list"><a class="footer-link" href="#">ЧаВо</a></li>
-          <li class="footer-list"><a class="footer-link" href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="footer-manager">
-        <div class="footer-roster__cat">
-          <h3 class="footer-roster__rank footer-roster__ranks">Связаться с менеджером</h3>
-
-        </div>
-        <div class="footer-roster__text">Есть вопрос на который не нашли ответ? <br> Оставьте контакт и наш менеджер свяжеться с вами</div>
-        <div class="footer-roster__tel">
-          <input type="tel" class="footer__phone" name="phone" placeholder="Номер телефона">
-          <button type="button" class="footer__arrow"><img class="footer__arrow-img" src="/img/footer/Group6.svg" alt=""></button>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy">
-      <p class="footer-copy__corp">© 2022 . All rights reserved. <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a></p>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 
 </html>

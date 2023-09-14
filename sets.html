@@ -34,7 +34,7 @@
             <img class="but-image" src="/img/men.svg" alt="">
           </button>
           <button type="button" class="page-header__button active">RU</button>
-          /
+          <p class="page-slash">/</p>
           <button type="button" class="page-header__button">ENG</button>
         </div>
       </div>
@@ -43,13 +43,13 @@
         <div class="header-nav__container main-container">
           <ul class="header-list">
             <li class="header-list__item">
-              <a class="header-list__navigation" href="/collections">Наборы</a>
+              <a class="header-list__navigation header-list__navigation--active" href="/">Наборы</a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation header-list__navigation--active" href="products">Все товары </a>
+              <a class="header-list__navigation" href="/">Все товары </a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation" href="information">Информация</a>
+              <a class="header-list__navigation" href="/information.html">Информация</a>
             </li>
           </ul>
           <div class="header-text">Шопперы со скидкой - 25%</div>
@@ -77,9 +77,7 @@
         <img class="header-hero__picture" src="./img/prize1920.png" alt="prize">
       </picture>
     </section>
-    <div class="header__wave">
-      <img class="header__wave-img" src="/img/main/header-wave.svg" alt="">
-    </div>
+    <img class="header__wave" src="/img/main/header-wave.svg" alt="wave">
   </div>
 
   <div class="cards main-container">
@@ -102,7 +100,7 @@
           <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <ul class="card__color">
-            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple"></button></li>
+            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
           </ul>
@@ -133,7 +131,7 @@
           <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <ul class="card__color">
-            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple"></button></li>
+            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
           </ul>
@@ -164,7 +162,7 @@
           <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <ul class="card__color">
-            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple"></button></li>
+            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
           </ul>
@@ -193,7 +191,7 @@
           <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
           <ul class="card__color">
-            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple"></button></li>
+            <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
             <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
           </ul>
@@ -249,31 +247,28 @@
     </div>
   </div>
 
-  <div class="decor">
-    <div class="main-container">
-      <div class="decor__basis">
-        <div class="decor__image"><img class="decor__img" src="/img/Pangolin.png" alt=""></div>
-        <p class="decor__idea">Как создать бокс по Вашей идее?</p>
-        <p class="decor__text">У вас своя уникальная идея для бокса или хотите все стилизовать к одному виду?</p>
-        <div class="book decor__book">
-          <p class="decor__connect">Введите свои контактные данные, и наш менеджер свяжется с Вами <span class="colortext">в&nbsp;течении 15 минут</span> </p>
-          <form class="order" action="self">
-            <input type="text" class="order__info" name="login" placeholder="Ваше Имя">
-            <input type="email" class="order__info" name="email" placeholder="Ваша електронная почта">
-            <input type="tel" class="order__info" name="tel" placeholder="Ваш номер телефона">
-            <button type="button" class="order__button">
-              Заказать
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="decor__picture">
-        <img class="decor__picture-img" src="/img/Photo.png" alt="">
+  <div class="decor ">
+    <div class="decor__basis main-container">
+      <div class="decor__image"><img class="decor__img" src="/img/Pangolin.png" alt=""></div>
+      <p class="decor__idea">Как создать бокс по Вашей идее?</p>
+      <p class="decor__text">У вас своя уникальная идея для бокса или хотите все стилизовать к одному виду?</p>
+      <div class="book decor__book">
+        <p class="decor__connect">Введите свои контактные данные, и наш менеджер свяжется с Вами <span class="colortext">в&nbsp;течении 15 минут</span> </p>
+        <form class="order" action="self">
+          <input type="text" class="order__info" name="login" placeholder="Ваше Имя">
+          <input type="email" class="order__info" name="email" placeholder="Ваша електронная почта">
+          <input type="tel" class="order__info" name="tel" placeholder="Ваш номер телефона">
+          <button type="button" class="order__button">
+            Заказать
+          </button>
+        </form>
       </div>
     </div>
-    <div class="footer__wave">
-      <img class="footer__wave-img" src="/img/footer/footer-wave.svg" alt="">
+    <div class="decor__picture">
+      <img class="decor__picture-img" src="/img/Photo.png" alt="">
     </div>
+    <img class="wave decor-wave" src="/img/creative-wave.svg" alt="wave">
+    <img class="footer__wave" src="/img/footer/footer-wave.svg" alt="wave">
   </div>
 
   <div class="container__footer">
@@ -337,11 +332,7 @@
           <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a>
         </p>
       </div>
-
     </footer>
-    <!-- <div class="footer__wave">
-      <img class="footer__wave-img" src="/img/footer/footer-wave.svg" alt="">
-    </div> -->
   </div>
 
 

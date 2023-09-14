@@ -30,6 +30,11 @@
     box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
 }
 
+.card__color-button--active {
+    outline: solid 3px #000;
+    outline-style: double;
+}
+
 .card__image {
     width: 100%;
     border-top-right-radius: 15px;
@@ -51,7 +56,7 @@
 
 .numbering__direction {
     display: flex;
-    padding: 5px;
+    padding: 6px 8px 6px 5px;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -62,7 +67,7 @@
 }
 
 .numbering__number--card {
-    margin: 0 5px;
+    margin: 0;
 }
 
 .hand__cards-img {
@@ -96,6 +101,7 @@
     height: 24px;
     padding: 0 0.5px;
     margin: 0;
+    cursor: pointer;
     background: transparent;
     border: none;
     border-radius: 50%;
@@ -116,7 +122,7 @@
 .card__price {
     margin: 0;
     margin-top: 37px;
-    margin-bottom: 3px;
+    margin-bottom: 11px;
     font-size: 24px;
     font-weight: 600;
     line-height: 105.5%;
@@ -126,7 +132,8 @@
 .card__cart {
     position: absolute;
     right: 11px;
-    bottom: 10px;
+    bottom: 17px;
+    cursor: pointer;
     background: transparent;
     border: none;
 }
@@ -134,7 +141,7 @@
 .pagination {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .pagination__more {
@@ -153,6 +160,7 @@
 
 .pagination__menu {
     height: 42px;
+    cursor: pointer;
     background: transparent;
     border: none;
 }
@@ -254,10 +262,6 @@
     position: relative;
     padding-bottom: 290px;
     margin-top: 111px;
-    background-image: url('../img/creative-wave.svg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .decor__img {
@@ -361,6 +365,20 @@
 
 .order__button:active {
     background-color: #156B57;
+}
+
+
+.wave {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.decor-wave {
+    top: -93px;
 }
 
 
@@ -510,6 +528,11 @@
         height: 533px;
         object-fit: cover;
     }
+
+    .decor-wave {
+        top: 300px;
+        transform: scaleY(2) translateY(-36%);
+    }
 }
 
 @media (width <=999px) {
@@ -541,8 +564,8 @@
     }
 
     .numbering--card {
-        right: 16px;
-        bottom: 9px;
+        right: 11px;
+        bottom: 13px;
     }
 
     .card__name {
@@ -571,8 +594,8 @@
     }
 
     .card__price {
-        margin-top: 34px;
-        margin-bottom: 3px;
+        margin-top: 26px;
+        margin-bottom: 10px;
         font-size: 22.2267px;
         font-weight: 600;
         line-height: 105.5%;
@@ -598,7 +621,7 @@
     }
 
     .numbering__direction--card {
-        padding: 4px;
+        padding: 2px 9px;
     }
 
     .reduction {
@@ -631,6 +654,10 @@
         width: 335px;
         height: 318px;
     }
+
+    .decor-wave {
+        transform: scaleY(2.6) translateY(-29%);
+    }
 }
 
 @media (width <=767px) {
@@ -656,7 +683,7 @@
 
     .card__name {
         width: 180px;
-        margin-top: 1px;
+        margin-top: 0;
         font-size: 13.4338px;
         font-weight: 600;
         line-height: 105.5%;
@@ -681,12 +708,12 @@
     }
 
     .numbering--card {
-        right: 6px;
+        right: 2px;
         bottom: 7px;
     }
 
     .numbering__direction--card {
-        padding: 2px;
+        padding: 2px 7px;
     }
 
     .numbering__arrow--card {
@@ -700,7 +727,7 @@
 
     .card__price {
         margin-top: 17px;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
         font-size: 13.4338px;
         font-weight: 600;
         line-height: 105.5%;
@@ -713,14 +740,14 @@
 
     .card__cart {
         right: 4px;
-        bottom: 19px;
+        bottom: 21px;
     }
 
     .pagination {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .pagination__menu {
@@ -729,6 +756,7 @@
 
     .pagination__more {
         margin-top: 0;
+        text-align: center;
     }
 
     .pagination__page {
@@ -823,6 +851,11 @@
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+    }
+
+    .decor-wave {
+        top: 882px;
+        transform: scaleY(2.6) translateY(-33%);
     }
 }
 
@@ -997,4 +1030,10 @@
         margin-top: 1px;
         justify-content: center;
     }
+
+    .decor-wave {
+        top: 880px;
+        transform: scaleY(3.3) translateY(-33%);
+    }
+
 }

@@ -109,7 +109,6 @@
     font-weight: 500;
     line-height: 105.5%;
     color: #000;
-    ;
     cursor: pointer;
     background-color: #FAFAFA;
     border: none;
@@ -123,6 +122,8 @@
     line-height: 105.5%;
     color: rgb(31 171 138 / 50%);
     cursor: pointer;
+    background-color: #FAFAFA;
+    border: none;
     text-decoration-line: underline;
 }
 
@@ -334,10 +335,6 @@
     align-items: center;
 }
 
-.numbering__direction-product {
-    padding: 9px;
-}
-
 .product__numbering {
     position: static;
     margin-top: 20px;
@@ -426,6 +423,7 @@
 }
 
 .partners {
+    position: relative;
     padding-bottom: 140px;
 }
 

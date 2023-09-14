@@ -77,7 +77,7 @@
 }
 
 .description__txt-active {
-    margin-top: 60px;
+    margin-top: 30px;
     font-weight: 700;
     color: #3C336C;
 }
@@ -101,10 +101,17 @@
     line-height: 130%;
 }
 
-.description__img {
+.description__item-button {
     position: absolute;
     top: 16px;
-    right: 4px;
+    right: 0;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #ffff;
+    border: none;
+}
+
+.description__img {
     transform: rotate(180deg);
 }
 
@@ -116,9 +123,12 @@
 }
 
 .description__img-chanche {
-    top: 15px;
-    right: 3px;
     transform: rotate(0deg);
+}
+
+.description__item-but {
+    top: 15px;
+    right: 0;
 }
 
 .description__float-hidden {
@@ -139,7 +149,7 @@
     display: flex;
     max-width: 990px;
     padding-bottom: 192px;
-    margin-top: 10px;
+    margin-top: 70px;
     justify-content: space-between;
 }
 
@@ -218,6 +228,7 @@
     color: #272525;
 }
 
+
 @media (width <=1500px) {
     .header-hero__navigation {
         flex-wrap: wrap;
@@ -254,7 +265,7 @@
     }
 
     .specification__text {
-        margin-top: 10px;
+        margin-top: 58px;
         margin-bottom: 0;
     }
 
@@ -291,7 +302,7 @@
     }
 
     .specification__text-one {
-        margin-top: 39px;
+        margin-top: 62px;
     }
 
     .reach__promo {
@@ -329,8 +340,12 @@
 
     .header-hero__image {
         right: -302px;
-        bottom: 148px;
+        bottom: 46px;
         width: 90vw;
+    }
+
+    .information__header-wave {
+        transform: scaleY(2) translateY(-25%);
     }
 
     .specification__text {
@@ -428,13 +443,13 @@
 
     .header-hero__image {
         right: 0;
-        bottom: 197px;
+        bottom: 188px;
         left: -23px;
         width: 500px;
     }
 
     .guide__txt {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .description__txt-active {
@@ -450,7 +465,11 @@
     }
 
     .specification__text {
-        margin-top: 40px;
+        margin-top: 39px;
+    }
+
+    .specification__text-one {
+        margin-top: 50px;
     }
 
     .specification__txt {
@@ -459,7 +478,7 @@
 
     .reach__promo {
         padding-bottom: 157px;
-        margin-top: 40px;
+        margin-top: 0;
     }
 
     .slogan {
@@ -473,7 +492,7 @@
     }
 
     .contacts {
-        margin-top: 45px;
+        margin-top: 50px;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
@@ -510,6 +529,7 @@
 
     .hero__txt {
         width: 280px;
+        padding-bottom: 239px;
         margin-top: 20px;
         margin-right: auto;
         margin-left: auto;
@@ -527,7 +547,7 @@
     }
 
     .guide__txt {
-        margin-top: 70px;
+        margin-top: 62px;
         font-size: 28px;
     }
 
@@ -558,7 +578,7 @@
     }
 
     .contacts__mail {
-        margin-top: 50px;
+        margin-top: 43px;
         font-size: 24px;
         text-align: center;
     }
