@@ -88,7 +88,7 @@ body {
     margin-right: 3px;
     font-size: 16px;
     line-height: 16.88px;
-    background: url("/img/search.svg") no-repeat left;
+    background: url("../img/search.svg") no-repeat left;
     background-position: 28px;
     background-size: 4.2%;
     border: 4px solid black;
@@ -292,7 +292,13 @@ body {
     list-style-type: none;
 }
 
-.header-hero__logo:nth-of-type(1) {
+.header-hero__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .header-hero__logo:nth-of-type(1) {
     position: absolute;
     top: 257px;
     left: 26px;
@@ -317,7 +323,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .header-hero__logos {
     position: relative;
@@ -2074,6 +2080,7 @@ body {
 }
 
 .quantity__txt {
+    margin-top: 0;
     font-size: 9px;
     font-weight: 400;
     line-height: 105.5%;

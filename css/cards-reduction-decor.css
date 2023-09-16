@@ -383,14 +383,14 @@
 
 
 @media (width <=1500px) {
-    .card__active {
-        display: none;
-    }
-
     .card {
         width: calc(35% - 32px);
         margin-top: 21px;
         margin-right: 2px;
+    }
+
+    .card:nth-of-type(4) {
+        display: none;
     }
 
     .cards__list {
@@ -536,10 +536,6 @@
 }
 
 @media (width <=999px) {
-    .card__active {
-        display: block;
-    }
-
     .cards__list {
         display: flex;
         flex-wrap: wrap;
@@ -552,6 +548,10 @@
         margin-top: 1px;
         margin-right: -0;
         margin-bottom: 32px;
+    }
+
+    .card:nth-of-type(4) {
+        display: block;
     }
 
     .cards__header {
