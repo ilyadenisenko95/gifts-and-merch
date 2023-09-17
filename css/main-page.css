@@ -174,6 +174,14 @@
     color: #272525;
 }
 
+.creative {
+    position: relative;
+}
+
+.creative-wave {
+    top: -130px;
+}
+
 .creative-main {
     position: relative;
     margin-top: 151px;
@@ -465,7 +473,7 @@
 
 @media (width <=1500px) {
     .popular {
-        margin-top: -140px;
+        margin-top: 0;
     }
 
     .popular__all {
@@ -497,6 +505,11 @@
     .popular-goods_desc {
         margin-top: 3px;
         font-size: 18px;
+    }
+
+    .creative-wave {
+        top: 240px;
+        transform: scaleY(2) translateY(-36%);
     }
 
     .creative-main {
@@ -659,7 +672,7 @@
 
 @media (width <=999px) {
     .popular {
-        margin-top: 138px;
+        margin-top: 30px;
     }
 
     .popular__most {
@@ -703,7 +716,7 @@
     }
 
     .popular__basket {
-        top: -87px;
+        top: -47px;
     }
 
     .popular__basket-img {
@@ -879,7 +892,7 @@
 
 @media (width <=767px) {
     .popular {
-        margin-top: 122px;
+        margin-top: 69px;
     }
 
     .popular__goods {
@@ -926,6 +939,12 @@
 
     .popular__basket {
         top: -81px;
+        right: 14px;
+    }
+
+    .creative-wave {
+        top: 642px;
+        transform: scaleY(2.5) translateY(-36%);
     }
 
     .creative-main {
@@ -1161,12 +1180,32 @@
         bottom: -40px;
     }
 
+    .creative-wave {
+        top: 746px;
+        transform: scaleY(3.7) translateY(-36%);
+    }
+
     .creative-main {
+        padding-right: 0;
+        padding-left: 0;
         margin-top: 104px;
     }
 
+    .creative-main__picture {
+        position: relative;
+        width: 200px;
+        height: 344px;
+        margin-top: 90px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: visible;
+    }
+
     .creative-main__image {
-        width: 154px;
+        right: -362px;
+        width: 366px;
+        height: 345px;
+        transform: translate(-83%, -11%);
     }
 
     .creative-main__text {
@@ -1185,13 +1224,8 @@
         margin-top: 55px;
     }
 
-    .creative-main__picture {
-        width: 385px;
-        height: 343px;
-    }
-
     .creative-main__img {
-        right: -24px;
+        right: -5px;
         width: 385px;
         height: 343px;
     }
