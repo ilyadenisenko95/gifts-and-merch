@@ -1046,7 +1046,7 @@ body {
     }
 
     .header-hero {
-        min-height: 603px;
+        min-height: 443px;
         padding-top: 26px;
     }
 
@@ -1305,9 +1305,9 @@ body {
     }
 
     .header-hero__picture {
-        right: -6px;
+        right: -56px;
         bottom: 0;
-        width: 118.7vw;
+        width: 151.7vw;
     }
 
     .header-hero__picture_new {
