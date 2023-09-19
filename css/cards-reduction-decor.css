@@ -15,6 +15,7 @@
 .card {
     position: relative;
     width: calc(25% - 23px);
+    list-style-type: none;
 }
 
 .card__top {
@@ -409,10 +410,6 @@
         padding: 3px;
     }
 
-    .numbering__direction--card {
-        padding: 3px;
-    }
-
     .numbering__arrow--card {
         width: 9px;
         height: 17px;
@@ -448,8 +445,8 @@
     }
 
     .card__price {
-        margin-top: 28px;
-        margin-bottom: 3px;
+        margin-top: 29px;
+        margin-bottom: 9px;
         font-size: 19.26px;
         font-weight: 600;
         line-height: 105.5%;
@@ -462,11 +459,11 @@
 
     .card__cart {
         right: 8px;
-        bottom: 6px;
+        bottom: 14px;
     }
 
     .pagination {
-        margin-top: 41px;
+        margin-top: 33px;
     }
 
     .hand__cards {
@@ -494,7 +491,7 @@
     }
 
     .decor {
-        padding-bottom: 290px;
+        padding-bottom: 217px;
         margin-top: 131px;
     }
 
@@ -547,7 +544,7 @@
         width: calc(50% - 14px);
         margin-top: 1px;
         margin-right: -0;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 
     .card:nth-of-type(4) {
@@ -594,11 +591,9 @@
     }
 
     .card__price {
-        margin-top: 26px;
+        margin-top: 33px;
         margin-bottom: 10px;
         font-size: 22.2267px;
-        font-weight: 600;
-        line-height: 105.5%;
     }
 
     .card__cart-image {
@@ -612,7 +607,7 @@
 
     .card__cart {
         right: 10px;
-        bottom: 8px;
+        bottom: 18px;
     }
 
     .numbering__arrow--card {
@@ -629,6 +624,7 @@
     }
 
     .decor {
+        padding-bottom: 190px;
         margin-top: 132px;
     }
 
@@ -664,7 +660,7 @@
     .card {
         width: calc(50% - 8px);
         margin-top: 7px;
-        margin-bottom: -3px;
+        margin-bottom: -9px;
     }
 
     .cards__header {
@@ -726,7 +722,7 @@
     }
 
     .card__price {
-        margin-top: 17px;
+        margin-top: 20px;
         margin-bottom: 7px;
         font-size: 13.4338px;
         font-weight: 600;
@@ -740,14 +736,14 @@
 
     .card__cart {
         right: 4px;
-        bottom: 21px;
+        bottom: 26px;
     }
 
     .pagination {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        margin-top: 16px;
     }
 
     .pagination__menu {
@@ -777,7 +773,7 @@
     }
 
     .decor {
-        padding-bottom: 164px;
+        padding-bottom: 159px;
         margin-top: 80px;
     }
 
@@ -863,7 +859,7 @@
     .card {
         width: calc(100% - 1px);
         margin-top: -6px;
-        margin-bottom: 11px;
+        margin-bottom: 8px;
     }
 
     .cards__header {
@@ -917,7 +913,7 @@
 
     .card__price {
         margin-top: 27px;
-        margin-bottom: 3px;
+        margin-bottom: 6px;
         font-size: 17.7778px;
         font-weight: 600;
         line-height: 105.5%;
@@ -925,7 +921,7 @@
 
     .card__cart {
         right: 6px;
-        bottom: 27px;
+        bottom: 30px;
     }
 
     .pagination {
@@ -966,7 +962,7 @@
     }
 
     .decor {
-        padding-bottom: 103px;
+        padding-bottom: 97px;
     }
 
     .decor__basis {

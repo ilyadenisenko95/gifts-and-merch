@@ -18,7 +18,7 @@ body {
 
 .header-bg {
     position: relative;
-    background: linear-gradient(38.95deg, #9796F0 -10.38%, #FBC7D4 107.56%);
+    background: linear-gradient(39deg, #9796F0 -20%, #FBC7D4 110%);
 }
 
 .page-header__top {
@@ -347,14 +347,13 @@ body {
 }
 
 .header-hero__ready {
-    top: 560px;
-    left: 156px;
     display: inline-block;
     width: 280px;
     height: 60px;
     padding: 18px 43px;
     font-size: 18.5px;
     font-weight: 500;
+    line-height: 140%;
     text-align: center;
     text-decoration: none;
     color: #FFF;
@@ -365,6 +364,8 @@ body {
 
 .header-hero__create {
     font-size: 17px;
+    font-weight: 600;
+    line-height: 140%;
     text-decoration: none;
     color: #524983;
 }
@@ -401,7 +402,6 @@ body {
 
 .footer {
     position: relative;
-    margin-bottom: 30px;
 }
 
 .footer-nav {
@@ -465,6 +465,11 @@ body {
 
 .footer-roster__cat {
     max-width: 480px;
+    margin: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
 }
 
 .footer-row {
@@ -476,7 +481,7 @@ body {
     margin: 0 auto;
 }
 
-.footer-roster__rank {
+.rank {
     margin: 0 auto;
     font-size: 20px;
     font-weight: 600;
@@ -700,10 +705,6 @@ body {
         line-height: 24px;
     }
 
-    .header-hero {
-        min-height: 464px;
-    }
-
     .header-hero__description {
         width: 543px;
         font-size: 14px;
@@ -713,19 +714,8 @@ body {
     }
 
     .header-hero__ready {
-        top: 560px;
-        left: 156px;
-        display: inline-block;
         width: 245px;
-        padding: 18px 43px;
         font-size: 15px;
-        font-weight: 500;
-        text-align: center;
-        text-decoration: none;
-        color: #FFF;
-        background-color: #3C336C;
-        border-radius: 60px;
-        align-items: center;
     }
 
     .header-hero__creation {
@@ -786,10 +776,6 @@ body {
         line-height: 20px;
     }
 
-    .footer {
-        margin-top: -74px;
-    }
-
     .footer-nav {
         display: flex;
         justify-content: space-between;
@@ -810,10 +796,14 @@ body {
         width: 24%;
     }
 
+    .rank {
+        margin-top: 2px;
+    }
+
     .footer-manager {
         display: flex;
         width: 100%;
-        margin-top: 22px;
+        margin-top: 35px;
         margin-right: 0;
         margin-left: 0;
         justify-content: space-between;
@@ -897,6 +887,10 @@ body {
         padding-top: 22px;
     }
 
+    .header-hero__selection {
+        margin-top: 25px;
+    }
+
     .header-nav {
         display: none;
     }
@@ -947,10 +941,6 @@ body {
         width: 67.7vw;
     }
 
-    .footer {
-        margin-top: -103px;
-    }
-
     .footer-servis {
         display: flex;
         justify-content: space-between;
@@ -970,7 +960,7 @@ body {
     .footer-manager {
         display: block;
         width: 48%;
-        margin-top: 0;
+        margin-top: 8px;
     }
 
     .footer-image {
@@ -999,6 +989,10 @@ body {
 
     .footer-servis__connect {
         margin-right: 31px;
+    }
+
+    .rank {
+        margin-top: 7px;
     }
 
     .footer-servis__logo {
@@ -1147,11 +1141,6 @@ body {
 
     .footer-servis {
         display: block;
-        margin-top: 8px;
-    }
-
-    .footer {
-        margin-top: 0;
     }
 
     .footer-servis__connect {
@@ -1298,12 +1287,6 @@ body {
         margin-bottom: 8px;
     }
 
-    .header-hero__create {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 140%;
-    }
-
     .header-hero__picture {
         right: -56px;
         bottom: 0;
@@ -1374,11 +1357,11 @@ body {
         margin-left: auto;
     }
 
-    .footer-roster__rank {
+    .rank {
         text-align: left;
     }
 
-    .footer-roster__ranks {
+    .footer-roster--text-center {
         text-align: center;
     }
 
@@ -1400,7 +1383,8 @@ body {
 
     .header__wave {
         bottom: -6px;
-        transform: scaleY(3) translateY(-32%);
+        transform: scaleX(-1) scaleY(3) translateY(-32%);
+
     }
 
     .footer__wave {

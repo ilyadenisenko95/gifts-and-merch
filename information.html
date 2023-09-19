@@ -40,13 +40,13 @@
         <div class="header-nav__container main-container">
           <ul class="header-list">
             <li class="header-list__item">
-              <a class="header-list__navigation" href="./sets.html">Наборы</a>
-            </li>
-            <li class="header-list__item">
               <a class="header-list__navigation" href="./index.html">Все товары </a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation header-list__navigation--active" href="#">Информация</a>
+              <a class="header-list__navigation" href="./sets.html">Наборы</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__navigation header-list__navigation--active">Информация</a>
             </li>
           </ul>
           <div class="header-text">Шопперы со скидкой - 25%</div>
@@ -55,7 +55,7 @@
       </div>
     </header>
 
-    <section class="header-hero">
+    <section class="header-hero information__header-hero">
       <div class="header-hero__container main-container">
         <div class="header-hero__buttons">
           <button type="button" class="header-hero__button active">Главная</button>
@@ -97,16 +97,15 @@
     <div class="guide__info">
       <ul class="description">
         <li class="description__string">
-          <div class="description__txt description__txt-change ">Как заказать</div>
-          <div class="description__float ">
+          <div class="description__txt">Как заказать</div>
+          <div class="description__float description__float--open-show">
             <p class="description__text">Выбирайте из готовых моделей или отправьте нам свой дизайн для пошива.</p>
           </div>
-          <img class="description__img description__img-chanche description__img-hidden" src="./img/arrow.png" alt="arrow">
         </li>
 
         <li class="description__string">
-          <div class="description__txt description__txt-active">Материал</div>
-          <div class="description__float">
+          <div class="description__txt description__txt--active">Материал</div>
+          <div class="description__float description__float--open-show">
             <p class="description__text">Вы можете заказать у нас пошив толстовок из любого вида материалов:</p>
             <ul class="description__item">
               <li>Хлопок 100%</li>
@@ -115,13 +114,13 @@
             </ul>
           </div>
           <button class="description__item-button" type="button">
-            <img class="description__img" src="./img/arrow.png" alt="arrow">
+            <img class="description__img description__img--rotate" src="./img/arrow.png" alt="arrow">
           </button>
         </li>
 
         <li class="description__string">
-          <div class="description__txt description__txt-change">Виды нанесения</div>
-          <div class="description__float description__float-hidden">
+          <div class="description__txt">Виды нанесения</div>
+          <div class="description__float">
             <p class="description__text ">Вы можете заказать у нас пошив толстовок из любого вида материалов:</p>
             <ul class="description__item">
               <li>Шелкография</li>
@@ -130,20 +129,21 @@
               <li>Флекс</li>
             </ul>
           </div>
-          <button class="description__item-button description__item-but" type="button">
-            <img class="description__img description__img-chanche" src="./img/arrow.png" alt="arrow">
+          <button class="description__item-button" type="button">
+            <img class="description__img" src="./img/arrow.png" alt="arrow">
           </button>
         </li>
 
         <li class="description__string">
-          <div class="description__txt description__txt-change">Уход за товаром</div>
-          <div class="description__float description__float-hidden">
-            <p class="description__text ">— Не рекомендуем использовать моющие средства и стиральные порошки с отбеливателями и хлором. <br>
+          <div class="description__txt">Уход за товаром</div>
+          <div class="description__float">
+            <p class="description__text">
+              — Не рекомендуем использовать моющие средства и стиральные порошки с отбеливателями и хлором. <br>
               — Перед глажкой и стиркой желательно вывернуть изделие наизнанку. <br>
               — Стирка в прохладной воде не выше 30°С без включения режима сушки</p>
           </div>
-          <button class="description__item-button description__item-but" type="button">
-            <img class="description__img description__img-chanche" src="./img/arrow.png" alt="arrow">
+          <button class="description__item-button" type="button">
+            <img class="description__img" src="./img/arrow.png" alt="arrow">
           </button>
         </li>
       </ul>
@@ -217,9 +217,7 @@
           </div>
         </div>
         <div class="footer-row">
-          <div class="footer-roster__cat">
-            <h3 class="footer-roster__rank">Категории</h3>
-          </div>
+          <h3 class="footer-roster__cat rank">Категории</h3>
           <ul class="footer-roster__list">
             <li class="footer-list footer-roster__list-item"><a class="footer-link" href="#">Пошив</a></li>
             <li class="footer-list"><a class="footer-link" href="#">Все товары</a></li>
@@ -228,9 +226,7 @@
           </ul>
         </div>
         <div class="footer-info">
-          <div class="footer-roster__cat">
-            <h3 class="footer-roster__rank">Информация</h3>
-          </div>
+          <h3 class="footer-roster__cat rank">Информация</h3>
           <ul class="footer-roster__list">
             <li class="footer-list"><a class="footer-link" href="#">О нас</a></li>
             <li class="footer-list"><a class="footer-link" href="#">ЧаВо</a></li>
@@ -238,10 +234,7 @@
           </ul>
         </div>
         <div class="footer-manager">
-          <div class="footer-roster__cat">
-            <h3 class="footer-roster__rank footer-roster__ranks">Связаться с менеджером</h3>
-
-          </div>
+          <h3 class="footer-roster__cat footer-roster--text-center">Связаться с менеджером</h3>
           <div class="footer-roster__text">Есть вопрос на который не нашли ответ? <br> Оставьте контакт и наш менеджер свяжеться с вами</div>
           <div class="footer-roster__tel">
             <input type="tel" class="footer__phone" name="phone" placeholder="Номер телефона">

@@ -43,10 +43,10 @@
         <div class="header-nav__container main-container">
           <ul class="header-list">
             <li class="header-list__item">
-              <a class="header-list__navigation header-list__navigation--active" href="#">Наборы</a>
+              <a class="header-list__navigation" href="index.html">Все товары </a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__navigation" href="index.html">Все товары </a>
+              <a class="header-list__navigation header-list__navigation--active">Наборы</a>
             </li>
             <li class="header-list__item">
               <a class="header-list__navigation" href="./information.html">Информация</a>
@@ -83,7 +83,7 @@
   <div class="cards main-container">
     <h2 class="cards__header">Готовые наборы </h2>
     <div class="cards__list">
-      <div class="card">
+      <li class="card">
         <div class="card__top">
           <img class="card__image" src="./img/prize_image1.png" alt="">
           <div class="numbering numbering--card">
@@ -112,14 +112,14 @@
         <button type="button" class="card__cart">
           <img class="card__cart-image" src="./img/cart.svg" alt="">
         </button>
-      </div>
+      </li>
 
-      <div class="card">
+      <li class="card">
         <div class="card__top">
           <img class="card__image" src="./img/prize_image2.png" alt="">
           <div class="numbering numbering--card">
             <button type="button" class="numbering__direction numbering__direction--card">
-              <img class="numbering__arrow numbering__arrow--card" src="./.img/left.png" alt="">
+              <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
             </button>
             <p class="numbering__number numbering__number--card">1/7</p>
             <button type="button" class="numbering__direction numbering__direction--card numbering__direction--right">
@@ -143,9 +143,9 @@
         <button type="button" class="card__cart">
           <img class="card__cart-image" src="./img/cart.svg" alt="">
         </button>
-      </div>
+      </li>
 
-      <div class="card">
+      <li class="card">
         <div class="card__top">
           <img class="card__image" src="./img/prize_image3.png" alt="">
           <div class="numbering numbering--card">
@@ -172,9 +172,9 @@
           </p>
         </div>
         <button type="button" class="card__cart"><img class="card__cart-image" src="./img/cart.svg" alt=""></button>
-      </div>
+      </li>
 
-      <div class="card">
+      <li class="card">
         <div class="card__top">
           <img class="card__image" src="./img/prize_image4.png" alt="">
           <div class="numbering numbering--card">
@@ -203,7 +203,7 @@
         <button type="button" class="card__cart">
           <img class="card__cart-image" src="./img/cart.svg" alt="">
         </button>
-      </div>
+      </li>
     </div>
 
     <div class="pagination">
@@ -296,9 +296,7 @@
           </div>
         </div>
         <div class="footer-row">
-          <div class="footer-roster__cat">
-            <h3 class="footer-roster__rank">Категории</h3>
-          </div>
+          <h3 class="footer-roster__cat rank">Категории</h3>
           <ul class="footer-roster__list">
             <li class="footer-list footer-roster__list-item"><a class="footer-link" href="#">Пошив</a></li>
             <li class="footer-list"><a class="footer-link" href="#">Все товары</a></li>
@@ -307,9 +305,7 @@
           </ul>
         </div>
         <div class="footer-info">
-          <div class="footer-roster__cat">
-            <h3 class="footer-roster__rank">Информация</h3>
-          </div>
+          <h3 class="footer-roster__cat rank">Информация</h3>
           <ul class="footer-roster__list">
             <li class="footer-list"><a class="footer-link" href="#">О нас</a></li>
             <li class="footer-list"><a class="footer-link" href="#">ЧаВо</a></li>
@@ -317,9 +313,7 @@
           </ul>
         </div>
         <div class="footer-manager">
-          <div class="footer-roster__cat">
-            <h3 class="footer-roster__rank footer-roster__ranks">Связаться с менеджером</h3>
-          </div>
+          <h3 class="footer-roster__cat footer-roster--text-center">Связаться с менеджером</h3>
           <div class="footer-roster__text">Есть вопрос на который не нашли ответ? <br> Оставьте контакт и наш менеджер свяжеться с вами</div>
           <div class="footer-roster__tel">
             <input type="tel" class="footer__phone" name="phone" placeholder="Номер телефона">
