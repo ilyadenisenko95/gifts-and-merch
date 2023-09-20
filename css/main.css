@@ -173,7 +173,9 @@ body {
 
 .header-list__navigation--active {
     color: #FAFBFD;
+    cursor: default;
     background-color: #272525;
+
 }
 
 .header-list__navigation--active::after {
@@ -836,11 +838,14 @@ body {
     }
 
     .page-header__top {
+        justify-content: flex-end;
+        gap: 20px;
         padding-top: 20px;
         margin-top: 0;
     }
 
     .page-header__logo-link {
+        margin-right: auto;
         font-size: 0;
     }
 
@@ -877,7 +882,6 @@ body {
     .page-header__loupe {
         display: block;
         padding-top: 6px;
-        margin-left: 60px;
         background-color: transparent;
         border: none;
     }
@@ -1026,17 +1030,12 @@ body {
         height: 16.86px;
     }
 
-    .page-header__loupe {
-        margin-left: 129px;
-    }
-
     .phone {
         display: none;
     }
 
     .page-header__burger {
         margin-right: 0;
-        margin-left: 20px;
     }
 
     .header-hero {
@@ -1213,7 +1212,6 @@ body {
         width: 15.95px;
         height: 15.95px;
         padding-top: 0;
-        margin-left: 70px;
     }
 
     .page-header__loupe-image {
@@ -1232,7 +1230,6 @@ body {
 
     .page-header__burger {
         padding-top: 3px;
-        margin-left: 26px;
     }
 
     .header-hero {

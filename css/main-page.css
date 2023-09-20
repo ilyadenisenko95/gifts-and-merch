@@ -349,10 +349,15 @@
 }
 
 .ideas {
+    position: relative;
     width: 100%;
     background-image: url("../img/main/ideas/bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.ideas__wave {
+    top: 2px;
 }
 
 .idea {
@@ -825,7 +830,7 @@
     }
 
     .ideas {
-        background-size: 205%;
+        background-size: 185%;
     }
 
     .idea {
