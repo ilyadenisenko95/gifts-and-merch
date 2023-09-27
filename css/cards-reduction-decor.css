@@ -1,20 +1,21 @@
 .cards__header {
     margin: 0;
     margin-top: 9px;
-    font-weight: 700;
     font-size: 48px;
+    font-weight: 700;
     line-height: 58px;
 }
 
 .cards__list {
-    margin-top: 40px;
     display: flex;
-    justify-content:  space-between;
+    margin-top: 40px;
+    justify-content: space-between;
 }
 
 .card {
-    width: calc(25% - 23px);
     position: relative;
+    width: calc(25% - 23px);
+    list-style-type: none;
 }
 
 .card__top {
@@ -22,39 +23,44 @@
 }
 
 .card__info {
-    overflow: hidden;
-    margin-top: 2px;
-    padding-left: 14px;
     padding-top: 11px;
-    box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+    padding-left: 14px;
+    margin-top: 2px;
+    overflow: hidden;
     border-radius: 15px;
+    box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
+}
+
+.card__color-button--active {
+    outline: solid 3px #000;
+    outline-style: double;
 }
 
 .card__image {
     width: 100%;
-    border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.numbering{
-    display: flex;
+.numbering {
     position: absolute;
-    bottom: 8px;
     right: 18px;
-    text-align: center;
-    align-items: center;
-    font-weight: 400;
+    bottom: 8px;
+    display: flex;
     font-size: 12px;
+    font-weight: 400;
     line-height: 1;
+    text-align: center;
     color: #7981AD;
+    align-items: center;
 }
 
 .numbering__direction {
     display: flex;
-    padding: 5px;
-    border: none;
-    background: transparent;
+    padding: 6px 8px 6px 5px;
     cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 .numbering__direction--right {
@@ -62,7 +68,7 @@
 }
 
 .numbering__number--card {
-    margin: 0 5px;
+    margin: 0;
 }
 
 .hand__cards-img {
@@ -71,8 +77,8 @@
 
 .card__name {
     margin: 0;
-    font-weight: 600;
     font-size: 24px;
+    font-weight: 600;
     line-height: 105.5%;
     color: #272525;
 }
@@ -86,53 +92,57 @@
 }
 
 .card__color {
+    display: flex;
+    padding: 0;
     margin-top: 15px;
 }
 
 .card__color-button {
     width: 24px;
     height: 24px;
-    margin: 0;
     padding: 0 0.5px;
+    margin: 0;
+    cursor: pointer;
     background: transparent;
     border: none;
     border-radius: 50%;
 }
 
 .card__color-button--purple {
-    background: #524983;
+    background-color: #524983;
 }
 
 .card__color-button--green {
-    background: #309F85;
+    background-color: #309F85;
 }
 
 .card__color-button--silver {
-    background: #F1F1F1;
+    background-color: #F1F1F1;
 }
 
 .card__price {
     margin: 0;
     margin-top: 37px;
-    margin-bottom: 3px;
-    font-weight: 600;
+    margin-bottom: 11px;
     font-size: 24px;
+    font-weight: 600;
     line-height: 105.5%;
     color: #C4C4C4;
 }
 
 .card__cart {
     position: absolute;
-    border: none;
-    background: transparent;
-    bottom: 10px;
     right: 11px;
+    bottom: 17px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 .pagination {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .pagination__more {
@@ -141,75 +151,77 @@
 }
 
 .pagination__text {
-    margin: 0px;
+    margin: 0;
     margin-right: 17px;
-    font-weight: 700;
     font-size: 24px;
+    font-weight: 700;
     line-height: 130%;
     color: #272525;
 }
 
 .pagination__menu {
-    border: none;
-    background: transparent;
     height: 42px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 .pagination__nubmers {
     position: relative;
     display: flex;
+    padding: 0;
     margin: 0;
-    padding: 0px;
     list-style-type: none;
     align-items: center;
 }
 
 .pagination__page {
     display: flex;
-    margin: 0;
     padding-left: 0;
+    margin: 0;
     list-style-type: none;
     align-items: center;
 }
 
 .pagination__page-transition {
     padding: 9px 10px;
-    margin-left: 0px;
-    font-weight: 700;
+    margin-left: 0;
     font-size: 18px;
+    font-weight: 700;
     line-height: 130%;
-    color: #7981AD;
     text-decoration: none;
+    color: #7981AD;
 }
 
 .pagination__page-transition--active {
     display: flex;
     height: 40px;
     padding: 5px 15px;
-    margin-left: 29px;
     margin-right: 11px;
+    margin-left: 29px;
     font-size: 23px;
     color: white;
-    background: #7981AD;
-    box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+    background-color: #7981AD;
     border-radius: 50%;
+    box-shadow: 0 16.0566px 20.0707px -4.01414px rgb(26 32 44 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
 }
 
 .hand__cards {
     display: flex;
-    margin-top: 0px;
-    margin-left: 31px;
+    margin-top: 0;
     margin-right: 13px;
+    margin-left: 31px;
     align-items: center;
 }
+
 .hand {
     width: 40px;
     height: 40px;
-    justify-content: center;
+    cursor: pointer;
+    background-color: #ECE7F0;
     border: none;
     border-radius: 50%;
-    background: #ECE7F0;
-    cursor: pointer;
+    justify-content: center;
 }
 
 .reduction {
@@ -221,40 +233,36 @@
 
 .reduction__item {
     width: 23%;
-    margin-right:  123px;
+    margin-right: 123px;
 }
 
 .reduction__title {
-    margin-bottom: 0;
     margin-top: 1px;
-    font-weight: 600;
+    margin-bottom: 0;
     font-size: 36px;
+    font-weight: 600;
     line-height: 130%;
 }
 
 .reduction__text {
     margin-top: 20px;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 130%;
 }
 
 .reduction__text-color {
     margin-top: 20px;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 130%;
     color: #524983;
 }
 
 .decor {
     position: relative;
-    margin-top: 111px;
     padding-bottom: 290px;
-    background-image: url('../img/creative-wave.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
+    margin-top: 111px;
 }
 
 .decor__img {
@@ -264,41 +272,38 @@
 .decor__idea {
     max-width: 790px;
     margin-top: 26px;
-    margin-bottom: 0px;
-    font-weight: 700;
+    margin-bottom: 0;
     font-size: 48px;
-    line-height: 58px;
     font-weight: 700;
-    font-size: 48px;
     line-height: 58px;
 }
 
 .decor__text {
     width: 592px;
-    margin-bottom: 0px;
-    font-weight: 400;
+    margin-bottom: 0;
     font-size: 18px;
+    font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.065em;
     color: #454747;
 }
 
 .colortext {
-    color: rgb(132, 202, 116);
+    color: rgb(132 202 116);
 }
 
 .decor__connect {
     width: 300px;
-    margin: 0px;
-    font-weight: 600;
+    margin: 0;
     font-size: 24px;
+    font-weight: 600;
     line-height: 29px;
     color: #222227;
 }
 
 .book {
-    width: 723px;
     display: flex;
+    width: 723px;
     justify-content: space-between;
 }
 
@@ -312,13 +317,13 @@
 
 .order__info {
     width: 100%;
-    margin-bottom: 32px;
-    border: none;
-    border-bottom: 1px solid rgb(1, 0, 0);
-    background-color: transparent;
-    color: inherit;
-    outline: none;
     padding-top: 4px;
+    margin-bottom: 32px;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(1 0 0);
+    outline: none;
 }
 
 .decor__order-line {
@@ -335,23 +340,23 @@
 
 .date__text {
     width: 250px;
+    color: #454747;
     border: none;
-    color:#454747;
 }
 
 .order__button {
     display: inline-block;
-    margin-top: 7px;
     padding: 21px 102px;
-    text-decoration: none;
+    margin-top: 7px;
     font-size: 18px;
     font-weight: 600;
     line-height: 19px;
+    text-decoration: none;
     color: #EEF1F6;
-    background-color: #1FAB8A;
-    border-radius: 60px;
-    border: none;
     cursor: pointer;
+    background-color: #1FAB8A;
+    border: none;
+    border-radius: 60px;
 }
 
 .order__button:hover,
@@ -364,16 +369,29 @@
 }
 
 
-@media (max-width: 1500px) {
+.wave {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
-    .card__active {
-        display: none;
-    }
+.decor-wave {
+    top: -93px;
+}
 
+
+@media (width <=1500px) {
     .card {
         width: calc(35% - 32px);
         margin-top: 21px;
         margin-right: 2px;
+    }
+
+    .card:nth-of-type(4) {
+        display: none;
     }
 
     .cards__list {
@@ -382,23 +400,19 @@
 
     .card__info {
         margin-top: -2px;
-        box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
+        box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
-    .numbering--card{
-        bottom: 9px;
+    .numbering--card {
         right: 12px;
-        padding: 3px;
-    }
-
-    .numbering__direction--card {
+        bottom: 9px;
         padding: 3px;
     }
 
     .numbering__arrow--card {
-        height: 17px;
         width: 9px;
+        height: 17px;
     }
 
     .numbering__number--card {
@@ -406,17 +420,17 @@
         font-weight: 400;
     }
 
-    .card__name{
-        font-weight: 600;
+    .card__name {
         font-size: 19.26px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
     .card__description {
         width: 179px;
         margin-top: 8px;
-        font-weight: 400;
         font-size: 9.63px;
+        font-weight: 400;
         line-height: 105.5%;
     }
 
@@ -424,17 +438,17 @@
         margin-top: 12px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 19.26px;
         height: 19.26px;
         margin-top: 1px;
     }
 
     .card__price {
-        margin-top: 28px;
-        margin-bottom: 3px;
-        font-weight: 600;
+        margin-top: 29px;
+        margin-bottom: 9px;
         font-size: 19.26px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
@@ -444,12 +458,12 @@
     }
 
     .card__cart {
-        bottom: 6px;
         right: 8px;
+        bottom: 14px;
     }
 
     .pagination {
-        margin-top: 41px;
+        margin-top: 33px;
     }
 
     .hand__cards {
@@ -469,16 +483,16 @@
 
     .reduction__item {
         width: 39%;
-        margin-right:  92px;
+        margin-right: 92px;
     }
 
-   .reduction__text-color{
+    .reduction__text-color {
         margin-top: -15px;
     }
 
     .decor {
+        padding-bottom: 217px;
         margin-top: 131px;
-        padding-bottom: 290px;
     }
 
     .decor__idea {
@@ -505,20 +519,20 @@
 
     .decor__picture-img {
         position: absolute;
-        width: 580px;
-        height: 533px;
         top: 0;
         right: -154px;
+        width: 580px;
+        height: 533px;
         object-fit: cover;
+    }
+
+    .decor-wave {
+        top: 300px;
+        transform: scaleY(2) translateY(-36%);
     }
 }
 
-@media (max-width: 999px) {
-
-    .card__active{
-        display: block;
-    }
-
+@media (width <=999px) {
     .cards__list {
         display: flex;
         flex-wrap: wrap;
@@ -529,36 +543,40 @@
     .card {
         width: calc(50% - 14px);
         margin-top: 1px;
-        margin-bottom: 32px;
-        margin-right: -0px;
+        margin-right: -0;
+        margin-bottom: 24px;
+    }
+
+    .card:nth-of-type(4) {
+        display: block;
     }
 
     .cards__header {
-        margin-top: -104px;
+        margin-top: 0;
     }
 
     .card__info {
-        box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
         border-radius: 15px;
+        box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
-    .numbering--card{
-        bottom: 9px;
-        right: 16px;
+    .numbering--card {
+        right: 11px;
+        bottom: 13px;
     }
 
-    .card__name{
-        margin-top: 0px;
-        font-weight: 600;
+    .card__name {
+        margin-top: 0;
         font-size: 22.2267px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
     .card__description {
         width: 179px;
         margin-top: 13px;
-        font-weight: 400;
         font-size: 11.1134px;
+        font-weight: 400;
         line-height: 105.5%;
     }
 
@@ -566,18 +584,16 @@
         margin-top: 9px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 22.23px;
         height: 22.23px;
         margin-top: 1px;
     }
 
     .card__price {
-        margin-top: 34px;
-        margin-bottom: 3px;
-        font-weight: 600;
+        margin-top: 33px;
+        margin-bottom: 10px;
         font-size: 22.2267px;
-        line-height: 105.5%;
     }
 
     .card__cart-image {
@@ -586,21 +602,21 @@
     }
 
     .pagination {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .card__cart {
-        bottom: 8px;
         right: 10px;
+        bottom: 18px;
     }
 
     .numbering__arrow--card {
-        height: 19px;
         width: 9px;
+        height: 19px;
     }
 
     .numbering__direction--card {
-        padding: 4px;
+        padding: 2px 9px;
     }
 
     .reduction {
@@ -608,6 +624,7 @@
     }
 
     .decor {
+        padding-bottom: 190px;
         margin-top: 132px;
     }
 
@@ -615,9 +632,9 @@
         margin-top: 14px;
     }
 
-    .decor__order{
-        left: 409px;
+    .decor__order {
         top: 352px;
+        left: 409px;
     }
 
     .decor__picture {
@@ -628,48 +645,51 @@
     }
 
     .decor__picture-img {
-        width: 335px;
-        height: 318px;
         top: 11px;
         right: -99px;
+        width: 335px;
+        height: 318px;
+    }
+
+    .decor-wave {
+        transform: scaleY(2.6) translateY(-29%);
     }
 }
 
-@media (max-width: 767px) {
-
+@media (width <=767px) {
     .card {
         width: calc(50% - 8px);
         margin-top: 7px;
-        margin-bottom: -3px;
+        margin-bottom: -9px;
     }
 
     .cards__header {
-        margin-top: -152px;
+        margin-top: 10px;
         font-size: 28px;
         line-height: 34px;
     }
 
     .card__info {
-        margin-bottom: 16.5px;
-        margin-top: -8px;
         padding-left: 9px;
-        box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+        margin-top: -8px;
+        margin-bottom: 16.5px;
         border-radius: 15px;
+        box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
     .card__name {
         width: 180px;
-        margin-top: 1px;
-        font-weight: 600;
+        margin-top: 0;
         font-size: 13.4338px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
     .card__description {
         width: 125px;
         margin-top: 7px;
-        font-weight: 400;
         font-size: 6.71689px;
+        font-weight: 400;
         line-height: 105.5%;
     }
 
@@ -677,24 +697,24 @@
         margin-top: 7px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 13.43px;
         height: 13.43px;
         margin-top: 1px;
     }
 
-    .numbering--card{
+    .numbering--card {
+        right: 2px;
         bottom: 7px;
-        right: 6px;
     }
 
     .numbering__direction--card {
-        padding: 2px;
+        padding: 2px 7px;
     }
 
     .numbering__arrow--card {
-        height: 11px;
         width: 6px;
+        height: 11px;
     }
 
     .numbering__number--card {
@@ -702,10 +722,10 @@
     }
 
     .card__price {
-        margin-top: 17px;
-        margin-bottom: 3px;
-        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 7px;
         font-size: 13.4338px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
@@ -715,15 +735,15 @@
     }
 
     .card__cart {
-        bottom: 19px;
         right: 4px;
+        bottom: 26px;
     }
 
     .pagination {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15px;
+        margin-top: 16px;
     }
 
     .pagination__menu {
@@ -732,6 +752,7 @@
 
     .pagination__more {
         margin-top: 0;
+        text-align: center;
     }
 
     .pagination__page {
@@ -742,7 +763,7 @@
         margin-right: 27px;
     }
 
-    .pagination__page-transition--active  {
+    .pagination__page-transition--active {
         margin-left: 12px;
     }
 
@@ -752,8 +773,8 @@
     }
 
     .decor {
+        padding-bottom: 159px;
         margin-top: 80px;
-        padding-bottom: 588px;
     }
 
     .decor__img {
@@ -761,8 +782,8 @@
         width: 206px;
         height: 41px;
         margin-top: 5px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .decor__basis-image {
@@ -773,36 +794,47 @@
     .decor__idea {
         width: 450px;
         margin-top: 39px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 28px;
         line-height: 110.9%;
+        text-align: center;
     }
 
     .decor__book {
+        width: 100%;
         margin-top: 1px;
         flex-wrap: wrap;
-        width: 465px;
     }
 
     .decor__text {
-        width: 101%;
+        width: 100%;
         margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 16px;
         line-height: 130%;
+        text-align: center;
     }
 
     .decor__connect {
-        width: 96%;
+        width: 465px;
         margin-top: 49px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 24px;
         line-height: 29px;
+        text-align: center;
     }
 
     .decor__picture {
-        top: 699px;
-        right: 138px;
-        width: 367px;
+        position: relative;
+        width: 200px;
         height: 344px;
-        overflow: visible ;
+        margin-top: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: visible;
     }
 
     .decor__picture-img {
@@ -812,43 +844,50 @@
 
     .order {
         margin-top: 65px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .decor-wave {
+        top: 882px;
+        transform: scaleY(2.6) translateY(-33%);
     }
 }
 
-@media (max-width: 479px) {
-
+@media (width <=479px) {
     .card {
         width: calc(100% - 1px);
         margin-top: -6px;
-        margin-bottom: 11px;
+        margin-bottom: 8px;
     }
 
     .cards__header {
-        margin-top: -205px;
+        margin-top: 22px;
         font-size: 28px;
         line-height: 34px;
     }
 
     .card__info {
-        margin-bottom: 20.5px;
         padding-left: 11px;
-        box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+        margin-bottom: 20.5px;
         border-radius: 15px;
+        box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
     }
 
-    .card__name{
+    .card__name {
         width: 238px;
         margin-top: 5px;
-        font-weight: 600;
         font-size: 17.7778px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
     .card__description {
         width: 165px;
         margin-top: 9px;
-        font-weight: 400;
         font-size: 8.88889px;
+        font-weight: 400;
         line-height: 105.5%;
     }
 
@@ -856,33 +895,33 @@
         margin-top: 9px;
     }
 
-    .card__color-button{
+    .card__color-button {
         width: 17.78px;
         height: 17.78px;
         margin-top: 1px;
     }
 
-    .numbering--card{
-        bottom: 8px;
+    .numbering--card {
         right: 12px;
+        bottom: 8px;
     }
 
     .numbering__arrow--card {
-        height: 16px;
         width: 8px;
+        height: 16px;
     }
 
     .card__price {
         margin-top: 27px;
-        margin-bottom: 3px;
-        font-weight: 600;
+        margin-bottom: 6px;
         font-size: 17.7778px;
+        font-weight: 600;
         line-height: 105.5%;
     }
 
     .card__cart {
-        bottom: 27px;
         right: 6px;
+        bottom: 30px;
     }
 
     .pagination {
@@ -910,26 +949,26 @@
 
     .pagination__page-transition {
         padding: 9px 7px;
-        font-size: 16px;
         margin-left: 4px;
+        font-size: 16px;
     }
 
     .pagination__page-transition--active {
         width: 34px;
         height: 34px;
-        margin: 0;
         padding: 4px 14px;
+        margin: 0;
         font-size: 21px;
     }
 
     .decor {
-        padding-bottom: 537px;
+        padding-bottom: 97px;
     }
 
     .decor__basis {
         display: block;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .decor__img {
@@ -953,9 +992,9 @@
     .decor__text {
         width: 89%;
         margin-left: 15px;
-        text-align: center;
         font-size: 15px;
         line-height: 130%;
+        text-align: center;
     }
 
     .decor__connect {
@@ -972,25 +1011,24 @@
     }
 
     .decor__picture {
-        top: 712px;
-        right: 77px;
+        margin-top: 90px;
     }
 
     .decor__picture-img {
-        right: -380px;
+        right: -362px;
         width: 366px;
         height: 345px;
-        transform: translate(-83%,-11%);
+        transform: translate(-83%, -11%);
     }
 
     .decor__book {
-        margin-top: 1px;
         max-width: 100%;
+        margin-top: 1px;
         justify-content: center;
     }
 
-    .order {
-        margin-top: 40px;
+    .decor-wave {
+        top: 880px;
+        transform: scaleY(3.3) translateY(-33%);
     }
 }
-
