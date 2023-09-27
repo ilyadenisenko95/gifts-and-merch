@@ -103,12 +103,11 @@
     right: 0;
     padding: 2px;
     cursor: pointer;
-    transform: rotate(180deg);
 }
 
 .description__string--active .description__img {
     top: 45px;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
 }
 
 .description__string {
