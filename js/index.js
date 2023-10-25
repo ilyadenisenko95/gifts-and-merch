@@ -1,3 +1,10 @@
+'use strict'
+
+
+
+
+
+
 document.getElementById("open-modal-btn").addEventListener("click", function () {
   document.getElementById("my-modal").classList.add("open")
 })
@@ -28,3 +35,15 @@ document.getElementById("open-modal-btn2").addEventListener("click", function ()
 document.getElementById("close-my-modal-btn2").addEventListener("click", function () {
   document.getElementById("my-modal2").classList.remove("open")
 })
+
+
+
+document.getElementById("open-modals").addEventListener("click", function () {
+  document.getElementById("my-modals").classList.add("open")
+})
+
+document.getElementById("close-my-modals").addEventListener("click", function () {
+  document.getElementById("my-modals").classList.remove("open")
+})
+
+
