@@ -146,8 +146,8 @@
 
 .popular__purchases-exit {
     position: absolute;
-    top: 4px;
-    right: 2px;
+    top: -31px;
+    right: -19px;
     padding: 0;
     cursor: pointer;
     background-color: transparent;

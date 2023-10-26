@@ -1,9 +1,3 @@
-'use strict'
-
-
-
-
-
 
 document.getElementById("open-modal-btn").addEventListener("click", function () {
   document.getElementById("my-modal").classList.add("open")
@@ -45,5 +39,3 @@ document.getElementById("open-modals").addEventListener("click", function () {
 document.getElementById("close-my-modals").addEventListener("click", function () {
   document.getElementById("my-modals").classList.remove("open")
 })
-
-
