@@ -129,6 +129,10 @@
     cursor: pointer;
     background-color: #FAFAFA;
     border: none;
+    text-decoration-line: none;
+}
+
+.popular__purchases-look:hover {
     text-decoration-line: underline;
 }
 
@@ -141,6 +145,10 @@
     cursor: pointer;
     background-color: #FAFAFA;
     border: none;
+    text-decoration-line: none;
+}
+
+.popular__purchases-buy:hover {
     text-decoration-line: underline;
 }
 
