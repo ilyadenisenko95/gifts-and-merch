@@ -120,12 +120,17 @@
         </div>
       </div>
     </div>
-    <div class="popular__purchases">
-      <button class="popular__purchases-look">Продолжить покупки</button>
-      <button class="popular__purchases-buy" type="menu">В корзину</button>
-      <img class="popular__purchases-exit" src="./img/main/X.svg" alt="x">
+
+    <div id="my-modals" class="popular__purchases">
+      <div class="popular__purchases-menu">
+        <button type="button" class="popular__purchases-look">Продолжить покупки</button>
+        <button id="open-modal-btn5" type="button" class="popular__purchases-buy">В корзину</button>
+        <button id="close-my-modals" type="button" class="popular__purchases-exit">
+          <img src="./img/main/X.svg" alt="x">
+        </button>
+      </div>
     </div>
-    <button type="button" class="popular__basket">
+    <button id="open-modals" type="button" class="popular__basket">
       <img class="popular__basket-img" src="./img/main/Frame383.svg" alt="basket">
       <span class="popular__basket-number">3</span>
       <span class="popular__basket-price">965 руб</span>
@@ -287,6 +292,7 @@
       </div>
     </footer>
   </div>
+  <script defer src="js/index.js"></script>
 </body>
 
 </html>
