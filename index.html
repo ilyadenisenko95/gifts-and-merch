@@ -25,8 +25,9 @@
         <button type="button" class="page-header__loupe"><img class="page-header__loupe-image" src="./img/search1.svg" alt="поиск"></button>
 
         <a class="phone" href="tel:+79283627229">+380 630 130 103</a>
-        <button type="button" class="page-header__burger"><img class="page-header__burger-image" src="./img/COLOR.svg" alt=""> </button>
-
+        <button id="open-modal-btn" type="button" class="page-header__burger">
+          <img class="page-header__burger-image" src="./img/COLOR.svg" alt="">
+        </button>
         <div class="page-header__buttons">
           <button type="button" class="page-header__profile-btn"><img class="but-image" src="./img/men.svg" alt=""></button>
           <button type="button" class="page-header__button active">RU</button>
@@ -121,16 +122,16 @@
       </div>
     </div>
 
-    <div id="my-modals" class="popular__purchases">
+    <div id="my-modal1" class="popular__purchases">
       <div class="popular__purchases-menu">
         <button type="button" class="popular__purchases-look">Продолжить покупки</button>
-        <button id="open-modal-btn5" type="button" class="popular__purchases-buy">В корзину</button>
-        <button id="close-my-modals" type="button" class="popular__purchases-exit">
+        <button id="open-modal-btn2" type="button" class="popular__purchases-buy">В корзину</button>
+        <button id="close-my-modal-btn1" type="button" class="popular__purchases-exit">
           <img src="./img/main/X.svg" alt="x">
         </button>
       </div>
     </div>
-    <button id="open-modals" type="button" class="popular__basket">
+    <button id="open-modal-btn1" type="button" class="popular__basket">
       <img class="popular__basket-img" src="./img/main/Frame383.svg" alt="basket">
       <span class="popular__basket-number">3</span>
       <span class="popular__basket-price">965 руб</span>
@@ -291,6 +292,201 @@
         <p class="footer-copy__corp">© 2022 . All rights reserved. <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a></p>
       </div>
     </footer>
+  </div>
+
+
+  <div class="modal" id="my-modal">
+    <div class="gap burger__menu-gap">
+      <div class="burger-menu__header">
+        <button type="button" class="burger-menu__language active">RU</button>
+        /
+        <button type="button" class="burger-menu__language">ENG</button>
+        <button type="button" class="burger-menu__man">
+          <img class="burger-menu__image" src="./img/men-3.svg" alt="">
+        </button>
+        <button type="button" class="burger-menu__class" id="close-my-modal-btn">
+          <img src="./img/COLOR-2.svg" alt="">
+        </button>
+      </div>
+      <div class="burger-menu__sets">Наборы</div>
+      <div class="burger-menu__all">Все товары</div>
+      <div class="burger-menu__list">
+        <div class="textcols">
+          <ul class="burger-menu__clothes">
+            <li class="burger__list">
+              <a class="burger-menu__text--active" href="">Толстовки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Свитшоты</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Футболки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Поло</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Жилетки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Рюкзаки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="textcols">
+          <ul class="burger-menu__clothes">
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Бананки</a>
+            </li>
+            <li class="burger__list burger__list-one">
+              <a class="burger-menu__text" href="">Эко-сумки/Шопперы</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Пледы</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Носки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Маски</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="burger-menu__info">Информация</p>
+      <div class="burger__mail">
+        <a class="burger-menu__mail" href="example@gmail.com">example@gmail.com</a>
+      </div>
+      <div class="burger__phone">
+        <a class="phone burger-menu__phone" href="tel:+79283627229">+380 630 130 103</a>
+      </div>
+      <div class="burger-menu__masagers">
+        <div class="burger__mesagers">
+          <div class="burger-menu__image"><a href=""></a><img src="./img/Vector11.svg" alt=""></div>
+          <div class="burger-menu__image"><a href=""></a><img src="./img/instagram.svg" alt=""></div>
+          <div class="burger-menu__image"><a href=""><img src="./img/facebook.svg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="my-modal2">
+    <div class="gap trolley__gap">
+      <div class="trolley__order">
+        <p class="trolley__text">Оформить заказ</p>
+        <p class="trolley__txt">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
+        <form class="trolley__orders" action="self">
+          <input type="text" class="trolley__order-info" name="login" placeholder="Ваше Имя">
+          <input type="email" class="trolley__order-info" name="email" placeholder="Ваша електронная почта">
+          <input type="tel" class="trolley__order-info trolley__order-info--active" name="tel" placeholder="Ваш номер телефона">
+          <button type="button" class="trolley__order-button">
+            Заказать
+          </button>
+        </form>
+        <p class="trolley__inf">Нажимая "Подтвердить заказ", Вы даете согласие на обработку Ваших персональных данных</p>
+      </div>
+      <div class="trolley__box">
+        <div class="basket__order">Корзина</div>
+        <div class="basket__selection">
+          <div class="details">
+            <div class="details__image">
+              <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
+            </div>
+            <div class="details__info">
+              <p class="details__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+              <div class="details__color">
+                <span class="details__colors details__colors--green">Цвет</span>
+              </div>
+            </div>
+            <div class="details__size">
+              <p class="size__text">Размер</p>
+              <p class="size__txt">XS</p>
+            </div>
+            <div class="details__quantity">
+              <span class="quantity__text">Кол-во</span>
+              <div class="quantity__choice">
+                <button type="button" class="quantity__reduce">-</button>
+                <span class="quantity__number">5</span>
+                <button type="button" class="quantity__reduce">+</button>
+              </div>
+              <p class="quantity__txt">min.</p>
+            </div>
+            <span class="details__sum">$76.43</span>
+            <button type="button" class="details__remove">
+              <img class="details__remove-img" src="./img/trolley/times-circle.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="basket__selection">
+          <div class="details">
+            <div class="details__image">
+              <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
+            </div>
+            <div class="details__info">
+              <div class="details__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</div>
+              <div class="details__color">
+                <span class="details__colors details__colors--green">Цвет</span>
+              </div>
+            </div>
+            <div class="details__size">
+              <p class="size__text">Размер</p>
+              <p class="size__txt">XS</p>
+            </div>
+            <div class="details__quantity">
+              <span class="quantity__text">Кол-во</span>
+              <div class="quantity__choice">
+                <button type="button" class="quantity__reduce">-</button>
+                <span class="quantity__number">5</span>
+                <button type="button" class="quantity__reduce">+</button>
+              </div>
+              <p class="quantity__txt">min.</p>
+            </div>
+            <span class="details__sum">$76.43</span>
+            <button type="button" class="details__remove">
+              <img class="details__remove-img" src="./img/trolley/times-circle.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="basket__selection basket__selection-one">
+          <div class="details">
+            <div class="details__image">
+              <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
+            </div>
+            <div class="details__info">
+              <div class="details__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</div>
+              <div class="details__color">
+                <span class="details__colors details__colors--green">Цвет</span>
+              </div>
+            </div>
+            <div class="details__size">
+              <p class="size__text">Размер</p>
+              <p class="size__txt">XS</p>
+            </div>
+            <div class="details__quantity">
+              <span class="quantity__text">Кол-во</span>
+              <div class="quantity__choice">
+                <button type="button" class="quantity__reduce">-</button>
+                <span class="quantity__number">5</span>
+                <button type="button" class="quantity__reduce">+</button>
+              </div>
+              <p class="quantity__txt">min.</p>
+            </div>
+            <span class="details__sum">$76.43</span>
+            <button type="button" class="details__remove">
+              <img class="details__remove-img" src="./img/trolley/times-circle.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="order__dilivery">
+          <span class="order__details">Заказ № 110293</span>
+          <span class="order__sum">Всего: $ 235.80</span>
+        </div>
+        <button type="button" class="modal__close trolley__modal-close">
+          <img class="modal__close-img" id="close-my-modal-btn2" src="./img/trolley/close.svg" alt="">
+        </button>
+        <div class="trolley__line"></div>
+      </div>
+    </div>
   </div>
   <script defer src="js/index.js"></script>
 </body>

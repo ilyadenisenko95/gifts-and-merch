@@ -24,7 +24,7 @@
         <input class="page-header__search" type="text" placeholder="Поиск">
         <button type="button" class="page-header__loupe"><img class="page-header__loupe-image" src="./img/search1.svg" alt="поиск"></button>
         <a class="phone" href="tel:+79283627229">+380 630 130 103</a>
-        <button type="button" class="page-header__burger"><img class="page-header__burger-image" src="./img/COLOR.svg" alt=""> </button>
+        <button id="open-modal-btn" type="button" class="page-header__burger"><img class="page-header__burger-image" src="./img/COLOR.svg" alt=""> </button>
 
         <div class="page-header__buttons">
           <button type="button" class="page-header__profile-btn">
@@ -249,6 +249,81 @@
         <p class="footer-copy__corp"> © 2022 . All rights reserved. <a class="footer-copy__conf" href="#"> Политика конфиденциальности</a></p>
       </div>
     </footer>
+  </div>
+
+  <div class="modal" id="my-modal">
+    <div class="gap burger__menu-gap">
+      <div class="burger-menu__header">
+        <button type="button" class="burger-menu__language active">RU</button>
+        /
+        <button type="button" class="burger-menu__language">ENG</button>
+        <button type="button" class="burger-menu__man">
+          <img class="burger-menu__image" src="./img/men-3.svg" alt="">
+        </button>
+        <button type="button" class="burger-menu__class" id="close-my-modal-btn">
+          <img src="./img/COLOR-2.svg" alt="">
+        </button>
+      </div>
+      <div class="burger-menu__sets">Наборы</div>
+      <div class="burger-menu__all">Все товары</div>
+      <div class="burger-menu__list">
+        <div class="textcols">
+          <ul class="burger-menu__clothes">
+            <li class="burger__list">
+              <a class="burger-menu__text--active" href="">Толстовки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Свитшоты</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Футболки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Поло</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Жилетки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Рюкзаки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="textcols">
+          <ul class="burger-menu__clothes">
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Бананки</a>
+            </li>
+            <li class="burger__list burger__list-one">
+              <a class="burger-menu__text" href="">Эко-сумки/Шопперы</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Пледы</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Носки</a>
+            </li>
+            <li class="burger__list">
+              <a class="burger-menu__text" href="">Маски</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="burger-menu__info">Информация</p>
+      <div class="burger__mail">
+        <a class="burger-menu__mail" href="example@gmail.com">example@gmail.com</a>
+      </div>
+      <div class="burger__phone">
+        <a class="phone burger-menu__phone" href="tel:+79283627229">+380 630 130 103</a>
+      </div>
+      <div class="burger-menu__masagers">
+        <div class="burger__mesagers">
+          <div class="burger-menu__image"><a href=""></a><img src="./img/Vector11.svg" alt=""></div>
+          <div class="burger-menu__image"><a href=""></a><img src="./img/instagram.svg" alt=""></div>
+          <div class="burger-menu__image"><a href=""><img src="./img/facebook.svg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
   </div>
   <script defer src="js/index.js"></script>
 </body>

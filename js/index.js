@@ -1,3 +1,4 @@
+const myModal = document.getElementById("my-modal")
 
 document.getElementById("open-modal-btn").addEventListener("click", function () {
   document.getElementById("my-modal").classList.add("open")
@@ -16,6 +17,7 @@ window.addEventListener('keydown', (e) => {
 
 // Первое модальное окно на странице "Наборы"
 
+const myModals = document.getElementById("my-modal1")
 
 document.getElementById("open-modal-btn1").addEventListener("click", function () {
   document.getElementById("my-modal1").classList.add("open")
@@ -53,34 +55,32 @@ window.addEventListener('keydown', (e) => {
   }
 })
 
-// Модальное окно, которое вызывается в другом на странице "Наборы"
+// // Модальное окно, которое вызывается в другом на странице "Наборы"
 
-document.getElementById("open-modals").addEventListener("click", function () {
-  document.getElementById("my-modals").classList.add("open")
-})
+// const cartButton = document.getElementById("open-modals");
 
-document.getElementById("close-my-modals").addEventListener("click", function () {
-  document.getElementById("my-modals").classList.remove("open")
-})
-
-document.getElementById("open-modal-btn5").addEventListener("click", function () {
-  document.getElementById("my-modals").classList.remove("open")
-})
-
-document.getElementById("open-modal-btn5").addEventListener("click", function () {
-  document.getElementById("my-modal2").classList.add("open")
-})
-
-// попап на странице все товары
-
-
-// const menuBody = document.querySelector('.popular__basket');
-
-// document.addEventListener("click", popular__basket);
-
-// function popular(event) {
-//   if (event.target.closest('.popular__purchases')) {
-//     menuBody.classList.toggle('open');
-//   }
-
+// if (cartButton) {
+//   cartButton.addEventListener("click", function () {
+//     document.getElementById("my-modals").classList.add("open")
+//   })
 // }
+
+// document.getElementById("open-modal-btn1").addEventListener("click", function () {
+//   document.getElementById("my-modal1").classList.add("open")
+// })
+
+// document.getElementById("close-my-modal-btn").addEventListener("click", function () {
+//   document.getElementById("my-modal").classList.remove("open")
+// })
+
+// document.getElementById("open-modal-btn1").addEventListener("click", function () {
+//   document.getElementById("my-modal").classList.remove("open")
+// })
+
+// document.getElementById("open-modal-btn5").addEventListener("click", function () {
+//   document.getElementById("my-modal2").classList.add("open")
+// })
+
+// // попап на странице все товары
+
+
