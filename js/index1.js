@@ -101,5 +101,4 @@ if (cartButton) {
   cartButton.addEventListener("click", function () {
     document.getElementById("my-golder").classList.add("open")
   })
-
 }
