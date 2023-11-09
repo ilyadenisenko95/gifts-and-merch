@@ -102,3 +102,33 @@ if (cartButton) {
     document.getElementById("my-golder").classList.add("open")
   })
 }
+
+
+
+// const cartButton = document.getElementById("open-modals");
+
+// if (cartButton) {
+//   cartButton.addEventListener("click", function () {
+//     document.getElementById("my-modals").classList.add("open")
+//   })
+// }
+
+// document.getElementById("open-modal-btn1").addEventListener("click", function () {
+//   document.getElementById("modal-order-menu").classList.add("open")
+// })
+
+// document.getElementById("close-my-modal-btn").addEventListener("click", function () {
+//   document.getElementById("modal-mobile-menu").classList.remove("open")
+// })
+
+// document.getElementById("open-modal-btn1").addEventListener("click", function () {
+//   document.getElementById("modal-mobile-menu").classList.remove("open")
+// })
+
+// document.getElementById("open-modal-btn5").addEventListener("click", function () {
+//   document.getElementById("my-modal2").classList.add("open")
+// })
+
+// // попап на странице все товары
+
+

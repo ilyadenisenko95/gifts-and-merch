@@ -118,9 +118,14 @@
     border-bottom: 8px solid #F1F0F8;
 }
 
-.description__float {
+/* .description__float {
+    display: none;
+} */
+
+.description__float:not(.open) {
     display: none;
 }
+
 
 .description__string--active .description__float {
     display: block;
