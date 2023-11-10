@@ -137,15 +137,15 @@ window.addEventListener('keydown', (e) => {
 
 
 
-const accordionTopElArr = document.querySelectorAll('.description__float');
-accordionTopElArr.forEach((topEl) => {
+const accordionDesTx = document.querySelectorAll('.description__txt');
+accordionDesTx.forEach((topEl) => {
   topEl.addEventListener('click', (event) => {
     const contentEl = event.currentTarget.nextElementSibling;
     contentEl.classList.toggle('open');
   });
 });
 
-
+//аккордеон
 
 
 
