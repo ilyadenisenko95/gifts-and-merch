@@ -1,10 +1,11 @@
 
+const myModalMob = document.getElementById("modal-mobile-menu")
 document.getElementById("mobile-menu-btn").addEventListener("click", function () {
-  document.getElementById("modal-mobile-menu").classList.add("open")
+  myModalMob.classList.add("open")
 })
 
 document.getElementById("close-mobile-menu-btn").addEventListener("click", function () {
-  document.getElementById("modal-mobile-menu").classList.remove("open")
+  myModalMob.classList.remove("open")
 })
 
 window.addEventListener('keydown', (e) => {
@@ -17,92 +18,69 @@ window.addEventListener('keydown', (e) => {
 
 
 const myModal = document.getElementById("order-menu-btn")
+const myModalOr = document.getElementById("modal-order-menu")
 if (myModal) {
-  myModal.addEventListener("click", function () {
-    document.getElementById("modal-order-menu").classList.add("open");
-  });
+  document.querySelectorAll(".card__cart").forEach((cartBtn) => {
+    cartBtn.addEventListener("click", function () {
+      myModalOr.classList.add("open")
+    })
+  })
 }
+
 const orderModal = document.getElementById("close-order-menu-btn")
 if (orderModal) {
   orderModal.addEventListener("click", function () {
-    document.getElementById("modal-order-menu").classList.remove("open");
+    myModalOr.classList.remove("open");
   });
 }
 
 window.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
-    document.getElementById("modal-order-menu").classList.remove("open")
+    myModalOr.classList.remove("open")
   }
 })
 
 const myModalBasket = document.getElementById("modal-basket-btn")
+const myModalBasOp = document.getElementById("modal-basket-menu")
 if (myModalBasket) {
   myModalBasket.addEventListener("click", function () {
-    document.getElementById("modal-basket-menu").classList.add("open");
+    myModalBasOp.classList.add("open");
     closeModalBasket();
   })
 }
 
 function closeModalBasket() {
-  document.getElementById("modal-order-menu").classList.remove("open");
+  myModalOr.classList.remove("open");
 }
 
-// Первое модальное окно в карточак
-
-
-const myModalOne = document.getElementById("order-menu-btn-one")
-if (myModalOne) {
-  myModalOne.addEventListener("click", function () {
-    document.getElementById("modal-order-menu").classList.add("open");
-  });
-}
-
-// Второе модальное окно в карточак
-
-const myModalTwo = document.getElementById("order-menu-btn-two")
-if (myModalTwo) {
-  myModalTwo.addEventListener("click", function () {
-    document.getElementById("modal-order-menu").classList.add("open");
-  });
-}
-
-// Третье модальное окно в карточак
-
-const myModalThree = document.getElementById("order-menu-btn-three")
-if (myModalThree) {
-  myModalThree.addEventListener("click", function () {
-    document.getElementById("modal-order-menu").classList.add("open");
-  });
-}
-
-// Четвертое модальное окно в карточак
-
+// Модальное окно в карточак
 
 
 const myTrolley = document.getElementById("trolley-modal-btn")
+const myModalBo = document.getElementById("modal-book-menu")
 if (myTrolley) {
   myTrolley.addEventListener("click", function () {
-    document.getElementById("modal-book-menu").classList.add("open");
+    myModalBo.classList.add("open");
   });
 }
 
 const myTrolleyOne = document.getElementById("close-trolley-modal-btn")
 if (myTrolleyOne) {
   myTrolleyOne.addEventListener("click", function () {
-    document.getElementById("modal-book-menu").classList.remove("open");
+    myModalBo.classList.remove("open");
   });
 }
 
 const myTrolleyCl = document.getElementById("close-trolley-modal-btn-two")
 if (myTrolleyCl) {
   myTrolleyCl.addEventListener("click", function () {
-    document.getElementById("modal-book-menu").classList.remove("open");
+    myModalBo.classList.remove("open");
   });
 }
 
 window.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
-    document.getElementById("modal-book-menu").classList.remove("open")
+    myModalBo.classList.remove("open")
   }
 })
 
@@ -111,25 +89,25 @@ window.addEventListener('keydown', (e) => {
 const myBasketOp = document.getElementById("open-modal-basket-btn")
 if (myBasketOp) {
   myBasketOp.addEventListener("click", function () {
-    document.getElementById("modal-basket-menu").classList.add("open")
+    myModalBasOp.classList.add("open")
     closeModal();
   })
 }
 
 function closeModal() {
-  document.getElementById("modal-book-menu").classList.remove("open");
+  myModalBo.classList.remove("open");
 }
 
 const myBasketCl = document.getElementById("close-basket-modal-btn")
 if (myBasketCl) {
   myBasketCl.addEventListener("click", function () {
-    document.getElementById("modal-basket-menu").classList.remove("open")
+    myModalBasOp.classList.remove("open")
   })
 }
 
 window.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
-    document.getElementById("modal-basket-menu").classList.remove("open")
+    myModalBasOp.classList.remove("open")
   }
 })
 

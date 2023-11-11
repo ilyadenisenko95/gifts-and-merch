@@ -1428,7 +1428,7 @@ body {
     background-color: #FAFAFA;
     transform: scale(0);
     box-shadow: 0 16.0566px 20.0707px -4.01414px rgb(26 32 44 / 10%), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 4%);
-    transition: transform .8s;
+    transition: transform .4s;
 }
 
 .burger-menu__header {

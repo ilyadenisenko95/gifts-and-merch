@@ -109,7 +109,7 @@
 
 .popular__purchases-menu {
     transform: scale(0);
-    transition: transform .8s;
+    transition: transform .4s;
 }
 
 .popular__purchases.open {
