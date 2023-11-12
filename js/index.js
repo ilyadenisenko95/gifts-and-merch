@@ -8,11 +8,11 @@ document.getElementById("close-mobile-menu-btn").addEventListener("click", funct
   myModalMob.classList.remove("open")
 })
 
-window.addEventListener('keydown', (e) => {
-  if (e.key === "Escape") {
-    document.getElementById("modal-mobile-menu").classList.remove("open")
-  }
-})
+// window.addEventListener('keydown', (e) => {
+//   if (e.key === "Escape") {
+//     myModalMob.classList.remove("open")
+//   }
+// })
 
 // Модальное окно БМ
 
@@ -34,11 +34,11 @@ if (orderModal) {
   });
 }
 
-window.addEventListener('keydown', (e) => {
-  if (e.key === "Escape") {
-    myModalOr.classList.remove("open")
-  }
-})
+// window.addEventListener('keydown', (e) => {
+//   if (e.key === "Escape") {
+//     myModalOr.classList.remove("open")
+//   }
+// })
 
 const myModalBasket = document.getElementById("modal-basket-btn")
 const myModalBasOp = document.getElementById("modal-basket-menu")
@@ -78,17 +78,17 @@ if (myTrolleyCl) {
   });
 }
 
-window.addEventListener('keydown', (e) => {
-  if (e.key === "Escape") {
-    myModalBo.classList.remove("open")
-  }
-})
+// window.addEventListener('keydown', (e) => {
+//   if (e.key === "Escape") {
+//     myModalBo.classList.remove("open")
+//   }
+// })
 
 // // Модальное окно(корзина), которое вызывается на странице "Все товары"
 
-const myBasketOp = document.getElementById("open-modal-basket-btn")
-if (myBasketOp) {
-  myBasketOp.addEventListener("click", function () {
+
+if (myModalBasket) {
+  myModalBasket.addEventListener("click", function () {
     myModalBasOp.classList.add("open")
     closeModal();
   })
@@ -108,6 +108,9 @@ if (myBasketCl) {
 window.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
     myModalBasOp.classList.remove("open")
+    myModalMob.classList.remove("open")
+    myModalOr.classList.remove("open")
+    myModalBo.classList.remove("open")
   }
 })
 
