@@ -8,12 +8,6 @@ document.getElementById("close-mobile-menu-btn").addEventListener("click", funct
   myModalMob.classList.remove("open")
 })
 
-// window.addEventListener('keydown', (e) => {
-//   if (e.key === "Escape") {
-//     myModalMob.classList.remove("open")
-//   }
-// })
-
 // Модальное окно БМ
 
 
@@ -33,12 +27,6 @@ if (orderModal) {
     myModalOr.classList.remove("open");
   });
 }
-
-// window.addEventListener('keydown', (e) => {
-//   if (e.key === "Escape") {
-//     myModalOr.classList.remove("open")
-//   }
-// })
 
 const myModalBasket = document.getElementById("modal-basket-btn")
 const myModalBasOp = document.getElementById("modal-basket-menu")
@@ -78,11 +66,6 @@ if (myTrolleyCl) {
   });
 }
 
-// window.addEventListener('keydown', (e) => {
-//   if (e.key === "Escape") {
-//     myModalBo.classList.remove("open")
-//   }
-// })
 
 // // Модальное окно(корзина), которое вызывается на странице "Все товары"
 
