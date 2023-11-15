@@ -15,15 +15,21 @@
 
 .card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: calc(25% - 23px);
     list-style-type: none;
 }
 
 .card__top {
     position: relative;
+    height: 387px;
 }
 
 .card__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding-top: 11px;
     padding-left: 14px;
     margin-top: 2px;
@@ -39,6 +45,8 @@
 
 .card__image {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -95,7 +103,8 @@
 .card__color {
     display: flex;
     padding: 0;
-    margin-top: 15px;
+    margin-top: auto;
+    margin-bottom: 15px;
 }
 
 .card__color-button {
@@ -123,7 +132,6 @@
 
 .card__price {
     margin: 0;
-    margin-top: 37px;
     margin-bottom: 11px;
     font-size: 24px;
     font-weight: 600;
@@ -446,7 +454,6 @@
     }
 
     .card__price {
-        margin-top: 29px;
         margin-bottom: 9px;
         font-size: 19.26px;
         font-weight: 600;
@@ -592,7 +599,6 @@
     }
 
     .card__price {
-        margin-top: 33px;
         margin-bottom: 10px;
         font-size: 22.2267px;
     }
@@ -723,7 +729,6 @@
     }
 
     .card__price {
-        margin-top: 20px;
         margin-bottom: 7px;
         font-size: 13.4338px;
         font-weight: 600;
@@ -913,7 +918,6 @@
     }
 
     .card__price {
-        margin-top: 27px;
         margin-bottom: 6px;
         font-size: 17.7778px;
         font-weight: 600;

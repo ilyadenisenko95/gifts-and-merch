@@ -245,6 +245,8 @@ const setItems = [
 const fillItemList = () => {
   const itemListEl = document.getElementById('card-list');
   const itemTemplate = document.getElementById('item-template');
+  const colorTemplate = document.getElementById('color-template');
+
   if (!itemTemplate || !itemListEl) {
     return;
   }
@@ -254,30 +256,21 @@ const fillItemList = () => {
     itemEl.querySelector('.card__description').textContent = item.shortDescription
     itemEl.querySelector('.card__price span').textContent = item.price;
     itemEl.querySelector('.card__image').src = item.images[0];
+    const colorListEl = itemEl.getElementById('color-list');
+    item.colors.forEach((color, index) => {
+      const colorEl = colorTemplate.content.cloneNode(true);
+      const buttonEl = colorEl.getElementById('button-color');
+      if (index === 0) {
+        buttonEl.classList.add('card__color-button--active');
+      }
+      buttonEl.style = `background-color: ${color}`;
+      colorListEl.appendChild(colorEl);
+    })
+
     itemListEl.appendChild(itemEl);
   });
 };
 fillItemList();
-
-
-
-
-
-
-
-const colorListEl = document.getElementById('color-list');
-const colorTemplate = document.getElementById('color-template');
-const buttonEl = document.getElementById('button-color');
-// const inlineStyles = buttonEl.style;
-
-setItems.forEach((item) => {
-  const colorEl = colorTemplate.content.cloneNode(true).querySelector('*');
-  document.getElementById('color-list').appendChild(colorEl);
-  // buttonEl.style = `background-color: ${color}`;
-})
-
-
-
 
 
 
