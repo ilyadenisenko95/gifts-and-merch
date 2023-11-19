@@ -45,6 +45,7 @@ function closeModalBasket() {
 
 
 
+
 const myTrolley = document.getElementById("trolley-modal-btn")
 const myModalBo = document.getElementById("modal-book-menu")
 if (myTrolley) {
