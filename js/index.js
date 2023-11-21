@@ -98,6 +98,7 @@ window.addEventListener('keydown', (e) => {
   }
 })
 
+
 // Модальное окно "В корзину"
 
 
@@ -109,6 +110,8 @@ accordionDesTx.forEach((topEl) => {
     contentEl.classList.toggle('open');
   });
 });
+
+console.log(sf)
 
 //аккордеон
 
