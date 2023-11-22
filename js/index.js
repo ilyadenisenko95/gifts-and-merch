@@ -111,7 +111,8 @@ accordionDesTx.forEach((topEl) => {
   });
 });
 
-console.log(sf)
+
+
 
 //аккордеон
 
