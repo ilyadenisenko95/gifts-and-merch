@@ -16,7 +16,7 @@ const myModalOr = document.getElementById("modal-order-menu")
 if (myModal) {
   document.querySelectorAll(".card__cart").forEach((cartBtn) => {
     cartBtn.addEventListener("click", function () {
-      myModalOr.classList.add("open")
+      myModalOr.classList.add("open");
     })
   })
 }

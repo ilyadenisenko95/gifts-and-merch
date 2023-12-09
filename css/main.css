@@ -45,7 +45,7 @@ body {
     font-size: 18px;
     line-height: 19px;
     color: #8E8E8E;
-    cursor: pointer;
+    cursor: not-allowed;
     background: transparent;
     border: none;
 }
@@ -58,14 +58,13 @@ body {
     display: flex;
     align-items: center;
     color: #8E8E8E;
-    cursor: pointer;
 }
 
 .page-header__button {
     padding: 2px;
     font-size: 18px;
     color: #8E8E8E;
-    cursor: pointer;
+    cursor: not-allowed;
     background: transparent;
     border: 0;
 }
@@ -73,7 +72,7 @@ body {
 .page-header__button.active {
     font-weight: 600;
     color: #272525;
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .page-header__burger {
@@ -1661,6 +1660,7 @@ body {
     height: 24px;
     padding: 0 0.5px;
     margin: 0;
+    margin-right: 4.5px;
     background: transparent;
     border: none;
     border-radius: 50%;
@@ -1674,11 +1674,6 @@ body {
     display: flex;
     width: 70px;
     padding-left: 0;
-}
-
-.color__list {
-    margin-right: 7px;
-    list-style-type: none;
 }
 
 .win__price {
@@ -1701,31 +1696,8 @@ body {
 }
 
 .size {
-    display: flex;
     width: 634px;
     margin-top: 30px;
-    justify-content: space-between;
-}
-
-.size__text-win {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 105.5%;
-    color: #272525;
-}
-
-.size__choise {
-    display: flex;
-    width: 147px;
-    padding-left: 0;
-    margin-top: 7px;
-    justify-content: space-between;
-}
-
-.size__color-list {
-    margin-right: 0;
 }
 
 .size__right {
@@ -1774,21 +1746,17 @@ body {
 }
 
 .size__button {
-    position: absolute;
-    top: 543px;
-    right: 480px;
     display: inline-block;
     padding: 21px 82px;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
     line-height: 19px;
     text-decoration: none;
     color: #FFF;
     cursor: pointer;
-    ;
     background-color: #524983;
     border: none;
-    ;
     border-radius: 60px;
 }
 
@@ -1815,9 +1783,6 @@ body {
 }
 
 .property {
-    position: absolute;
-    top: 450px;
-    right: 70px;
     display: flex;
     width: 352px;
 }
@@ -2163,8 +2128,6 @@ body {
     }
 
     .size__button {
-        top: 378px;
-        right: 313px;
         padding: 16px 76px;
         font-size: 15px;
     }
@@ -2188,8 +2151,6 @@ body {
     }
 
     .property {
-        top: 305px;
-        right: 22px;
         width: 245px;
     }
 
@@ -2316,8 +2277,6 @@ body {
     }
 
     .size__button {
-        top: 480px;
-        right: 50px;
         padding: 16px 90px;
     }
 
@@ -2326,18 +2285,12 @@ body {
         right: -7px;
     }
 
-    .size__left {
-        display: none;
-    }
-
     .size__feature {
         width: 155px;
         font-size: 16px;
     }
 
     .property {
-        top: 331px;
-        right: 50px;
         width: 245px;
     }
 
@@ -2471,18 +2424,11 @@ body {
 
     .win__txt {
         width: 185px;
-        margin-top: 27px;
+        margin-top: 0;
     }
 
     .size__button {
-        top: 475px;
-        right: 17px;
         padding: 16px 64px;
-    }
-
-    .property {
-        top: 690px;
-        right: 180px;
     }
 
     .basket__selection-one {
@@ -2708,10 +2654,6 @@ body {
         right: -8px;
     }
 
-    .size__left {
-        display: none;
-    }
-
     .winwod-img {
         height: 157px;
     }
@@ -2726,11 +2668,6 @@ body {
         font-size: 14px;
     }
 
-    .size__button {
-        top: 422px;
-        right: 45px;
-    }
-
     .size__right {
         width: 155px;
     }
@@ -2739,8 +2676,8 @@ body {
         margin-top: 0;
     }
 
-    .property {
-        display: none;
+    .size__button {
+        margin-left: 25px;
     }
 
     .trolley__gap {
