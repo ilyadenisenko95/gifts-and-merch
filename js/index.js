@@ -113,7 +113,6 @@ accordionDesTx.forEach((topEl) => {
 
 
 
-
 //аккордеон
 
 
