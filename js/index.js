@@ -284,7 +284,6 @@ fillItemList();
 
 
 
-
 <form class="order" action="self">
   <div class="order__field">
     <input type="text" class="order__input" name="login" placeholder="Ваше Имя">
