@@ -93,7 +93,7 @@
 }
 
 .card__description {
-    width: 223px;
+    width: 100%;
     font-size: 12px;
     font-weight: 400;
     line-height: 105.5%;
@@ -258,18 +258,45 @@
 }
 
 .order {
-    width: 336px;
+    width: 100%;
+    max-width: 336px;
 }
 
-.order__info {
+.order__field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.order__input {
     width: 100%;
     padding-top: 4px;
-    margin-bottom: 32px;
     color: inherit;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgb(1 0 0);
     outline: none;
+}
+
+.order__field.error .order__input,
+.order__field.error .order__input::placeholder {
+    color: #f45656;
+    border-color: #f45656;
+}
+
+.order__error-msg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: none;
+    font-size: 14px;
+    color: #f45656;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.order__field.error .order__error-msg {
+    display: block;
 }
 
 .decor__order-line {
@@ -298,9 +325,9 @@
     font-weight: 600;
     line-height: 19px;
     text-decoration: none;
-    color: #EEF1F6;
+    color: #eef1f6;
     cursor: pointer;
-    background-color: #1FAB8A;
+    background-color: #1fab8a;
     border: none;
     border-radius: 60px;
 }
@@ -373,7 +400,6 @@
     }
 
     .card__description {
-        width: 179px;
         margin-top: 8px;
         font-size: 9.63px;
         font-weight: 400;
@@ -510,7 +536,6 @@
     }
 
     .card__description {
-        width: 179px;
         margin-top: 13px;
         font-size: 11.1134px;
         font-weight: 400;
@@ -618,7 +643,6 @@
     }
 
     .card__description {
-        width: 125px;
         margin-top: 7px;
         font-size: 6.71689px;
         font-weight: 400;
@@ -786,7 +810,6 @@
     }
 
     .card__description {
-        width: 165px;
         margin-top: 9px;
         font-size: 8.88889px;
         font-weight: 400;

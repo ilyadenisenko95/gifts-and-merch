@@ -181,11 +181,19 @@
         <p class="slogan__text" id="contact">Свяжитесь с нами</p>
         <div class="book slogan__book">
           <p class="slogan__txt">Введите свои контактные данные, и наш менеджер свяжется с Вами <span class="colortext">в&nbsp;течении 15 минут</span></p>
-          <form class="order order__reach" action="self">
-            <input type="text" class="order__info" name="login" placeholder="Ваше Имя">
-            <input type="email" class="order__info" name="email" placeholder="Ваша електронная почта">
-            <input type="tel" class="order__info" name="tel" placeholder="Ваш номер телефона">
-            <button id="my-but" type="button" class="order__button">
+          <form class="order" action="self">
+            <div class="order__field">
+              <input type="text" class="order__input" name="login" placeholder="Ваше Имя">
+            </div>
+            <div class="order__field">
+              <input type="email" class="order__input" name="email" placeholder="Ваша електронная почта" minlength="7" required>
+              <span class="order__error-msg">Неверный формат</span>
+            </div>
+            <div class="order__field">
+              <input type="tel" class="order__input" name="tel" placeholder="Ваш номер телефона" minlength="6" required>
+              <span class="order__error-msg">Неверный формат</span>
+            </div>
+            <button type="button" class="order__button">
               Заказать
             </button>
           </form>

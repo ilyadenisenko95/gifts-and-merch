@@ -390,7 +390,7 @@
 
 .idea {
     position: relative;
-    padding-bottom: 140px;
+    padding-bottom: 128px;
     margin-top: 40px;
 }
 
@@ -418,6 +418,7 @@
 .idea__info {
     max-width: 530px;
     margin-top: 93px;
+    margin-bottom: 37px;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
@@ -454,7 +455,12 @@
     justify-content: space-between;
 }
 
-.order__info--idea {
+.order__field--idea {
+    margin-right: 60px;
+    margin-bottom: 0;
+}
+
+.order__input--idea {
     width: 336px;
     margin-bottom: 26px;
 }
@@ -648,7 +654,7 @@
         width: 336px;
     }
 
-    .order__info--idea {
+    .order__input--idea {
         width: 100%;
         margin-bottom: 32px;
     }
@@ -867,7 +873,7 @@
 
     .idea__text {
         max-width: 460px;
-        padding-top: 80px;
+        padding-top: 136px;
         font-size: 28px;
     }
 

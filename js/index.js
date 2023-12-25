@@ -283,19 +283,4 @@ fillItemList();
 
 
 
-<form class="order" action="self">
-  <div class="order__field">
-    <input type="text" class="order__input" name="login" placeholder="Ваше Имя">
-  </div>
-  <div class="order__field">
-    <input type="email" class="order__input" name="email" placeholder="Ваша електронная почта" minlength="7" required>
-      <span class="order__error-msg">Неверный формат</span>
-  </div>
-  <div class="order__field">
-    <input type="tel" class="order__input" name="tel" placeholder="Ваш номер телефона" minlength="6" required>
-      <span class="order__error-msg">Неверный формат</span>
-  </div>
-  <button type="button" class="order__button">
-    Заказать
-  </button>
-</form>
+

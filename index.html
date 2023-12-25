@@ -192,18 +192,22 @@
       <p class="idea__txt">Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с технологией производства, предоставим образцы матералов.</p>
       <div class="idea__book">
         <p class="idea__info">Введите свои контактные данные, и наш менеджер свяжется с Вами <span class="colortext">в&nbsp;течении 15 минут</span></p>
-
-
         <form class="order idea__order" action="self">
-          <input type="text" class="order__info order__info--idea" name="login" placeholder="Ваше Имя">
-          <input type="email" class="order__info order__info--idea" name="email" placeholder="Ваша електронная почта">
-          <input type="tel" class="order__info order__info--idea" name="tel" placeholder="Ваш номер телефона">
+          <div class="order__field order__field--idea">
+            <input type="text" class="order__input order__input--idea" name="login" placeholder="Ваше Имя">
+          </div>
+          <div class="order__field order__field--idea">
+            <input type="email" class="order__input order__input--idea" name="email" placeholder="Ваша електронная почта" minlength="7" required>
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+          <div class="order__field order__field--idea">
+            <input type="tel" class="order__input order__input--idea" name="tel" placeholder="Ваш номер телефона" minlength="6" required>
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
           <button type="button" class="order__button order__button--idea">
             Заказать
           </button>
         </form>
-
-
       </div>
       <div class="idea__image">
         <img class="img__ic1" src="./img/main/ideas/rocket1.svg" alt="">

@@ -1081,6 +1081,8 @@ body {
     .header-hero__creation {
         display: flex;
         width: 210px;
+        margin-right: auto;
+        margin-left: auto;
         flex-wrap: wrap;
         justify-content: center;
     }
