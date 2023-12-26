@@ -280,7 +280,3 @@ const fillItemList = () => {
 };
 fillItemList();
 
-
-
-
-
