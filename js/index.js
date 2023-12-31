@@ -11,6 +11,19 @@ document.getElementById("close-mobile-menu-btn").addEventListener("click", funct
 // Модальное окно БМ
 
 
+// const addOpenCartListeners = () => {
+//   const setCards = document.querySelectorAll('.card');
+//   const myModalOr = document.getElementById("modal-order-menu")
+//   setCards.forEach(card => {
+//     card.addEventListener('click', () => {
+//       myModalOr.classList.add("open");
+//     });
+//   });
+// };
+// addOpenCartListeners();
+
+
+
 const myModal = document.getElementById("order-menu-btn")
 const myModalOr = document.getElementById("modal-order-menu")
 if (myModal) {
@@ -20,6 +33,7 @@ if (myModal) {
     })
   })
 }
+
 
 const orderModal = document.getElementById("close-order-menu-btn")
 if (orderModal) {
