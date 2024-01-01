@@ -1848,7 +1848,7 @@ body {
     color: #454747;
 }
 
-.trolley__inf {
+.trolley__confirm-txt {
     width: 264px;
     padding-bottom: 85px;
     font-size: 10px;
@@ -1860,12 +1860,7 @@ body {
     color: #737373;
 }
 
-.trolley__orders {
-    width: 279px;
-    margin-top: 40px;
-}
-
-.trolley__order-info {
+/* .trolley__order-info {
     width: 100%;
     padding-top: 4px;
     margin-bottom: 28px;
@@ -1878,7 +1873,7 @@ body {
 
 .trolley__order-info--active {
     margin-bottom: 0;
-}
+} */
 
 .trolley__order-button {
     display: inline-block;
@@ -2159,16 +2154,11 @@ body {
         font-size: 14px;
     }
 
-    .trolley__orders {
-        width: 279px;
-        margin-top: 38px;
-    }
-
     .trolley__box {
         width: 62.25%;
     }
 
-    .trolley__inf {
+    .trolley__confirm-txt {
         padding-bottom: 16px;
     }
 
@@ -2307,14 +2297,7 @@ body {
         right: 4px;
     }
 
-    .trolley__orders {
-        display: flex;
-        width: 100%;
-        margin-top: 21px;
-        flex-wrap: wrap;
-    }
-
-    .trolley__order-info {
+    /* .trolley__order-info {
         width: calc(50% - 51px);
         margin-right: 30px;
         margin-bottom: 20px;
@@ -2324,7 +2307,7 @@ body {
         margin-right: 0;
         margin-bottom: 50px;
         margin-left: 0;
-    }
+    } */
 
     .trolley__order-button {
         height: 60px;
@@ -2337,7 +2320,7 @@ body {
         margin-bottom: 0;
     }
 
-    .trolley__inf {
+    .trolley__confirm-txt {
         padding-bottom: 20px;
         margin-top: 0;
         margin-left: 322px;
@@ -2436,15 +2419,7 @@ body {
         margin-top: 30px;
     }
 
-    .trolley__orders {
-        display: block;
-        width: 200px;
-        margin-top: 25px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .trolley__inf {
+    .trolley__confirm-txt {
         width: 100%;
         margin-top: 10px;
         margin-right: auto;
@@ -2452,7 +2427,7 @@ body {
     }
 
 
-    .trolley__order-info {
+    /* .trolley__order-info {
         width: 100%;
         margin-top: 7px;
         margin-bottom: 6px;
@@ -2460,7 +2435,7 @@ body {
 
     .trolley__order-info--active {
         margin-left: 0;
-    }
+    } */
 
     .trolley__order-button {
         height: 50px;
@@ -2694,7 +2669,7 @@ body {
         margin-left: auto;
     }
 
-    .trolley__order-info {
+    /* .trolley__order-info {
         font-size: 14px;
-    }
+    } */
 }

@@ -372,21 +372,38 @@
     </div>
   </div>
 
-  <div class="modal" id="modal-basket-menu">
+  <div class="modal open" id="modal-basket-menu">
     <div class="gap trolley__gap">
       <div class="trolley__order">
         <p class="trolley__text">Оформить заказ</p>
         <p class="trolley__txt">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
-        <form class="trolley__orders" action="self">
-          <input type="text" class="trolley__order-info" name="login" placeholder="Ваше Имя">
-          <input type="email" class="trolley__order-info" name="email" placeholder="Ваша електронная почта">
-          <input type="tel" class="trolley__order-info trolley__order-info--active" name="tel" placeholder="Ваш номер телефона">
+
+
+        <form class="order" action="self">
+          <div class="order__field">
+            <input type="text" class="order__input" name="login" placeholder="Ваше Имя">
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+
+          <div class="order__field">
+            <input type="email" class="order__input" name="email" placeholder="Ваша електронная почта">
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+
+          <div class="order__field">
+            <input type="tel" class="order__input trolley__order-info--active" name="tel" placeholder="Ваш номер телефона">
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+
           <button type="button" class="trolley__order-button">
             Заказать
           </button>
-        </form>
-        <p class="trolley__inf">Нажимая "Подтвердить заказ", Вы даете согласие на обработку Ваших персональных данных</p>
+          <p class="trolley__confirm-txt">Нажимая "Подтвердить заказ", Вы даете согласие на обработку Ваших персональных данных</p>
       </div>
+      </form>
+
+
+
       <div class="trolley__box">
         <div class="basket__order">Корзина</div>
         <div class="basket__selection">
