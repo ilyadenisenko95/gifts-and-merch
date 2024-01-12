@@ -4,15 +4,15 @@
 
 .header-hero__navigation {
     display: flex;
+    justify-content: space-between;
     max-width: 545px;
     margin-top: 74px;
-    justify-content: space-between;
 }
 
 .header__navigation {
     font-size: 18px;
-    font-weight: 600;
     line-height: 105.5%;
+    font-weight: 600;
     text-decoration: none;
     color: #3C336C;
 }
@@ -28,16 +28,16 @@
     margin: 0;
     margin-top: 20px;
     font-size: 36px;
-    font-weight: 600;
     line-height: 130%;
+    font-weight: 600;
     color: #272525;
 }
 
 .specification__txt {
     margin-top: 20px;
     font-size: 16px;
-    font-weight: 400;
     line-height: 130%;
+    font-weight: 400;
     color: #454747;
 }
 
@@ -51,8 +51,8 @@
     margin-top: 113px;
     margin-bottom: 20px;
     font-size: 48px;
-    font-weight: 700;
     line-height: 105.5%;
+    font-weight: 700;
     color: #272525;
 }
 
@@ -63,8 +63,8 @@
 .description {
     position: relative;
     max-width: 853px;
-    padding-left: 0;
     margin: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 
@@ -72,8 +72,8 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 36px;
-    font-weight: 600;
     line-height: 130%;
+    font-weight: 600;
     color: #272525;
 }
 
@@ -86,14 +86,14 @@
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 16px;
-    font-weight: 400;
     line-height: 130%;
+    font-weight: 400;
     color: #454747;
 }
 
 .description__item {
-    padding-left: 23px;
     margin: 0;
+    padding-left: 23px;
     line-height: 130%;
 }
 
@@ -143,10 +143,10 @@
 
 .reach__promo {
     display: flex;
-    max-width: 990px;
-    padding-bottom: 192px;
-    margin-top: 70px;
     justify-content: space-between;
+    max-width: 990px;
+    margin-top: 70px;
+    padding-bottom: 192px;
 }
 
 .contacts {
@@ -157,8 +157,8 @@
 .contacts__text {
     display: flex;
     font-size: 48px;
-    font-weight: 700;
     line-height: 103%;
+    font-weight: 700;
     color: #272525;
 }
 
@@ -170,8 +170,8 @@
     margin-top: 50px;
     margin-bottom: 0;
     font-size: 36px;
-    font-weight: 600;
     line-height: 103%;
+    font-weight: 600;
     color: #272525;
 }
 
@@ -179,25 +179,25 @@
     margin-top: 28px;
     margin-bottom: 0;
     font-size: 36px;
-    font-weight: 800;
     line-height: 37px;
+    font-weight: 800;
     color: #272525;
 }
 
 .contacts__socials {
     display: flex;
-    width: 143px;
-    padding-left: 0;
-    margin: 0;
-    list-style-type: none;
     justify-content: space-between;
+    width: 143px;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 .slogan__text {
     margin-left: 240px;
     font-size: 48px;
-    font-weight: 700;
     line-height: 105.5%;
+    font-weight: 700;
     color: #272525;
 }
 
@@ -205,8 +205,8 @@
     max-width: 300px;
     margin-top: 0;
     font-size: 24px;
-    font-weight: 600;
     line-height: 29px;
+    font-weight: 600;
     color: #222227;
 }
 
@@ -295,8 +295,8 @@
 
     .reach__promo {
         display: block;
-        padding-bottom: 175px;
         margin-top: 0;
+        padding-bottom: 175px;
     }
 
     .slogan {
@@ -364,8 +364,8 @@
     }
 
     .reach__promo {
-        padding-bottom: 107px;
         margin-top: 72px;
+        padding-bottom: 107px;
     }
 
     .contacts__phone {
@@ -462,8 +462,8 @@
     }
 
     .reach__promo {
-        padding-bottom: 153px;
         margin-top: 0;
+        padding-bottom: 153px;
     }
 
     .slogan {
@@ -472,8 +472,8 @@
 
     .slogan__book {
         flex-wrap: wrap;
-        width: 100%;
         justify-content: center;
+        width: 100%;
     }
 
     .contacts {
@@ -514,10 +514,10 @@
 
     .hero__txt {
         width: 280px;
-        padding-bottom: 239px;
         margin-top: 20px;
         margin-right: auto;
         margin-left: auto;
+        padding-bottom: 239px;
         line-height: 137%;
     }
 
@@ -606,8 +606,8 @@
     }
 
     .slogan__book {
-        max-width: 100%;
         justify-content: center;
+        max-width: 100%;
     }
 
     .order__reach {
