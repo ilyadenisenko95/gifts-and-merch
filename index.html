@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gifts and Merch</title>
   <link rel="stylesheet" href="./css/vendor/normalize.css">
+  <link rel="stylesheet" href="./css/vendor/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/cards-reduction-decor.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -224,18 +225,18 @@
     </div>
   </div>
 
-  <div class="partners">
-    <p class="partners__text main-container">С нами соотрудничают</p>
-    <div class="partners__logo main-container">
-      <button type="button" class="hand hand__partners"><img src="./img/left.png" alt=""></button>
-      <ul class="partners__list">
-        <li class="partners__items"><img class="partners__img" src="./img/Logo_NIKE1.png" alt="nike"></li>
-        <li class="partners__items"><img class="partners__img" src="./img/Coca-Cola_logo.png" alt="cola"></li>
-        <li class="partners__items"><img class="partners__img" src="./img/weekend.png" alt="tls"></li>
-        <li class="partners__items"><img class="partners__img" src="./img/megogo.png" alt="megogo"></li>
-        <li class="partners__items"><img class="partners__img" src="./img/crazybox.png" alt="crazy"></li>
+  <div class="partners main-container">
+    <p class="partners__text">С нами соотрудничают</p>
+    <div class="partners__logo swiper">
+      <button id="partners-prev-btn" type="button" class="hand hand__partners"><img src="./img/left.png" alt=""></button>
+      <ul class="partners__list swiper-wrapper">
+        <li class="partners__items swiper-slide"><img class="partners__img" src="./img/Logo_NIKE1.png" alt="nike"></li>
+        <li class="partners__items swiper-slide"><img class="partners__img" src="./img/Coca-Cola_logo.png" alt="cola"></li>
+        <li class="partners__items swiper-slide"><img class="partners__img" src="./img/weekend.png" alt="tls"></li>
+        <li class="partners__items swiper-slide"><img class="partners__img" src="./img/megogo.png" alt="megogo"></li>
+        <li class="partners__items swiper-slide"><img class="partners__img" src="./img/crazybox.png" alt="crazy"></li>
       </ul>
-      <button type="button" class="hand hand__partners hand__img hand__partners--img-reverse"><img src="./img/left.png" alt=""></button>
+      <button id="partners-next-btn" type="button" class="hand hand__partners hand__img hand__partners--img-reverse"><img src="./img/left.png" alt=""></button>
     </div>
   </div>
 
@@ -505,7 +506,7 @@
     <li class="color__list"><button type="button" class="color__but card__color-button--purple" id="colors-list"></button></li>
   </template>
 
-
+  <script defer src="js/vendor/swiper-bundle.min.js"></script>
   <script defer src="js/index.js"></script>
 </body>
 

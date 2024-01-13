@@ -388,6 +388,13 @@
         padding: 3px;
     }
 
+    .hand__window {
+      display: flex;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
+
     .numbering__arrow--card {
         width: 9px;
         height: 17px;

@@ -1618,8 +1618,8 @@ body {
 
 .modal__close {
     position: absolute;
-    top: 18px;
-    right: 17px;
+    top: 14px;
+    right: 14px;
     padding: 0;
     cursor: pointer;
     background-color: transparent;
@@ -1629,8 +1629,8 @@ body {
 .window__picture {
     position: relative;
     width: 43%;
-    margin-top: 28px;
-    margin-left: 27px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 .window__order {
@@ -1639,15 +1639,16 @@ body {
 
 .window__picture-img {
     display: flex;
-    justify-content: space-between;
-    width: 318px;
+    justify-content: start;
+    width: 100%;
     margin-top: 6px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .winwod-thing {
   width: 100px;
   height: 100px;
+  margin-right: 11px;
   border-radius: 6px;
   object-fit: cover ;
 }
@@ -1661,8 +1662,8 @@ body {
 
 
 .win__text {
-    width: 500px;
-    margin-top: 113px;
+    width: 600px;
+    margin-top: 25px;
     margin-bottom: 0;
     font-size: 36px;
     line-height: 44px;
@@ -1689,11 +1690,12 @@ body {
 .color__win {
     display: flex;
     width: 70px;
+    margin-bottom: 28px;
     padding-left: 0;
 }
 
 .win__price {
-    margin-top: 28px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 24px;
     line-height: 105.5%;
@@ -1763,8 +1765,8 @@ body {
 
 .size__button {
     display: inline-block;
-    margin-top: 10px;
-    padding: 21px 82px;
+    margin-top: 124px;
+    padding: 21px 92px;
     font-size: 18px;
     line-height: 19px;
     font-weight: 600;
@@ -1801,12 +1803,17 @@ body {
 .property {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.property:not(.open) {
+  display: none;
 }
 
 .property__text {
     width: 45%;
-    margin-top: 14px;
-    padding-bottom: 8px;
+    margin-top: 0;
+    padding-bottom: 10px;
     font-size: 16px;
     line-height: 105.5%;
     font-weight: 400;
@@ -2027,6 +2034,7 @@ body {
 @media (width <=1500px) {
     .window__gap {
         width: 960px;
+        border-radius: 18.462px;
     }
 
     .winwod-img {
@@ -2037,17 +2045,18 @@ body {
     .winwod-thing {
         width: 73.846px;
         height: 73.846px;
+        margin-right: 10px;
     }
 
     .window__picture-img {
-        width: 236px;
-        margin-top: 2px;
-        padding-bottom: 35px;
+        margin-top: 7px;
+        padding-bottom: 20px;
     }
 
     .window__picture {
+        width: 42.5%;
         margin-top: 21px;
-        margin-left: 22px;
+        margin-left: 21px;
     }
 
     .window__line {
@@ -2062,7 +2071,6 @@ body {
     }
 
     .win__price {
-        margin-top: 20px;
         font-size: 19px;
     }
 
@@ -2072,8 +2080,13 @@ body {
         font-size: 14px;
     }
 
+    .color__win {
+      margin-bottom: 20px;
+    }
+
     .size__button {
-        padding: 16px 76px;
+        margin-top: 44px;
+        padding: 16px 84px;
         font-size: 15px;
     }
 
@@ -2088,16 +2101,26 @@ body {
     }
 
     .size {
-        width: 600px;
+        width: 470px;
     }
 
     .size__feature {
-        width: 170px;
+        width: 155px;
+        font-size: 16px;
     }
 
     .property__text {
-        padding-bottom: 4px;
+        width: 29%;
+        padding-bottom: 9px;
         font-size: 11.815px;
+    }
+
+    .property__text:nth-of-type(2n) {
+        width: 71%;
+    }
+
+    .property {
+      margin-top: 11.815px;
     }
 
     .trolley {
@@ -2156,19 +2179,21 @@ body {
     }
 
     .window__picture {
-        width: 56%;
+        width: 53.5%;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     .window__order {
-        width: 40%;
+        width: 42%;
+    }
+
+    .color__win {
+      margin-bottom: 12px;
     }
 
     .color {
         margin-top: 40px;
-    }
-
-    .win__price {
-        margin-top: 15px;
     }
 
     .win__txt {
@@ -2177,12 +2202,12 @@ body {
     }
 
     .size__button {
-        padding: 16px 90px;
+        padding: 16px 86px;
     }
 
     .modal__close {
-        top: -7px;
-        right: -7px;
+        top: -16px;
+        right: -16px;
     }
 
     .size__feature {
@@ -2191,13 +2216,21 @@ body {
     }
 
     .property__text {
-        padding-bottom: 3px;
+        width: 50%;
+        padding-bottom: 7px;
+    }
+
+    .property__text:nth-of-type(2n) {
+        width: 50%;
     }
 
     .size {
-        width: 180px;
+        width: 281px;
         margin-top: 16px;
-        padding-bottom: 150px;
+    }
+
+    .property {
+      margin-top: 10px;
     }
 
     .trolley {
@@ -2253,7 +2286,7 @@ body {
 
     .window__order {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 16px;
     }
 
@@ -2267,17 +2300,29 @@ body {
         object-fit: cover;
     }
 
+    .window__line {
+      display: none;
+    }
+
     .winwod-thing {
         width: 44px;
         height: 44px;
     }
 
     .window__picture-img {
-        width: 145px;
         margin-top: 4px;
         padding-bottom: 0;
     }
 
+    .modal__close-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal__close {
+        top: -9px;
+        right: -9px;
+    }
 
     .win__text {
         width: 330px;
@@ -2286,8 +2331,9 @@ body {
 
     .color {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        width: 385px;
+        width: 400px;
         margin-top: 20px;
     }
 
@@ -2297,7 +2343,21 @@ body {
     }
 
     .size__button {
-        padding: 16px 64px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        padding: 16px 172px;
+    }
+
+    .size {
+      width: 408px;
+    }
+
+    .property__text {
+      width: 40%;
+    }
+
+    .property__text:nth-child(2n) {
+      width: 60%;
     }
 
     .trolley {
@@ -2395,7 +2455,7 @@ body {
 
     .window__picture {
         margin-top: 11px;
-        margin-left: 9px;
+        margin-left: 10px;
     }
 
     .window__picture-img {
@@ -2404,6 +2464,7 @@ body {
 
     .window__order {
         margin-top: 10px;
+        margin-left: 10px;
     }
 
     .win__text {
@@ -2415,14 +2476,17 @@ body {
         margin-right: 2px;
     }
 
+    .color__list {
+      margin-right: 9px;
+    }
+
     .win__price {
-        width: 120px;
-        margin-top: 0;
+        width: 90px;
         font-size: 16px;
     }
 
     .color {
-        width: 275px;
+        width: 260px;
     }
 
     .color__win {
@@ -2430,10 +2494,9 @@ body {
     }
 
     .win__txt {
-        width: 245px;
+        width: 260px;
         margin-top: 11px;
         font-size: 12px;
-        text-align: center;
     }
 
     .modal__close {
@@ -2445,13 +2508,16 @@ body {
         height: 157px;
     }
 
-    .size {
-        padding-bottom: 100px;
+    .property__text {
+      width: 45%;
+    }
+
+    .property__text:nth-child(2n) {
+      width: 55%;
     }
 
     .size__feature {
         width: 130px;
-        margin-left: 60px;
         font-size: 14px;
     }
 
@@ -2459,12 +2525,18 @@ body {
         width: 155px;
     }
 
+    .size {
+      width: 260px;
+    }
+
     .size__image {
         margin-top: 0;
     }
 
     .size__button {
+        margin-bottom: 10px;
         margin-left: 25px;
+        padding: 16px 68px;
     }
 
     .trolley {

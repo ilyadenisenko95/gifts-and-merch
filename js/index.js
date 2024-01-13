@@ -1,3 +1,45 @@
+
+
+
+
+const swiperLogos = new Swiper('.swiper.partners__logo', {
+  speed: 400,
+  spaceBetween: 100,
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    prevEl: '#partners-prev-btn',
+    nextEl: '#partners-next-btn',
+
+  },
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 80,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 120,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 120,
+    },
+    1501: {
+      slidesPerView: 5,
+      spaceBetween: 120,
+    },
+  },
+});
+
+
+
+
+
+
 const setItems = [
   {
     id: '0',
@@ -96,9 +138,9 @@ const setItems = [
 
 
 const fillItemList = () => {
-  const itemListEl = document.getElementById('card-list');
-  const itemTemplate = document.getElementById('item-template');
-  const colorTemplate = document.getElementById('color-template');
+  const itemListEl = document.querySelector('#card-list');
+  const itemTemplate = document.querySelector('#item-template');
+  const colorTemplate = document.querySelector('#color-template');
 
   if (!itemTemplate || !itemListEl) {
     return;
@@ -111,15 +153,26 @@ const fillItemList = () => {
     itemEl.querySelector('.card__price span').textContent = item.price;
     itemEl.querySelector('.card__image').src = item.images[0];
     const colorListEl = itemEl.querySelector('#color-list');
+
     item.colors.forEach((color, index) => {
       const colorEl = colorTemplate.content.cloneNode(true);
-      const buttonEl = colorEl.getElementById('button-color');
+      const buttonEl = colorEl.querySelector('#button-color');
       if (index === 0) {
         buttonEl.classList.add('card__color-button--active');
       }
       buttonEl.style = `background-color: ${color}`;
       colorListEl.appendChild(colorEl);
     });
+    //Переключение цвета в карточках
+    const colorBtns = itemListEl.querySelectorAll('.card__color-button');
+    colorBtns.forEach((el) => el.addEventListener('click', (evt) => {
+      evt.stopPropagation();
+      const btnEl = evt.currentTarget;
+      const colorList = btnEl.closest('.card__color');
+      const allColors = colorList.querySelectorAll('.card__color-button');
+      allColors.forEach((el) => el.classList.remove('card__color-button--active'));
+      btnEl.classList.add('card__color-button--active');
+    }));
 
     itemListEl.appendChild(itemEl);
   });
@@ -129,12 +182,19 @@ fillItemList();
 // Карточки
 
 
-const colorsTemplate = document.getElementById('color-modtemplate');
+
+
+
+
+
+
+
+
+const colorsTemplate = document.querySelector('#color-modtemplate');
 const setCards = document.querySelectorAll('.card');
-console.log('setCards', setCards);
-const myModalOr = document.getElementById('modal-order-menu');
+const myModalOr = document.querySelector('#modal-order-menu');
 const priceMod = 'Цена $';
-const myModalWin = document.getElementById('window-mod');
+const myModalWin = document.querySelector('#window-mod');
 const propertyWrapper = myModalOr.querySelector('.property');
 const colorListElem = myModalOr.querySelector('#color-listmod');
 const otherImages = myModalOr.querySelector('.window__picture-img');
@@ -176,7 +236,7 @@ const addOpenCartListeners = () => {
       colorListElem.innerHTML = '';
       item.colors.forEach((color, index) => {
         const colorElModal = colorsTemplate.content.cloneNode(true);
-        const buttonEls = colorElModal.getElementById('colors-list');
+        const buttonEls = colorElModal.querySelector('#colors-list');
         if (index === 0) {
           buttonEls.classList.add('color__but--active');
         }
@@ -191,15 +251,34 @@ addOpenCartListeners();
 // Модальное окно набора
 
 
-const orderModal = document.getElementById('close-order-menu-btn');
+
+
+
+
+
+
+
+
+//Передавать выбранный цвет в модальное окно набор
+
+
+
+
+
+
+
+
+
+
+const orderModal = document.querySelector('#close-order-menu-btn');
 if (orderModal) {
   orderModal.addEventListener('click', function () {
     myModalOr.classList.remove('open');
   });
 }
 
-const myModalBasket = document.getElementById('modalbasket-btn');
-const myModalBasOp = document.getElementById('cart-modal');
+const myModalBasket = document.querySelector('#modalbasket-btn');
+const myModalBasOp = document.querySelector('#cart-modal');
 if (myModalBasket) {
   myModalBasket.addEventListener('click', function () {
     myModalBasOp.classList.add('open');
@@ -216,12 +295,12 @@ function closeModalBasket() {
 
 
 
-const myModalMob = document.getElementById('modal-mobile-menu');
-document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+const myModalMob = document.querySelector('#modal-mobile-menu');
+document.querySelector('#mobile-menu-btn').addEventListener('click', function () {
   myModalMob.classList.add('open');
 });
 
-document.getElementById('close-mobile-menu-btn').addEventListener('click', function () {
+document.querySelector('#close-mobile-menu-btn').addEventListener('click', function () {
   myModalMob.classList.remove('open');
 });
 
@@ -234,22 +313,22 @@ document.getElementById('close-mobile-menu-btn').addEventListener('click', funct
 
 
 
-const myTrolley = document.getElementById('trolley-modal-btn');
-const myModalBo = document.getElementById('modal-book-menu');
+const myTrolley = document.querySelector('#trolley-modal-btn');
+const myModalBo = document.querySelector('#modal-book-menu');
 if (myTrolley) {
   myTrolley.addEventListener('click', function () {
     myModalBo.classList.add('open');
   });
 }
 
-const myTrolleyOne = document.getElementById('close-trolley-modal-btn');
+const myTrolleyOne = document.querySelector('#close-trolley-modal-btn');
 if (myTrolleyOne) {
   myTrolleyOne.addEventListener('click', function () {
     myModalBo.classList.remove('open');
   });
 }
 
-const myTrolleyCl = document.getElementById('close-trolley-modal-btn-two');
+const myTrolleyCl = document.querySelector('#close-trolley-modal-btn-two');
 if (myTrolleyCl) {
   myTrolleyCl.addEventListener('click', function () {
     myModalBo.classList.remove('open');
@@ -270,7 +349,7 @@ function closeModal() {
   myModalBo.classList.remove('open');
 }
 
-const myBasketCl = document.getElementById('close-basket-modal-btn');
+const myBasketCl = document.querySelector('#close-basket-modal-btn');
 if (myBasketCl) {
   myBasketCl.addEventListener('click', function () {
     myModalBasOp.classList.remove('open');
@@ -302,27 +381,33 @@ accordionDesTx.forEach((topEl) => {
 
 //аккордеон
 
-
-
-
-
-
-
-
-
-
-const addSetModalListeners = () => {
-  const addToCartBtn = detailCardModal.querySelector('#open-cart-modal');
-  const basketItemTemplate = document.getElementById('basket-item-template');
-  const basketItemList = cartModal.querySelector('.basket__item-list');
-  const openCartModal = () => {
-    basketItemList.innerHTML = '';
-    const item = setItems[2];
-    const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
-  };
-  setCards.forEach(cardEl => {
-    cardEl.addEventListener('click', () => {
-      addToCartBtn.addEventListener('click', openCartModal);
-    });
+const accordionDesTxs = document.querySelectorAll('.size__right');
+accordionDesTxs.forEach((topEl) => {
+  topEl.addEventListener('click', (event) => {
+    const contentEls = event.currentTarget.nextElementSibling;
+    contentEls.classList.toggle('open');
   });
-};
+});
+
+
+
+
+
+
+
+
+// const addSetModalListeners = () => {
+//   const addToCartBtn = detailCardModal.querySelector('#open-cart-modal');
+//   const basketItemTemplate = document.querySelector('#basket-item-template');
+//   const basketItemList = cartModal.querySelector('.basket__item-list');
+//   const openCartModal = () => {
+//     basketItemList.innerHTML = '';
+//     const item = setItems[2];
+//     const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
+//   };
+//   setCards.forEach(cardEl => {
+//     cardEl.addEventListener('click', () => {
+//       addToCartBtn.addEventListener('click', openCartModal);
+//     });
+//   });
+// };
