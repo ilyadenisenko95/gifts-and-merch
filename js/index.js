@@ -39,7 +39,6 @@ const swiperLogos = new Swiper('.swiper.partners__logo', {
 
 
 
-
 const setItems = [
   {
     id: '0',
