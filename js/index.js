@@ -2,41 +2,6 @@
 
 
 
-const swiperLogos = new Swiper('.swiper.partners__logo', {
-  speed: 400,
-  spaceBetween: 100,
-  slidesPerView: 1,
-  loop: true,
-  navigation: {
-    prevEl: '#partners-prev-btn',
-    nextEl: '#partners-next-btn',
-
-  },
-  autoplay: {
-    delay: 3000,
-  },
-  breakpoints: {
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 80,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 120,
-    },
-    1000: {
-      slidesPerView: 3,
-      spaceBetween: 120,
-    },
-    1501: {
-      slidesPerView: 5,
-      spaceBetween: 120,
-    },
-  },
-});
-
-
-
 
 
 const setItems = [
@@ -156,8 +121,10 @@ const fillItemList = () => {
     item.colors.forEach((color, index) => {
       const colorEl = colorTemplate.content.cloneNode(true);
       const buttonEl = colorEl.querySelector('#button-color');
+      buttonEl.dataset.colorIdx = index;
       if (index === 0) {
         buttonEl.classList.add('card__color-button--active');
+        itemEl.dataset.colorIdx = index;
       }
       buttonEl.style = `background-color: ${color}`;
       colorListEl.appendChild(colorEl);
@@ -171,6 +138,8 @@ const fillItemList = () => {
       const allColors = colorList.querySelectorAll('.card__color-button');
       allColors.forEach((el) => el.classList.remove('card__color-button--active'));
       btnEl.classList.add('card__color-button--active');
+      const setEl = colorList.closest('.card');
+      setEl.dataset.colorIdx = btnEl.dataset.colorIdx;
     }));
 
     itemListEl.appendChild(itemEl);
@@ -234,13 +203,24 @@ const addOpenCartListeners = () => {
 
       colorListElem.innerHTML = '';
       item.colors.forEach((color, index) => {
-        const colorElModal = colorsTemplate.content.cloneNode(true);
-        const buttonEls = colorElModal.querySelector('#colors-list');
-        if (index === 0) {
-          buttonEls.classList.add('color__but--active');
+        const colorEl = colorsTemplate.content.cloneNode(true).querySelector('*');
+        const buttonEl = colorEl.firstChild;
+        buttonEl.style = `background-color: ${color}`;
+        if (index == card.dataset.colorIdx) {
+          buttonEl.classList.add('color__but--active');
         }
-        buttonEls.style = `background-color: ${color}`;
-        colorListElem.appendChild(colorElModal);
+
+
+        buttonEl.addEventListener('click', () => {
+          const colorList = document.querySelector('.window__gap');
+          const allColors = colorList.querySelectorAll('.color__but');
+          allColors.forEach((el) => el.classList.remove('color__but--active'));
+          buttonEl.classList.add('color__but--active');
+        });
+
+
+
+        colorListElem.appendChild(colorEl);
       });
     });
   });
@@ -252,13 +232,52 @@ addOpenCartListeners();
 
 
 
+const addSetSliders = () => {
+  const setCards = document.querySelectorAll('.card');
+  setCards.forEach(setCard => {
+    const cardTop = setCard.querySelector('.card__top');
+    const item = setItems.find(el => el.id === setCard.dataset.id);
 
+    if (item.images.length < 2) {
+      const pagination = setCard.querySelector('.card__slider-nav');
+      pagination.hidden = true;
+      return;
+    }
 
+    const imageList = setCard.querySelector('.card__image-list');
+    item.images.forEach((image, idx) => {
+      // Первое изображение уже создано
+      if (idx === 0) {
+        return;
+      }
+      // Можно так же использовать <template>
+      const imgEl = document.createElement('img');
+      imgEl.src = image;
+      imgEl.classList.add('card__image');
+      const liEl = document.createElement('li');
+      liEl.classList.add('swiper-slide');
+      liEl.append(imgEl);
+      imageList.append(liEl);
+    });
 
-
-
-
-//Передавать выбранный цвет в модальное окно набор
+    // Вместо селектора первым аргументом можно передавать HTML элемент
+    new Swiper(cardTop, {
+      speed: 400,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: '.slider-nav__direction--next',
+        prevEl: '.slider-nav__direction--prev',
+      },
+      pagination: {
+        el: '.slider-nav__position',
+        type: 'fraction',
+      },
+    });
+  });
+};
+addSetSliders();
 
 
 
@@ -410,3 +429,36 @@ accordionDesTxs.forEach((topEl) => {
 //     });
 //   });
 // };
+new Swiper('.swiper.partners__logo', {
+  speed: 400,
+  spaceBetween: 100,
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '#partners-next-btn',
+    prevEl: '#partners-prev-btn',
+  },
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 80,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 120,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 120,
+    },
+    1501: {
+      slidesPerView: 5,
+      spaceBetween: 120,
+    },
+  },
+});
+
+swiper;

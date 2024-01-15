@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gifts and Merch</title>
   <link rel="stylesheet" href="./css/vendor/normalize.css">
+  <link rel="stylesheet" href="./css/vendor/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/cards-reduction-decor.css">
@@ -89,15 +90,15 @@
 
   <template id="item-template">
     <li class="card" id="detail-cart-modal">
-      <div class="card__top">
-        <img class="card__image" src="./img/prize_image1.png" alt="">
-        <div class="numbering numbering--card">
-          <button type="button" class="numbering__direction numbering__direction--card">
-            <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
+      <div class="card__top swiper">
+        <ul class="card__image-list swiper-wrapper">
+          <li class="swiper-slide"><img class="card__image" src="./img/prize_image1.png" alt=""></li>
+        </ul>
+        <div class="slider-nav card__slider-nav">
+          <button class="slider-nav__direction slider-nav__direction--prev" type="button">
           </button>
-          <p class="numbering__number numbering__number--card">1/7</p>
-          <button type="button" class="numbering__direction numbering__direction--card numbering__direction--right">
-            <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
+          <span class="slider-nav__position">1/7</span>
+          <button class="slider-nav__direction slider-nav__direction--next" type="button">
           </button>
         </div>
       </div>
@@ -120,7 +121,7 @@
   </template>
 
   <template id="color-template">
-    <li class="color__list"><button type="button" class="card__color-button card__color-button--purple" id="button-color"></button></li>
+    <li class="color__list"><button type="button" class="card__color-button" id="button-color"></button></li>
   </template>
 
 
@@ -320,10 +321,8 @@
       <div class="window__picture">
         <div class="window__line">
           <button type="button" class="hand hand__window">
-            <img src="./img/left.png" alt="">
           </button>
           <button type="button" class="hand hand__window hand__window-img">
-            <img src="./img/left.png" alt="">
           </button>
         </div>
         <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
@@ -367,7 +366,7 @@
   </div>
 
   <template id="color-modtemplate">
-    <li class="color__list"><button type="button" class="color__but card__color-button--purple" id="colors-list"></button></li>
+    <li class="color__list"><button type="button" class="color__but"></button></li>
   </template>
 
 
@@ -444,131 +443,8 @@
     </div>
   </div>
 
+  <script defer src="js/vendor/swiper-bundle.min.js"></script>
   <script defer src="js/index.js"></script>
 </body>
 
 </html>
-
-
-
-<!-- <li class="card">
-  <div class="card__top">
-    <img class="card__image" src="./img/prize_image1.png" alt="">
-    <div class="numbering numbering--card">
-      <button type="button" class="numbering__direction numbering__direction--card">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-      <p class="numbering__number numbering__number--card">1/7</p>
-      <button type="button" class="numbering__direction numbering__direction--card numbering__direction--right">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-    </div>
-  </div>
-  <div class="card__info">
-    <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <ul class="card__color">
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
-    </ul>
-    <p class="card__price">
-      From Price<br>
-      $76.43
-    </p>
-  </div>
-  <button type="button" class="card__cart" id="order-menu-btn">
-    <img class="card__cart-image" src="./img/cart.svg" alt="">
-  </button>
-</li>
-
-<li class="card">
-  <div class="card__top">
-    <img class="card__image" src="./img/prize_image2.png" alt="">
-    <div class="numbering numbering--card">
-      <button type="button" class="numbering__direction numbering__direction--card">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-      <p class="numbering__number numbering__number--card">1/7</p>
-      <button type="button" class="numbering__direction numbering__direction--card numbering__direction--right">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-    </div>
-  </div>
-  <div class="card__info">
-    <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <ul class="card__color">
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
-    </ul>
-    <p class="card__price">
-      From Price<br>
-      $76.43
-    </p>
-  </div>
-  <button type="button" class="card__cart">
-    <img class="card__cart-image" src="./img/cart.svg" alt="">
-  </button>
-</li>
-
-<li class="card">
-  <div class="card__top">
-    <img class="card__image" src="./img/prize_image3.png" alt="">
-    <div class="numbering numbering--card">
-      <button type="button" class="numbering__direction numbering__direction--card">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-      <p class="numbering__number numbering__number--card">1/7</p>
-      <button type="button" class="numbering__direction numbering__direction--card numbering__direction--right">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-    </div>
-  </div>
-  <div class="card__info">
-    <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <ul class="card__color">
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
-    </ul>
-    <p class="card__price">
-      From Price<br>
-      $76.43
-    </p>
-  </div>
-  <button type="button" class="card__cart"><img class="card__cart-image" src="./img/cart.svg" alt=""></button>
-</li>
-
-<li class="card">
-  <div class="card__top">
-    <img class="card__image" src="./img/prize_image4.png" alt="">
-    <div class="numbering numbering--card">
-      <button type="button" class="numbering__direction numbering__direction--card">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-      <p class="numbering__number numbering__number--card">1/7</p>
-      <button type="button" class="numbering__direction numbering__direction--card numbering__direction--right">
-        <img class="numbering__arrow numbering__arrow--card" src="./img/left.png" alt="">
-      </button>
-    </div>
-  </div>
-  <div class="card__info">
-    <p class="card__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <p class="card__description">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-    <ul class="card__color">
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--purple card__color-button--active"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--green"></button></li>
-      <li class="color__list"><button type="button" class="card__color-button card__color-button--silver"></button></li>
-    </ul>
-    <p class="card__price">
-      From Price<br>
-      $76.43
-    </p>
-  </div>
-  <button type="button" class="card__cart">
-    <img class="card__cart-image" src="./img/cart.svg" alt="">
-  </button>
-</li> -->

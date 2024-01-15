@@ -23,7 +23,46 @@
 
 .card__top {
     position: relative;
+    width: 100%;
     height: 387px;
+}
+
+.slider-nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card__image-list {
+  padding: 0;
+}
+
+.slider-nav[hidden] {
+  display: none;
+}
+
+.card__slider-nav {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 1;
+  background-color: #fffc;
+  border-radius: 3px;
+}
+
+.slider-nav__direction {
+  display: flex;
+  flex-shrink: 0;
+  width: 24px;
+  height: 34px;
+  padding: 0;
+  cursor: pointer;
+  background: transparent url('../img/Vector.svg') no-repeat center;
+  border: none;
+}
+
+.slider-nav__direction--next {
+  transform: rotate(180deg);
 }
 
 .card__info {
@@ -33,6 +72,7 @@
     padding-top: 11px;
     padding-left: 14px;
     overflow: hidden;
+    cursor: pointer;
     border-radius: 15px;
     box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 0.1), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 0.04);
     flex-grow: 1;
@@ -54,39 +94,6 @@
     object-fit: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-}
-
-.numbering {
-    position: absolute;
-    right: 18px;
-    bottom: 8px;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 400;
-    text-align: center;
-    color: #7981AD;
-}
-
-.numbering__direction {
-    display: flex;
-    padding: 6px 8px 6px 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
-
-.numbering__direction--right {
-    transform: rotate(180deg);
-}
-
-.numbering__number--card {
-    margin: 0;
-}
-
-.hand__cards-img {
-    transform: rotate(180deg);
 }
 
 .card__name {
@@ -128,18 +135,6 @@
     border-radius: 50%;
 }
 
-.card__color-button--purple {
-    background-color: #524983;
-}
-
-.card__color-button--green {
-    background-color: #309F85;
-}
-
-.card__color-button--silver {
-    background-color: #F1F1F1;
-}
-
 .card__price {
     margin: 0;
     margin-bottom: 11px;
@@ -158,19 +153,12 @@
     border: none;
 }
 
-.hand__cards {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    margin-right: 13px;
-    margin-left: 31px;
-}
-
 .hand {
     justify-content: center;
     width: 40px;
     height: 40px;
     cursor: pointer;
+    background: transparent url("../img/Vector2.svg") no-repeat center;
     background-color: #ECE7F0;
     border: none;
     border-radius: 50%;
@@ -382,27 +370,11 @@
         box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 0.1), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 0.04);
     }
 
-    .numbering--card {
-        right: 12px;
-        bottom: 9px;
-        padding: 3px;
-    }
-
     .hand__window {
       display: flex;
       align-items: center;
       width: 30px;
       height: 30px;
-    }
-
-    .numbering__arrow--card {
-        width: 9px;
-        height: 17px;
-    }
-
-    .numbering__number--card {
-        font-size: 10px;
-        font-weight: 400;
     }
 
     .card__name {
@@ -535,11 +507,6 @@
         box-shadow: 0 16.0566px 22px -8px rgb(82 73 131 / 0.1), 0 8.02828px 8.02828px -4.01414px rgb(26 32 44 / 0.04);
     }
 
-    .numbering--card {
-        right: 11px;
-        bottom: 13px;
-    }
-
     .card__name {
         margin-top: 0;
         font-size: 22.2267px;
@@ -577,15 +544,6 @@
     .card__cart {
         right: 10px;
         bottom: 18px;
-    }
-
-    .numbering__arrow--card {
-        width: 9px;
-        height: 19px;
-    }
-
-    .numbering__direction--card {
-        padding: 2px 9px;
     }
 
     .reduction {
@@ -671,22 +629,14 @@
         margin-top: 1px;
     }
 
-    .numbering--card {
-        right: 2px;
-        bottom: 7px;
+    .slider-nav__direction {
+      width: 20px;
+      height: 30px;
+      background-size: 11px;
     }
 
-    .numbering__direction--card {
-        padding: 2px 7px;
-    }
-
-    .numbering__arrow--card {
-        width: 6px;
-        height: 11px;
-    }
-
-    .numbering__number--card {
-        font-size: 7px;
+    .slider-nav__position {
+      font-weight: 600;
     }
 
     .card__price {
@@ -704,10 +654,6 @@
     .card__cart {
         right: 4px;
         bottom: 26px;
-    }
-
-    .hand__cards {
-        margin-right: 27px;
     }
 
     .decor {
@@ -838,16 +784,6 @@
         margin-top: 1px;
     }
 
-    .numbering--card {
-        right: 12px;
-        bottom: 8px;
-    }
-
-    .numbering__arrow--card {
-        width: 8px;
-        height: 16px;
-    }
-
     .card__price {
         margin-bottom: 6px;
         font-size: 17.7778px;
@@ -872,10 +808,6 @@
     .hand {
         width: 35px;
         height: 35px;
-        margin-left: 28px;
-    }
-
-    .hand__cards {
         margin-left: 28px;
     }
 

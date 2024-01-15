@@ -2349,15 +2349,15 @@ body {
     }
 
     .size {
-      width: 408px;
+        width: 408px;
     }
 
     .property__text {
-      width: 40%;
+        width: 40%;
     }
 
     .property__text:nth-child(2n) {
-      width: 60%;
+        width: 60%;
     }
 
     .trolley {
