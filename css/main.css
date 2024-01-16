@@ -1646,6 +1646,7 @@ body {
 }
 
 .winwod-thing {
+  display: block;
   width: 100px;
   height: 100px;
   margin-right: 11px;
@@ -1795,6 +1796,7 @@ body {
     position: absolute;
     top: 270px;
     left: 20px;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     width: 460px;

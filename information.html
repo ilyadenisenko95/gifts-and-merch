@@ -454,23 +454,50 @@
     </div>
   </div>
 
-  <div class="modal" id="modal-order-menu">
+  <div class="modal open" id="modal-order-menu">
     <div class="gap window__gap" id="window-mod">
-      <button type="button" class="modal__close" id="close-order-menu-btn">
+      <button type="button" class="modal__close" id="order-next-btn">
         <img class="modal__close-img" src="./img/trolley/close.svg" alt="">
       </button>
-      <div class="window__picture">
-        <div class="window__line">
-          <button type="button" class="hand hand__window">
-          </button>
-          <button type="button" class="hand hand__window hand__window-img">
-          </button>
+      <div class="window__picture ">
+        <div class="window__pic-img swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
+            </li>
+            <li class="swiper-slide">
+              <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
+            </li>
+            <li class="swiper-slide">
+              <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
+            </li>
+          </ul>
         </div>
-        <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
-        <div class="window__picture-img">
-          <img class="winwod-thing" src="./img/image/Screenshot2.png" alt="man">
-          <img class="winwod-thing" src="./img/image/Screenshot3.png" alt="man">
-          <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
+        <div class="window__picture-img swiper">
+          <ul class="swiper-wrapper order-swap">
+            <li class="swiper-slide order-wrap">
+              <img class="winwod-thing" src="./img/image/Screenshot2.png" alt="man">
+            </li>
+            <li class="swiper-slide order-wrap">
+              <img class="winwod-thing" src="./img/image/Screenshot3.png" alt="man">
+            </li>
+            <li class="swiper-slide order-wrap">
+              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
+            </li>
+            <li class="swiper-slide order-wrap">
+              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
+            </li>
+            <li class="swiper-slide order-wrap">
+              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
+            </li>
+            <li class="swiper-slide order-wrap">
+              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
+            </li>
+          </ul>
+        </div>
+        <div class="window__line">
+          <button id="order-prev-btn" type="button" class="hand hand__window"></button>
+          <button id="partners-next-btn" type="button" class="hand hand__window hand__window-img"></button>
         </div>
       </div>
       <div class="window__order">
@@ -498,7 +525,7 @@
             <p class="property__text">Плотность, г/м</p>
             <p class="property__text">150</p>
           </div>
-          <button type="button" class="size__button">
+          <button id="open-cart-modal" type="button" class="size__button">
             Заказать
           </button>
         </div>
@@ -507,18 +534,10 @@
   </div>
 
   <template id="color-modtemplate">
-    <li class="color__list"><button type="button" class="color__but card__color-button--purple"></button></li>
+    <li class="color__list"><button type="button" class="color__but"></button></li>
   </template>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
+
 
   <script defer src="js/vendor/swiper-bundle.min.js"></script>
   <script defer src="js/index.js"></script>

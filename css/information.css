@@ -110,6 +110,14 @@
     transform: rotate(180deg);
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* .description__img::after {
+  transform: rotate(0deg);
+} */
+
 .description__string {
     position: relative;
     padding-top: 30px;
@@ -218,6 +226,18 @@
 .contacts__link {
     text-decoration: none;
     color: #272525;
+}
+
+.order-swap {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.order-wrap {
+  width: 100px;
+  height: 100px;
 }
 
 

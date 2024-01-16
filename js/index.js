@@ -177,6 +177,29 @@ const addOpenCartListeners = () => {
       myModalOr.querySelector('.win__txt').textContent = item.shortDescription;
       myModalOr.querySelector('.win__price').textContent = priceMod + item.price;
       myModalWin.querySelector('.winwod-img').src = item.images[0];
+      const swiper = new Swiper('.window__picture-img', {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+
+      });
+
+      const swiper2 = new Swiper('.window__pic-img', {
+        speed: 400,
+        spaceBetween: 0,
+        slidesPerView: 'auto',
+        navigation: {
+          nextEl: '#order-next-btn',
+          prevEl: '#order-prev-btn',
+        },
+        // autoplay: {
+        //   delay: 3000,
+        // },
+        thumbs: {
+          swiper: swiper,
+        },
+
+      });
 
       propertyWrapper.innerHTML = '';
       item.attributes.forEach(attr => {
@@ -397,7 +420,7 @@ accordionDesTx.forEach((topEl) => {
 });
 
 
-//аккордеон
+//аккордеон на странице информация
 
 const accordionDesTxs = document.querySelectorAll('.size__right');
 accordionDesTxs.forEach((topEl) => {
@@ -407,58 +430,143 @@ accordionDesTxs.forEach((topEl) => {
   });
 });
 
+//аккордеон в модальном окне
 
 
 
 
 
 
+const addSetModalListeners = () => {
+  const addToCartBtn = document.querySelector('#open-cart-modal');
+  const basketItemTemplate = document.querySelector('#basket-item-template');
+  const basketItemList = document.querySelector('.basket__item-list');
+  const openCartModal = () => {
+    basketItemList.innerHTML = '';
+    const item = setItems[2];
+    const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
+  };
+  const myModalOr = document.querySelector('#cart-modal');
+  setCards.forEach(cardEl => {
+    cardEl.addEventListener('click', () => {
+      addToCartBtn.addEventListener('click', () => {
+        myModalOr.classList.add('open');
+        // const openCartModal = (card) => {
+        //   const item = setItems[card.dataset.id];
+        //   // Создаём копию объекта item, чтобы мы могли изменять его свойства не изменяя по ссылкам свойства оригинального объекта.
+        //   const itemCopy = JSON.parse(JSON.stringify(item));
+        //   itemCopy.color = itemCopy.colors[card.dataset.colorIdx];
+        //   itemEl.querySelector('.details__color-icon').style.backgroundColor = item.colors[card.dataset.colorIdx];
+        // };
+      });
+    });
+  });
+};
+addSetModalListeners();
 
-// const addSetModalListeners = () => {
-//   const addToCartBtn = detailCardModal.querySelector('#open-cart-modal');
-//   const basketItemTemplate = document.querySelector('#basket-item-template');
-//   const basketItemList = cartModal.querySelector('.basket__item-list');
-//   const openCartModal = () => {
-//     basketItemList.innerHTML = '';
-//     const item = setItems[2];
-//     const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
-//   };
-//   setCards.forEach(cardEl => {
-//     cardEl.addEventListener('click', () => {
-//       addToCartBtn.addEventListener('click', openCartModal);
-//     });
-//   });
-// };
-new Swiper('.swiper.partners__logo', {
+
+
+
+
+
+// new Swiper('.swiper.partners__logo', {
+//   speed: 400,
+//   spaceBetween: 100,
+//   slidesPerView: 1,
+//   loop: true,
+//   navigation: {
+//     nextEl: '#partners-next-btn',
+//     prevEl: '#partners-prev-btn',
+//   },
+//   autoplay: {
+//     delay: 3000,
+//   },
+//   breakpoints: {
+//     480: {
+//       slidesPerView: 2,
+//       spaceBetween: 80,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 120,
+//     },
+//     1000: {
+//       slidesPerView: 3,
+//       spaceBetween: 120,
+//     },
+//     1501: {
+//       slidesPerView: 5,
+//       spaceBetween: 120,
+//     },
+//   },
+// });
+
+// swiper;
+
+
+
+
+
+const setModalSliders = {
+  top: null,
+  bottom: null,
+};
+
+// Вызывается перед закрытием модального окна набора
+const unmountSetModalSliders = () => {
+  if (setModalSliders.top) {
+    setModalSliders.top.destroy();
+  }
+  if (setModalSliders.bottom) {
+    setModalSliders.bottom.destroy();
+  }
+};
+
+
+// const swiperBottom = detailCardModal.querySelector('.window__pic-img');
+// setModalSliders.bottom = new Swiper(swiperBottom, {
+
+// const swiper = new Swiper('.window__pic-img'
+
+//   new Swiper('.window__picture-img', {
+//   speed: 400,
+//   spaceBetween: 10,
+//   slidesPerView: 'auto',
+//   thumbs: {
+//     swiper: swiper,
+//   },
+
+// });
+
+
+
+
+
+
+const swiper = new Swiper('.window__picture-img', {
   speed: 400,
-  spaceBetween: 100,
-  slidesPerView: 1,
-  loop: true,
-  navigation: {
-    nextEl: '#partners-next-btn',
-    prevEl: '#partners-prev-btn',
-  },
-  autoplay: {
-    delay: 3000,
-  },
-  breakpoints: {
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 80,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 120,
-    },
-    1000: {
-      slidesPerView: 3,
-      spaceBetween: 120,
-    },
-    1501: {
-      slidesPerView: 5,
-      spaceBetween: 120,
-    },
-  },
+  spaceBetween: 10,
+  slidesPerView: 'auto',
+
 });
 
-swiper;
+const swiper2 = new Swiper('.window__pic-img', {
+  speed: 400,
+  spaceBetween: 0,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '#order-next-btn',
+    prevEl: '#order-prev-btn',
+  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  thumbs: {
+    swiper: swiper,
+  },
+
+});
+
+
+
+// swiper;
