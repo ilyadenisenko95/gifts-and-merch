@@ -414,8 +414,9 @@ window.addEventListener('keydown', (e) => {
 const accordionDesTx = document.querySelectorAll('.description__txt');
 accordionDesTx.forEach((topEl) => {
   topEl.addEventListener('click', (event) => {
-    const contentEl = event.currentTarget.nextElementSibling;
-    contentEl.classList.toggle('open');
+    // const liEl = topEl.closest('.description__string');
+    // liEl.classList.toggle('description__string--active');
+    topEl.parentElement.classList.toggle('description__string--active');
   });
 });
 
