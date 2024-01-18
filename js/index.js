@@ -1,6 +1,61 @@
+const setModalSliders = {
+  top: null,
+  bottom: null,
+};
+const addCloseModalListeners = () => {
+  const unmountSetModalSliders = () => {
+    if (setModalSliders.top) {
+      setModalSliders.top.destroy();
+    }
+    if (setModalSliders.bottom) {
+      setModalSliders.bottom.destroy();
+    }
+  };
 
+  const allModals = document.querySelectorAll('.modal');
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      allModals.forEach(el => {
+        el.classList.remove('open');
+      });
+      unmountSetModalSliders();
+    }
+  });
 
+  const DETAIL_CARD_MODAL_ID = 'modal-order-menu';
+  allModals.forEach(modal => {
+    modal.addEventListener('click', (evt) => {
+      // console.log('evt:', evt);
+      // console.log('evt:', evt.target);
+      if (evt.target.classList.contains('modal') || evt.target.classList.contains('modal__close')) {
+        modal.classList.remove('open');
+        if (modal.id === DETAIL_CARD_MODAL_ID) {
+          unmountSetModalSliders();
+        }
+      }
+    });
+  });
 
+  const modalCloseBtns = document.querySelectorAll('.modal__close, #close-mobile-menu-btn');
+  modalCloseBtns.forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+      const modalRoot = closeBtn.closest('.modal');
+      modalRoot.classList.remove('open');
+      if (modalRoot.id === DETAIL_CARD_MODAL_ID) {
+        unmountSetModalSliders();
+      }
+    });
+  });
+
+  const myMobalMenu = document.querySelector('#mobile-menu-btn');
+  const myModalMob = document.querySelector('#modal-mobile-menu');
+  myMobalMenu.addEventListener('click', function () {
+    myModalMob.classList.add('open');
+  });
+
+  // Модальное окно БМ
+};
+addCloseModalListeners();
 
 
 
@@ -99,6 +154,19 @@ const setItems = [
   },
 ];
 
+const cartItems = [
+  {
+    ...setItems[2],
+    color: setItems[2].colors[1],
+    count: 2,
+  },
+  {
+    ...setItems[1],
+    color: setItems[1].colors[1],
+    count: 1,
+  },
+];
+
 
 
 const fillItemList = () => {
@@ -157,49 +225,117 @@ fillItemList();
 
 
 
-
-const colorsTemplate = document.querySelector('#color-modtemplate');
 const setCards = document.querySelectorAll('.card');
 const myModalOr = document.querySelector('#modal-order-menu');
-const priceMod = 'Цена $';
-const myModalWin = document.querySelector('#window-mod');
-const propertyWrapper = myModalOr.querySelector('.property');
-const colorListElem = myModalOr.querySelector('#color-listmod');
-const otherImages = myModalOr.querySelector('.window__picture-img');
-
 const addOpenCartListeners = () => {
+  const colorsTemplate = document.querySelector('#color-modtemplate');
+  const myModalWin = document.querySelector('#window-mod');
+  const propertyWrapper = myModalOr.querySelector('.property');
+  const colorListElem = myModalOr.querySelector('#color-listmod');
+  const topImages = myModalOr.querySelector('.window__swiper-top .window__swipe-img');
+  const bottomImages = myModalOr.querySelector('.window__swiper-bottom .window__swipe-img');
+
+
+
+  const initSliders = (item) => {
+    topImages.innerHTML = '';
+    item.images.forEach((imageSrc) => {
+      const imgEl = document.createElement('img');
+      imgEl.src = imageSrc;
+      imgEl.classList.add('winwod-img', 'swiper-slide');
+      topImages.appendChild(imgEl);
+    });
+    bottomImages.innerHTML = '';
+    item.images.forEach((imageSrc) => {
+      const imgEl = document.createElement('img');
+      imgEl.src = imageSrc;
+      imgEl.classList.add('winwod-thing', 'swiper-slide');
+      bottomImages.appendChild(imgEl);
+    });
+
+    //подключение слайде
+    setModalSliders.bottom = new Swiper(
+      '.window__swiper-bottom',
+      {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+      }
+    );
+    setModalSliders.top = new Swiper('.window__swiper-top', {
+      speed: 400,
+      spaceBetween: 10,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '#order-next-btn',
+        prevEl: '#order-prev-btn',
+      },
+      thumbs: {
+        swiper: setModalSliders.bottom,
+      },
+    });
+  };
+
+
+
+  const addSetModalListenersTBD = () => {
+    const cartModal = document.querySelector('#cart-modal');
+    const addToCartBtn = document.querySelector('#open-cart-modal');
+    const basketItemTemplate = document.querySelector('#basket-item-template');
+    const basketItemList = cartModal.querySelector('.basket__item-list');
+
+    const openCartModal = () => {
+      let totalSum = 0;
+      basketItemList.innerHTML = '';
+      cartItems.forEach(item => {
+        const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
+        const itemCopy = JSON.parse(JSON.stringify(item));
+        itemEl.querySelector('.details__color-icon').style.backgroundColor = item.color;
+        itemEl.querySelector('.details__name').textContent = item.name;
+        itemEl.querySelector('.quantity__number').textContent = 1;
+        itemEl.querySelector('.details__sum').textContent = item.price;
+        itemEl.querySelector('.details__img').src = item.images[0];
+
+
+        totalSum += item.price * item.count;
+        basketItemList.appendChild(itemEl);
+      });
+
+
+
+
+
+      basketItemList.appendChild(itemEl);
+    };
+
+
+
+    const myModalOr = document.querySelector('#cart-modal');
+    setCards.forEach(cardEl => {
+      cardEl.addEventListener('click', () => {
+        addToCartBtn.addEventListener('click', () => {
+          myModalOr.classList.add('open');
+          openCartModal(cardEl);
+
+        });
+      });
+    });
+  };
+  addSetModalListenersTBD();
+
+
+
   setCards.forEach(card => {
-    card.addEventListener('click', () => {
+    const myBotCard = card.querySelector('.card__info');
+    myBotCard.addEventListener('click', () => {
       myModalOr.classList.add('open');
       const cardId = card.dataset.id;
       const item = setItems.find(el => el.id === cardId);
       myModalOr.querySelector('.win__text').textContent = item.name;
       myModalOr.querySelector('.win__txt').textContent = item.shortDescription;
-      myModalOr.querySelector('.win__price').textContent = priceMod + item.price;
+      myModalOr.querySelector('.win__price').textContent = 'Цена $' + item.price;
       myModalWin.querySelector('.winwod-img').src = item.images[0];
-      const swiper = new Swiper('.window__picture-img', {
-        speed: 400,
-        spaceBetween: 10,
-        slidesPerView: 'auto',
 
-      });
-
-      const swiper2 = new Swiper('.window__pic-img', {
-        speed: 400,
-        spaceBetween: 0,
-        slidesPerView: 'auto',
-        navigation: {
-          nextEl: '#order-next-btn',
-          prevEl: '#order-prev-btn',
-        },
-        // autoplay: {
-        //   delay: 3000,
-        // },
-        thumbs: {
-          swiper: swiper,
-        },
-
-      });
 
       propertyWrapper.innerHTML = '';
       item.attributes.forEach(attr => {
@@ -212,17 +348,7 @@ const addOpenCartListeners = () => {
         propertyWrapper.append(parLabel, parValue);
       });
 
-      otherImages.innerHTML = '';
-      item.images.forEach((imageSrc, idx) => {
-        if (idx === 0) {
-          myModalOr.querySelector('.winwod-img').src = imageSrc;
-          return;
-        }
-        const imgEl = document.createElement('img');
-        imgEl.src = imageSrc;
-        imgEl.classList.add('winwod-thing');
-        otherImages.appendChild(imgEl);
-      });
+      initSliders(item);
 
       colorListElem.innerHTML = '';
       item.colors.forEach((color, index) => {
@@ -233,7 +359,6 @@ const addOpenCartListeners = () => {
           buttonEl.classList.add('color__but--active');
         }
 
-
         buttonEl.addEventListener('click', () => {
           const colorList = document.querySelector('.window__gap');
           const allColors = colorList.querySelectorAll('.color__but');
@@ -241,10 +366,10 @@ const addOpenCartListeners = () => {
           buttonEl.classList.add('color__but--active');
         });
 
-
-
         colorListElem.appendChild(colorEl);
       });
+
+      // addToCartBtn.addEventListener('click', openCartModal);
     });
   });
 };
@@ -256,7 +381,6 @@ addOpenCartListeners();
 
 
 const addSetSliders = () => {
-  const setCards = document.querySelectorAll('.card');
   setCards.forEach(setCard => {
     const cardTop = setCard.querySelector('.card__top');
     const item = setItems.find(el => el.id === setCard.dataset.id);
@@ -302,118 +426,15 @@ const addSetSliders = () => {
 };
 addSetSliders();
 
+//cards swipers
 
 
-
-
-
-
-
-
-
-const orderModal = document.querySelector('#close-order-menu-btn');
-if (orderModal) {
-  orderModal.addEventListener('click', function () {
-    myModalOr.classList.remove('open');
-  });
-}
-
-const myModalBasket = document.querySelector('#modalbasket-btn');
-const myModalBasOp = document.querySelector('#cart-modal');
-if (myModalBasket) {
-  myModalBasket.addEventListener('click', function () {
-    myModalBasOp.classList.add('open');
-    closeModalBasket();
-  });
-}
-
-function closeModalBasket() {
-  myModalOr.classList.remove('open');
-}
-
-// Модальное окно в карточак
-
-
-
-
-const myModalMob = document.querySelector('#modal-mobile-menu');
-document.querySelector('#mobile-menu-btn').addEventListener('click', function () {
-  myModalMob.classList.add('open');
-});
-
-document.querySelector('#close-mobile-menu-btn').addEventListener('click', function () {
-  myModalMob.classList.remove('open');
-});
-
-// Модальное окно БМ
-
-
-
-
-
-
-
-
-const myTrolley = document.querySelector('#trolley-modal-btn');
-const myModalBo = document.querySelector('#modal-book-menu');
-if (myTrolley) {
-  myTrolley.addEventListener('click', function () {
-    myModalBo.classList.add('open');
-  });
-}
-
-const myTrolleyOne = document.querySelector('#close-trolley-modal-btn');
-if (myTrolleyOne) {
-  myTrolleyOne.addEventListener('click', function () {
-    myModalBo.classList.remove('open');
-  });
-}
-
-const myTrolleyCl = document.querySelector('#close-trolley-modal-btn-two');
-if (myTrolleyCl) {
-  myTrolleyCl.addEventListener('click', function () {
-    myModalBo.classList.remove('open');
-  });
-}
-
-// // Модальное окно(корзина), которое вызывается на странице "Все товары"
-
-
-if (myModalBasket) {
-  myModalBasket.addEventListener('click', function () {
-    myModalBasOp.classList.add('open');
-    closeModal();
-  });
-}
-
-function closeModal() {
-  myModalBo.classList.remove('open');
-}
-
-const myBasketCl = document.querySelector('#close-basket-modal-btn');
-if (myBasketCl) {
-  myBasketCl.addEventListener('click', function () {
-    myModalBasOp.classList.remove('open');
-  });
-}
-
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    myModalBasOp.classList.remove('open');
-    myModalMob.classList.remove('open');
-    myModalOr.classList.remove('open');
-    myModalBo.classList.remove('open');
-  }
-});
-
-
-// Модальное окно "В корзину"
 
 
 
 const accordionDesTx = document.querySelectorAll('.description__txt');
 accordionDesTx.forEach((topEl) => {
-  topEl.addEventListener('click', (event) => {
+  topEl.addEventListener('click', () => {
     // const liEl = topEl.closest('.description__string');
     // liEl.classList.toggle('description__string--active');
     topEl.parentElement.classList.toggle('description__string--active');
@@ -425,9 +446,10 @@ accordionDesTx.forEach((topEl) => {
 
 const accordionDesTxs = document.querySelectorAll('.size__right');
 accordionDesTxs.forEach((topEl) => {
-  topEl.addEventListener('click', (event) => {
-    const contentEls = event.currentTarget.nextElementSibling;
-    contentEls.classList.toggle('open');
+  topEl.addEventListener('click', () => {
+    // const contentEls = event.currentTarget.nextElementSibling;
+    // contentEls.classList.toggle('open');
+    topEl.parentElement.classList.toggle('size__image--active');
   });
 });
 
@@ -436,138 +458,83 @@ accordionDesTxs.forEach((topEl) => {
 
 
 
-
-
-const addSetModalListeners = () => {
-  const addToCartBtn = document.querySelector('#open-cart-modal');
-  const basketItemTemplate = document.querySelector('#basket-item-template');
-  const basketItemList = document.querySelector('.basket__item-list');
-  const openCartModal = () => {
-    basketItemList.innerHTML = '';
-    const item = setItems[2];
-    const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
-  };
-  const myModalOr = document.querySelector('#cart-modal');
-  setCards.forEach(cardEl => {
-    cardEl.addEventListener('click', () => {
-      addToCartBtn.addEventListener('click', () => {
-        myModalOr.classList.add('open');
-        // const openCartModal = (card) => {
-        //   const item = setItems[card.dataset.id];
-        //   // Создаём копию объекта item, чтобы мы могли изменять его свойства не изменяя по ссылкам свойства оригинального объекта.
-        //   const itemCopy = JSON.parse(JSON.stringify(item));
-        //   itemCopy.color = itemCopy.colors[card.dataset.colorIdx];
-        //   itemEl.querySelector('.details__color-icon').style.backgroundColor = item.colors[card.dataset.colorIdx];
-        // };
-      });
-    });
-  });
-};
-addSetModalListeners();
-
-
-
-
-
-
-// new Swiper('.swiper.partners__logo', {
-//   speed: 400,
-//   spaceBetween: 100,
-//   slidesPerView: 1,
-//   loop: true,
-//   navigation: {
-//     nextEl: '#partners-next-btn',
-//     prevEl: '#partners-prev-btn',
-//   },
-//   autoplay: {
-//     delay: 3000,
-//   },
-//   breakpoints: {
-//     480: {
-//       slidesPerView: 2,
-//       spaceBetween: 80,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 120,
-//     },
-//     1000: {
-//       slidesPerView: 3,
-//       spaceBetween: 120,
-//     },
-//     1501: {
-//       slidesPerView: 5,
-//       spaceBetween: 120,
-//     },
-//   },
-// });
-
-// swiper;
-
-
-
-
-
-const setModalSliders = {
-  top: null,
-  bottom: null,
-};
-
-// Вызывается перед закрытием модального окна набора
-const unmountSetModalSliders = () => {
-  if (setModalSliders.top) {
-    setModalSliders.top.destroy();
-  }
-  if (setModalSliders.bottom) {
-    setModalSliders.bottom.destroy();
-  }
-};
-
-
-// const swiperBottom = detailCardModal.querySelector('.window__pic-img');
-// setModalSliders.bottom = new Swiper(swiperBottom, {
-
-// const swiper = new Swiper('.window__pic-img'
-
-//   new Swiper('.window__picture-img', {
-//   speed: 400,
-//   spaceBetween: 10,
-//   slidesPerView: 'auto',
-//   thumbs: {
-//     swiper: swiper,
-//   },
-
-// });
-
-
-
-
-
-
-const swiper = new Swiper('.window__picture-img', {
+new Swiper('.swiper.partners__logo', {
   speed: 400,
-  spaceBetween: 10,
-  slidesPerView: 'auto',
-
-});
-
-const swiper2 = new Swiper('.window__pic-img', {
-  speed: 400,
-  spaceBetween: 0,
-  slidesPerView: 'auto',
+  spaceBetween: 100,
+  slidesPerView: 1,
+  loop: true,
   navigation: {
-    nextEl: '#order-next-btn',
-    prevEl: '#order-prev-btn',
+    nextEl: '#partners-next-btn',
+    prevEl: '#partners-prev-btn',
   },
-  // autoplay: {
-  //   delay: 3000,
-  // },
-  thumbs: {
-    swiper: swiper,
+  autoplay: {
+    delay: 3000,
   },
-
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 80,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 120,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 120,
+    },
+    1501: {
+      slidesPerView: 5,
+      spaceBetween: 120,
+    },
+  },
 });
 
+//swiper на главной ;
 
 
-// swiper;
+
+
+
+
+// const addCallValidation = () => {
+//   const forms = document.querySelectorAll('.order');
+//   const orderSuccessModal = document.querySelector('#order-success');
+//   forms.forEach(formEl => {
+//     const loginEl = formEl.querySelector('input[name="login"]');
+//     const emailEl = formEl.querySelector('input[type="email"]');
+//     const emailWrapperEl = emailEl.closest('.order__field');
+//     const phoneEl = formEl.querySelector('input[type="tel"]');
+//     const phoneWrapperEl = phoneEl.closest('.order__field');
+//     const orderBtn = formEl.querySelector('.order__button');
+//     orderBtn.addEventListener('click', () => {
+//       const isEmailValid = emailEl.validity.valid;
+//       const isPhoneValid = phoneEl.validity.valid;
+//       if (emailEl.validity.valid) {
+//         emailWrapperEl.classList.remove('error');
+//       } else {
+//         emailWrapperEl.classList.add('error');
+//       }
+//       if (phoneEl.validity.valid) {
+//         phoneWrapperEl.classList.remove('error');
+//       } else {
+//         phoneWrapperEl.classList.add('error');
+//       }
+//       if (isEmailValid && isPhoneValid) {
+//         loginEl.value = '';
+//         emailEl.value = '';
+//         phoneEl.value = '';
+//         allModals.forEach(el => {
+//           el.classList.add('remove');
+//         });
+//         unmountSetModalSliders();
+//         orderSuccessModal.classList.add('open');
+//       }
+//     });
+//   });
+// };
+// addCallValidation();
+
+// // Модалка валидации
+
+

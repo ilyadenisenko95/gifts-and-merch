@@ -319,17 +319,24 @@
         <img class="modal__close-img" src="./img/trolley/close.svg" alt="">
       </button>
       <div class="window__picture">
+        <div class="window__swiper-top swiper">
+          <div class="window__swipe-img swiper-wrapper">
+            <img class="winwod-img swiper-slide" src="./img/image/Screenshot1.png" alt="man">
+
+          </div>
+        </div>
         <div class="window__line">
-          <button type="button" class="hand hand__window">
+          <button id="order-prev-btn" type="button" class="hand hand__window ">
           </button>
-          <button type="button" class="hand hand__window hand__window-img">
+          <button id="order-next-btn" type="button" class="hand hand__window hand__window-img ">
           </button>
         </div>
-        <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
-        <div class="window__picture-img">
-          <img class="winwod-thing" src="./img/image/Screenshot2.png" alt="man">
-          <img class="winwod-thing" src="./img/image/Screenshot3.png" alt="man">
-          <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
+        <div class="window__picture-img window__swiper-bottom swiper">
+          <div class="window__swipe-img swiper-wrapper">
+            <img class="winwod-thing swiper-slide" src="./img/image/Screenshot2.png" alt="man">
+            <img class="winwod-thing swiper-slide" src="./img/image/Screenshot3.png" alt="man">
+            <img class="winwod-thing swiper-slide" src="./img/image/Screenshot4.png" alt="man">
+          </div>
         </div>
       </div>
       <div class="window__order">
@@ -344,10 +351,10 @@
           <div class="size__right">
             <button type="button" class="size__feature">
               Характеристики
-              <img class="size__image size__image--active" src="./img/image/arrow.svg" alt="">
+              <img class="size__image" src="./img/image/arrow.svg" alt="">
             </button>
           </div>
-          <div class="property open">
+          <div class="property ">
             <p class="property__text">Материал</p>
             <p class="property__text">100% хлопок</p>
             <p class="property__text">Нанесение</p>
@@ -440,6 +447,18 @@
         <span class="side-cart__count">0</span>
       </button>
       <span class="side-cart__sum">0</span>
+    </div>
+  </div>
+
+
+  <!-- валидация -->
+  <div class="modal" id="order-success">
+    <div class="gap order-success">
+      <button class="modal__close" type="button">
+        <img class="modal__close-img" src="./img/trolley/close.svg" alt="">
+      </button>
+      <p class="order-success__title">Заказ успешно оформлен</p>
+      <p class="order-success__sub-title">Наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
     </div>
   </div>
 

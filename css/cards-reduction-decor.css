@@ -304,12 +304,6 @@
     right: 146px;
 }
 
-.date__text {
-    width: 250px;
-    color: #454747;
-    border: none;
-}
-
 .order__button {
     display: inline-block;
     margin-top: 7px;
@@ -415,11 +409,6 @@
     .card__cart {
         right: 8px;
         bottom: 14px;
-    }
-
-
-    .hand__cards {
-        margin-right: 0;
     }
 
     .reduction {

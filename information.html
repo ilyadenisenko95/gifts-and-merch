@@ -335,169 +335,103 @@
     </div>
   </div>
 
-  <div class="modal" id="my-golder">
-    <div class="gap trolley__gap">
+  <div class="modal " id="cart-modal">
+    <div class="gap trolley">
       <div class="trolley__order">
-        <p class="trolley__text">Оформить заказ</p>
-        <p class="trolley__txt">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
-        <form class="trolley__orders" action="self">
-          <input type="text" class="trolley__order-info" name="login" placeholder="Ваше Имя">
-          <input type="email" class="trolley__order-info" name="email" placeholder="Ваша електронная почта">
-          <input type="tel" class="trolley__order-info trolley__order-info--active" name="tel" placeholder="Ваш номер телефона">
-          <button type="button" class="trolley__order-button">
+        <p class="trolley__title">Оформить заказ</p>
+        <p class="trolley__sub-title">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
+        <form class="order" action="self">
+          <div class="order__field">
+            <input type="text" class="order__input" name="login" placeholder="Ваше Имя">
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+          <div class="order__field">
+            <input type="email" class="order__input" name="email" placeholder="Ваша електронная почта" minlength="7" required>
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+          <div class="order__field">
+            <input type="tel" class="order__input" name="tel" placeholder="Ваш номер телефона" minlength="6" required>
+            <span class="order__error-msg">Неверный формат</span>
+          </div>
+          <button type="button" class="order__button">
             Заказать
           </button>
+          <p class="trolley__confirm-txt">Нажимая "Подтвердить заказ", Вы даете согласие на&nbsp;обработку Ваших персональных данных</p>
         </form>
-        <p class="trolley__inf">Нажимая "Подтвердить заказ", Вы даете согласие на обработку Ваших персональных данных</p>
       </div>
-      <div class="trolley__box">
-        <div class="basket__order">Корзина</div>
-        <div class="basket__selection">
-          <div class="details">
-            <div class="details__image">
-              <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
-            </div>
-            <div class="details__info">
-              <p class="details__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-              <div class="details__color">
-                <span class="details__colors details__colors--green">Цвет</span>
-              </div>
-            </div>
-            <div class="details__size">
-              <p class="size__text">Размер</p>
-              <p class="size__txt">XS</p>
-            </div>
-            <div class="details__quantity">
-              <span class="quantity__text">Кол-во</span>
-              <div class="quantity__choice">
-                <button type="button" class="quantity__reduce">-</button>
-                <span class="quantity__number">5</span>
-                <button type="button" class="quantity__reduce">+</button>
-              </div>
-              <p class="quantity__txt">min.</p>
-            </div>
-            <span class="details__sum">$76.43</span>
-            <button type="button" class="details__remove">
-              <img class="details__remove-img" src="./img/trolley/times-circle.svg" alt="">
-            </button>
-          </div>
-        </div>
-        <div class="basket__selection">
-          <div class="details">
-            <div class="details__image">
-              <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
-            </div>
-            <div class="details__info">
-              <div class="details__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</div>
-              <div class="details__color">
-                <span class="details__colors details__colors--green">Цвет</span>
-              </div>
-            </div>
-            <div class="details__size">
-              <p class="size__text">Размер</p>
-              <p class="size__txt">XS</p>
-            </div>
-            <div class="details__quantity">
-              <span class="quantity__text">Кол-во</span>
-              <div class="quantity__choice">
-                <button type="button" class="quantity__reduce">-</button>
-                <span class="quantity__number">5</span>
-                <button type="button" class="quantity__reduce">+</button>
-              </div>
-              <p class="quantity__txt">min.</p>
-            </div>
-            <span class="details__sum">$76.43</span>
-            <button type="button" class="details__remove">
-              <img class="details__remove-img" src="./img/trolley/times-circle.svg" alt="">
-            </button>
-          </div>
-        </div>
-        <div class="basket__selection basket__selection-one">
-          <div class="details">
-            <div class="details__image">
-              <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
-            </div>
-            <div class="details__info">
-              <div class="details__text">EL003 Elleven Checkpoint-Friendly Compu-Backpack</div>
-              <div class="details__color">
-                <span class="details__colors details__colors--green">Цвет</span>
-              </div>
-            </div>
-            <div class="details__size">
-              <p class="size__text">Размер</p>
-              <p class="size__txt">XS</p>
-            </div>
-            <div class="details__quantity">
-              <span class="quantity__text">Кол-во</span>
-              <div class="quantity__choice">
-                <button type="button" class="quantity__reduce">-</button>
-                <span class="quantity__number">5</span>
-                <button type="button" class="quantity__reduce">+</button>
-              </div>
-              <p class="quantity__txt">min.</p>
-            </div>
-            <span class="details__sum">$76.43</span>
-            <button type="button" class="details__remove">
-              <img class="details__remove-img" src="./img/trolley/times-circle.svg" alt="">
-            </button>
-          </div>
-        </div>
-        <div class="order__dilivery">
+      <div class="trolley__cart">
+        <p class="trolley__title">Корзина</p>
+        <ul class="basket__item-list" id="color-mod">
+        </ul>
+        <div class="order__delivery">
           <span class="order__details">Заказ № 110293</span>
-          <span class="order__sum">Всего: $ 235.80</span>
+          <span id="basket-total-sum" class="order__sum">Всего: $235.80</span>
         </div>
-        <button type="button" class="modal__close trolley__modal-close">
-          <img class="modal__close-img" id="close-my-modal-btn2" src="./img/trolley/close.svg" alt="">
-        </button>
-        <div class="trolley__line"></div>
       </div>
+      <button type="button" class="modal__close">
+        <img class="modal__close-img" id="close-basket-modal-btn" src="./img/trolley/close.svg" alt="">
+      </button>
+    </div>
+  </div>
+  <template id="basket-item-template">
+    <li class="basket__item">
+      <div class="details__image">
+        <img class="details__img" src="./img/trolley/MaskGroup.png" alt="">
+      </div>
+      <div class="details__info">
+        <div class="details__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</div>
+        <div class="details__color">
+          <span class="details__color-text">Цвет <i class="details__color-icon"></i></span>
+        </div>
+      </div>
+      <div class="details__quantity">
+        <span class="quantity__text">Кол-во</span>
+        <div class="quantity__choice">
+          <button id="basket-count-dec" class="quantity__reduce" type="button">-</button>
+          <span class="quantity__number">5</span>
+          <button id="basket-count-inc" class="quantity__reduce" type="button">+</button>
+        </div>
+      </div>
+      <span class="details__sum">$76.43</span>
+      <button type="button" class="details__remove">
+        <img src="./img/trolley/times-circle.svg" alt="">
+      </button>
+    </li>
+  </template>
+  <div class="main-container side-cart">
+    <div class="side-cart__container">
+      <button class="side-cart__btn" type="button" aria-label="Открыть корзину">
+        <span class="side-cart__bg"></span>
+        <span class="side-cart__count">0</span>
+      </button>
+      <span class="side-cart__sum">0</span>
     </div>
   </div>
 
-  <div class="modal open" id="modal-order-menu">
+  <div class="modal" id="modal-order-menu">
     <div class="gap window__gap" id="window-mod">
-      <button type="button" class="modal__close" id="order-next-btn">
+      <button type="button" class="modal__close" id="close-order-menu-btn">
         <img class="modal__close-img" src="./img/trolley/close.svg" alt="">
       </button>
-      <div class="window__picture ">
-        <div class="window__pic-img swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
-            </li>
-            <li class="swiper-slide">
-              <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
-            </li>
-            <li class="swiper-slide">
-              <img class="winwod-img" src="./img/image/Screenshot1.png" alt="man">
-            </li>
-          </ul>
-        </div>
-        <div class="window__picture-img swiper">
-          <ul class="swiper-wrapper order-swap">
-            <li class="swiper-slide order-wrap">
-              <img class="winwod-thing" src="./img/image/Screenshot2.png" alt="man">
-            </li>
-            <li class="swiper-slide order-wrap">
-              <img class="winwod-thing" src="./img/image/Screenshot3.png" alt="man">
-            </li>
-            <li class="swiper-slide order-wrap">
-              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
-            </li>
-            <li class="swiper-slide order-wrap">
-              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
-            </li>
-            <li class="swiper-slide order-wrap">
-              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
-            </li>
-            <li class="swiper-slide order-wrap">
-              <img class="winwod-thing" src="./img/image/Screenshot4.png" alt="man">
-            </li>
-          </ul>
+      <div class="window__picture">
+        <div class="window__swiper-top swiper">
+          <div class="window__swipe-img swiper-wrapper">
+            <img class="winwod-img swiper-slide" src="./img/image/Screenshot1.png" alt="man">
+
+          </div>
         </div>
         <div class="window__line">
-          <button id="order-prev-btn" type="button" class="hand hand__window"></button>
-          <button id="partners-next-btn" type="button" class="hand hand__window hand__window-img"></button>
+          <button id="order-prev-btn" type="button" class="hand hand__window ">
+          </button>
+          <button id="order-next-btn" type="button" class="hand hand__window hand__window-img ">
+          </button>
+        </div>
+        <div class="window__picture-img window__swiper-bottom swiper">
+          <div class="window__swipe-img swiper-wrapper">
+            <img class="winwod-thing swiper-slide" src="./img/image/Screenshot2.png" alt="man">
+            <img class="winwod-thing swiper-slide" src="./img/image/Screenshot3.png" alt="man">
+            <img class="winwod-thing swiper-slide" src="./img/image/Screenshot4.png" alt="man">
+          </div>
         </div>
       </div>
       <div class="window__order">
@@ -512,10 +446,10 @@
           <div class="size__right">
             <button type="button" class="size__feature">
               Характеристики
-              <img class="size__image size__image--active" src="./img/image/arrow.svg" alt="">
+              <img class="size__image" src="./img/image/arrow.svg" alt="">
             </button>
           </div>
-          <div class="property">
+          <div class="property ">
             <p class="property__text">Материал</p>
             <p class="property__text">100% хлопок</p>
             <p class="property__text">Нанесение</p>
@@ -536,6 +470,17 @@
   <template id="color-modtemplate">
     <li class="color__list"><button type="button" class="color__but"></button></li>
   </template>
+
+  <!-- валидация -->
+  <div class="modal" id="order-success">
+    <div class="gap order-success">
+      <button class="modal__close" type="button">
+        <img class="modal__close-img" src="./img/trolley/close.svg" alt="">
+      </button>
+      <p class="order-success__title">Заказ успешно оформлен</p>
+      <p class="order-success__sub-title">Наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
+    </div>
+  </div>
 
 
 
