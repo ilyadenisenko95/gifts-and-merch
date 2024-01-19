@@ -27,7 +27,7 @@ const addCloseModalListeners = () => {
     modal.addEventListener('click', (evt) => {
       // console.log('evt:', evt);
       // console.log('evt:', evt.target);
-      if (evt.target.classList.contains('modal') || evt.target.classList.contains('modal__close')) {
+      if (evt.target.classList.contains('modal')) {
         modal.classList.remove('open');
         if (modal.id === DETAIL_CARD_MODAL_ID) {
           unmountSetModalSliders();
@@ -184,8 +184,8 @@ const fillItemList = () => {
     itemEl.querySelector('.card__description').textContent = item.shortDescription;
     itemEl.querySelector('.card__price span').textContent = item.price;
     itemEl.querySelector('.card__image').src = item.images[0];
-    const colorListEl = itemEl.querySelector('#color-list');
 
+    const colorListEl = itemEl.querySelector('#color-list');
     item.colors.forEach((color, index) => {
       const colorEl = colorTemplate.content.cloneNode(true);
       const buttonEl = colorEl.querySelector('#button-color');
@@ -301,14 +301,21 @@ const addOpenCartListeners = () => {
         basketItemList.appendChild(itemEl);
       });
 
-
-
-
-
-      basketItemList.appendChild(itemEl);
     };
 
-
+    const addToCart = (card) => {
+      const item = setItems.find(el => el.id === card.dataset.id);
+      const itemCopy = JSON.parse(JSON.stringify(item)); // Создаём копию, что не изменять исходный объект
+      itemCopy.color = itemCopy.colors[card.dataset.colorIdx];
+      // Пытаемся найти этот элемент в корзине
+      const itemIndex = cartItems.findIndex(el => el.id === itemCopy.id && el.color === itemCopy.color);
+      if (itemIndex >= 0) {
+        cartItems[itemIndex].count = cartItems[itemIndex].count + 1;
+      } else {
+        // Элемент не найден, добавляем в корзину.
+        cartItems.push({ ...itemCopy, count: 1 });
+      }
+    };
 
     const myModalOr = document.querySelector('#cart-modal');
     setCards.forEach(cardEl => {
@@ -320,6 +327,8 @@ const addOpenCartListeners = () => {
         });
       });
     });
+
+
   };
   addSetModalListenersTBD();
 
