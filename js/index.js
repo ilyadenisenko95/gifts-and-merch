@@ -36,7 +36,7 @@ const addCloseModalListeners = () => {
     });
   });
 
-  const modalCloseBtns = document.querySelectorAll('.modal__close, #close-mobile-menu-btn');
+  const modalCloseBtns = document.querySelectorAll('.modal__close, #close-burger-menu-btn');
   modalCloseBtns.forEach(closeBtn => {
     closeBtn.addEventListener('click', () => {
       const modalRoot = closeBtn.closest('.modal');
@@ -47,10 +47,10 @@ const addCloseModalListeners = () => {
     });
   });
 
-  const myMobalMenu = document.querySelector('#mobile-menu-btn');
-  const myModalMob = document.querySelector('#modal-mobile-menu');
-  myMobalMenu.addEventListener('click', function () {
-    myModalMob.classList.add('open');
+  const myMobalBurgerOpen = document.querySelector('#open-burger-btn');
+  const myModalBurgerMenu = document.querySelector('#modal-burger-menu');
+  myMobalBurgerOpen.addEventListener('click', function () {
+    myModalBurgerMenu.classList.add('open');
   });
 
   // Модальное окно БМ
@@ -155,18 +155,23 @@ const setItems = [
 ];
 
 const cartItems = [
-  {
-    ...setItems[2],
-    color: setItems[2].colors[1],
-    count: 2,
-  },
-  {
-    ...setItems[1],
-    color: setItems[1].colors[1],
-    count: 1,
-  },
+
 ];
 
+
+const addToCart = (card) => {
+  const item = setItems.find(el => el.id === card.dataset.id);
+  const itemCopy = JSON.parse(JSON.stringify(item)); // Создаём копию, что не изменять исходный объект
+  itemCopy.color = itemCopy.colors[card.dataset.colorIdx];
+  // Пытаемся найти этот элемент в корзине
+  const itemIndex = cartItems.findIndex(el => el.id === itemCopy.id && el.color === itemCopy.color);
+  if (itemIndex >= 0) {
+    cartItems[itemIndex].count = cartItems[itemIndex].count + 1;
+  } else {
+    // Элемент не найден, добавляем в корзину.
+    cartItems.push({ ...itemCopy, count: 1 });
+  }
+};
 
 
 const fillItemList = () => {
@@ -197,18 +202,28 @@ const fillItemList = () => {
       buttonEl.style = `background-color: ${color}`;
       colorListEl.appendChild(colorEl);
     });
+
+
     //Переключение цвета в карточках
     const colorBtns = itemListEl.querySelectorAll('.card__color-button');
-    colorBtns.forEach((el) => el.addEventListener('click', (evt) => {
-      evt.stopPropagation();
-      const btnEl = evt.currentTarget;
-      const colorList = btnEl.closest('.card__color');
-      const allColors = colorList.querySelectorAll('.card__color-button');
-      allColors.forEach((el) => el.classList.remove('card__color-button--active'));
-      btnEl.classList.add('card__color-button--active');
-      const setEl = colorList.closest('.card');
-      setEl.dataset.colorIdx = btnEl.dataset.colorIdx;
-    }));
+    colorBtns.forEach((el) => {
+      el.addEventListener('click', (evt) => {
+        evt.stopPropagation();
+        const btnEl = evt.currentTarget;
+        const colorList = btnEl.closest('.card__color');
+        const allColors = colorList.querySelectorAll('.card__color-button');
+        allColors.forEach((el) => el.classList.remove('card__color-button--active'));
+        btnEl.classList.add('card__color-button--active');
+        const setEl = colorList.closest('.card');
+        setEl.dataset.colorIdx = btnEl.dataset.colorIdx;
+      });
+    });
+
+    const cartBtn = itemEl.querySelector('.card__cart');
+    cartBtn.addEventListener('click', (evt) => {
+      evt.stopPropagation(); // чтобы не открывалось модальное окно
+      addToCart(itemEl);
+    });
 
     itemListEl.appendChild(itemEl);
   });
@@ -222,20 +237,15 @@ fillItemList();
 
 
 
-
-
-
 const setCards = document.querySelectorAll('.card');
-const myModalOr = document.querySelector('#modal-order-menu');
-const addOpenCartListeners = () => {
+const myModalOrderMenu = document.querySelector('#modal-order-menu');
+const myModalOrCloseBtn = myModalOrderMenu.querySelector('.modal__close');
+const addSetModalListeners = () => {
   const colorsTemplate = document.querySelector('#color-modtemplate');
-  const myModalWin = document.querySelector('#window-mod');
-  const propertyWrapper = myModalOr.querySelector('.property');
-  const colorListElem = myModalOr.querySelector('#color-listmod');
-  const topImages = myModalOr.querySelector('.window__swiper-top .window__swipe-img');
-  const bottomImages = myModalOr.querySelector('.window__swiper-bottom .window__swipe-img');
-
-
+  const propertyWrapper = myModalOrderMenu.querySelector('.property');
+  const colorListElem = myModalOrderMenu.querySelector('#color-listmod');
+  const topImages = myModalOrderMenu.querySelector('.window__swiper-top .window__swipe-img');
+  const bottomImages = myModalOrderMenu.querySelector('.window__swiper-bottom .window__swipe-img');
 
   const initSliders = (item) => {
     topImages.innerHTML = '';
@@ -277,73 +287,92 @@ const addOpenCartListeners = () => {
   };
 
 
-
-  const addSetModalListenersTBD = () => {
-    const cartModal = document.querySelector('#cart-modal');
-    const addToCartBtn = document.querySelector('#open-cart-modal');
-    const basketItemTemplate = document.querySelector('#basket-item-template');
-    const basketItemList = cartModal.querySelector('.basket__item-list');
-
-    const openCartModal = () => {
-      let totalSum = 0;
-      basketItemList.innerHTML = '';
-      cartItems.forEach(item => {
-        const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
-        const itemCopy = JSON.parse(JSON.stringify(item));
-        itemEl.querySelector('.details__color-icon').style.backgroundColor = item.color;
-        itemEl.querySelector('.details__name').textContent = item.name;
-        itemEl.querySelector('.quantity__number').textContent = 1;
-        itemEl.querySelector('.details__sum').textContent = item.price;
-        itemEl.querySelector('.details__img').src = item.images[0];
-
-
-        totalSum += item.price * item.count;
-        basketItemList.appendChild(itemEl);
+  // const addSetModalListenersTBD = () => {
+  const cartModal = document.querySelector('#modal-cart-menu');
+  const addToCartAndOpen = document.querySelector('#add-to-cart-and-open');
+  const basketItemTemplate = document.querySelector('#basket-item-template');
+  const basketItemList = cartModal.querySelector('.basket__item-list');
+  //добавление данных в корзину
+  const openCartModal = () => {
+    basketItemList.innerHTML = '';
+    cartItems.forEach(item => {
+      const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
+      //изменение кол-ва товаров и их суммы
+      const recalcItemPrice = () => {
+        itemEl.querySelector('.quantity__number').textContent = item.count;
+        const totalSum = item.price * item.count;
+        itemEl.querySelector('.details__sum').textContent = `$${totalSum}`;
+        recalcTotalSum();
+      };
+      itemEl.querySelector('#basket-count-dec').addEventListener('click', () => {
+        item.count--;
+        recalcItemPrice();
+      });
+      itemEl.querySelector('#basket-count-inc').addEventListener('click', () => {
+        item.count++;
+        recalcItemPrice();
       });
 
-    };
-
-    const addToCart = (card) => {
-      const item = setItems.find(el => el.id === card.dataset.id);
-      const itemCopy = JSON.parse(JSON.stringify(item)); // Создаём копию, что не изменять исходный объект
-      itemCopy.color = itemCopy.colors[card.dataset.colorIdx];
-      // Пытаемся найти этот элемент в корзине
-      const itemIndex = cartItems.findIndex(el => el.id === itemCopy.id && el.color === itemCopy.color);
-      if (itemIndex >= 0) {
-        cartItems[itemIndex].count = cartItems[itemIndex].count + 1;
-      } else {
-        // Элемент не найден, добавляем в корзину.
-        cartItems.push({ ...itemCopy, count: 1 });
-      }
-    };
-
-    const myModalOr = document.querySelector('#cart-modal');
-    setCards.forEach(cardEl => {
-      cardEl.addEventListener('click', () => {
-        addToCartBtn.addEventListener('click', () => {
-          myModalOr.classList.add('open');
-          openCartModal(cardEl);
-
+      const basketSumEl = cartModal.querySelector('#basket-total-sum');
+      const recalcTotalSum = () => {
+        let sum = 0;
+        cartItems.forEach(item => {
+          sum += item.price * item.count;
         });
-      });
+        basketSumEl.textContent = `Всего: $${sum}`;
+      };
+
+
+      itemEl.querySelector('.details__color-icon').style.backgroundColor = item.color;
+      itemEl.querySelector('.details__name').textContent = item.name;
+      itemEl.querySelector('.details__img').src = item.images[0];
+
+      basketItemList.appendChild(itemEl);
+      recalcItemPrice();
+      cartModal.classList.add('open');
+
+
+
+
     });
-
-
   };
-  addSetModalListenersTBD();
+
 
 
 
   setCards.forEach(card => {
+    const addAndOpenCart = () => {
+      console.log('fdfsfsd');
+      addToCart(card);
+      openCartModal();
+    };
+    const addCloseLiseners = () => {
+      window.addEventListener('keydown', (evt) => {
+        if (evt.key === 'Escape') {
+          addToCartAndOpen.removeEventListener('click', addAndOpenCart);
+        }
+      });
+      myModalOrderMenu.addEventListener('click', (evt) => {
+        if (evt.target.classList.contains('modal')) {
+          addToCartAndOpen.removeEventListener('click', addAndOpenCart);
+        }
+      });
+      myModalOrCloseBtn.addEventListener('click', () => {
+        addToCartAndOpen.removeEventListener('click', addAndOpenCart);
+      });
+    };
+    addCloseLiseners();
+
+
+
     const myBotCard = card.querySelector('.card__info');
     myBotCard.addEventListener('click', () => {
-      myModalOr.classList.add('open');
+      myModalOrderMenu.classList.add('open');
       const cardId = card.dataset.id;
       const item = setItems.find(el => el.id === cardId);
-      myModalOr.querySelector('.win__text').textContent = item.name;
-      myModalOr.querySelector('.win__txt').textContent = item.shortDescription;
-      myModalOr.querySelector('.win__price').textContent = 'Цена $' + item.price;
-      myModalWin.querySelector('.winwod-img').src = item.images[0];
+      myModalOrderMenu.querySelector('.win__text').textContent = item.name;
+      myModalOrderMenu.querySelector('.win__txt').textContent = item.shortDescription;
+      myModalOrderMenu.querySelector('.win__price').textContent = 'Цена $' + item.price;
 
 
       propertyWrapper.innerHTML = '';
@@ -378,11 +407,11 @@ const addOpenCartListeners = () => {
         colorListElem.appendChild(colorEl);
       });
 
-      // addToCartBtn.addEventListener('click', openCartModal);
+      addToCartAndOpen.addEventListener('click', addAndOpenCart);
     });
   });
 };
-addOpenCartListeners();
+addSetModalListeners();
 
 // Модальное окно набора
 

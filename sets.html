@@ -27,7 +27,7 @@
           <img class="page-header__loupe-image" src="./img/search1.svg" alt="поиск">
         </button>
         <a class="phone" href="tel:+79283627229">+380 630 130 103</a>
-        <button id="mobile-menu-btn" type="button" class="page-header__burger">
+        <button id="open-burger-btn" type="button" class="page-header__burger">
           <img class="page-header__burger-image" src="./img/COLOR.svg" alt="">
         </button>
         <div class="page-header__buttons">
@@ -113,10 +113,10 @@
           $
           <span>76.43</span>
         </p>
+        <button type="button" class="card__cart" id="add-to-cart">
+          <img class="card__cart-image" src="./img/cart.svg" alt="">
+        </button>
       </div>
-      <button type="button" class="card__cart" id="order-menu-btn">
-        <img class="card__cart-image" src="./img/cart.svg" alt="">
-      </button>
     </li>
   </template>
 
@@ -236,7 +236,7 @@
 
   <!-- <button id="open-modal-btn">открыть модальное окно</button> -->
 
-  <div class="modal" id="modal-mobile-menu">
+  <div class="modal" id="modal-burger-menu">
     <div class="gap burger__menu-gap">
       <div class="burger-menu__header">
         <button type="button" class="burger-menu__language active">RU</button>
@@ -245,7 +245,7 @@
         <button type="button" class="burger-menu__man">
           <img class="burger-menu__image" src="./img/men-3.svg" alt="">
         </button>
-        <button type="button" class="burger-menu__class" id="close-mobile-menu-btn">
+        <button type="button" class="burger-menu__class" id="close-burger-menu-btn">
           <img src="./img/COLOR-2.svg" alt="">
         </button>
       </div>
@@ -314,8 +314,8 @@
 
 
   <div class="modal" id="modal-order-menu">
-    <div class="gap window__gap" id="window-mod">
-      <button type="button" class="modal__close" id="close-order-menu-btn">
+    <div class="gap window__gap">
+      <button type="button" class="modal__close">
         <img class="modal__close-img" src="./img/trolley/close.svg" alt="">
       </button>
       <div class="window__picture">
@@ -364,7 +364,7 @@
             <p class="property__text">Плотность, г/м</p>
             <p class="property__text">150</p>
           </div>
-          <button id="open-cart-modal" type="button" class="size__button">
+          <button id="add-to-cart-and-open" type="button" class="size__button">
             Заказать
           </button>
         </div>
@@ -377,7 +377,7 @@
   </template>
 
 
-  <div class="modal " id="cart-modal">
+  <div class="modal " id="modal-cart-menu">
     <div class="gap trolley">
       <div class="trolley__order">
         <p class="trolley__title">Оформить заказ</p>
