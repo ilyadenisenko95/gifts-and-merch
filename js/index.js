@@ -286,7 +286,6 @@ const addSetModalListeners = () => {
     });
   };
 
-
   // const addSetModalListenersTBD = () => {
   const cartModal = document.querySelector('#modal-cart-menu');
   const addToCartAndOpen = document.querySelector('#add-to-cart-and-open');
