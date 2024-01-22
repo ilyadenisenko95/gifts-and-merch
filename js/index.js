@@ -2,17 +2,19 @@ const setModalSliders = {
   top: null,
   bottom: null,
 };
-const addCloseModalListeners = () => {
-  const unmountSetModalSliders = () => {
-    if (setModalSliders.top) {
-      setModalSliders.top.destroy();
-    }
-    if (setModalSliders.bottom) {
-      setModalSliders.bottom.destroy();
-    }
-  };
 
-  const allModals = document.querySelectorAll('.modal');
+const unmountSetModalSliders = () => {
+  if (setModalSliders.top) {
+    setModalSliders.top.destroy();
+  }
+  if (setModalSliders.bottom) {
+    setModalSliders.bottom.destroy();
+  }
+};
+
+const allModals = document.querySelectorAll('.modal');
+const addCloseModalListeners = () => {
+
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       allModals.forEach(el => {
@@ -154,12 +156,53 @@ const setItems = [
   },
 ];
 
-const cartItems = [
+let cartItems = [
 
 ];
 
 
+const setCartItemsLS = (newCartItems) => {
+  window.localStorage.setItem('cartItems', JSON.stringify(newCartItems));
+};
+
+const getCartItemsLS = () => {
+  const cartItemsString = window.localStorage.getItem('cartItems');
+  return JSON.parse(cartItemsString) || [];
+};
+
+
+
+
+const getTotalCartSum = () => {
+  const cartItems = getCartItemsLS();
+  let sum = 0;
+  cartItems.forEach(item => {
+    sum += item.price * item.count;
+  });
+  return Math.ceil(sum);
+};
+
+//всплывающая корзинка
+const sideCartEl = document.querySelector('.side-cart');
+const sideCartSum = sideCartEl.querySelector('.side-cart__sum');
+const sideCartCount = sideCartEl.querySelector('.side-cart__count');
+const recalcSideCart = () => {
+  const cartItems = getCartItemsLS();
+  cartItems.length
+    ? sideCartEl.classList.add('active')
+    : sideCartEl.classList.remove('active');
+  sideCartCount.textContent = cartItems.length;
+  let sum = 0;
+  cartItems.forEach(item => {
+    sum += item.price * item.count;
+  });
+  sideCartSum.textContent = `$${getTotalCartSum()}`;
+};
+recalcSideCart();
+
+
 const addToCart = (card) => {
+  const cartItems = getCartItemsLS();
   const item = setItems.find(el => el.id === card.dataset.id);
   const itemCopy = JSON.parse(JSON.stringify(item)); // Создаём копию, что не изменять исходный объект
   itemCopy.color = itemCopy.colors[card.dataset.colorIdx];
@@ -171,6 +214,8 @@ const addToCart = (card) => {
     // Элемент не найден, добавляем в корзину.
     cartItems.push({ ...itemCopy, count: 1 });
   }
+  setCartItemsLS(cartItems);
+  recalcSideCart();
 };
 
 
@@ -189,7 +234,6 @@ const fillItemList = () => {
     itemEl.querySelector('.card__description').textContent = item.shortDescription;
     itemEl.querySelector('.card__price span').textContent = item.price;
     itemEl.querySelector('.card__image').src = item.images[0];
-
     const colorListEl = itemEl.querySelector('#color-list');
     item.colors.forEach((color, index) => {
       const colorEl = colorTemplate.content.cloneNode(true);
@@ -286,62 +330,86 @@ const addSetModalListeners = () => {
     });
   };
 
-  // const addSetModalListenersTBD = () => {
   const cartModal = document.querySelector('#modal-cart-menu');
   const addToCartAndOpen = document.querySelector('#add-to-cart-and-open');
   const basketItemTemplate = document.querySelector('#basket-item-template');
   const basketItemList = cartModal.querySelector('.basket__item-list');
   //добавление данных в корзину
-  const openCartModal = () => {
+  const renderCartElements = () => {
     basketItemList.innerHTML = '';
+    const cartItems = getCartItemsLS();
     cartItems.forEach(item => {
       const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
       //изменение кол-ва товаров и их суммы
       const recalcItemPrice = () => {
         itemEl.querySelector('.quantity__number').textContent = item.count;
+        // const MyFunctions = {
+        //   ceil: (a) => {
+        //     const res = a + 10;
+        //     return res;
+        //   },
+        // };
+        // const aPlusTen = MyFunctions.ceil(15);
+        // console.log(aPlusTen);
         const totalSum = item.price * item.count;
         itemEl.querySelector('.details__sum').textContent = `$${totalSum}`;
         recalcTotalSum();
       };
+
       itemEl.querySelector('#basket-count-dec').addEventListener('click', () => {
         item.count--;
+        setCartItemsLS(cartItems);
         recalcItemPrice();
+        recalcTotalSum();
+        if (item.count === 0) {
+          deleteItem();
+          recalcSideCart();
+        }
       });
       itemEl.querySelector('#basket-count-inc').addEventListener('click', () => {
         item.count++;
+        setCartItemsLS(cartItems);
         recalcItemPrice();
       });
 
+
       const basketSumEl = cartModal.querySelector('#basket-total-sum');
       const recalcTotalSum = () => {
-        let sum = 0;
-        cartItems.forEach(item => {
-          sum += item.price * item.count;
-        });
-        basketSumEl.textContent = `Всего: $${sum}`;
+        basketSumEl.textContent = `Всего: $${getTotalCartSum()}`;
       };
-
-
       itemEl.querySelector('.details__color-icon').style.backgroundColor = item.color;
       itemEl.querySelector('.details__name').textContent = item.name;
       itemEl.querySelector('.details__img').src = item.images[0];
 
+      const deleteItem = () => {
+        let cartItems = getCartItemsLS();
+        cartItems = cartItems.filter(el => el.id !== item.id || el.color !== item.color);
+        setCartItemsLS(cartItems);
+        renderCartElements();
+        recalcSideCart();
+
+      };
+      const deleteBtn = itemEl.querySelector('.details__remove');
+      deleteBtn.addEventListener('click', deleteItem);
+
       basketItemList.appendChild(itemEl);
       recalcItemPrice();
-      cartModal.classList.add('open');
-
-
-
-
     });
+
   };
 
+  const openCartModal = () => {
+    renderCartElements();
+    cartModal.classList.add('open');
+  };
+
+  const sideCartBtn = sideCartEl.querySelector('.side-cart__btn');
+  sideCartBtn.addEventListener('click', openCartModal);
 
 
 
   setCards.forEach(card => {
     const addAndOpenCart = () => {
-      console.log('fdfsfsd');
       addToCart(card);
       openCartModal();
     };
@@ -534,44 +602,42 @@ new Swiper('.swiper.partners__logo', {
 
 
 
-// const addCallValidation = () => {
-//   const forms = document.querySelectorAll('.order');
-//   const orderSuccessModal = document.querySelector('#order-success');
-//   forms.forEach(formEl => {
-//     const loginEl = formEl.querySelector('input[name="login"]');
-//     const emailEl = formEl.querySelector('input[type="email"]');
-//     const emailWrapperEl = emailEl.closest('.order__field');
-//     const phoneEl = formEl.querySelector('input[type="tel"]');
-//     const phoneWrapperEl = phoneEl.closest('.order__field');
-//     const orderBtn = formEl.querySelector('.order__button');
-//     orderBtn.addEventListener('click', () => {
-//       const isEmailValid = emailEl.validity.valid;
-//       const isPhoneValid = phoneEl.validity.valid;
-//       if (emailEl.validity.valid) {
-//         emailWrapperEl.classList.remove('error');
-//       } else {
-//         emailWrapperEl.classList.add('error');
-//       }
-//       if (phoneEl.validity.valid) {
-//         phoneWrapperEl.classList.remove('error');
-//       } else {
-//         phoneWrapperEl.classList.add('error');
-//       }
-//       if (isEmailValid && isPhoneValid) {
-//         loginEl.value = '';
-//         emailEl.value = '';
-//         phoneEl.value = '';
-//         allModals.forEach(el => {
-//           el.classList.add('remove');
-//         });
-//         unmountSetModalSliders();
-//         orderSuccessModal.classList.add('open');
-//       }
-//     });
-//   });
-// };
-// addCallValidation();
+const addCallValidation = () => {
+  const forms = document.querySelectorAll('.order');
+  const orderSuccessModal = document.querySelector('#order-success');
+  forms.forEach(formEl => {
+    const loginEl = formEl.querySelector('input[name="login"]');
+    const emailEl = formEl.querySelector('input[type="email"]');
+    const emailWrapperEl = emailEl.closest('.order__field');
+    const phoneEl = formEl.querySelector('input[type="tel"]');
+    const phoneWrapperEl = phoneEl.closest('.order__field');
+    const orderBtn = formEl.querySelector('.order__button');
+    orderBtn.addEventListener('click', () => {
+      const isEmailValid = emailEl.validity.valid;
+      const isPhoneValid = phoneEl.validity.valid;
+      if (emailEl.validity.valid) {
+        emailWrapperEl.classList.remove('error');
+      } else {
+        emailWrapperEl.classList.add('error');
+      }
+      if (phoneEl.validity.valid) {
+        phoneWrapperEl.classList.remove('error');
+      } else {
+        phoneWrapperEl.classList.add('error');
+      }
+      if (isEmailValid && isPhoneValid) {
+        loginEl.value = '';
+        emailEl.value = '';
+        phoneEl.value = '';
+        allModals.forEach(el => {
+          el.classList.remove('open');
+        });
+        unmountSetModalSliders();
+        orderSuccessModal.classList.add('open');
+      }
+    });
+  });
+};
+addCallValidation();
 
 // // Модалка валидации
-
-

@@ -90,37 +90,6 @@
     border-radius: 15px;
 }
 
-.popular__basket {
-    position: absolute;
-    top: 76px;
-    right: 32px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
-}
-
-.popular__basket-number {
-    position: absolute;
-    top: 17px;
-    right: 30px;
-    font-size: 12.6667px;
-    line-height: 105.5%;
-    font-weight: 500;
-    color: #272525;
-    pointer-events: none;
-}
-
-.popular__basket-price {
-    position: absolute;
-    top: 106px;
-    right: 20px;
-    font-size: 17px;
-    line-height: 105.5%;
-    font-weight: 500;
-    color: #000;
-}
-
 .popular-goods_desc {
     margin-top: 16px;
     font-size: 24px;
@@ -485,11 +454,6 @@
         margin-bottom: 6px;
     }
 
-    .popular__basket {
-        top: 70px;
-        right: 21px;
-    }
-
     .popular-goods_desc {
         margin-top: 3px;
         font-size: 18px;
@@ -691,27 +655,6 @@
         margin-top: 17px;
     }
 
-    .popular__basket {
-        top: -47px;
-    }
-
-    .popular__basket-img {
-        width: 81px;
-        height: 81px;
-    }
-
-    .popular__basket-number {
-        top: 13px;
-        right: 26px;
-        font-size: 11.6667px;
-    }
-
-    .popular__basket-price {
-        top: 88px;
-        right: 14px;
-        font-size: 15px;
-    }
-
     .creative-main {
         margin-top: 137px;
     }
@@ -908,11 +851,6 @@
 
     .popular__all-product {
         font-size: 15px;
-    }
-
-    .popular__basket {
-        top: -81px;
-        right: 14px;
     }
 
     .creative-wave {
@@ -1126,11 +1064,6 @@
     .popular__star {
         top: 7px;
         right: -32px;
-    }
-
-    .popular__basket {
-        top: -124px;
-        right: 22px;
     }
 
     .popular__goods {
