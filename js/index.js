@@ -179,7 +179,7 @@ const getTotalCartSum = () => {
   cartItems.forEach(item => {
     sum += item.price * item.count;
   });
-  return Math.ceil(sum);
+  return Math.ceil(sum * 100) / 100;
 };
 
 //всплывающая корзинка
@@ -343,16 +343,8 @@ const addSetModalListeners = () => {
       //изменение кол-ва товаров и их суммы
       const recalcItemPrice = () => {
         itemEl.querySelector('.quantity__number').textContent = item.count;
-        // const MyFunctions = {
-        //   ceil: (a) => {
-        //     const res = a + 10;
-        //     return res;
-        //   },
-        // };
-        // const aPlusTen = MyFunctions.ceil(15);
-        // console.log(aPlusTen);
-        const totalSum = item.price * item.count;
-        itemEl.querySelector('.details__sum').textContent = `$${totalSum}`;
+        const myCeil = Math.ceil((item.price * item.count) * 100) / 100;
+        itemEl.querySelector('.details__sum').textContent = '$' + myCeil;
         recalcTotalSum();
       };
 
