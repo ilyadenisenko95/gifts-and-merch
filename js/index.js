@@ -162,6 +162,7 @@ let cartItems = [
 
 
 
+
 const setCartItemsLS = (newCartItems) => {
   window.localStorage.setItem('cartItems', JSON.stringify(newCartItems));
 };
