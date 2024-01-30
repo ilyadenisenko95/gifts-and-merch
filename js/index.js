@@ -193,10 +193,6 @@ const recalcSideCart = () => {
     ? sideCartEl.classList.add('active')
     : sideCartEl.classList.remove('active');
   sideCartCount.textContent = cartItems.length;
-  let sum = 0;
-  cartItems.forEach(item => {
-    sum += item.price * item.count;
-  });
   sideCartSum.textContent = `$${getTotalCartSum()}`;
 };
 recalcSideCart();
@@ -356,13 +352,16 @@ const addSetModalListeners = () => {
         recalcTotalSum();
         if (item.count === 0) {
           deleteItem();
-          recalcSideCart();
         }
+        recalcSideCart();
+
       });
       itemEl.querySelector('#basket-count-inc').addEventListener('click', () => {
         item.count++;
         setCartItemsLS(cartItems);
         recalcItemPrice();
+        recalcSideCart();
+
       });
 
 
@@ -380,7 +379,7 @@ const addSetModalListeners = () => {
         setCartItemsLS(cartItems);
         renderCartElements();
         recalcSideCart();
-
+        recalcTotalSum();
       };
       const deleteBtn = itemEl.querySelector('.details__remove');
       deleteBtn.addEventListener('click', deleteItem);
