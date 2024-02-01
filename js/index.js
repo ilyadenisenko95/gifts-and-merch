@@ -38,7 +38,7 @@ const addCloseModalListeners = () => {
     });
   });
 
-  const modalCloseBtns = document.querySelectorAll('.modal__close, #close-burger-menu-btn');
+  const modalCloseBtns = document.querySelectorAll('.modal__but-close, #close-burger-menu-btn');
   modalCloseBtns.forEach(closeBtn => {
     closeBtn.addEventListener('click', () => {
       const modalRoot = closeBtn.closest('.modal');
@@ -227,8 +227,8 @@ const fillItemList = () => {
   setItems.forEach((item) => {
     const itemEl = itemTemplate.content.cloneNode(true).querySelector('*');
     itemEl.dataset.id = item.id;
-    itemEl.querySelector('.card__name').textContent = item.name;
-    itemEl.querySelector('.card__description').textContent = item.shortDescription;
+    itemEl.querySelector('.card__info-name').textContent = item.name;
+    itemEl.querySelector('.card__info-description').textContent = item.shortDescription;
     itemEl.querySelector('.card__price span').textContent = item.price;
     itemEl.querySelector('.card__image').src = item.images[0];
     const colorListEl = itemEl.querySelector('#color-list');
@@ -280,7 +280,7 @@ fillItemList();
 
 const setCards = document.querySelectorAll('.card');
 const myModalOrderMenu = document.querySelector('#modal-order-menu');
-const myModalOrCloseBtn = myModalOrderMenu.querySelector('.modal__close');
+const myModalOrCloseBtn = myModalOrderMenu.querySelector('.modal__but-close');
 const addSetModalListeners = () => {
   const colorsTemplate = document.querySelector('#color-modtemplate');
   const propertyWrapper = myModalOrderMenu.querySelector('.property');
@@ -330,7 +330,7 @@ const addSetModalListeners = () => {
   const cartModal = document.querySelector('#modal-cart-menu');
   const addToCartAndOpen = document.querySelector('#add-to-cart-and-open');
   const basketItemTemplate = document.querySelector('#basket-item-template');
-  const basketItemList = cartModal.querySelector('.basket__item-list');
+  const basketItemList = cartModal.querySelector('.trolley__cart-list');
   //добавление данных в корзину
   const renderCartElements = () => {
     basketItemList.innerHTML = '';
@@ -339,9 +339,9 @@ const addSetModalListeners = () => {
       const itemEl = basketItemTemplate.content.cloneNode(true).querySelector('*');
       //изменение кол-ва товаров и их суммы
       const recalcItemPrice = () => {
-        itemEl.querySelector('.quantity__number').textContent = item.count;
+        itemEl.querySelector('.choice__number').textContent = item.count;
         const myCeil = Math.ceil((item.price * item.count) * 100) / 100;
-        itemEl.querySelector('.details__sum').textContent = '$' + myCeil;
+        itemEl.querySelector('.article__sum').textContent = '$' + myCeil;
         recalcTotalSum();
       };
 
@@ -361,7 +361,6 @@ const addSetModalListeners = () => {
         setCartItemsLS(cartItems);
         recalcItemPrice();
         recalcSideCart();
-
       });
 
 
@@ -369,9 +368,9 @@ const addSetModalListeners = () => {
       const recalcTotalSum = () => {
         basketSumEl.textContent = `Всего: $${getTotalCartSum()}`;
       };
-      itemEl.querySelector('.details__color-icon').style.backgroundColor = item.color;
-      itemEl.querySelector('.details__name').textContent = item.name;
-      itemEl.querySelector('.details__img').src = item.images[0];
+      itemEl.querySelector('.colors-info__icon').style.backgroundColor = item.color;
+      itemEl.querySelector('.article__info-name').textContent = item.name;
+      itemEl.querySelector('.article__details-img').src = item.images[0];
 
       const deleteItem = () => {
         let cartItems = getCartItemsLS();
@@ -381,7 +380,7 @@ const addSetModalListeners = () => {
         recalcSideCart();
         recalcTotalSum();
       };
-      const deleteBtn = itemEl.querySelector('.details__remove');
+      const deleteBtn = itemEl.querySelector('.article__remove');
       deleteBtn.addEventListener('click', deleteItem);
 
       basketItemList.appendChild(itemEl);
@@ -457,7 +456,7 @@ const addSetModalListeners = () => {
         }
 
         buttonEl.addEventListener('click', () => {
-          const colorList = document.querySelector('.window__gap');
+          const colorList = document.querySelector('.modal__window');
           const allColors = colorList.querySelectorAll('.color__but');
           allColors.forEach((el) => el.classList.remove('color__but--active'));
           buttonEl.classList.add('color__but--active');
@@ -633,3 +632,4 @@ const addCallValidation = () => {
 addCallValidation();
 
 // // Модалка валидации
+
