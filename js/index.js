@@ -61,6 +61,7 @@ addCloseModalListeners();
 
 
 
+
 const setItems = [
   {
     id: '0',
@@ -156,9 +157,9 @@ const setItems = [
   },
 ];
 
-let cartItems = [
+// let cartItems = [
 
-];
+// ];
 
 
 
