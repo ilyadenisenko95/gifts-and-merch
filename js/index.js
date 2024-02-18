@@ -38,6 +38,7 @@ const addCloseModalListeners = () => {
     });
   });
 
+
   const modalCloseBtns = document.querySelectorAll('.modal__but-close, #close-burger-menu-btn');
   modalCloseBtns.forEach(closeBtn => {
     closeBtn.addEventListener('click', () => {
