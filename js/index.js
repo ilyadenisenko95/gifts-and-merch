@@ -24,6 +24,7 @@ const addCloseModalListeners = () => {
     }
   });
 
+
   const DETAIL_CARD_MODAL_ID = 'modal-order-menu';
   allModals.forEach(modal => {
     modal.addEventListener('click', (evt) => {
