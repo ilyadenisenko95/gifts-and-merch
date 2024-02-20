@@ -70,7 +70,7 @@ const setItems = [
     name: 'Belgian chocolate package',
     shortDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, tempora.',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro aliquid necessitatibus, quibusdam quam error similique deserunt accusamus eligendi perferendis doloribus harum recusandae qui sunt.',
-    images: ['../img/sets/set-01-01.jpg', '../img/sets/set-01-02.jpg', '../img/sets/set-01-03.jpg', '../img/sets/set-01-04.jpg'],
+    images: ['./img/sets/set-01-01.jpg', './img/sets/set-01-02.jpg', './img/sets/set-01-03.jpg', './img/sets/set-01-04.jpg'],
     colors: ['#000000', '#4c3a2e', '#a5826b'],
     price: 17.99,
     attributes: [
@@ -92,7 +92,7 @@ const setItems = [
     id: '1',
     name: 'Cocoa and zephyr',
     shortDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    images: ['../img/sets/set-02-01.jpg', '../img/sets/set-02-02.jpg', '../img/sets/set-02-03.jpg'],
+    images: ['./img/sets/set-02-01.jpg', './img/sets/set-02-02.jpg', './img/sets/set-02-03.jpg'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nihil exercitationem accusamus impedit ad, nostrum tenetur nemo saepe nisi quasi?',
     colors: ['#4c3a2e', '#cccccc'],
     price: 12.99,
@@ -116,7 +116,7 @@ const setItems = [
     name: 'Multiple flavor samples',
     shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore dolores deleniti!',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic non repellendus nihil recusandae obcaecati temporibus quam fugiat dolor, repellat aspernatur fugit saepe dignissimos corporis neque quod eius accusamus minima in.',
-    images: ['../img/sets/set-04-01.jpg'],
+    images: ['./img/sets/set-04-01.jpg'],
     colors: ['#b86843', '#ac9336', '#235c91', '#587837'],
     price: 14.99,
     attributes: [
@@ -139,7 +139,7 @@ const setItems = [
     name: 'Plan B package',
     shortDescription: 'Lorem ipsum dolor amet adipisicing.',
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, eum.',
-    images: ['../img/sets/set-03-01.jpg', '../img/sets/set-03-02.jpg'],
+    images: ['./img/sets/set-03-01.jpg', './img/sets/set-03-02.jpg'],
     colors: ['#000000'],
     price: 9.99,
     attributes: [
