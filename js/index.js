@@ -220,6 +220,8 @@ const addToCart = (card) => {
 };
 
 
+
+
 const fillItemList = () => {
   const itemListEl = document.querySelector('#card-list');
   const itemTemplate = document.querySelector('#item-template');
