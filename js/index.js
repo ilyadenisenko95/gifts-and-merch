@@ -481,7 +481,6 @@ addSetModalListeners();
 
 
 
-
 const addSetSliders = () => {
   setCards.forEach(setCard => {
     const cardTop = setCard.querySelector('.card__top');
