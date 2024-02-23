@@ -429,6 +429,7 @@ const addSetModalListeners = () => {
 
 
 
+
     const myBotCard = card.querySelector('.card__info');
     myBotCard.addEventListener('click', () => {
       myModalOrderMenu.classList.add('open');
