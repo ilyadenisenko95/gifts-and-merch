@@ -469,8 +469,13 @@ const addSetModalListeners = () => {
           buttonEl.classList.add('color__but--active');
         });
 
+
         colorListElem.appendChild(colorEl);
       });
+      if (card.dataset.colorIdx == index) {
+        buttonEl.classList.add('card__color-button--active');
+      }
+
 
       addToCartAndOpen.addEventListener('click', addAndOpenCart);
     });
