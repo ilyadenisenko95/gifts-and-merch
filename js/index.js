@@ -533,7 +533,6 @@ addSetSliders();
 //cards swipers
 
 
-
 const accordionDesTx = document.querySelectorAll('.description__txt');
 accordionDesTx.forEach((topEl) => {
   topEl.addEventListener('click', () => {
